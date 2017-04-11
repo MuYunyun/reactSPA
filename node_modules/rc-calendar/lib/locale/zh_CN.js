@@ -1,0 +1,37 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _zh_CN = require('gregorian-calendar-format/lib/locale/zh_CN');
+
+var _zh_CN2 = _interopRequireDefault(_zh_CN);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+exports["default"] = {
+  today: '今天',
+  now: '此刻',
+  backToToday: '返回今天',
+  ok: '确定',
+  clear: '清除',
+  month: '月',
+  year: '年',
+  previousMonth: '上个月 (翻页上键)',
+  nextMonth: '下个月 (翻页下键)',
+  monthSelect: '选择月份',
+  yearSelect: '选择年份',
+  decadeSelect: '选择年代',
+  yearFormat: 'yyyy\'年\'',
+  monthFormat: 'M\'月\'',
+  dateFormat: 'yyyy\'年\'M\'月\'d\'日\'',
+  previousYear: '上一年 (Control键加左方向键)',
+  nextYear: '下一年 (Control键加右方向键)',
+  previousDecade: '上一年代',
+  nextDecade: '下一年代',
+  previousCentury: '上一世纪',
+  nextCentury: '下一世纪',
+  format: _zh_CN2["default"]
+};
+module.exports = exports['default'];

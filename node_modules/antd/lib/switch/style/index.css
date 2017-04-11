@@ -1,0 +1,93 @@
+.ant-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 44px;
+  height: 22px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.ant-switch-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 24px;
+}
+.ant-switch:after {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 2px;
+  top: 1px;
+  border-radius: 18px;
+  background-color: #fff;
+  content: " ";
+  cursor: pointer;
+  -webkit-transition: left 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), width 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: left 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), width 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+.ant-switch:active:after {
+  width: 24px;
+}
+.ant-switch:focus {
+  box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+  outline: 0;
+}
+.ant-switch:focus:hover {
+  box-shadow: none;
+}
+.ant-switch-small {
+  height: 14px;
+  line-height: 12px;
+  width: 28px;
+}
+.ant-switch-small:after {
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: 0;
+}
+.ant-switch-small:active:after {
+  width: 16px;
+}
+.ant-switch-small.ant-switch-checked:after {
+  left: 14px;
+}
+.ant-switch-small:active.ant-switch-checked:after {
+  left: 10px;
+}
+.ant-switch-checked {
+  border-color: #2db7f5;
+  background-color: #2db7f5;
+}
+.ant-switch-checked .ant-switch-inner {
+  left: 6px;
+}
+.ant-switch-checked:after {
+  left: 22px;
+}
+.ant-switch-checked:active:after {
+  left: 16px;
+}
+.ant-switch-disabled {
+  cursor: not-allowed;
+  background: #f4f4f4;
+  border-color: #f4f4f4;
+}
+.ant-switch-disabled:after {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.ant-switch-disabled .ant-switch-inner {
+  color: #ccc;
+}

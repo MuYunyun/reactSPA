@@ -1,0 +1,319 @@
+.ant-transfer-checkbox {
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+}
+.ant-transfer-checkbox:hover .ant-transfer-checkbox-inner,
+.ant-transfer-checkbox-focused .ant-transfer-checkbox-inner {
+  border-color: #bcbcbc;
+}
+.ant-transfer-checkbox-inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #d9d9d9;
+  background-color: #fff;
+  -webkit-transition: border-color 0.1s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.1s cubic-bezier(0.71, -0.46, 0.29, 1.46);
+  transition: border-color 0.1s cubic-bezier(0.71, -0.46, 0.29, 1.46), background-color 0.1s cubic-bezier(0.71, -0.46, 0.29, 1.46);
+}
+.ant-transfer-checkbox-inner:after {
+  -webkit-transform: rotate(45deg) scale(0);
+      -ms-transform: rotate(45deg) scale(0);
+          transform: rotate(45deg) scale(0);
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  display: table;
+  width: 5px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  content: ' ';
+  -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+  transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6);
+}
+.ant-transfer-checkbox-input {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.ant-transfer-checkbox-indeterminate .ant-transfer-checkbox-inner {
+  border-color: #2db7f5;
+  background-color: #2db7f5;
+}
+.ant-transfer-checkbox-indeterminate .ant-transfer-checkbox-inner:after {
+  content: ' ';
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 8px;
+  height: 1px;
+}
+.ant-transfer-checkbox-indeterminate:hover .ant-transfer-checkbox-inner {
+  border-color: #2db7f5;
+}
+.ant-transfer-checkbox-checked:hover .ant-transfer-checkbox-inner {
+  border-color: #2db7f5;
+}
+.ant-transfer-checkbox-checked .ant-transfer-checkbox-inner {
+  border-color: #2db7f5;
+  background-color: #2db7f5;
+}
+.ant-transfer-checkbox-checked .ant-transfer-checkbox-inner:after {
+  -webkit-transform: rotate(45deg) scale(1);
+      -ms-transform: rotate(45deg) scale(1);
+          transform: rotate(45deg) scale(1);
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  display: table;
+  width: 5px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-left: 0;
+  content: ' ';
+  -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+.ant-transfer-checkbox-disabled.ant-transfer-checkbox-checked:hover .ant-transfer-checkbox-inner {
+  border-color: #d9d9d9;
+}
+.ant-transfer-checkbox-disabled.ant-transfer-checkbox-checked .ant-transfer-checkbox-inner {
+  background-color: #f3f3f3;
+  border-color: #d9d9d9;
+}
+.ant-transfer-checkbox-disabled.ant-transfer-checkbox-checked .ant-transfer-checkbox-inner:after {
+  -webkit-animation-name: none;
+          animation-name: none;
+  border-color: #ccc;
+}
+.ant-transfer-checkbox-disabled:hover .ant-transfer-checkbox-inner {
+  border-color: #d9d9d9;
+}
+.ant-transfer-checkbox-disabled .ant-transfer-checkbox-inner {
+  border-color: #d9d9d9;
+  background-color: #f3f3f3;
+}
+.ant-transfer-checkbox-disabled .ant-transfer-checkbox-inner:after {
+  -webkit-animation-name: none;
+          animation-name: none;
+  border-color: #f3f3f3;
+}
+.ant-transfer-checkbox-disabled .ant-transfer-checkbox-inner-input {
+  cursor: default;
+}
+.ant-transfer-checkbox-disabled + span {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.ant-transfer-checkbox-wrapper {
+  cursor: pointer;
+  font-size: 12px;
+  display: inline-block;
+}
+.ant-transfer-checkbox-wrapper + .ant-transfer-checkbox-wrapper {
+  margin-left: 8px;
+}
+.ant-transfer-checkbox-wrapper + span,
+.ant-transfer-checkbox + span {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.ant-transfer-checkbox-group {
+  font-size: 12px;
+}
+.ant-transfer-checkbox-group-item {
+  display: inline-block;
+}
+@media \0screen {
+  .ant-transfer-checkbox-checked .ant-transfer-checkbox-inner:before,
+  .ant-transfer-checkbox-checked .ant-transfer-checkbox-inner:after {
+    font-family: 'anticon';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e62e";
+    font-weight: bold;
+    font-size: 8px;
+    border: 0;
+    color: #fff;
+    left: 2px;
+    top: 3px;
+    position: absolute;
+  }
+}
+.ant-transfer {
+  position: relative;
+  line-height: 1.5;
+}
+.ant-transfer-list {
+  font-size: 12px;
+  border: 1px solid #d9d9d9;
+  display: inline-block;
+  border-radius: 6px;
+  vertical-align: middle;
+  position: relative;
+  width: 160px;
+  height: 200px;
+  padding-top: 33px;
+}
+.ant-transfer-list-with-footer {
+  padding-bottom: 33px;
+}
+.ant-transfer-list-search-action {
+  color: #ccc;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+.ant-transfer-list-search-action .anticon {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 12px;
+  color: #ccc;
+}
+.ant-transfer-list-search-action .anticon:hover {
+  color: #999;
+}
+.ant-transfer-list-header {
+  padding: 7px 16px;
+  border-radius: 6px 6px 0 0;
+  background: #fff;
+  color: #666;
+  border-bottom: 1px solid #e9e9e9;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.ant-transfer-list-header-title {
+  float: right;
+}
+.ant-transfer-list-body {
+  font-size: 12px;
+  position: relative;
+  height: 100%;
+}
+.ant-transfer-list-body-search-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  padding: 4px;
+  width: 100%;
+}
+.ant-transfer-list-body-not-found {
+  padding-top: 24px;
+  color: #ccc;
+  text-align: center;
+  height: 100%;
+}
+.ant-transfer-list-body ul {
+  height: 100%;
+  overflow: auto;
+}
+.ant-transfer-list-body ul li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 7px 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ant-transfer-list-body ul li:hover {
+  cursor: pointer;
+  background-color: #eaf8fe;
+}
+ul li.ant-transfer-list-highlight-enter {
+  -webkit-animation: transferHighlightIn 1s ease;
+          animation: transferHighlightIn 1s ease;
+  -webkit-transition: none;
+  transition: none;
+}
+.ant-transfer-list-body-with-search {
+  padding-top: 34px;
+}
+.ant-transfer-list-footer {
+  border-top: 1px solid #e9e9e9;
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.ant-transfer-operation {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+.ant-transfer-operation .ant-btn {
+  float: left;
+  clear: both;
+}
+.ant-transfer-operation .ant-btn:first-child {
+  margin-bottom: 4px;
+}
+.ant-transfer-operation .ant-btn .anticon {
+  display: inline-block;
+  font-size: 12px;
+  font-size: 8px \9;
+  -webkit-transform: scale(0.66666667) rotate(0deg);
+      -ms-transform: scale(0.66666667) rotate(0deg);
+          transform: scale(0.66666667) rotate(0deg);
+  /* IE6-IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+  zoom: 1;
+}
+:root .ant-transfer-operation .ant-btn .anticon {
+  -webkit-filter: none;
+          filter: none;
+}
+:root .ant-transfer-operation .ant-btn .anticon {
+  font-size: 12px;
+}
+@-webkit-keyframes transferHighlightIn {
+  0% {
+    background: #d5f1fd;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes transferHighlightIn {
+  0% {
+    background: #d5f1fd;
+  }
+  100% {
+    background: transparent;
+  }
+}

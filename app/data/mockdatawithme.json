@@ -1,0 +1,19 @@
+/**
+将以下模板粘贴到(http://mockjs.com/examples.html)的控制台
+把生成的模拟数据粘贴出来，保存成JSON格式的文件
+*/
+var data=Mock.mock({
+    "rowData|18-48":[{
+        "name|1":["钢铁侠","蜘蛛侠","蝙蝠侠","蚁人","幻视","鹰眼","金刚狼","冬兵","吸血鬼","黑寡妇","超人","美国队长"],
+        "key|+1":1,
+        "status|1":["启用中","暂停中"],
+        "exp|122-34542":22,
+        "expURL":"@url",
+        "clickNum|4522-9542":22,
+        "clickRate|12-98":12,
+        "clickPrice|1-198":12,
+        "limit|50-250":50,
+        "handle":""
+    }]
+});
+$("<pre>").text(JSON.stringify(data, null, 4)).appendTo("body");

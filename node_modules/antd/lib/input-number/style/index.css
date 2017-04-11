@@ -1,0 +1,299 @@
+.ant-input-number {
+  position: relative;
+  padding: 4px 7px;
+  width: 100%;
+  cursor: text;
+  line-height: 1.5;
+  color: #666;
+  background-color: #fff;
+  background-image: none;
+  -webkit-transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  font-size: 12px;
+  height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 80px;
+}
+.ant-input-number::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.ant-input-number:-ms-input-placeholder {
+  color: #ccc;
+}
+.ant-input-number::-webkit-input-placeholder {
+  color: #ccc;
+}
+.ant-input-number:hover {
+  border-color: #57c5f7;
+}
+.ant-input-number:focus {
+  border-color: #57c5f7;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+}
+.ant-input-number[disabled],
+fieldset[disabled] .ant-input-number {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ant-input-number[disabled]:hover,
+fieldset[disabled] .ant-input-number:hover {
+  border-color: #e1e1e1;
+}
+textarea.ant-input-number {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.ant-input-number-lg {
+  padding: 6px 7px;
+  height: 32px;
+}
+.ant-input-number-sm {
+  padding: 1px 7px;
+  height: 22px;
+  border-radius: 4px;
+}
+.ant-input-number-handler {
+  text-align: center;
+  line-height: 0;
+  height: 14px;
+  overflow: hidden;
+  color: #999;
+  position: relative;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+.ant-input-number-handler:active {
+  background: #f4f4f4;
+}
+.ant-input-number-handler:hover .ant-input-number-handler-up-inner,
+.ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+  color: #57c5f7;
+}
+.ant-input-number-handler-up-inner,
+.ant-input-number-handler-down-inner {
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 7px \9;
+  -webkit-transform: scale(0.58333333) rotate(0deg);
+      -ms-transform: scale(0.58333333) rotate(0deg);
+          transform: scale(0.58333333) rotate(0deg);
+  /* IE6-IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+  zoom: 1;
+  right: 4px;
+  color: #999;
+}
+.ant-input-number-handler-up-inner:before,
+.ant-input-number-handler-down-inner:before {
+  display: block;
+  font-family: "anticon" !important;
+}
+:root .ant-input-number-handler-up-inner,
+:root .ant-input-number-handler-down-inner {
+  -webkit-filter: none;
+          filter: none;
+}
+:root .ant-input-number-handler-up-inner,
+:root .ant-input-number-handler-down-inner {
+  font-size: 12px;
+}
+.ant-input-number:hover {
+  border-color: #57c5f7;
+}
+.ant-input-number-focused {
+  border-color: #57c5f7;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+}
+.ant-input-number-disabled {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ant-input-number-disabled:hover {
+  border-color: #e1e1e1;
+}
+.ant-input-number-input-wrap {
+  overflow: hidden;
+  height: 28px;
+}
+.ant-input-number-input {
+  width: 100%;
+  text-align: left;
+  outline: 0;
+  -moz-appearance: textfield;
+  line-height: 28px;
+  height: 28px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: #666;
+  border: 0;
+  border-radius: 6px;
+  padding: 0 7px;
+}
+.ant-input-number-input[disabled] {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ant-input-number-input[disabled]:hover {
+  border-color: #e1e1e1;
+}
+.ant-input-number-lg {
+  padding: 0;
+}
+.ant-input-number-lg .ant-input-number-handler-wrap {
+  height: 32px;
+}
+.ant-input-number-lg .ant-input-number-input-wrap {
+  height: 32px;
+}
+.ant-input-number-lg .ant-input-number-handler {
+  height: 16px;
+}
+.ant-input-number-lg input {
+  height: 32px;
+  line-height: 32px;
+}
+.ant-input-number-lg .ant-input-number-handler-up-inner {
+  top: 2px;
+}
+.ant-input-number-lg .ant-input-number-handler-down-inner {
+  bottom: 2px;
+}
+.ant-input-number-lg .ant-input-number-handler-up:hover {
+  height: 18px;
+}
+.ant-input-number-sm {
+  padding: 0;
+}
+.ant-input-number-sm .ant-input-number-handler-wrap {
+  height: 22px;
+}
+.ant-input-number-sm .ant-input-number-input-wrap {
+  height: 22px;
+}
+.ant-input-number-sm .ant-input-number-handler {
+  height: 11px;
+}
+.ant-input-number-sm input {
+  height: 22px;
+  line-height: 22px;
+  margin-top: -1px;
+  vertical-align: top;
+}
+.ant-input-number-sm .ant-input-number-handler-up-inner {
+  top: -1px;
+}
+.ant-input-number-sm .ant-input-number-handler-down-inner {
+  bottom: -1px;
+}
+.ant-input-number-sm .ant-input-number-handler-up:hover {
+  height: 13px;
+}
+.ant-input-number-sm .ant-input-number-handler-down:hover .ant-input-number-handler-down-inner {
+  bottom: 4px;
+}
+.ant-input-number-handler-wrap {
+  border-left: 1px solid #d9d9d9;
+  width: 22px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.24s linear 0.1s;
+  transition: opacity 0.24s linear 0.1s;
+}
+.ant-input-number:hover .ant-input-number-handler-wrap {
+  opacity: 1;
+}
+.ant-input-number-handler-up {
+  cursor: pointer;
+}
+.ant-input-number-handler-up-inner {
+  top: 1px;
+}
+.ant-input-number-handler-up-inner:before {
+  text-align: center;
+  content: "\e602";
+}
+.ant-input-number-handler-up:hover {
+  height: 16px;
+}
+.ant-input-number-handler-up:hover .ant-input-number-handler-up-inner {
+  margin-top: 2px;
+}
+.ant-input-number-handler-down {
+  border-top: 1px solid #d9d9d9;
+  top: -1px;
+  cursor: pointer;
+}
+.ant-input-number-handler-down-inner:before {
+  text-align: center;
+  content: "\e603";
+}
+.ant-input-number-handler-down:hover {
+  height: 16px;
+  margin-top: -2px;
+}
+.ant-input-number-handler-down-disabled .ant-input-number-handler-down-inner,
+.ant-input-number-handler-up-disabled .ant-input-number-handler-down-inner,
+.ant-input-number-disabled .ant-input-number-handler-down-inner,
+.ant-input-number-handler-down-disabled .ant-input-number-handler-up-inner,
+.ant-input-number-handler-up-disabled .ant-input-number-handler-up-inner,
+.ant-input-number-disabled .ant-input-number-handler-up-inner {
+  opacity: 0.72;
+  color: #ccc !important;
+  cursor: not-allowed;
+}
+.ant-input-number-disabled .ant-input-number-input {
+  opacity: 0.72;
+  cursor: not-allowed;
+  background-color: #f3f3f3;
+}
+.ant-input-number-disabled .ant-input-number-handler-wrap {
+  display: none;
+}
+.ant-input-number-disabled .ant-input-number-handler {
+  opacity: 0.72;
+  color: #ccc !important;
+  cursor: not-allowed;
+}

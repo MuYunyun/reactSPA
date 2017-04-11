@@ -1,0 +1,533 @@
+.ant-search-input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ant-search-input.ant-input-group .ant-input:first-child,
+.ant-search-input.ant-input-group .ant-select:first-child {
+  border-radius: 6px;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}
+.ant-search-input .ant-search-btn {
+  color: #666;
+  background-color: #f7f7f7;
+  border-color: #d9d9d9;
+  border-radius: 0 5px 5px 0;
+  left: -1px;
+  position: relative;
+  border-width: 0 0 0 1px;
+  z-index: 2;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.ant-search-input .ant-search-btn > a:only-child {
+  color: currentColor;
+}
+.ant-search-input .ant-search-btn > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input .ant-search-btn:hover,
+.ant-search-input .ant-search-btn:focus {
+  color: #858585;
+  background-color: #f9f9f9;
+  border-color: #e1e1e1;
+}
+.ant-search-input .ant-search-btn:hover > a:only-child,
+.ant-search-input .ant-search-btn:focus > a:only-child {
+  color: currentColor;
+}
+.ant-search-input .ant-search-btn:hover > a:only-child:after,
+.ant-search-input .ant-search-btn:focus > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input .ant-search-btn:active,
+.ant-search-input .ant-search-btn.active {
+  color: #616161;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+.ant-search-input .ant-search-btn:active > a:only-child,
+.ant-search-input .ant-search-btn.active > a:only-child {
+  color: currentColor;
+}
+.ant-search-input .ant-search-btn:active > a:only-child:after,
+.ant-search-input .ant-search-btn.active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input .ant-search-btn.disabled,
+.ant-search-input .ant-search-btn[disabled],
+fieldset[disabled] .ant-search-input .ant-search-btn,
+.ant-search-input .ant-search-btn.disabled:hover,
+.ant-search-input .ant-search-btn[disabled]:hover,
+fieldset[disabled] .ant-search-input .ant-search-btn:hover,
+.ant-search-input .ant-search-btn.disabled:focus,
+.ant-search-input .ant-search-btn[disabled]:focus,
+fieldset[disabled] .ant-search-input .ant-search-btn:focus,
+.ant-search-input .ant-search-btn.disabled:active,
+.ant-search-input .ant-search-btn[disabled]:active,
+fieldset[disabled] .ant-search-input .ant-search-btn:active,
+.ant-search-input .ant-search-btn.disabled.active,
+.ant-search-input .ant-search-btn[disabled].active,
+fieldset[disabled] .ant-search-input .ant-search-btn.active {
+  color: #ccc;
+  background-color: #f7f7f7;
+  border-color: #d9d9d9;
+}
+.ant-search-input .ant-search-btn.disabled > a:only-child,
+.ant-search-input .ant-search-btn[disabled] > a:only-child,
+fieldset[disabled] .ant-search-input .ant-search-btn > a:only-child,
+.ant-search-input .ant-search-btn.disabled:hover > a:only-child,
+.ant-search-input .ant-search-btn[disabled]:hover > a:only-child,
+fieldset[disabled] .ant-search-input .ant-search-btn:hover > a:only-child,
+.ant-search-input .ant-search-btn.disabled:focus > a:only-child,
+.ant-search-input .ant-search-btn[disabled]:focus > a:only-child,
+fieldset[disabled] .ant-search-input .ant-search-btn:focus > a:only-child,
+.ant-search-input .ant-search-btn.disabled:active > a:only-child,
+.ant-search-input .ant-search-btn[disabled]:active > a:only-child,
+fieldset[disabled] .ant-search-input .ant-search-btn:active > a:only-child,
+.ant-search-input .ant-search-btn.disabled.active > a:only-child,
+.ant-search-input .ant-search-btn[disabled].active > a:only-child,
+fieldset[disabled] .ant-search-input .ant-search-btn.active > a:only-child {
+  color: currentColor;
+}
+.ant-search-input .ant-search-btn.disabled > a:only-child:after,
+.ant-search-input .ant-search-btn[disabled] > a:only-child:after,
+fieldset[disabled] .ant-search-input .ant-search-btn > a:only-child:after,
+.ant-search-input .ant-search-btn.disabled:hover > a:only-child:after,
+.ant-search-input .ant-search-btn[disabled]:hover > a:only-child:after,
+fieldset[disabled] .ant-search-input .ant-search-btn:hover > a:only-child:after,
+.ant-search-input .ant-search-btn.disabled:focus > a:only-child:after,
+.ant-search-input .ant-search-btn[disabled]:focus > a:only-child:after,
+fieldset[disabled] .ant-search-input .ant-search-btn:focus > a:only-child:after,
+.ant-search-input .ant-search-btn.disabled:active > a:only-child:after,
+.ant-search-input .ant-search-btn[disabled]:active > a:only-child:after,
+fieldset[disabled] .ant-search-input .ant-search-btn:active > a:only-child:after,
+.ant-search-input .ant-search-btn.disabled.active > a:only-child:after,
+.ant-search-input .ant-search-btn[disabled].active > a:only-child:after,
+fieldset[disabled] .ant-search-input .ant-search-btn.active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input .ant-search-btn:hover,
+.ant-search-input .ant-search-btn:focus {
+  color: #57c5f7;
+  background-color: white;
+  border-color: #57c5f7;
+}
+.ant-search-input .ant-search-btn:hover > a:only-child,
+.ant-search-input .ant-search-btn:focus > a:only-child {
+  color: currentColor;
+}
+.ant-search-input .ant-search-btn:hover > a:only-child:after,
+.ant-search-input .ant-search-btn:focus > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input .ant-search-btn:active,
+.ant-search-input .ant-search-btn.active {
+  color: #2baee9;
+  background-color: white;
+  border-color: #2baee9;
+}
+.ant-search-input .ant-search-btn:active > a:only-child,
+.ant-search-input .ant-search-btn.active > a:only-child {
+  color: currentColor;
+}
+.ant-search-input .ant-search-btn:active > a:only-child:after,
+.ant-search-input .ant-search-btn.active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input .ant-search-btn:hover {
+  border-color: #d9d9d9;
+}
+form .ant-search-input .ant-search-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty,
+.ant-search-input:hover .ant-search-btn-noempty {
+  color: #fff;
+  background-color: #2db7f5;
+  border-color: #2db7f5;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty > a:only-child {
+  color: currentColor;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:hover,
+.ant-search-input:hover .ant-search-btn-noempty:hover,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:focus,
+.ant-search-input:hover .ant-search-btn-noempty:focus {
+  color: #ffffff;
+  background-color: #57c5f7;
+  border-color: #57c5f7;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:hover > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty:hover > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:focus > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty:focus > a:only-child {
+  color: currentColor;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:hover > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty:hover > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:focus > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty:focus > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:active,
+.ant-search-input:hover .ant-search-btn-noempty:active,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.active,
+.ant-search-input:hover .ant-search-btn-noempty.active {
+  color: #f2f2f2;
+  background-color: #2baee9;
+  border-color: #2baee9;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:active > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty:active > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.active > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty.active > a:only-child {
+  color: currentColor;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:active > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty:active > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.active > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty.active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled,
+.ant-search-input:hover .ant-search-btn-noempty.disabled,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled],
+.ant-search-input:hover .ant-search-btn-noempty[disabled],
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:hover,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:hover,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:hover,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:hover,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:hover,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:hover,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:focus,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:focus,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:focus,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:focus,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:focus,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:focus,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:active,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:active,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:active,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:active,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:active,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:active,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled.active,
+.ant-search-input:hover .ant-search-btn-noempty.disabled.active,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled].active,
+.ant-search-input:hover .ant-search-btn-noempty[disabled].active,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty.active,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty.active {
+  color: #ccc;
+  background-color: #f7f7f7;
+  border-color: #d9d9d9;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty.disabled > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled] > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty[disabled] > a:only-child,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty > a:only-child,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:hover > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:hover > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:hover > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:hover > a:only-child,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:hover > a:only-child,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:hover > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:focus > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:focus > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:focus > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:focus > a:only-child,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:focus > a:only-child,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:focus > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:active > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:active > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:active > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:active > a:only-child,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:active > a:only-child,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:active > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled.active > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty.disabled.active > a:only-child,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled].active > a:only-child,
+.ant-search-input:hover .ant-search-btn-noempty[disabled].active > a:only-child,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty.active > a:only-child,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty.active > a:only-child {
+  color: currentColor;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty.disabled > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled] > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty[disabled] > a:only-child:after,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty > a:only-child:after,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:hover > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:hover > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:hover > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:hover > a:only-child:after,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:hover > a:only-child:after,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:hover > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:focus > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:focus > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:focus > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:focus > a:only-child:after,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:focus > a:only-child:after,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:focus > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled:active > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty.disabled:active > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled]:active > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty[disabled]:active > a:only-child:after,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty:active > a:only-child:after,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty:active > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.disabled.active > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty.disabled.active > a:only-child:after,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty[disabled].active > a:only-child:after,
+.ant-search-input:hover .ant-search-btn-noempty[disabled].active > a:only-child:after,
+fieldset[disabled] .ant-search-input.ant-search-input-focus .ant-search-btn-noempty.active > a:only-child:after,
+fieldset[disabled] .ant-search-input:hover .ant-search-btn-noempty.active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:hover,
+.ant-search-input:hover .ant-search-btn-noempty:hover,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:focus,
+.ant-search-input:hover .ant-search-btn-noempty:focus,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty:active,
+.ant-search-input:hover .ant-search-btn-noempty:active,
+.ant-search-input.ant-search-input-focus .ant-search-btn-noempty.active,
+.ant-search-input:hover .ant-search-btn-noempty.active {
+  color: #fff;
+}
+.ant-search-input .ant-select-combobox .ant-select-selection__rendered {
+  right: 29px;
+}
+.ant-input {
+  position: relative;
+  display: inline-block;
+  padding: 4px 7px;
+  width: 100%;
+  height: 28px;
+  cursor: text;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  -webkit-transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-input::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.ant-input:-ms-input-placeholder {
+  color: #ccc;
+}
+.ant-input::-webkit-input-placeholder {
+  color: #ccc;
+}
+.ant-input:hover {
+  border-color: #57c5f7;
+}
+.ant-input:focus {
+  border-color: #57c5f7;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+}
+.ant-input[disabled],
+fieldset[disabled] .ant-input {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ant-input[disabled]:hover,
+fieldset[disabled] .ant-input:hover {
+  border-color: #e1e1e1;
+}
+textarea.ant-input {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.ant-input-lg {
+  padding: 6px 7px;
+  height: 32px;
+}
+.ant-input-sm {
+  padding: 1px 7px;
+  height: 22px;
+  border-radius: 4px;
+}
+.ant-input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  width: 100%;
+}
+.ant-input-group[class*="col-"] {
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ant-input-group > [class*="col-"] {
+  padding-right: 8px;
+}
+.ant-input-group-addon,
+.ant-input-group-wrap,
+.ant-input-group > .ant-input {
+  display: table-cell;
+}
+.ant-input-group-addon:not(:first-child):not(:last-child),
+.ant-input-group-wrap:not(:first-child):not(:last-child),
+.ant-input-group > .ant-input:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.ant-input-group-addon,
+.ant-input-group-wrap {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.ant-input-group-wrap > * {
+  display: block !important;
+}
+.ant-input-group .ant-input {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.ant-input-group-addon {
+  padding: 4px 7px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1;
+  color: #666;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+}
+.ant-input-group-addon .ant-select {
+  margin: -5px -7px;
+}
+.ant-input-group-addon .ant-select .ant-select-selection {
+  background-color: inherit;
+  border: 0;
+  margin: -1px;
+  border: 1px solid transparent;
+}
+.ant-input-group-addon .ant-select-open .ant-select-selection,
+.ant-input-group-addon .ant-select-focused .ant-select-selection {
+  border-color: #57c5f7;
+}
+.ant-input-group > span > .ant-input:first-child,
+.ant-input-group > .ant-input:first-child,
+.ant-input-group-addon:first-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.ant-input-group > span > .ant-input:first-child .ant-select .ant-select-selection,
+.ant-input-group > .ant-input:first-child .ant-select .ant-select-selection,
+.ant-input-group-addon:first-child .ant-select .ant-select-selection {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.ant-input-group-addon:first-child {
+  border-right: 0;
+}
+.ant-input-group-addon:last-child {
+  border-left: 0;
+}
+.ant-input-group > .ant-input:last-child,
+.ant-input-group-addon:last-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.ant-input-group > .ant-input:last-child .ant-select .ant-select-selection,
+.ant-input-group-addon:last-child .ant-select .ant-select-selection {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.ant-input-group-lg .ant-input,
+.ant-input-group-lg > .ant-input-group-addon {
+  padding: 6px 7px;
+  height: 32px;
+}
+.ant-input-group-sm .ant-input,
+.ant-input-group-sm > .ant-input-group-addon {
+  padding: 1px 7px;
+  height: 22px;
+  border-radius: 4px;
+}

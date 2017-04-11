@@ -1,0 +1,13 @@
+.queue-anim-leaving {
+  position: absolute;
+  width: 100%;
+}
+.router-wrap {
+  height: 480px;
+  background: #F8F8F8;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: height 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: height 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}

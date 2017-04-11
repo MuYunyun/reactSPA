@@ -1,0 +1,128 @@
+.ant-spin {
+  color: #2db7f5;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  font-size: 12px;
+  display: none;
+}
+.ant-spin-spinning {
+  opacity: 1;
+  position: static;
+  display: inline-block;
+}
+.ant-spin-nested-loading {
+  position: relative;
+}
+.ant-spin-nested-loading .ant-spin {
+  position: absolute;
+  top: 50%;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  z-index: 4;
+  text-align: center;
+  width: 100%;
+}
+.ant-spin-nested-loading .ant-spin-dot {
+  display: inline-block;
+}
+.ant-spin-container {
+  -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+.ant-spin-nested-loading > .ant-spin-container {
+  opacity: 0.7;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  -webkit-filter: progid\:DXImageTransform\.Microsoft\.Blur(PixelRadius\=1, MakeShadow\=false);
+          filter: progid\:DXImageTransform\.Microsoft\.Blur(PixelRadius\=1, MakeShadow\=false);
+  /* IE6~IE9 */
+  position: relative;
+}
+.ant-spin-nested-loading > .ant-spin-container:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+}
+.ant-spin-tip {
+  color: #999;
+}
+.ant-spin-dot {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.ant-spin-dot:before,
+.ant-spin-dot:after {
+  content: '';
+  border-radius: 50%;
+  background-color: #2db7f5;
+  -webkit-animation: antSpinBounce 2.2s infinite ease-in-out;
+          animation: antSpinBounce 2.2s infinite ease-in-out;
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.ant-spin-dot:after {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+}
+.ant-spin-sm .ant-spin-dot {
+  width: 12px;
+  height: 12px;
+}
+.ant-spin-lg .ant-spin-dot {
+  width: 32px;
+  height: 32px;
+}
+.ant-spin-text,
+.ant-spin.ant-spin-show-text .ant-spin-dot {
+  display: none;
+}
+.ant-spin.ant-spin-show-text .ant-spin-text {
+  display: block;
+}
+@-webkit-keyframes antSpinBounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes antSpinBounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ */
+  .ant-spin-nested-loading > .ant-spin-container {
+    background: #fff;
+    opacity: 0.5;
+  }
+}

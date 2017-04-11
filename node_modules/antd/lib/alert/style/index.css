@@ -1,0 +1,186 @@
+.ant-alert {
+  position: relative;
+  padding: 8px 8px 8px 16px;
+  border-radius: 6px;
+  color: #666;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.ant-alert-icon {
+  margin-right: 8px;
+  font-size: 14px;
+  top: 1px;
+  position: relative;
+}
+.ant-alert-description {
+  font-size: 12px;
+  color: #999;
+  line-height: 21px;
+  display: none;
+}
+.ant-alert-success {
+  border: 1px solid #e7f6e1;
+  background-color: #f3faf0;
+}
+.ant-alert-success .ant-alert-icon {
+  color: #87d068;
+}
+.ant-alert-info {
+  border: 1px solid #d5f1fd;
+  background-color: #eaf8fe;
+}
+.ant-alert-info .ant-alert-icon {
+  color: #2db7f5;
+}
+.ant-alert-warning {
+  border: 1px solid #ffeecc;
+  background-color: #fff7e6;
+}
+.ant-alert-warning .ant-alert-icon {
+  color: #fa0;
+}
+.ant-alert-error {
+  border: 1px solid #ffddcc;
+  background-color: #ffeee6;
+}
+.ant-alert-error .ant-alert-icon {
+  color: #f50;
+}
+.ant-alert-close-icon {
+  font-size: 12px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -6px;
+  height: 12px;
+  line-height: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.ant-alert-close-icon .anticon-cross {
+  color: #999;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+.ant-alert-close-icon .anticon-cross:hover {
+  color: #444;
+}
+.ant-alert-close-text {
+  position: absolute;
+  right: 16px;
+}
+.ant-alert-with-description {
+  padding: 16px 16px 16px 69px;
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+.ant-alert-with-description.ant-alert-no-icon {
+  padding: 16px;
+}
+.ant-alert-with-description .ant-alert-icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  margin-top: -15px;
+  font-size: 29px;
+}
+.ant-alert-with-description .ant-alert-close-icon {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.ant-alert-with-description .ant-alert-message {
+  font-size: 14px;
+  color: #666;
+  display: block;
+}
+.ant-alert-with-description .ant-alert-description {
+  display: block;
+}
+.ant-alert.ant-alert-close {
+  height: 0 !important;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+.ant-alert-slide-up-leave {
+  -webkit-animation: antAlertSlideUpOut 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          animation: antAlertSlideUpOut 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes antAlertSlideUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@keyframes antAlertSlideUpIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@-webkit-keyframes antAlertSlideUpOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+@keyframes antAlertSlideUpOut {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
