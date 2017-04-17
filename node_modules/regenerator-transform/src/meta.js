@@ -68,8 +68,7 @@ function makePredicate(propertyName, knownTypes) {
 }
 
 let opaqueTypes = {
-  FunctionExpression: true,
-  ArrowFunctionExpression: true
+  FunctionExpression: true
 };
 
 // These types potentially have side effects regardless of what side

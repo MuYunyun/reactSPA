@@ -10,12 +10,12 @@
 
 'use strict';
 
-var invariant = require('fbjs/lib/invariant');
-var warning = require('fbjs/lib/warning');
-
-var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
-
-var loggedTypeFailures = {};
+if ("development" !== 'production') {
+  var invariant = require('fbjs/lib/invariant');
+  var warning = require('fbjs/lib/warning');
+  var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+  var loggedTypeFailures = {};
+}
 
 /**
  * Assert that the values match with the type specs.
@@ -44,7 +44,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
         } catch (ex) {
           error = ex;
         }
-        "development" !== 'production' ? warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error) : void 0;
+        warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error);
         if (error instanceof Error && !(error.message in loggedTypeFailures)) {
           // Only monitor this failure once because there tends to be a lot of the
           // same error.
@@ -52,7 +52,7 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
           var stack = getStack ? getStack() : '';
 
-          "development" !== 'production' ? warning(false, 'Failed %s type: %s%s', location, error.message, stack != null ? stack : '') : void 0;
+          warning(false, 'Failed %s type: %s%s', location, error.message, stack != null ? stack : '');
         }
       }
     }
@@ -61,7 +61,63 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-},{"./lib/ReactPropTypesSecret":4,"fbjs/lib/invariant":6,"fbjs/lib/warning":7}],2:[function(require,module,exports){
+},{"./lib/ReactPropTypesSecret":5,"fbjs/lib/invariant":7,"fbjs/lib/warning":8}],2:[function(require,module,exports){
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+'use strict';
+
+var emptyFunction = require('fbjs/lib/emptyFunction');
+var invariant = require('fbjs/lib/invariant');
+
+module.exports = function() {
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+  function shim() {
+    invariant(
+      false,
+      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+      'Use PropTypes.checkPropTypes() to call them. ' +
+      'Read more at http://fb.me/use-check-prop-types'
+    );
+  };
+  shim.isRequired = shim;
+  function getShim() {
+    return shim;
+  };
+  var ReactPropTypes = {
+    array: shim,
+    bool: shim,
+    func: shim,
+    number: shim,
+    object: shim,
+    string: shim,
+    symbol: shim,
+
+    any: shim,
+    arrayOf: getShim,
+    element: shim,
+    instanceOf: getShim,
+    node: shim,
+    objectOf: getShim,
+    oneOf: getShim,
+    oneOfType: getShim,
+    shape: getShim
+  };
+
+  ReactPropTypes.checkPropTypes = emptyFunction;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+
+},{"fbjs/lib/emptyFunction":6,"fbjs/lib/invariant":7}],3:[function(require,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -80,7 +136,7 @@ var warning = require('fbjs/lib/warning');
 var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
 var checkPropTypes = require('./checkPropTypes');
 
-module.exports = function (isValidElement) {
+module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
   var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
   var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
@@ -155,58 +211,27 @@ module.exports = function (isValidElement) {
 
   var ANONYMOUS = '<<anonymous>>';
 
-  var ReactPropTypes;
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
 
-  if ("development" !== 'production') {
-    // Keep in sync with production version below
-    ReactPropTypes = {
-      array: createPrimitiveTypeChecker('array'),
-      bool: createPrimitiveTypeChecker('boolean'),
-      func: createPrimitiveTypeChecker('function'),
-      number: createPrimitiveTypeChecker('number'),
-      object: createPrimitiveTypeChecker('object'),
-      string: createPrimitiveTypeChecker('string'),
-      symbol: createPrimitiveTypeChecker('symbol'),
-
-      any: createAnyTypeChecker(),
-      arrayOf: createArrayOfTypeChecker,
-      element: createElementTypeChecker(),
-      instanceOf: createInstanceTypeChecker,
-      node: createNodeChecker(),
-      objectOf: createObjectOfTypeChecker,
-      oneOf: createEnumTypeChecker,
-      oneOfType: createUnionTypeChecker,
-      shape: createShapeTypeChecker
-    };
-  } else {
-    var productionTypeChecker = function () {
-      invariant(false, 'React.PropTypes type checking code is stripped in production.');
-    };
-    productionTypeChecker.isRequired = productionTypeChecker;
-    var getProductionTypeChecker = function () {
-      return productionTypeChecker;
-    };
-    // Keep in sync with development version above
-    ReactPropTypes = {
-      array: productionTypeChecker,
-      bool: productionTypeChecker,
-      func: productionTypeChecker,
-      number: productionTypeChecker,
-      object: productionTypeChecker,
-      string: productionTypeChecker,
-      symbol: productionTypeChecker,
-
-      any: productionTypeChecker,
-      arrayOf: getProductionTypeChecker,
-      element: productionTypeChecker,
-      instanceOf: getProductionTypeChecker,
-      node: productionTypeChecker,
-      objectOf: getProductionTypeChecker,
-      oneOf: getProductionTypeChecker,
-      oneOfType: getProductionTypeChecker,
-      shape: getProductionTypeChecker
-    };
-  }
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker
+  };
 
   /**
    * inlined Object.is polyfill to avoid requiring consumers ship their own
@@ -243,16 +268,41 @@ module.exports = function (isValidElement) {
   function createChainableTypeChecker(validate) {
     if ("development" !== 'production') {
       var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
     }
     function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
       componentName = componentName || ANONYMOUS;
       propFullName = propFullName || propName;
-      if ("development" !== 'production') {
-        if (secret !== ReactPropTypesSecret && typeof console !== 'undefined') {
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          invariant(
+            false,
+            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+            'Use `PropTypes.checkPropTypes()` to call them. ' +
+            'Read more at http://fb.me/use-check-prop-types'
+          );
+        } else if ("development" !== 'production' && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
           var cacheKey = componentName + ':' + propName;
-          if (!manualPropTypeCallCache[cacheKey]) {
-            "development" !== 'production' ? warning(false, 'You are manually calling a React.PropTypes validation ' + 'function for the `%s` prop on `%s`. This is deprecated ' + 'and will not work in production with the next major version. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.', propFullName, componentName) : void 0;
+          if (
+            !manualPropTypeCallCache[cacheKey] &&
+            // Avoid spamming the console because they are often not actionable except for lib authors
+            manualPropTypeWarningCount < 3
+          ) {
+            warning(
+              false,
+              'You are manually calling a React.PropTypes validation ' +
+              'function for the `%s` prop on `%s`. This is deprecated ' +
+              'and will throw in the standalone `prop-types` package. ' +
+              'You may be seeing this warning due to a third-party PropTypes ' +
+              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.',
+              propFullName,
+              componentName
+            );
             manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
           }
         }
       }
@@ -547,7 +597,7 @@ module.exports = function (isValidElement) {
   return ReactPropTypes;
 };
 
-},{"./checkPropTypes":1,"./lib/ReactPropTypesSecret":4,"fbjs/lib/emptyFunction":5,"fbjs/lib/invariant":6,"fbjs/lib/warning":7}],3:[function(require,module,exports){
+},{"./checkPropTypes":1,"./lib/ReactPropTypesSecret":5,"fbjs/lib/emptyFunction":6,"fbjs/lib/invariant":7,"fbjs/lib/warning":8}],4:[function(require,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -557,22 +607,29 @@ module.exports = function (isValidElement) {
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-var factory = require('./factory');
+if ("development" !== 'production') {
+  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+    Symbol.for &&
+    Symbol.for('react.element')) ||
+    0xeac7;
 
-var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-  Symbol.for &&
-  Symbol.for('react.element')) ||
-  0xeac7;
+  var isValidElement = function(object) {
+    return typeof object === 'object' &&
+      object !== null &&
+      object.$$typeof === REACT_ELEMENT_TYPE;
+  };
 
-function isValidElement(object) {
-  return typeof object === 'object' &&
-    object !== null &&
-    object.$$typeof === REACT_ELEMENT_TYPE;
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = require('./factoryWithThrowingShims')();
 }
 
-module.exports = factory(isValidElement);
-
-},{"./factory":2}],4:[function(require,module,exports){
+},{"./factoryWithThrowingShims":2,"./factoryWithTypeCheckers":3}],5:[function(require,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -588,7 +645,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 "use strict";
 
 /**
@@ -627,7 +684,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -683,7 +740,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -750,5 +807,5 @@ if ("development" !== 'production') {
 }
 
 module.exports = warning;
-},{"./emptyFunction":5}]},{},[3])(3)
+},{"./emptyFunction":6}]},{},[4])(4)
 });

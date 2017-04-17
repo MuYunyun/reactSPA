@@ -1,32 +1,23 @@
-var WebSocket = require('..').Client,
-    deflate   = require('permessage-deflate'),
-    fs        = require('fs');
+var WebSocket = require('../lib/faye/websocket'),
+    port      = process.argv[2] || 7000,
+    secure    = process.argv[3] === 'ssl',
+    scheme    = secure ? 'wss' : 'ws',
+    url       = scheme + '://localhost:' + port + '/',
+    headers   = {Origin: 'http://faye.jcoglan.com'},
+    ws        = new WebSocket.Client(url, null, {headers: headers});
 
-var url   = process.argv[2],
-    proxy = process.argv[3],
-    ca    = fs.readFileSync(__dirname + '/../spec/server.crt'),
-    tls   = {ca: ca};
+console.log('Connecting to ' + ws.url);
 
-var ws = new WebSocket(url, [], {
-  proxy:      {origin: proxy, headers: {'User-Agent': 'Echo'}, tls: tls},
-  tls:        tls,
-  headers:    {Origin: 'http://faye.jcoglan.com'},
-  extensions: [deflate]
-});
-
-ws.onopen = function() {
-  console.log('[open]', ws.headers);
-  ws.send('mic check');
+ws.onopen = function(event) {
+  console.log('open');
+  ws.send('Hello, WebSocket!');
 };
 
-ws.onclose = function(close) {
-  console.log('[close]', close.code, close.reason);
+ws.onmessage = function(event) {
+  console.log('message', event.data);
+  // ws.close(1002, 'Going away');
 };
 
-ws.onerror = function(error) {
-  console.log('[error]', error.message);
-};
-
-ws.onmessage = function(message) {
-  console.log('[message]', message.data);
+ws.onclose = function(event) {
+  console.log('close', event.code, event.reason);
 };
