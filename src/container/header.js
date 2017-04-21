@@ -1,32 +1,38 @@
-import React from 'react';
-import {Select} from 'antd';
-const Option = Select.Option;
+import React from 'react'
+// import createHistory from 'history/lib/createHashHistory'
+import { Menu, Icon } from 'antd'
+import './header.css'
+// const history = createHistory()
 
-export default class Logout extends React.Component {
+const SubMenu = Menu.SubMenu
+
+export default class Header extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
+        this.state = {
+            username: ''
+        }
     }
 
-    handleChange = (v) => {
-        if(v === '退出') {
-            // history.push('/login');
-        }
+    componentDidMount() {
+        this.getUser()
     }
+
+    getUser = () => {
+        this.setState({
+            username: 'Muyy'
+        })
+    }
+
     render() {
-        let logoutWrap = {
-            textAlign: 'right',
-            paddingRight: 25,
-            borderBottom: '1px solid #ddd',
-            paddingBottom: 20
-        }
         return (
-            <div style={logoutWrap}>
-                <Select defaultValue="超级管理员" size="large" onChange={this.handleChange}>
-                    <Option value="超级管理员">超级管理员</Option>
-                    <Option value="退出">退出</Option>
-                </Select>
+            <div className="header">
+                <Menu mode="horizontal">
+                    <SubMenu title={<span><Icon type="user" />{ this.state.username }</span>}>
+                        <Menu.Item key="setting:1">退出</Menu.Item>
+                    </SubMenu>
+                </Menu>
             </div>
         );
     }
 }
-
