@@ -1,0 +1,20 @@
+.bottom {
+  height: 56px;
+  text-align: center;
+  display: inline-block;
+}
+
+.text {
+  margin-top: -14px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.time {
+  color: #FF4081;
+  font-weight: bold;
+  font-size: 15px;
+}

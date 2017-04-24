@@ -1,19 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { IndexLink } from 'react-router'
-import { Menu, Icon, Switch } from 'antd'
+import { Menu, Icon, Switch, Layout } from 'antd'
+import Top from './header'
+import Footer from './bottom'
 import './sidebar.css'
 
 const SubMenu = Menu.SubMenu;
+const { Sider, Content } = Layout
 
 export default class Siderbar extends React.Component {
   state = {
     theme: 'dark',
     current: '1',
+    collapsed: false,
   }
   changeTheme = (value) => {
     this.setState({
       theme: value ? 'dark' : 'light',
+    });
+  }
+  toggle = () => {
+    this.setState({
+      collapsed: !this.state.collapsed,
     });
   }
   handleClick = (e) => {
@@ -24,35 +33,49 @@ export default class Siderbar extends React.Component {
   }
   render() {
     return (
-      <div className="leftMenu">
-        { this.state.theme === 'light' ? <Icon type="github" className="github" /> : <Icon type="github" className="github white" /> }
-        <Menu
-          theme={this.state.theme}
-          onClick={this.handleClick}
-          defaultOpenKeys={['sub1']}
-          selectedKeys={[this.state.current]}
-          mode="inline"
-          className="menu"
+      <Layout className="containAll">
+        <Sider
+          collapsible
+          collapsed={this.state.collapsed}
+          onCollapse={this.onCollapse}
+          className="leftMenu"
         >
-          <SubMenu key="sub1" title={<span><Icon type="home" /><span>首页</span></span>}></SubMenu>
-          <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>Navigtion Two</span></span>}>
-            <Menu.Item key="5"><Link to="/welcome">Option 5</Link></Menu.Item>
-            <Menu.Item key="6">Option 6</Menu.Item>
-          </SubMenu>
-          <SubMenu key="sub4" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
-            <Menu.Item key="9">Option 9</Menu.Item>
-            <Menu.Item key="10"><Link to="/follow">关注</Link></Menu.Item>
-          </SubMenu>
-        </Menu>
-        <div className="switch">
-          <Switch
-            checked={this.state.theme === 'dark'}
-            onChange={this.changeTheme}
-            checkedChildren="Dark"
-            unCheckedChildren="Light"
-          />
-        </div>
-      </div>
+          { this.state.theme === 'light' ? <Icon type="github" className="github" /> : <Icon type="github" className="github white" /> }
+          <Menu
+            theme={this.state.theme}
+            onClick={this.handleClick}
+            defaultOpenKeys={['sub1']}
+            selectedKeys={[this.state.current]}
+            mode="inline"
+            className="menu"
+          >
+            <Menu.Item><Link to="/follow"><Icon type="home" /><span className="nav-text">欢迎页</span></Link></Menu.Item>
+            <SubMenu key="sub2" title={<span><Icon type="bars" /><span>导航一</span></span>}>
+              <Menu.Item key="5"><Link to="/tools">小应用</Link></Menu.Item>
+              <Menu.Item key="6"><Link to="/welcome">Option 6</Link></Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub4" title={<span><Icon type="apple-o" /><span>导航二</span></span>}>
+              <Menu.Item key="9">Option 9</Menu.Item>
+              <Menu.Item key="10"><Link to="/follow">关注</Link></Menu.Item>
+            </SubMenu>
+          </Menu>
+          <div className="switch">
+            <Switch
+              checked={this.state.theme === 'dark'}
+              onChange={this.changeTheme}
+              checkedChildren="Dark"
+              unCheckedChildren="Light"
+            />
+          </div>
+        </Sider>
+        <Layout>
+          <Top toggle={ this.toggle } collapsed={ this.state.collapsed } />
+          <Content style={{ margin: '24px 0 0 16px', padding: 24, background: '#fff' }}>
+            Content
+          </Content>
+          <Footer />
+        </Layout>
+      </Layout>
     );
   }
 }

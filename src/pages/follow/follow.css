@@ -1,12 +1,18 @@
 .ani-box {
+    margin-left: 220px;
     text-align: center;
     margin-top: 20%;
 }
 
-.pic {
-    text-align: center;
-    margin-top: 16%;
+.welcome {
+    font-size: 20px;
 }
+
+.text {
+    color: #bbb;
+    font-size: 13px;
+}
+
 .lastPic {
     display: block;
     margin: 10px auto;

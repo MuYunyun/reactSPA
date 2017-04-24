@@ -1,17 +1,17 @@
-/*右侧宽度自适应*/
-.header {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 20px 20px 0 20px;
-    position: absolute;
-    top: 0;
-    left: 220px;
-    right: 0;
-    overflow-y: auto;
-
+.logOut {
+    float: right;
+    width: 100px;
+    margin-top: 17px;
 }
 
-.header .ant-menu-submenu {
-    float: right!important
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  margin-left: -24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.trigger:hover {
+  color: #108ee9;
 }
