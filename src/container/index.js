@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 import { IndexLink } from 'react-router'
 import { Menu, Icon, Switch, Layout } from 'antd'
 import Top from './header'
+import Contents from './content'
 import Footer from './bottom'
 import './index.css'
 
 const SubMenu = Menu.SubMenu;
-const { Sider, Content } = Layout
+const { Sider } = Layout
 
 export default class Container extends React.Component {
   state = {
@@ -70,8 +71,7 @@ export default class Container extends React.Component {
         </Sider>
         <Layout>
           <Top toggle={ this.toggle } collapsed={ this.state.collapsed } />
-          <Content style={{ margin: '24px 0 0 16px', padding: 24, background: '#fff' }}>
-          </Content>
+          <Contents />
           <Footer />
         </Layout>
       </Layout>
