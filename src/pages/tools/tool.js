@@ -11,7 +11,7 @@ const TabPane = Tabs.TabPane
 export default class Tools extends React.Component {
     render() {
         return (
-            <div className="tool">
+            <div>
                 <Tabs defaultActiveKey="1">
                     <TabPane tab="工资帽" key="1"><Salary /></TabPane>
                     <TabPane tab="小房租" key="2"><House /></TabPane>
