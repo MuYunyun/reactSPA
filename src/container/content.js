@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { Layout } from 'antd'
 import './content.css'
-// import routes from '../routes'
 import login from '../pages/login/login'
 import follow from '../pages/follow/follow'
 import Tools from '../pages/tools/tool'

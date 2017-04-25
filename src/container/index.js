@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { IndexLink } from 'react-router'
 import { Menu, Icon, Switch, Layout } from 'antd'
 import Top from './header'

@@ -1,7 +1,10 @@
 .ani-box {
-    margin-left: 220px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -110px;
     text-align: center;
-    margin-top: 20%;
 }
 
 .welcome {

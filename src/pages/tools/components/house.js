@@ -1,7 +1,6 @@
 import React from 'react';
 import {Input,Row,Col,Card} from 'antd';
 
-/* 租房买房比较组件 */
 export default class Salary extends React.Component {
     constructor(props) {
         super(props);
@@ -16,19 +15,19 @@ export default class Salary extends React.Component {
     }
 
     handleChange = (e) => {
-        let input = e.target.value;
-        this.setState({ item: input });
+        const rentMoney = e.target.value;
+        this.setState({ item: rentMoney });
     }
     handleTime = (e) => {
-        let input = e.target.value;
-        this.setState({ time: input });
-        let rent = input*12*this.state.item/10000;
+        const year = e.target.value;
+        this.setState({ time: year });
+        const rent = year*12*this.state.item/10000;
         this.setState({ rent: rent });
     }
     handleBuy = (e) => {
-        let input = e.target.value;
-        this.setState({ buy: input });
-        let balance = input-this.state.rent;
+        const buyMoney = e.target.value;
+        this.setState({ buy: buyMoney });
+        const balance = buyMoney-this.state.rent;
         this.setState({ balance: balance });
         if(balance > 0) {
             this.setState({ des: '租房更合算！' });
@@ -74,6 +73,11 @@ export default class Salary extends React.Component {
                         </Card>
                     </Col>
                 </Row>
+                <Row type="flex" justify="center" className="rowItem">
+	  	  			<Col span={10}>
+	  	  				<div className="issue">如若结果出现误差<a href="https://github.com/MuYunyun/react-antd-demo/issues" target="_blank">点此提issue</a>，O(∩_∩)O</div>
+	  	  			</Col>
+	  	  		</Row>
             </div>
         );
     }

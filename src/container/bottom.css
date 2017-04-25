@@ -1,11 +1,11 @@
 .bottom {
-  height: 56px;
+  height: 64px;
   text-align: center;
   display: inline-block;
 }
 
 .text {
-  margin-top: -14px;
+  margin-top: -12px;
 }
 
 .copyright {
