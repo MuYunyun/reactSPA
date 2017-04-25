@@ -6,6 +6,7 @@ import login from './pages/login/login'
 import createBrowserHistory from 'history/createBrowserHistory'
 import follow from './pages/follow/follow'
 import Tools from './pages/tools/tool'
+import Test from './pages/test/test'
 
 const customHistory = createBrowserHistory()
 // import EditMiss from './pages/editMiss';
@@ -20,6 +21,7 @@ const routes = (
       <Route path="/login" component={login} />
       <Route path="/follow" component={follow} />
       <Route path="/tools" component={Tools} />
+      <Route path="/test" component={Test} />
     </div>
   </HashRouter>
 )
