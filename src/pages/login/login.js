@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Input, Button, notification} from 'antd';
 // import createHistory from 'history/lib/createHashHistory';
 
-import './login.css'
+import './login.less'
 
 const FormItem = Form.Item;
 // const history = createHistory();
