@@ -2,10 +2,10 @@ import React from 'react';
 import { Route } from 'react-router-dom'
 import { Layout } from 'antd'
 import './content.less'
-import login from '../pages/login/login'
-import follow from '../pages/follow/follow'
-import Tools from '../pages/tools/tool'
-import Advertising from '../pages/advertising/advertising'
+import login from 'pages/login/login'
+import follow from 'pages/follow/follow'
+import Tools from 'pages/tools/tool'
+import Advertising from 'pages/advertising/advertising'
 
 const { Content } = Layout
 
