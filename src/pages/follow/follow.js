@@ -1,5 +1,5 @@
 import React from 'react'
-import './follow.css'
+import './follow.less'
 
 export default class follow extends React.Component {
     constructor(props) {

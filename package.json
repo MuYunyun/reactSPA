@@ -8,8 +8,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1",
-    "react-scripts": "^0.9.5"
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
@@ -42,7 +41,7 @@
     "http-proxy-middleware": "0.17.3",
     "jest": "18.1.0",
     "json-loader": "0.5.4",
-    "less-loader": "^2.2.3",
+    "less-loader": "^4.0.3",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
@@ -55,10 +54,10 @@
     "whatwg-fetch": "2.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "predeploy": "react-scripts build",
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "node scripts/build.js",
     "deploy": "gh-pages -d build"
   },
   "jest": {

@@ -1,7 +1,7 @@
 import React from 'react'
 // import createHistory from 'history/lib/createHashHistory'
 import { Menu, Icon, Layout } from 'antd'
-import './header.css'
+import './header.less'
 
 // const history = createHistory()
 

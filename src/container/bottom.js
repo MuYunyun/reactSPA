@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from 'antd'
-import './bottom.css'
+import './bottom.less'
 
 const { Footer } = Layout
 
