@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 // import 'es6-promise/dist/es6-promise.min.js';
 // import 'fetch-ie8/fetch.js';
 
-import './advertising.less'
+import './index.less'
 
 // 引入组件
 import Header from './components/header.jsx';
