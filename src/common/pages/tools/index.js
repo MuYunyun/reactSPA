@@ -4,7 +4,7 @@ import Age from './components/age'
 import Bmi from './components/bmi'
 import Salary from './components/salary'
 import House from './components/house'
-import './tool.less'
+import './index.less'
 
 const TabPane = Tabs.TabPane
 
