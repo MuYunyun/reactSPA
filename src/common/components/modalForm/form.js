@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import css from 'react-css-modules'
 import {
   Button,
   Input,
@@ -12,14 +11,13 @@ import {
   Switch,
 } from 'antd'
 
-import styles from './index.scss'
+import styles from './index.less'
 
 const FormItem = Form.Item
 const RadioGroup = Radio.Group
 
 
-@Form.create()
-@css(styles)
+// @Form.create()
 export default class ModalForm extends React.Component {
 
   componentDidMount() {
@@ -193,7 +191,7 @@ export default class ModalForm extends React.Component {
         offset: 6,
       }}
     >
-      <div styleName="buttons">
+      <div className="buttons">
         {this.props.showCancel && <Button onClick={this.doCancel} >取消</Button>}
         {!this.props.noBtn && <Button type="primary" htmlType="submit">{this.props.okText || '确定'}</Button>}
       </div>
@@ -208,7 +206,7 @@ export default class ModalForm extends React.Component {
       fields,
     } = this.props
     return (
-      <div styleName="formWrapper">
+      <div className="formWrapper">
         <Form onSubmit={this.handleSubmit} ref={(c) => { this.form = c; this.props.cb && this.props.cb(this.handleSubmit) }}>
           {this.generateFormFields(fields)}
         </Form>
