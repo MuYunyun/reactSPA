@@ -21,7 +21,7 @@ yarn start || npm start
 - [x] 样式：Less
 - [x] 动画：Animate.css
 - [ ] 框架：Reflux
-- [ ] 与后台通信：Fetch
+- [x] 与后台通信：Fetch
 - [ ] 日期处理：Moment
 - [ ] 假数据模拟：MockJS
 - [ ] 使用ts重构
@@ -30,7 +30,9 @@ yarn start || npm start
 
 ### 自定义组件的使用方式
 SearchBar组件
-```javascript
+
+Table组件
+<!--```javascript
 <SearchBar
   onSubmit={this.onSearch}
   fields={[{
@@ -66,4 +68,4 @@ SearchBar组件
     }
   }}
   />
-  ```
+  ```-->

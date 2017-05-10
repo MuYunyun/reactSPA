@@ -13,7 +13,7 @@ const routes = (
     <div>
       <Route path="/" component={Container} />
       <Route path="/login" component={Login} />
-      {/*<Redirect from='*' to='/login' />*/}
+      <Redirect from='*' to='/login' />
     </div>
   </HashRouter>
 )

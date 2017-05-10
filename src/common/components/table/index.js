@@ -39,7 +39,7 @@ export default class Table extends React.Component {
       width: 50,
       fixed: this.props.rowIndexFixed,
     }];
-    // eslint-disable-next-line no-restricted-syntax
+
     for (const header of headers) {
       this.columns.push({
         ...header,
@@ -141,7 +141,7 @@ export default class Table extends React.Component {
         <AntTable
           rowSelection={this.props.rowSelection}
           scroll={this.props.scroll}
-          dataSource={this.props.data.map((row, i) => ({ ...row, key: i + 1 }))}
+          dataSource={this.props.data.map((row, i) => ({ ...row, rowIndex: i + 1, key: i + 1 }))}
           columns={this.columns}
           rowClassName={this.props.getRowClassName}
           loading={this.props.loading}
@@ -155,6 +155,7 @@ export default class Table extends React.Component {
             },
           } : false}
           footer={this.props.footer}
+          scroll={ {x: this.props.x, y: this.props.y } }
         />
       </div>
     );

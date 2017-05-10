@@ -90,6 +90,7 @@ module.exports = {
       images: path.resolve(__dirname, '..') + '/src/common/images',
       pages: path.resolve(__dirname, '..') + '/src/common/pages',
       utils: path.resolve(__dirname, '..') + '/src/common/utils',
+      data: path.resolve(__dirname, '..') + '/src/server/data',
     }
   },
 
