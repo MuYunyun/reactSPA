@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { IndexLink } from 'react-router'
 import { Menu, Icon, Switch, Layout } from 'antd'
 import Top from './header'
 import Contents from './content'
@@ -53,7 +52,7 @@ export default class Container extends React.Component {
             <Menu.Item><Link to="/follow"><Icon type="home" /><span className="nav-text">欢迎页</span></Link></Menu.Item>
             <SubMenu key="sub2" title={<span><Icon type="bars" /><span>导航一</span></span>}>
               <Menu.Item key="5"><Link to="/tools">小应用</Link></Menu.Item>
-              <Menu.Item key="6"><Link to="/advertising">广告系列</Link></Menu.Item>
+              <Menu.Item key="6"><Link to="/music">音乐系列</Link></Menu.Item>
             </SubMenu>
             <SubMenu key="sub4" title={<span><Icon type="apple-o" /><span>导航二</span></span>}>
               <Menu.Item key="9"><Link to="/test">Test</Link></Menu.Item>

@@ -1,9 +1,7 @@
 import React from 'react'
-// import createHistory from 'history/lib/createHashHistory'
 import { Menu, Icon, Layout } from 'antd'
+import { Link } from 'react-router-dom'
 import './header.less'
-
-// const history = createHistory()
 
 const SubMenu = Menu.SubMenu
 const { Header } = Layout
@@ -34,9 +32,9 @@ export default class Top extends React.Component {
                 type={this.props.collapsed ? 'menu-unfold' : 'menu-fold'}
                 onClick={this.props.toggle}
                 />
-                <Menu mode="horizontal" className="logOut">
-                    <SubMenu title={<span><Icon type="user" />{ this.state.username }</span>}>
-                        <Menu.Item key="setting:1">退出</Menu.Item>
+                <Menu mode="horizontal" className="logOut" >
+                    <SubMenu title={<span><Icon type="user" />{ this.state.username }</span>} >
+                        <Menu.Item key="setting:1" ><Link to="/login" >退出</Link></Menu.Item>
                     </SubMenu>
                 </Menu>
             </Header>

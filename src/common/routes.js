@@ -1,6 +1,6 @@
 import React from 'react'
 import { HashRouter } from 'react-router-dom'
-import { Route } from 'react-router'
+import { Route, Redirect } from 'react-router'
 import Container from 'container'
 import Login from 'pages/login'
 import createBrowserHistory from 'history/createBrowserHistory'
@@ -13,6 +13,7 @@ const routes = (
     <div>
       <Route path="/" component={Container} />
       <Route path="/login" component={Login} />
+      <Redirect from='*' to='/login' />
     </div>
   </HashRouter>
 )

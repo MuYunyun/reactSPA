@@ -8,7 +8,7 @@ import {
     Cascader,
 } from 'antd';
 import * as _ from 'lodash';
-import styles from './index.less';
+import './index.less';
 
 const { RangePicker } = DatePicker
 
@@ -22,7 +22,6 @@ export default class SearchBar extends React.Component {
       warnings: {},
     };
   }
-
 
   setField(field, value) {
     const {
@@ -94,7 +93,7 @@ export default class SearchBar extends React.Component {
     for (const field of fields) {
       let items = [];
       if (field.items) {
-        if (field.dependency) {
+        if (field.dependency) {  // 选择省份后才能选择城市
           const params = [];
           for (const dependency of field.dependency) {
             params.push(this.state.fields[dependency.key]);
@@ -109,7 +108,7 @@ export default class SearchBar extends React.Component {
       switch (field.type) {
       case 'input':
       default:
-        if ('autoComplete' in field) {
+        if ('autoComplete' in field) {  // 自动补全
           component = (<Select
             combobox
             value={this.state.fields[field.key]}
@@ -141,7 +140,7 @@ export default class SearchBar extends React.Component {
           />)
         }
         break;
-      case 'cascader':
+      case 'cascader':  // 级联
         component = (<Cascader
           options={items}
           placeholder="请选择"
@@ -181,7 +180,7 @@ export default class SearchBar extends React.Component {
       case 'rangePicker':
         component = (<DatePicker.RangePicker
           showTime
-          format="YYYY-MM-DD HH:mm"
+          format="YYYY-MM-DD"
           value={[this.state.fields[field.key[0]], this.state.fields[field.key[1]]]}
           disabled={this.state.disabled[field.key]}
           onChange={(value) => {
@@ -202,21 +201,13 @@ export default class SearchBar extends React.Component {
           showToday={false}
         />)
         break;
-      case 'rangePicker':
-        component = (<RangePicker
-          format="YYYY/MM/DD"
-          value={this.state.fields[field.key]}
-          onChange={value => this.setField(field, value)}
-        />
-        )
-        break;
       }
-      components.push(<div key={i++} styleName="field">
-        <div styleName="input">
-          <div styleName="title" style={{ width: field.labelWidth || 100 }}>{field.title}:</div>
-          <div style={{ width: field.width || 130 }} styleName="input">{component}</div>
+      components.push(<div key={i++} className="field">
+        <div className="input">
+          <div className="title" style={{ width: field.labelWidth || 100 }}>{field.title}:</div>
+          <div style={{ width: field.width || 130 }} className="input">{component}</div>
         </div>
-        <div styleName="warning">{this.state.warnings[field.key]}</div>
+        <div className="warning">{this.state.warnings[field.key]}</div>
       </div>);
     }
     return components;
@@ -276,19 +267,15 @@ export default class SearchBar extends React.Component {
   }
 
   render() {
-    return (<div styleName="dwd-searchbar">
-      {this.generateInputs(this.props.fields)}
-      <div styleName="button-group">
-        { this.props.hasReset ? <Button onClick={this.handleReset} styleName="reset">重置</Button> : ''}
-        <Button
-          onClick={this.handleSubmit}
-          styleName="search"
-          icon="search"
-        >
-          搜索
-        </Button>
+    return (
+      <div className="searchbar">
+        {this.generateInputs(this.props.fields)}
+        <div className="buttonGroup">
+          <Button onClick={this.handleReset} className="reset" icon="reload">重置</Button>
+          <Button onClick={this.handleSubmit} className="search" icon="search">搜索</Button>
+        </div>
       </div>
-    </div>);
+    );
   }
 }
 

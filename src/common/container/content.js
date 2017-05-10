@@ -4,7 +4,7 @@ import { Layout } from 'antd'
 import './content.less'
 import follow from 'pages/follow'
 import Tools from 'pages/tools'
-import Advertising from 'pages/advertising'
+import Music from 'pages/music'
 
 const { Content } = Layout
 
@@ -14,7 +14,7 @@ export default class Contents extends React.Component {
       <Content className="content">
         <Route path="/follow" component={follow} />
         <Route path="/tools" component={Tools} />
-        <Route path="/advertising" component={Advertising} />
+        <Route path="/music" component={Music} />
       </Content>
     );
   }
