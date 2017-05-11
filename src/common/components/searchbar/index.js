@@ -10,8 +10,6 @@ import {
 import * as _ from 'lodash';
 import './index.less';
 
-const { RangePicker } = DatePicker
-
 export default class SearchBar extends React.Component {
   constructor(props) {
     super(props);
