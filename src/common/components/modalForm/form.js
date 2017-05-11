@@ -11,14 +11,12 @@ import {
   Switch,
 } from 'antd'
 
-import styles from './index.less'
+import './index.less'
 
 const FormItem = Form.Item
 const RadioGroup = Radio.Group
 
-
-// @Form.create()
-export default class ModalForm extends React.Component {
+class ModForm extends React.Component {
 
   componentDidMount() {
     // eslint-disable-next-line no-restricted-syntax
@@ -95,7 +93,7 @@ export default class ModalForm extends React.Component {
   getDateTimeField = field =>
     (<DatePicker
       showTime
-      format="YYYY-MM-DD HH:mm"
+      format="YYYY-MM-DD"
       placeholder="请选择时间"
       showToday={false}
       ref={item => this.needToEmptyStyleComponents.push(item)}
@@ -148,9 +146,6 @@ export default class ModalForm extends React.Component {
         break;
       case 'select':
         component = this.getSelectField(field)
-        break;
-      case 'selectMore':
-        component = this.getSelectFieldMore(field)
         break;
       case 'radioGroup':
         component = this.getRadioGroupField(field)
@@ -214,3 +209,7 @@ export default class ModalForm extends React.Component {
     )
   }
 }
+
+const ModalForm = Form.create()(ModForm)
+
+export default ModalForm

@@ -2,7 +2,7 @@
 > 使用React技术栈开发SPA.
 [效果展示](https://muyunyun.github.io/react-antd-demo)
 
-> 如果觉得做得还不错 , 或者项目源码对您有帮助 , 希望您小抬右手到右上角点一个star , 您的支持是作者长期更新维护的动力^_^
+> 如果觉得做得还不错 , 或者项目源码对您有帮助 , 希望您小抬右手到右上角点一个star , 您的支持是作者长期更新维护的动力
 
 ### Usage
 ```
@@ -13,59 +13,51 @@ yarn start || npm start
 
 ### Tech Stack || Features
 - [x] 打包构建：Babel Webpack
+- [x] 热更新
 - [x] 包管理：Yarn || Npm
 - [x] UI库：React & React-Dom
-- [x] UI组件：Antd(2.9x)
+- [x] UI组件：Antd(2.10x)
 - [x] 路由：React-Router(4.x) & History
 - [x] JS：ES6
 - [x] 样式：Less
 - [x] 动画：Animate.css
 - [ ] 框架：Reflux
 - [x] 与后台通信：Fetch
-- [ ] 日期处理：Moment
+- [x] 日期处理：Moment
 - [ ] 假数据模拟：MockJS
 - [ ] 使用ts重构
 - [ ] 写篇全面的文章总结(doing)
-<!--- [x] ~~finish~~-->
 
-### 自定义组件的使用方式
-SearchBar组件
-
-Table组件
-<!--```javascript
-<SearchBar
-  onSubmit={this.onSearch}
-  fields={[{
-    title: '城市',
-    key: 'city',
-    type: 'cascader', // select, cascader, input, date, datetime,
-    dependency: [{
-      key: 'province',
-      message: '选择省份后才能选择城市',
-      condition(value) {
-        return value !== null;
-      }
-    }]
-    autoComplete(value) {  // 自动补全用, 只适用于input.
-      return ['123', '456']
-    },
-    validator(value) {  // 数据输入规则
-      const result = value.match(/[0-9]+/);
-      if (result) return result[0];
-      return '';
-    },
-    width: 400,
-    labelWidth: 100,
-    items(province) {  // select和cascader才有 , select 返回 [{ key, value }]
-      return [{
-        value: 0,
-        label: '浙江',
-        children: [{
-          value: 1,
-          label: '杭州区'
-        }]
-      }]
-    }
-  }}
-  />
-  ```-->
+### project structure
+下列目录仅仅是当前日期的目录，不排除日后对目录的调整，
+```
+├── build.js                   项目打包后的文件
+├── config                     webpack配置文件
+│   ├──...
+│   ├──webpack.config.dev.js   开发环境配置
+│   ├──webpack.config.prod.js  生产环境配置
+├── node_modules               node模块目录
+├── public            
+│   └──index.html
+├── scripts
+│   ├── build.js               打包项目文件
+│   ├── start.js               启动项目文件
+│   └── test.js                测试项目文件
+├── src
+│   ├── client                 中间件目录(计划)
+│   ├── common                 核心目录
+│   │   ├── components         通用功能组件
+│   │   ├── container          通用样式组件
+│   │   ├── images
+│   │   ├── pages              页面模块
+│   │   ├── utils              工具类
+│   │   │   ├── config.js      前端通用配置(全局变量待实现)
+│   │   │   └── ajax.js        ajax模块(计划fetch实现)
+│   │   └── routes.js          前端路由
+│   └── server                 服务端目录(计划)
+│       └── controller
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock
+```

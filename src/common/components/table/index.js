@@ -155,7 +155,6 @@ export default class Table extends React.Component {
             },
           } : false}
           footer={this.props.footer}
-          scroll={ {x: this.props.x, y: this.props.y } }
         />
       </div>
     );

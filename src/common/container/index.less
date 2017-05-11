@@ -1,3 +1,7 @@
+.ant-layout-sider-collapsed .anticon {  // 放在.github前面原因猜想是渲染。
+  font-size: 20px;
+}
+
 .containAll {
     position: absolute;
     top: 0;
@@ -7,16 +11,24 @@
     .github {
         position: absolute;
         top: 20px;
-        left: 24px;
-        font-size: 42px;
+        left: 14px;
+        font-size: 36px;
         animation: App-logo-spin infinite 20s linear;
+    }
+    .author {
+        position: absolute;
+        top: 20px;
+        left: 65px;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Microsoft YaHei","SimHei"
     }
     .white {
         color: white
     }
     .menu {
         height: 100%;
-        padding-top: 76px;
+        padding-top: 75px;
     }
     .switch {
         position: absolute;
@@ -38,10 +50,18 @@
   to { transform: rotate(360deg); }
 }
 
-.ant-layout-sider-collapsed .anticon {
-  font-size: 20px;
-}
-
 .ant-layout-sider-collapsed .nav-text {
   display: none;
+}
+
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:after { // 对缩放时的menu样式进行处理
+    display: none;
+}
+
+.ant-menu-submenu-vertical .ant-menu-submenu-title span span {
+    display: none;
+}
+
+.ant-layout-sider-collapsed .author {
+    display: none;
 }

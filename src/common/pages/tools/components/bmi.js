@@ -1,8 +1,6 @@
 import React from 'react';
 import {Input,Row,Col,Button,Form,Card,message } from 'antd';
 
-const FormItem = Form.Item;
-
 class Bmi extends React.Component {
     constructor(props) {
         super(props);
@@ -28,7 +26,7 @@ class Bmi extends React.Component {
 				level = 0;
 			} else if(bmi >= 18.5 && bmi <= 24.9) {
 				level = 1;
-			} else if(bmi = 25) {
+			} else if(bmi === 25) {
 				level = 2;
 			} else if(bmi >= 25 && bmi <= 29.9) {
 				level = 3;
