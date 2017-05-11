@@ -28,16 +28,16 @@ yarn start || npm start
 - [ ] 使用ts重构
 - [ ] 写篇全面的文章总结(doing)
 
-### project structure
-下列目录仅仅是当前日期的目录，不排除日后对目录的调整，
+### Project Structure
+下列目录仅仅是当前日期的目录，不排除日后对目录的调整，
 ```
 ├── build.js                   项目打包后的文件
-├── config                     webpack配置文件
+├── config                     webpack配置文件
 │   ├──...
 │   ├──webpack.config.dev.js   开发环境配置
 │   ├──webpack.config.prod.js  生产环境配置
 ├── node_modules               node模块目录
-├── public            
+├── public
 │   └──index.html
 ├── scripts
 │   ├── build.js               打包项目文件
@@ -49,7 +49,7 @@ yarn start || npm start
 │   │   ├── components         通用功能组件
 │   │   ├── container          通用样式组件
 │   │   ├── images
-│   │   ├── pages              页面模块
+│   │   ├── pages              页面模块
 │   │   ├── utils              工具类
 │   │   │   ├── config.js      前端通用配置(全局变量待实现)
 │   │   │   └── ajax.js        ajax模块(计划fetch实现)
