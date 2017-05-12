@@ -6,7 +6,6 @@ import Login from 'pages/login'
 import createBrowserHistory from 'history/createBrowserHistory'
 
 const customHistory = createBrowserHistory()
-// import * as coupon from './pages/coupon'
 
 const routes = (
   <HashRouter history={customHistory} >
