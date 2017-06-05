@@ -53,7 +53,8 @@ yarn start || npm start
 │   │   ├── images
 │   │   ├── pages              页面模块
 │   │   ├── utils              工具类
-│   │   │   ├── config.js      前端通用配置(全局变量待实现)
+│   │   │   ├── config.js      通用配置(全局变量待实现)
+│   │   │   ├── menu.js        菜单配置
 │   │   │   └── ajax.js        ajax模块(计划fetch实现)
 │   │   └── routes.js          前端路由
 │   └── server                 服务端目录(计划)

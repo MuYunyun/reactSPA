@@ -1785,6 +1785,20 @@ draft-js@^0.10.0, draft-js@~0.10.0:
     immutable "~3.7.4"
     object-assign "^4.1.0"
 
+draftjs-to-html@^0.7.2:
+  version "0.7.2"
+  resolved "http://r.cnpmjs.org/draftjs-to-html/download/draftjs-to-html-0.7.2.tgz#e8735c4d836bd4e6be934ca6ccaedebacff9e772"
+
+draftjs-to-markdown@^0.4.2:
+  version "0.4.2"
+  resolved "http://r.cnpmjs.org/draftjs-to-markdown/download/draftjs-to-markdown-0.4.2.tgz#7bc00d72bc03eb42040057e1d4bcb6707a766bba"
+
+draftjs-utils@^0.7.5:
+  version "0.7.5"
+  resolved "http://r.cnpmjs.org/draftjs-utils/download/draftjs-utils-0.7.5.tgz#982b671bf9b8296c89b05683e63257817d30de55"
+  dependencies:
+    immutable "^3.x.x"
+
 duplexer@^0.1.1:
   version "0.1.1"
   resolved "http://r.cnpmjs.org/duplexer/download/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
@@ -1795,6 +1809,19 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
+echarts-for-react@^1.4.1:
+  version "1.4.1"
+  resolved "http://r.cnpmjs.org/echarts-for-react/download/echarts-for-react-1.4.1.tgz#bb254c0bcbf6b12de0baed274cd81eb5e178c4b2"
+  dependencies:
+    echarts "^3.5.0"
+    element-resize-event "^2.0.7"
+
+echarts@^3.5.0, echarts@^3.6.1:
+  version "3.6.1"
+  resolved "http://r.cnpmjs.org/echarts/download/echarts-3.6.1.tgz#6cb31173c6ac05ba713a613cdf4dd72145e0ab6f"
+  dependencies:
+    zrender "^3.5.1"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "http://r.cnpmjs.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -1802,6 +1829,10 @@ ee-first@1.1.1:
 electron-to-chromium@^1.1.0, electron-to-chromium@^1.2.7:
   version "1.3.3"
   resolved "http://r.cnpmjs.org/electron-to-chromium/download/electron-to-chromium-1.3.3.tgz#651eb63fe89f39db70ffc8dbd5d9b66958bc6a0e"
+
+element-resize-event@^2.0.7:
+  version "2.0.9"
+  resolved "http://r.cnpmjs.org/element-resize-event/download/element-resize-event-2.0.9.tgz#2f5e1581a296eb5275210c141bc56342e218f876"
 
 emoji-regex@^6.1.0:
   version "6.4.2"
@@ -2757,9 +2788,13 @@ image-size@~0.5.0:
   version "0.5.1"
   resolved "http://r.cnpmjs.org/image-size/download/image-size-0.5.1.tgz#28eea8548a4b1443480ddddc1e083ae54652439f"
 
-immutable@^3.7.4, immutable@^3.8.1:
+immutable@^3.7.4, immutable@^3.8.1, immutable@^3.x.x:
   version "3.8.1"
   resolved "http://r.cnpmjs.org/immutable/download/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
+
+immutable@^4.0.0-rc.1:
+  version "4.0.0-rc.2"
+  resolved "http://r.cnpmjs.org/immutable/download/immutable-4.0.0-rc.2.tgz#fdd0948aae728fda2306a02f72bb73e1773432d1"
 
 immutable@~3.7.4:
   version "3.7.6"
@@ -4181,6 +4216,10 @@ performance-now@^0.2.0:
   version "0.2.0"
   resolved "http://r.cnpmjs.org/performance-now/download/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
+photoswipe@^4.1.2:
+  version "4.1.2"
+  resolved "http://r.cnpmjs.org/photoswipe/download/photoswipe-4.1.2.tgz#95c20a75cea23b70d6299641cad82e03cae7f797"
+
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "http://r.cnpmjs.org/pify/download/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -4528,7 +4567,14 @@ promise@7.1.1, promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@~15.5.7:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8:
+  version "15.5.10"
+  resolved "http://r.cnpmjs.org/prop-types/download/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.3.1"
+
+prop-types@^15.5.7, prop-types@~15.5.7:
   version "15.5.8"
   resolved "http://r.cnpmjs.org/prop-types/download/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
   dependencies:
@@ -4934,6 +4980,15 @@ react-dom@^15.5.4:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "~15.5.7"
+
+react-draft-wysiwyg@^1.10.0:
+  version "1.10.0"
+  resolved "http://r.cnpmjs.org/react-draft-wysiwyg/download/react-draft-wysiwyg-1.10.0.tgz#110d887364bedcd4a6eabdb69d244e162e04e095"
+  dependencies:
+    classnames "^2.2.5"
+    draftjs-utils "^0.7.5"
+    immutable "^4.0.0-rc.1"
+    prop-types "^15.5.10"
 
 react-hammerjs@~0.5.0:
   version "0.5.0"
@@ -6147,3 +6202,7 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+zrender@^3.5.1:
+  version "3.5.1"
+  resolved "http://r.cnpmjs.org/zrender/download/zrender-3.5.1.tgz#70494096f017684c714ddd8bfa24cda6feecec34"

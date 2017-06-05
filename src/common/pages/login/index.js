@@ -15,7 +15,7 @@ class LoginPage extends React.Component {
         let p = this.props.form.getFieldsValue().password;
         if (n === 'muyy' && p === 'muyy') {
             // 表单的路由处理
-            history.push('/follow');
+            history.push('/index');
         } else {
             this.openNotificationWithIcon('info');
         }
