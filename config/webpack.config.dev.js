@@ -83,6 +83,8 @@ module.exports = {
       pages: path.resolve(__dirname, '..') + '/src/common/pages',
       utils: path.resolve(__dirname, '..') + '/src/common/utils',
       data: path.resolve(__dirname, '..') + '/src/server/data',
+      actions: path.resolve(__dirname, '..') + '/src/common/actions',
+      reducers: path.resolve(__dirname, '..') + '/src/common/reducers',
     }
   },
 

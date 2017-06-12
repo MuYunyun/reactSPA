@@ -93,7 +93,7 @@ export default class Gallery extends React.Component {
                         </div>
                         <div className="pa-m">
                             <h3>React Admin</h3>
-                            <small><a href="http://muyunyun.cn" target="_blank">http://muyunyun.cn</a></small>
+                            <small><a href="https://github.com/MuYunyun" target="_blank">https://github.com/MuYunyun</a></small>
                         </div>
                     </Card>
                 </div>

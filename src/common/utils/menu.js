@@ -17,6 +17,7 @@ export const allMenu = [
     children: [
       { name: '小应用', url: 'tools' },
       { name: '富文本编辑器', url: 'editor' },
+      { name: '待办事项', url: 'todoList' },
     ],
   }, {
     name: '画廊模块',
@@ -30,7 +31,7 @@ export const allMenu = [
     url: 'dev',
     icon: 'apple-o',
     children: [
-      { name: 'Redux开发中', url: 'todo' },
+      { name: '更多模块开发中', url: 'todo' },
     ],
   }, {
     name: '项目地址',

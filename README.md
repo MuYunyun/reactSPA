@@ -23,12 +23,18 @@ yarn start || npm start
 - [x] 路由：React-Router(4.x) & History
 - [x] JS：ES6
 - [x] 样式：Less
-- [x] 动画：Animate.css
 - [ ] 框架：Reflux
 - [x] 与后台通信：Fetch
-- [x] 日期处理：Moment
 - [ ] 假数据模拟：MockJS
 - [ ] 使用ts重构
+
+### Third-party libraries
+* css动画库：Animate.css
+* 富文本编辑：react-draft-wysiwyg
+* 全屏插件：screenfull
+* 图片弹层查看插件：photoswipe
+* 日期处理：Moment
+* 可视化图表：echarts-for-react
 
 ### Project Structure
 下列目录仅仅是当前日期的目录，不排除日后对目录的调整，

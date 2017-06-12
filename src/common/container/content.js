@@ -9,6 +9,7 @@ import Music from 'pages/music'
 import Todo from 'pages/todo'
 import Album from 'pages/album'
 import Editor from 'pages/editor'
+import TodoList from 'pages/todoList'
 
 const { Content } = Layout
 
@@ -23,6 +24,7 @@ export default class Contents extends React.Component {
         <Route path="/todo" component={Todo} />
         <Route path="/album" component={Album} />
         <Route path="/editor" component={Editor} />
+        <Route path="/todoList" component={TodoList} />
       </Content>
     );
   }
