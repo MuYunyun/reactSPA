@@ -141,6 +141,7 @@ module.exports = {
         loader: 'babel',
         query: {
           plugins: [
+            "transform-decorators-legacy",
             ['import', [{ libraryName: "antd", style: true }]],  // 加载 less 文件
           ]
         }

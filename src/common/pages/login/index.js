@@ -13,7 +13,7 @@ class LoginPage extends React.Component {
         e.preventDefault();
         let n = this.props.form.getFieldsValue().username;
         let p = this.props.form.getFieldsValue().password;
-        if (n === 'muyy' && p === 'muyy') {
+        if (n === '123' && p === '123') {
             // 表单的路由处理
             history.push('/index');
         } else {
@@ -25,7 +25,7 @@ class LoginPage extends React.Component {
     openNotificationWithIcon = (type) => {
         return notification[type]({
                  message: '用户名&密码',
-                 description: '都是：muyy',
+                 description: '都是：123',
                  duration: 6,
                  icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />,
                })

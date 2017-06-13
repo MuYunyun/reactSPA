@@ -50,7 +50,8 @@ export default class Container extends React.Component {
           onCollapse={this.onCollapse}
           className="leftMenu"
         >
-          { this.state.theme === 'light' ? <Icon type="github" className="github" /> : <Icon type="github" className="github white" /> }
+          { this.state.theme === 'light' ? <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank'><Icon type="github" className="github" /></a> :
+          <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank'><Icon type="github" className="github white" /></a> }
           { this.state.theme === 'light' ? <span className="author">牧之</span> : <span className="author white">牧之</span> }
           <Menu
             theme={this.state.theme}

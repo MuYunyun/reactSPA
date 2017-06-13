@@ -2,7 +2,10 @@ import React from 'react';
 import { Row, Col, Card, Timeline, Icon } from 'antd';
 import EchartsViews from './EchartsViews';
 import EchartsProjects from './EchartsProjects';
-import b1 from 'images/huoying.jpg';
+import b1 from 'images/minren.jpg';
+import b2 from 'images/zuozu.jpg';
+import b3 from 'images/xiaoying.jpg';
+import b4 from 'images/chutian.jpg';
 import './index.less'
 
 export default class index extends React.Component {
@@ -86,9 +89,9 @@ export default class index extends React.Component {
                                         <p>更多模块开发中</p>
                                     </Timeline.Item>
                                     <Timeline.Item color="red">
-                                        <p>加入Redux,使用ts重构(正在开发)</p>
+                                        <p>使用ts重构(正在开发)</p>
                                     </Timeline.Item>
-                                    <Timeline.Item color="green">引人Fetch</Timeline.Item>
+                                    <Timeline.Item color="green">引人Redux,Fetch</Timeline.Item>
                                     <Timeline.Item color="green">引人Less,React-Router(4.x)</Timeline.Item>
                                     <Timeline.Item color="green">初始化项目</Timeline.Item>
                                 </Timeline>
@@ -104,38 +107,38 @@ export default class index extends React.Component {
                                 <a className="card-tool"><Icon type="sync" /></a>
                                 <ul className="list-group no-border">
                                     <li className="list-group-item">
-                                        <a href="" className="pull-left w-40 mr-m">
+                                        <a className="pull-left w-40 mr-m">
                                             <img src={b1} className="img-responsive img-circle" alt="test" />
                                         </a>
                                         <div className="clear">
-                                            <a href="" className="block">鸣人</a>
+                                            <a className="block">鸣人</a>
                                             <span className="text-muted">终于当上火影了！</span>
                                         </div>
                                     </li>
                                     <li className="list-group-item">
-                                        <a href="" className="pull-left w-40 mr-m">
-                                            <img src={b1} className="img-responsive img-circle" alt="test" />
+                                        <a className="pull-left w-40 mr-m">
+                                            <img src={b2} className="img-responsive img-circle" alt="test" />
                                         </a>
                                         <div className="clear">
-                                            <a href="" className="block">佐助</a>
+                                            <a className="block">佐助</a>
                                             <span className="text-muted">吊车尾~~</span>
                                         </div>
                                     </li>
                                     <li className="list-group-item">
-                                        <a href="" className="pull-left w-40 mr-m">
-                                            <img src={b1} className="img-responsive img-circle" alt="test" />
+                                        <a className="pull-left w-40 mr-m">
+                                            <img src={b3} className="img-responsive img-circle" alt="test" />
                                         </a>
                                         <div className="clear">
-                                            <a href="" className="block">小樱</a>
+                                            <a className="block">小樱</a>
                                             <span className="text-muted">佐助，你好帅！</span>
                                         </div>
                                     </li>
                                     <li className="list-group-item">
-                                        <a href="" className="pull-left w-40 mr-m">
-                                            <img src={b1} className="img-responsive img-circle" alt="test" />
+                                        <a className="pull-left w-40 mr-m">
+                                            <img src={b4} className="img-responsive img-circle" alt="test" />
                                         </a>
                                         <div className="clear">
-                                            <a href="" className="block">雏田</a>
+                                            <a className="block">雏田</a>
                                             <span className="text-muted">鸣人君。。。那个。。。我。。喜欢你..</span>
                                         </div>
                                     </li>
