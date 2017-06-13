@@ -1,9 +1,11 @@
 {
-  "main.css": "static/css/main.e10b786e.css",
-  "main.css.map": "static/css/main.e10b786e.css.map",
-  "main.js": "static/js/main.265c2fee.js",
-  "main.js.map": "static/js/main.265c2fee.js.map",
+  "main.css": "static/css/main.557ba4ee.css",
+  "main.css.map": "static/css/main.557ba4ee.css.map",
+  "main.js": "static/js/main.8a7a4d7a.js",
+  "main.js.map": "static/js/main.8a7a4d7a.js.map",
+  "static/media/chutian.jpg": "static/media/chutian.d9543fe0.jpg",
   "static/media/default-skin.svg": "static/media/default-skin.b257fa9c.svg",
   "static/media/face.png": "static/media/face.a0e6c687.png",
-  "static/media/huoying.jpg": "static/media/huoying.553c69e9.jpg"
+  "static/media/minren.jpg": "static/media/minren.a392b4dd.jpg",
+  "static/media/xiaoying.jpg": "static/media/xiaoying.e2dedb10.jpg"
 }
