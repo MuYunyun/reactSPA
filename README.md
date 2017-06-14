@@ -4,7 +4,7 @@
 
 [效果展示](https://muyunyun.github.io/reactSPA)
 
-[文档地址](http://www.cnblogs.com/MuYunyun/p/6843584.html)
+[文档地址](http://muyunyun.cn/posts/9bfbdbf4/)
 
 > 如果觉得做得还不错 , 或者项目源码对您有帮助 , 希望您小抬右手到右上角点一个star , 您的支持是作者长期更新维护的动力
 
