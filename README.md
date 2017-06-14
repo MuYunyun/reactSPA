@@ -16,7 +16,7 @@ yarn start || npm start
 ```
 
 ### Tech Stack
-- [x] 打包构建：Babel Webpack
+- [x] 打包构建：Babel Webpack(2.6)
 - [x] 热更新
 - [x] 包管理：Yarn || Npm
 - [x] UI库：React & React-Dom
@@ -33,8 +33,8 @@ yarn start || npm start
 * 音乐模块
   * 用fetch调用了百度音乐api(JSONP)
 * 工具模块
-  * 实现对工资、房租、身体指数、年龄的智能计算
-  * 用redux实现了待办事项模块
+  * 实现对工资、房租、身体指数、年龄的智能计算
+  * 用redux实现了待办事项模块
 * 画廊模块
   * 图片懒加载(待开发)
 
@@ -52,7 +52,7 @@ yarn start || npm start
 ├── config                     webpack配置文件
 │   ├──...
 │   ├──webpack.config.dev.js   开发环境配置
-│   ├──webpack.config.prod.js  生产环境配置
+│   ├──webpack.config.prod.js  生产环境配置
 ├── node_modules               node模块目录
 ├── public
 │   └──index.html

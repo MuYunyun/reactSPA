@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu, Icon, Layout } from 'antd'
 import { Link } from 'react-router-dom'
-import screenfull from 'screenfull'
+// import screenfull from 'screenfull'
 import './header.less'
 
 const SubMenu = Menu.SubMenu
@@ -31,11 +31,11 @@ export default class Top extends React.Component {
         }
     }
 
-    screenFull = () => {
-        if (screenfull.enabled) {
-            screenfull.request();
-        }
-    }
+    // screenFull = () => {
+    //     if (screenfull.enabled) {
+    //         screenfull.request();
+    //     }
+    // }
     render() {
         return (
             <Header style={{ background: '#fff'}}>
@@ -49,11 +49,11 @@ export default class Top extends React.Component {
                         <Menu.Item key="logOut"><Link to="/login" >退出</Link></Menu.Item>
                     </SubMenu>
                 </Menu>
-                <Icon
+                {/*<Icon
                     className="screenFull"
                     type="arrows-alt"
                     onClick={this.screenFull}
-                />
+                />*/}
             </Header>
         );
     }
