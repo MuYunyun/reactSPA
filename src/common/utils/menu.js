@@ -27,6 +27,13 @@ export const allMenu = [
       { name: '时光相片', url: 'album' },
     ],
   }, {
+    name: '搜索模块',
+    url: 'search',
+    icon: 'search',
+    children: [
+      { name: '搜索引擎', url: 'searchEngine' },
+    ],
+  }, {
     name: '开发模块',
     url: 'dev',
     icon: 'apple-o',

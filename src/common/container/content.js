@@ -10,6 +10,7 @@ import Todo from 'pages/todo'
 import Album from 'pages/album'
 import Editor from 'pages/editor'
 import TodoList from 'pages/todoList'
+import Search from 'pages/search'
 
 const { Content } = Layout
 
@@ -25,6 +26,7 @@ export default class Contents extends React.Component {
         <Route path="/album" component={Album} />
         <Route path="/editor" component={Editor} />
         <Route path="/todoList" component={TodoList} />
+        <Route path="/searchEngine" component={Search} />
       </Content>
     );
   }

@@ -34,12 +34,14 @@ yarn start || npm start
 
 ### Features
 * 音乐模块
-  * 用fetch调用了百度音乐api(JSONP)
+  * 用fetch调用了百度音乐api
 * 工具模块
   * 实现对工资、房租、身体指数、年龄的智能计算
   * 用redux实现了待办事项模块
 * 画廊模块
   * 图片懒加载(待开发)
+* 搜索模块
+  * 搜索引擎的实现(集合了百度、360、搜狗搜索)
 
 ### Third-party libraries
 * css动画库：Animate.css
