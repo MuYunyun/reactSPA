@@ -43,6 +43,10 @@ export const musicKindList = [
 
 export const languageKindList = [
   {
+    value: 0,
+    mean: '全部',
+  },
+  {
     value: 1,
     mean: '国语',
   },
@@ -65,6 +69,10 @@ export const languageKindList = [
 ]
 
 export const publishCountry = [
+  {
+    value: 0,
+    mean: '全部',
+  },
   {
     value: 1,
     mean: '内地',

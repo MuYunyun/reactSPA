@@ -51,13 +51,13 @@ export default class Music extends React.Component {
             .then((data) => {
                 const songArray = []
                 let songList = data.song_list
-                if (searchFields && searchFields.country) { // 发行国家搜索
+                if (searchFields && searchFields.country && searchFields.country.toString() !== '0') { // 发行国家搜索
                     // eslint-disable-next-line
-                    songList = songList.filter(ele => ele.country === publishCountry.find(t => t.value === parseInt(searchFields.country)).mean)
+                    songList = songList.filter(ele => ele.country === publishCountry.find(t => t.value === parseInt(searchFields.country), 10).mean)
                 }
-                if (searchFields && searchFields.language) { // 歌曲语种搜索
+                if (searchFields && searchFields.language && searchFields.language.toString() !== '0') { // 歌曲语种搜索
                     // eslint-disable-next-line
-                    songList = songList.filter(ele => ele.language === languageKindList.find(t => t.value === parseInt(searchFields.language)).mean)
+                    songList = songList.filter(ele => ele.language === languageKindList.find(t => t.value === parseInt(searchFields.language), 10).mean)
                 }
                 if (searchFields && searchFields.start) { // 发行时间段收索
                     songList = songList.filter(ele => moment(ele.publishtime) >= moment(searchFields.start) && moment(ele.publishtime) <= moment(searchFields.end))
@@ -109,25 +109,19 @@ export default class Music extends React.Component {
             key: 'country',
             type: 'select',
             defaultValue: '全部',
-            items: () => [{
-                value: 0,
-                mean: '全部'
-            }].concat(publishCountry.map(ele => ({
+            items: () => publishCountry.map(ele => ({
                 value: ele.value,
                 mean: ele.mean
-            }))),
+            })),
         }, {
             title: '歌曲语种',
             key: 'language',
             type: 'select',
             defaultValue: '全部',
-            items: () => [{
-                value: 0,
-                mean: '全部'
-            }].concat(languageKindList.map(ele => ({
+            items: () => languageKindList.map(ele => ({
                 value: ele.value,
                 mean: ele.mean
-            }))),
+            })),
         }, {
             title: '发行时间段',
             key: ['start', 'end'],

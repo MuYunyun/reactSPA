@@ -19,7 +19,7 @@ yarn start || npm start
 ```
 
 ### Tech Stack
-- [x] 打包构建：Babel Webpack(2.6)
+- [x] 打包构建：Babel Webpack(3.x)
 - [x] 热更新
 - [x] 包管理：Yarn || Npm
 - [x] UI库：React & React-Dom
@@ -30,14 +30,15 @@ yarn start || npm start
 - [x] 框架：Redux
 - [x] 与后台通信：Fetch
 - [ ] 图片懒加载
+- [ ] 测试用例
 - [ ] 使用ts重构
 
 ### Features
 * 音乐模块
-  * 用fetch调用了百度音乐api
+  * 用 fetch 调用了百度音乐 api
 * 工具模块
   * 实现对工资、房租、身体指数、年龄的智能计算
-  * 用redux实现了待办事项模块
+  * 用 redux 实现了待办事项模块
 * 画廊模块
   * 图片懒加载(待开发)
 * 搜索模块
