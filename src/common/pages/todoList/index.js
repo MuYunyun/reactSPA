@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addTodo,toggleTodo,delTodo } from 'actions/todoList'
+import { addTodo, toggleTodo, delTodo } from 'actions/todoList'
 import FilterLink from './filterLink'
 import './index.less'
 

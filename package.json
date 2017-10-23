@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "2.10.0",
+    "antd": "^2.13.7",
     "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
     "draftjs-to-html": "^0.7.2",
@@ -68,7 +68,6 @@
     "promise": "8.0.1",
     "react-dev-utils": "^3.1.0",
     "react-error-overlay": "^1.0.10",
-    "screenfull": "^3.3.1",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.5.9",
