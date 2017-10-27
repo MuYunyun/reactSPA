@@ -29,13 +29,14 @@ yarn start || npm start
 - [x] 样式：Less
 - [x] 框架：Redux
 - [x] 与后台通信：Fetch
-- [ ] 图片懒加载
+- [x] 封装 Ajax 实现跨域请求
 - [ ] 测试用例
 - [ ] 使用ts重构
 
 ### Features
 * 音乐模块
-  * 用 fetch 调用了百度音乐 api
+  * 抽离了 Ajax 模块，可完成相应的跨域需求
+  * redux 流实现数据的获取
 * 工具模块
   * 实现对工资、房租、身体指数、年龄的智能计算
   * 用 redux 实现了待办事项模块
@@ -43,6 +44,8 @@ yarn start || npm start
   * 图片懒加载(待开发)
 * 搜索模块
   * 搜索引擎的实现(集合了百度、360、搜狗搜索)
+* 更多模块开发中
+  * 欢迎提 issue
 
 ### Third-party libraries
 * css动画库：Animate.css
@@ -69,6 +72,7 @@ yarn start || npm start
 ├── src
 │   ├── client                 汇聚目录
 │   ├── common                 核心目录
+│   │   ├── api                请求api层
 │   │   ├── actions            redux中的action
 │   │   ├── components         通用功能组件
 │   │   ├── container          通用样式组件
@@ -76,9 +80,10 @@ yarn start || npm start
 │   │   ├── pages              页面模块
 │   │   ├── reducers           redux中的reducer
 │   │   ├── utils              工具类
-│   │   │   ├── config.js      通用配置(全局变量待实现)
+│   │   │   ├── index.js       通用工具
+│   │   │   ├── config.js      通用配置
 │   │   │   ├── menu.js        菜单配置
-│   │   │   └── ajax.js        ajax模块(日后用到)
+│   │   │   └── ajax.js        ajax模块
 │   │   └── routes.js          前端路由
 │   └── server                 服务端目录(日后用到)
 │       └── controller

@@ -99,6 +99,7 @@ module.exports = {
       data: path.resolve(__dirname, '..') + '/src/server/data',
       actions: path.resolve(__dirname, '..') + '/src/common/actions',
       reducers: path.resolve(__dirname, '..') + '/src/common/reducers',
+      api: path.resolve(__dirname, '..') + '/src/common/api',
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).

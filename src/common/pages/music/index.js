@@ -1,27 +1,23 @@
 import React from 'react'
-import {
-    Button,
-    message,
-    Modal
-} from 'antd'
 import SearchBar from 'components/searchbar'
 import Table from 'components/table'
-import {
-    FormModal
-} from 'components/modalForm'
 import 'whatwg-fetch'
-import fetchJsonp from 'fetch-jsonp'
-import './index.less'
 import moment from 'moment'
-import {
-    musicKindList,
-    languageKindList,
-    publishCountry
-} from '../../utils/config'
+import { Button, message, Modal } from 'antd'
+import { FormModal } from 'components/modalForm'
+import { musicKindList, languageKindList, publishCountry } from '../../utils/config'
+import { fetchMusicList } from 'actions/music'
+import { connect } from 'react-redux'
+import './index.less'
 
 require('es6-promise').polyfill();
 
 const confirm = Modal.confirm
+@connect(
+    (state) => ({
+        musicList: state.musicList,
+    })
+)
 
 export default class Music extends React.Component {
     constructor(props) {
@@ -33,69 +29,34 @@ export default class Music extends React.Component {
             modalShow: false,
             modalShowEdit: false,
         }
-        this.add = this.add.bind(this)
-        this.onOk = this.onOk.bind(this)
-        this.onCancel = this.onCancel.bind(this)
-        this.onOkEdit = this.onOkEdit.bind(this)
-        this.onCancelEdit = this.onCancelEdit.bind(this)
-    }
-
-    // 获取表格数据
-    fetchTableData = (typeId, searchFields) => {
-        fetchJsonp(`http://tingapi.ting.baidu.com/v1/restserver/ting?xml&calback=&from=webapp_music&method=baidu.ting.billboard.billList&type=${typeId}&size=100&offset=0`, {
-                method: 'GET'
-            })
-            .then((res) => {
-                return res.json();
-            })
-            .then((data) => {
-                const songArray = []
-                let songList = data.song_list
-                if (searchFields && searchFields.country && searchFields.country.toString() !== '0') { // 发行国家搜索
-                    // eslint-disable-next-line
-                    songList = songList.filter(ele => ele.country === publishCountry.find(t => t.value === parseInt(searchFields.country), 10).mean)
-                }
-                if (searchFields && searchFields.language && searchFields.language.toString() !== '0') { // 歌曲语种搜索
-                    // eslint-disable-next-line
-                    songList = songList.filter(ele => ele.language === languageKindList.find(t => t.value === parseInt(searchFields.language), 10).mean)
-                }
-                if (searchFields && searchFields.start) { // 发行时间段收索
-                    songList = songList.filter(ele => moment(ele.publishtime) >= moment(searchFields.start) && moment(ele.publishtime) <= moment(searchFields.end))
-                }
-
-                for (let i = 0; i < songList.length; i++) {
-                    songArray.push({
-                        title: songList[i].title,
-                        author: songList[i].author,
-                        country: songList[i].country,
-                        language: songList[i].language,
-                        publishtime: songList[i].publishtime,
-                    })
-                }
-                this.setState({
-                    tData: songArray
-                });
-                this.setState({
-                    loading: false
-                });
-            })
-            .catch((e) => {
-                console.log(e.message);
-            });
     }
 
     componentDidMount() {
-        this.fetchTableData('2') // 默认是热歌版
+        fetchMusicList({  // 默认是热歌版
+            method: 'baidu.ting.billboard.billList',
+            size: 100,
+            type: 2,
+        })(this.props.dispatch)
+    }
+
+
+    fetchTableData = (value) => {
+        fetchMusicList({
+            method: 'baidu.ting.billboard.billList',
+            size: 100,
+            type: value,
+        })(this.props.dispatch)
     }
 
     onSearch = (searchFields) => {
-        const typeId = searchFields.type ? searchFields.type : 2
-        this.fetchTableData(typeId, searchFields)
+        this.setState({ // 这端代码只是起模拟筛选作用
+            searchFields: searchFields,
+        })
     }
 
     searchFields = () => {
         return [{
-            title: '类型(单独搜索)',
+            title: '歌曲类型',
             key: 'type',
             type: 'select',
             defaultValue: 2,
@@ -134,8 +95,6 @@ export default class Music extends React.Component {
             dataIndex: 'title',
             title: '歌曲名',
             width: 200,
-            // render: (text, record) => {
-            // }
         }, {
             dataIndex: 'author',
             title: '歌手',
@@ -155,31 +114,31 @@ export default class Music extends React.Component {
         }, ]
     }
 
-    add() {
+    add = () => {
         this.setState({
             modalShow: true
         })
     }
 
-    onOk(param) {
+    onOk = (param) => {
         message.success('添加成功')
         this.onCancel()
     }
 
-    onCancel() {
+    onCancel = () => {
         this.setState({
             modalShow: false
         })
     }
 
-    onOkEdit(param) {
+    onOkEdit = (param) => {
         this.setState({
             modalShowEdit: false
         })
         message.success('编辑成功')
     }
 
-    onCancelEdit() {
+    onCancelEdit = () => {
         this.setState({
             modalShowEdit: false
         })
@@ -335,6 +294,33 @@ export default class Music extends React.Component {
     }
 
     render() {
+        const { musicList } = this.props
+        const songArray = []
+        let songList = musicList.data
+        const searchFields = this.state.searchFields
+        if (searchFields && searchFields.country && searchFields.country.toString() !== '0') { // 发行国家搜索
+            // eslint-disable-next-line
+            songList = songList.filter(ele => ele.country === publishCountry.find(t => t.value === parseInt(searchFields.country), 10).mean)
+        }
+        if (searchFields && searchFields.language && searchFields.language.toString() !== '0') { // 歌曲语种搜索
+            // eslint-disable-next-line
+            songList = songList.filter(ele => ele.language === languageKindList.find(t => t.value === parseInt(searchFields.language), 10).mean)
+        }
+        if (searchFields && searchFields.start) { // 发行时间段收索
+            songList = songList.filter(ele => moment(ele.publishtime) >= moment(searchFields.start) && moment(ele.publishtime) <= moment(searchFields.end))
+        }
+
+        if(songList) {
+            for (let i = 0; i < songList.length; i++) {
+                songArray.push({
+                    title: songList[i].title,
+                    author: songList[i].author,
+                    country: songList[i].country,
+                    language: songList[i].language,
+                    publishtime: songList[i].publishtime,
+                })
+            }
+        }
         return (
             <div id="wrap">
                 <SearchBar
@@ -349,8 +335,8 @@ export default class Music extends React.Component {
                             pagination={ true }
                             pageSize={10}
                             header={ this.tableHeader() }
-                            data={ this.state.tData }
-                            loading={ this.state.loading }
+                            data={ songArray }
+                            loading={ musicList.loading }
                             action={row => [{
                                 key: 'edit',
                                 name: '修改',

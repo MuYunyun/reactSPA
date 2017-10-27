@@ -91,6 +91,7 @@ export default class index extends React.Component {
                                     <Timeline.Item color="red">
                                         <p>使用ts重构(正在开发)</p>
                                     </Timeline.Item>
+                                    <Timeline.Item color="green">封装Ajax实现跨域请求</Timeline.Item>
                                     <Timeline.Item color="green">引人Redux,Fetch</Timeline.Item>
                                     <Timeline.Item color="green">引人Less,React-Router(4.x)</Timeline.Item>
                                     <Timeline.Item color="green">初始化项目</Timeline.Item>
