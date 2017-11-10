@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo, toggleTodo, delTodo } from 'actions/todoList'
+import { Checkbox } from 'antd'
 import FilterLink from './filterLink'
 import './index.less'
 
@@ -27,8 +28,7 @@ export default class todoList extends React.Component {
     }
 
     render() {
-        const todoList = this.props.todoList
-        const setVisibility = this.props.setVisibility
+        const { todoList, setVisibility } = this.props
         let todos = todoList
         if (setVisibility.filter === 'SHOW_COMPLETED') {
             todos = todoList.filter(t => t.completed)
@@ -43,19 +43,20 @@ export default class todoList extends React.Component {
                         <FilterLink filter="SHOW_ACTIVE" name="待办任务"></FilterLink>
                         <FilterLink filter="SHOW_COMPLETED" name="已完成任务"></FilterLink>
                     </div>
+                    <input type="radio" />
                     <ul className="list-group">
                         {
                             todos.map(todo =>
-                            <li className="todo-list_li" style={{ textDecoration:todo.completed ? "line-through" : "none" }}>
-                                <input type="checkbox" className="check-box" checked={todo.completed} onClick={ e => this.props.dispatch(toggleTodo({
-                                    id: todo.id,
-                                    type: "TOGGLE_TODO"
-                                }))} />
-                                {todo.text}
-                                <button className="todo-list_del" onClick={e => this.props.dispatch(delTodo({
+                            <li className="todo-list_li" key={todo.id}>
+                                <Checkbox className="check-box" onChange={this.onChange} checked={todo.completed} style={{ textDecoration: todo.completed ? "line-through" : "none" }}
+                                    onClick={e => this.props.dispatch(toggleTodo({
+                                        id: todo.id,
+                                        type: "TOGGLE_TODO"
+                                    }))}>{todo.text}</Checkbox>
+                                <button key={`button-${todo.id}`} className="todo-list_del" onClick={e => this.props.dispatch(delTodo({
                                     id: todo.id,
                                     type: "DEL_TODO"
-                                })) }>删除</button>
+                                }))}>删除</button>
                             </li>)
                         }
                     </ul>

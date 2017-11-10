@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^2.13.7",
+    "antd": "^2.13.9",
     "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
     "draftjs-to-html": "^0.7.2",

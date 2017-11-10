@@ -15,8 +15,8 @@ export default class FilterLink extends React.Component {
   }
 
   render() {
-    const { name,filter } = this.props
-    const active = this.props.setVisibility.filter === filter
+    const { name, filter, setVisibility } = this.props
+    const active = setVisibility.filter === filter
     return (
       <div className="todo-tab_item">
         <a style={{ color: active? '#f01414' : '#4d555d' }} onClick={this.onClick}>{name}</a>
