@@ -1,0 +1,13 @@
+# https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
+# https://travis-ci.org/
+language: node_js
+node_js:
+  - "6"
+  - "8"
+install:
+  - npm install
+script:
+  - npm run build
+branches:
+  only:
+    - master

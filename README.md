@@ -1,3 +1,4 @@
+![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)
 ### Target
 > 使用React技术栈开发SPA.该项目把一些平时工作、学习中
 遇到的react案例抽离成demo展现出来.
