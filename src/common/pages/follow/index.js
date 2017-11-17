@@ -1,4 +1,5 @@
 import React from 'react'
+import _ from 'diana'
 import './index.less'
 
 export default class follow extends React.Component {
@@ -11,7 +12,7 @@ export default class follow extends React.Component {
 
     getRandomColor = () => {
         this.setState({
-            col: '#'+('00000'+(Math.random()*0x1000000<<0).toString(16)).slice(-6)
+            col: _.randomColor()
         });
     }
 
