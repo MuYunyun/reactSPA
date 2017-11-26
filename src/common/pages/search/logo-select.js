@@ -16,7 +16,7 @@ export default class LogoSelect extends React.Component {
         this.setState({
             selectIndex: index,
             showLogo: false
-        },function(){
+        }, () => {
             this.props.onLogoChange(index)
         })
     }

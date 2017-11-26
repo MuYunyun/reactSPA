@@ -18,7 +18,7 @@ export default class Search extends React.Component {
     handleInput = (e) => {
         this.setState({
             keyword: e.target.value
-        }, function () {
+        }, () => {
             fetchJsonp(`https://sug.so.360.cn/suggest?word=${this.state.keyword}&encodein=utf-8&encodeout=utf-8`, {
                 method: 'GET'
             })
@@ -45,7 +45,7 @@ export default class Search extends React.Component {
     handleSelectClick = (e) => {
         this.setState({
             keyword: e.target.innerText
-        }, function () {
+        }, () => {
             this.input.value = this.state.keyword;
             setTimeout(()=> {
                 this.handleSearch();
@@ -89,10 +89,10 @@ export default class Search extends React.Component {
     selectUpAndDown = (e, keycode) => {
         e.preventDefault();
 
-        const stateCb = function () {
+        const stateCb = () => {
             this.setState({
                 keyword: this.state.showList[this.state.listIndex]
-            }, function () {
+            }, () => {
                 this.input.value = this.state.keyword;
             });
         };
