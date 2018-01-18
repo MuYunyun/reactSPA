@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Input, Row, Col, message } from 'antd';
-import Container from '../../../container/index';
 import MyContainer from './decorator'
 
 let handleonce = true;
@@ -14,7 +13,7 @@ let handleonce = true;
 // 	}
 
 @MyContainer  // 相当于原来外组件 => 子组件 现在变为 外组件 => 装饰器 => 子组件
-export default class Salary extends React.Component {
+export default class Salary extends Component {
     constructor(props) {
         super(props);
         this.state = {

@@ -13,9 +13,15 @@ const routes = (
     <div>
       <Route path="/" component={Container} />
       <Route path="/login" component={Login} />
-      {location.hash === '#/' ? <Redirect from='xxxx' to='/login' /> : ''}
+      {location.hash === '#/' ? <Redirect to='/login' /> : ''}
     </div>
   </HashRouter>
+  // 以上使用 HashRouter 是为了 github 上展示方便，以上路由写法的缺陷在于加载 login 页时候会把其他页面也加载出来，
+  // 下面给出项目中可使用的写法
+  // <Switch>
+  //   <Route exec path="/" component={Container} />
+  //   <Route exec path="/login" component={Login} />
+  // </Switch>
 )
 
-export default routes;
+export default routes

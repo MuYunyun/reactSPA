@@ -1,5 +1,5 @@
 import React from 'react'
-import _ from 'diana'
+import * as _ from 'diana'
 import './index.less'
 
 export default class follow extends React.Component {
@@ -12,7 +12,7 @@ export default class follow extends React.Component {
 
     getRandomColor = () => {
         this.setState({
-            col: _.randomColor()
+            col: _.rdColor(),
         });
     }
 
@@ -28,7 +28,6 @@ export default class follow extends React.Component {
 
     render() {
         const { col } = this.state
-
         return (
             <div className="animated flip ani-box">
                 <div><a href="https://github.com/MuYunyun/react-antd-demo" className="welcome animated flip text" style={{ color: col }}>项目地址</a></div>

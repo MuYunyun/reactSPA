@@ -23,12 +23,12 @@ class LoginPage extends React.Component {
 
     // 返回一个弹框对象，提示用户名和密码
     openNotificationWithIcon = (type) => {
-        return notification[type]({
-                 message: '用户名&密码',
-                 description: '都是：123',
-                 duration: 6,
-                 icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />,
-               })
+        notification[type]({
+            message: '用户名&密码',
+            description: '都是：123',
+            duration: 6,
+            icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />,
+        })
     }
 
     componentDidMount() {
@@ -47,14 +47,14 @@ class LoginPage extends React.Component {
                                 {getFieldDecorator('username', {
                                     rules: [{ required: true, message: '请输入用户名' }],
                                 })(
-                                    <Input placeholder="Username" />
+                                    <Input placeholder="Username：123" />
                                 )}
                             </FormItem>
                             <FormItem>
                                 {getFieldDecorator('password', {
                                     rules: [{ required: true, message: '请输入密码' }],
                                 })(
-                                    <Input type="password" placeholder="Password" />
+                                    <Input type="password" placeholder="Password：123" />
                                 )}
                             </FormItem>
                             <Button type="primary" htmlType="submit" className="loginBtn">Login</Button>
