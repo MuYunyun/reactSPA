@@ -1,5 +1,5 @@
 import React from 'react';
-import 'jswaterfall'
+import './waterfall.js'
 import './index.less'
 import { imgUrlList } from './imgUrlList'
 
