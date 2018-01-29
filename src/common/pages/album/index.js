@@ -1,12 +1,10 @@
-/**
- * Created by hao.cheng on 2017/5/6.
- */
 import React from 'react';
 import { Row, Col, Card } from 'antd';
 import PhotoSwipe from 'photoswipe';
 import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default';
 import 'photoswipe/dist/photoswipe.css';
 import 'photoswipe/dist/default-skin/default-skin.css';
+import './index.less'
 
 export default class Gallery extends React.Component {
     state = {

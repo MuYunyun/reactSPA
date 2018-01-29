@@ -25,6 +25,7 @@ export const allMenu = [
     icon: 'edit',
     children: [
       { name: '时光相片', url: 'album' },
+      { name: '瀑布流', url: 'waterfall' },
     ],
   }, {
     name: '搜索模块',

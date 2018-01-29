@@ -5,3 +5,5 @@ npm-debug.log
 build
 
 package-lock.json
+
+yarn-error.log

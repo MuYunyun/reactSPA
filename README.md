@@ -7,9 +7,9 @@
 
 [文档地址](http://muyunyun.cn/posts/9bfbdbf4/)
 
-* 小模块展示：
+* 部分模块展示：
 ![](http://files.cnblogs.com/files/MuYunyun/reactSPA.gif)
-* redux在项目中的运用demo展示
+* redux 在项目中的运用 demo 展示
 ![](http://files.cnblogs.com/files/MuYunyun/todoList.gif)
 
 ### Usage
@@ -42,7 +42,7 @@ yarn start || npm start
   * 实现对工资、房租、身体指数、年龄的智能计算
   * 用 redux 实现了待办事项模块
 * 画廊模块
-  * 图片懒加载(待开发)
+  * 图片瀑布流(自研模块 [jswaterfall](https://github.com/MuYunyun/waterfall))
 * 搜索模块
   * 搜索引擎的实现(集合了百度、360、搜狗搜索)
 * 更多模块开发中
