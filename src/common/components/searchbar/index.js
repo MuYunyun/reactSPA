@@ -7,7 +7,6 @@ import {
     DatePicker,
     Cascader,
 } from 'antd';
-import * as _ from 'lodash';
 import './index.less';
 
 export default class SearchBar extends React.Component {
@@ -38,12 +37,6 @@ export default class SearchBar extends React.Component {
         warnings[field.key] = e.message;
       }
     }
-    for (const otherField of this.props.fields) {
-      const dependency = _.find(otherField.dependency, { key: field.key });
-      if (dependency) {
-        fields[otherField.key] = '';
-      }
-    }
     if (typeof field.key !== 'string') {
       fields[field.key[0]] = newValue && newValue[0];
       fields[field.key[1]] = newValue && newValue[1];
@@ -65,41 +58,15 @@ export default class SearchBar extends React.Component {
     }
   }
 
-  componentWillUpdate(props, state) {
-    // state.warnings = {};
-    // state.disabled = {};
-    for (const field of (props.fields || [])) {
-      if (field.dependency) {
-        for (const dependency of (field.dependency || [])) {
-          if (!dependency.condition(state.fields[dependency.key])) {
-            state.warnings[dependency.key] = dependency.message;
-            state.disabled[field.key] = true;
-          } else {
-            state.warnings[dependency.key] = null;
-            state.disabled[field.key] = false;
-          }
-        }
-      }
-    }
-  }
-
   generateInputs(fields) {
-    const components = [];
+    const components = []
     this.needToEmptyStyleComponents = [];
-    let i = 0;
+    let i = 0
     // eslint-disable-next-line no-restricted-syntax
     for (const field of fields) {
-      let items = [];
+      let items = []
       if (field.items) {
-        if (field.dependency) {  // 选择省份后才能选择城市
-          const params = [];
-          for (const dependency of field.dependency) {
-            params.push(this.state.fields[dependency.key]);
-          }
-          items = field.items(...params);
-        } else {
-          items = field.items();
-        }
+        items = field.items()
       }
 
       let component = null;
