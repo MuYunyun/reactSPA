@@ -26,12 +26,33 @@ export default class Waterfall extends React.Component {
         }, 1000)
       })
     }
-    if (!window.onload) {
-      window.onload = wf
-    } else {
-      wf()
-    }
+    this.loadImage(imgUrlList, wf)
   }
+
+  // 实现图片预加载
+  loadImage = (urlList, callback) => {
+    let count = 0
+    let completeCount = 0
+    for(let i = 0; i < urlList.length; i++) {
+      const img = new Image() //创建一个Image对象，实现图片的预下载
+      img.src = urlList[i]
+      if (img.complete) {
+        completeCount++
+      } else {
+        // eslint-disable-next-line
+        img.onload = () => {
+          count++
+          if (count === urlList.length) {
+            callback()
+          }
+        };
+      }
+    }
+    if (completeCount === urlList.length) {
+      callback()
+    }
+  };
+
 
   componentWillUnmount() {
     waterfall = null
