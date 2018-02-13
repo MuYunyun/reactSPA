@@ -1,7 +1,7 @@
 ![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)
 ### Target
-> 使用React技术栈开发SPA.该项目把一些平时工作、学习中
-遇到的react案例抽离成demo展现出来.
+> 使用 React 技术栈开发 SPA.该项目把日常工作、学习中
+遇到的 React 案例抽离成 demo 展现出来.
 
 [效果展示](https://muyunyun.github.io/reactSPA)
 
@@ -23,16 +23,16 @@ yarn start || npm start
 - [x] 打包构建：Babel Webpack(3.x)
 - [x] 热更新
 - [x] 包管理：Yarn || Npm
-- [x] UI库：React & React-Dom
-- [x] UI组件：Antd(2.10x)
-- [x] 路由：React-Router(4.x) & History
-- [x] JS：ES6
+- [x] UI库：React & React-Dom(16.2.0)
+- [x] UI组件：Antd(3.x)
+- [x] 路由：React-Router(4.x)
+- [x] JS：ES6、ES7
 - [x] 样式：Less
 - [x] 框架：Redux
-- [x] 与后台通信：Fetch
-- [x] 封装 Ajax 实现跨域请求
-- [ ] 测试用例
-- [ ] 使用ts重构
+- [x] Ajax：Fetch
+- [x] 跨域: 基于 CORS 实现
+- [ ] 测试用例：Jest
+- [ ] 搭建网关层(BFF)：使用 typescript + node.js
 
 ### Features
 * 音乐模块

@@ -14,7 +14,7 @@
           width:540px;
           height:36px;
           font-size:16px;
-          padding:0 30px 0 10px;
+          padding:0 10px;
           display:block;
           float:left;
         }
@@ -46,17 +46,27 @@
 }
 
 .search-list {
+  position: relative;
+  top: 8px;
 	width:540px;
-  margin-top: 34px;
   border: 1px solid #dfdfdf;
-  li {
-    text-align:left;
-    background-color:#fff;
-    padding:5px 10px;
-    cursor:pointer;
-  }
-  .is-select {
-    background-color:#e4e4e4;
+  border-top: none;
+  .search-ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    li:first {
+      height: 28px;
+    }
+    li {
+      text-align:left;
+      background-color:#fff;
+      padding:5px 10px;
+      cursor:pointer;
+    }
+    .is-select {
+      background-color:#e4e4e4;
+    }
   }
 }
 .logo-panel {

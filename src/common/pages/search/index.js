@@ -139,11 +139,7 @@ export default class Search extends React.Component {
                                 />
                                 <span className="search-clearinput" onClick={ this.handleClearClick }>&times;</span>
                             </div>
-                            <div className="search-list">
-                                <ul>{
-                                    Li
-                                }</ul>
-                            </div>
+                            {this.state.showList.length > 0 ? <div className="search-list"><ul className="search-ul">{Li}</ul></div> : ''}
                         </div>
                         <button className="search-btn" onClick={ this.handleSearch }>搜一下</button>
                     </div>

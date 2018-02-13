@@ -12,7 +12,7 @@ export default class index extends React.Component {
     render() {
         return (
             <div>
-                <Row gutter={10}>
+                <Row gutter={16}>
                     <Col span={4}>
                         <div className="cloud-box">
                             <Card>
