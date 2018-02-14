@@ -25,13 +25,13 @@ yarn start || npm start
 - [x] 包管理：Yarn || Npm
 - [x] UI库：React & React-Dom(16.2.0)
 - [x] UI组件：Antd(3.x)
-- [x] 路由：React-Router(4.x)
+- [x] 路由：react-router(4.x)、react-router-redux
 - [x] JS：ES6、ES7
-- [x] 样式：Less
-- [x] 框架：Redux
+- [x] 样式：less
+- [x] 状态管理：redux
 - [x] Ajax：Fetch
 - [x] 跨域: 基于 CORS 实现
-- [ ] 测试用例：Jest
+- [ ] 测试用例：jest
 - [ ] 搭建网关层(BFF)：使用 typescript + node.js
 
 ### Features
@@ -72,6 +72,8 @@ yarn start || npm start
 │   └── test.js                测试项目文件
 ├── src
 │   ├── client                 汇聚目录
+│   │   ├── store              redux中的store
+│   │   ├── devTools.js        开发者工具
 │   ├── common                 核心目录
 │   │   ├── api                请求api层
 │   │   ├── actions            redux中的action

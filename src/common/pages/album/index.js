@@ -100,19 +100,19 @@ export default class Gallery extends React.Component {
         return (
             <div>
                 <Row gutter={10}>
-                    <Col span={5}>
+                    <Col key={0} span={5}>
                         {imgsTag[0]}
                     </Col>
-                    <Col span={5}>
+                    <Col key={1} span={5}>
                         {imgsTag[1]}
                     </Col>
-                    <Col span={5}>
+                    <Col key={2} span={5}>
                         {imgsTag[2]}
                     </Col>
-                    <Col span={5}>
+                    <Col key={3} span={5}>
                         {imgsTag[3]}
                     </Col>
-                    <Col span={4}>
+                    <Col key={4} span={4}>
                         {imgsTag[4]}
                     </Col>
                 </Row>

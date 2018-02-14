@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import {
   Table as AntTable,   // 这里必须引用别名，why?
   Menu,
@@ -16,7 +16,7 @@ export default class Table extends React.Component {
   }
 
   componentWillReceiveProps(props) {
-    this.mountProps(props);
+    this.changeProps(props);
   }
 
   mountProps(props) {
@@ -33,18 +33,30 @@ export default class Table extends React.Component {
     this.makeColumns(header, action, headerWidth, data);
   }
 
+  changeProps(props) {
+    const {
+      header,
+      action,
+      headerWidth,
+      currentPage,
+      data,
+      } = props;
+    this.setState({ currentPage })
+    this.makeColumns(header, action, headerWidth, data);
+  }
+
   makeColumns(headers, action, headerWidth, data) {
     this.columns = this.props.noIndex ? [] : [{
       dataIndex: 'rowIndex',
       title: '序号',
-      width: 50,
+      width: 70,
       fixed: this.props.rowIndexFixed,
-    }];
+    }]
 
     for (const header of headers) {
       this.columns.push({
         ...header,
-      });
+      })
     }
     if (action) {
       const maxActionCount = Math.max(...(data.map(action).map(i => (i ? i.length : 0))));  // action的数量
@@ -82,7 +94,7 @@ export default class Table extends React.Component {
             {buttons}
           </div>);
         },
-      });
+      })
     }
   }
 
@@ -158,14 +170,14 @@ export default class Table extends React.Component {
           footer={this.props.footer}
         />
       </div>
-    );
+    )
   }
 }
-Table.PropTypes = {
-  scroll: PropTypes.object,
-  fixed: PropTypes.string,
-  pageSize: PropTypes.number,
-  getRowClassName: PropTypes.func
+Table.propTypes = {
+  scroll: propTypes.object,
+  fixed: propTypes.string,
+  pageSize: propTypes.number,
+  getRowClassName: propTypes.func
 }
 Table.defaultProps = {
   pageSize: 20,
