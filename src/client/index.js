@@ -17,7 +17,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <div>
         { routes }
-        {process.env.NODE_ENV === 'development' ? <DevTools /> : {}}
+        {process.env.NODE_ENV === 'development' ? <DevTools /> : ''}
       </div>
     </ConnectedRouter>
   </Provider>,
