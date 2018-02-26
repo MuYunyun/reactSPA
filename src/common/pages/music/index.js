@@ -32,20 +32,19 @@ export default class Music extends React.Component {
     }
 
     componentDidMount() {
-        fetchMusicList({  // 默认是热歌版
+        this.props.dispatch(fetchMusicList({  // 默认是热歌版
             method: 'baidu.ting.billboard.billList',
             size: 100,
             type: 2,
-        })(this.props.dispatch)
+        }))
     }
 
-
     fetchTableData = (value) => {
-        fetchMusicList({
+        this.props.dispatch(fetchMusicList({
             method: 'baidu.ting.billboard.billList',
             size: 100,
             type: value,
-        })(this.props.dispatch)
+        }))
     }
 
     onSearch = (searchFields) => {

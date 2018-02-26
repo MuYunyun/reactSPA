@@ -1,11 +1,11 @@
-import createHistory from 'history/createHashHistory'
 import rootReducer from 'reducers'
-import { createStore, applyMiddleware } from 'redux'
-import { routerMiddleware } from 'react-router-redux'
+import { createStore, applyMiddleware, compose } from 'redux'
+import thunk from 'redux-thunk'
 
-const history = createHistory()
-const middleware = routerMiddleware(history)
+const enhancer = compose(
+  applyMiddleware(thunk),
+)
 
-export default function configureStore() {
-  return createStore(rootReducer, applyMiddleware(middleware))
+export default function configureStore(initialstate) {
+  return createStore(rootReducer, initialstate, enhancer)
 }
