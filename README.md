@@ -1,11 +1,10 @@
 ![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)
 ### Target
-> 使用 React 技术栈开发 SPA.该项目把日常工作、学习中
-遇到的 React 案例抽离成 demo 展现出来.
 
-[效果展示](https://muyunyun.github.io/reactSPA)
+> React 全家桶的综合运用.该项目会把日常开发中
+遇到的 React 案例抽离成 demo 展现出来，该项目同时会对一些知识点进行实践。
 
-[文档地址](http://muyunyun.cn/posts/9bfbdbf4/)
+[效果展示](https://muyunyun.github.io/reactSPA)，项目变大后，gitpage 上访问速度会比较慢(几十秒)，建议本地打开
 
 * 部分模块展示：
 ![](http://files.cnblogs.com/files/MuYunyun/reactSPA.gif)
@@ -32,7 +31,15 @@ yarn start || npm start
 - [x] Ajax：Fetch
 - [x] 跨域: 基于 CORS 实现
 - [ ] 测试用例：jest
-- [ ] 搭建网关层(BFF)：使用 typescript + node.js
+- [ ] 网关层：使用 typescript + node.js，可参考 [gateway](https://github.com/MuYunyun/gateway)
+
+### Document
+
+结合该项目分析过的文章(技术栈以项目中的为准)
+
+* [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
+
+* [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
 
 ### Features
 * 音乐模块
@@ -40,21 +47,14 @@ yarn start || npm start
   * redux 流实现数据的获取
 * 工具模块
   * 实现对工资、房租、身体指数、年龄的智能计算
+  * 富文本编辑器应用
   * 用 redux 实现了待办事项模块
 * 画廊模块
-  * 图片瀑布流(自研模块 [jswaterfall](https://github.com/MuYunyun/waterfall))
+  * 图片瀑布流(撸了个插件 [jswaterfall](https://github.com/MuYunyun/waterfall))
 * 搜索模块
   * 搜索引擎的实现(集合了百度、360、搜狗搜索)
 * 更多模块开发中
   * 欢迎提 issue
-
-### Third-party libraries
-* css动画库：Animate.css
-* 富文本编辑：react-draft-wysiwyg
-* 全屏插件：screenfull
-* 图片弹层查看插件：photoswipe
-* 日期处理：Moment
-* 可视化图表：echarts-for-react
 
 ### Project Structure
 ```
