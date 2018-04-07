@@ -1,9 +1,9 @@
-import React from 'react';
-import {Input,Row,Col,Card} from 'antd';
+import React from 'react'
+import {Input,Row,Col,Card} from 'antd'
 
 export default class Salary extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             item:'',
             time:'',
@@ -15,26 +15,26 @@ export default class Salary extends React.Component {
     }
 
     handleChange = (e) => {
-        const rentMoney = e.target.value;
-        this.setState({ item: rentMoney });
+        const rentMoney = e.target.value
+        this.setState({ item: rentMoney })
     }
     handleTime = (e) => {
-        const year = e.target.value;
-        this.setState({ time: year });
-        const rent = year*12*this.state.item/10000;
-        this.setState({ rent: rent });
+        const year = e.target.value
+        this.setState({ time: year })
+        const rent = year*12*this.state.item/10000
+        this.setState({ rent: rent })
     }
     handleBuy = (e) => {
-        const buyMoney = e.target.value;
-        this.setState({ buy: buyMoney });
-        const balance = buyMoney-this.state.rent;
-        this.setState({ balance: balance });
+        const buyMoney = e.target.value
+        this.setState({ buy: buyMoney })
+        const balance = buyMoney-this.state.rent
+        this.setState({ balance: balance })
         if(balance > 0) {
-            this.setState({ des: '租房更合算！' });
+            this.setState({ des: '租房更合算！' })
         } else if(balance === 0) {
-            this.setState({ des: '哥们儿，洗洗睡吧！' });
+            this.setState({ des: '哥们儿，洗洗睡吧！' })
         } else {
-            this.setState({ des: '买房更合算！' });
+            this.setState({ des: '买房更合算！' })
         }
     }
 
@@ -79,7 +79,7 @@ export default class Salary extends React.Component {
 	  	  			</Col>
 	  	  		</Row>
             </div>
-        );
+        )
     }
 }
 

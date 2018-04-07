@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import routes from '../common/routes';
-import './index.less';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import routes from '../common/routes'
+import './index.less'
 import DevTools from './devTools'
 import configureStore from './store/configureStore'
 import { ConnectedRouter } from 'react-router-redux'
@@ -22,4 +22,4 @@ ReactDOM.render(
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')
-);
+)

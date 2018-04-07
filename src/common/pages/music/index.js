@@ -10,7 +10,7 @@ import { fetchMusicList } from 'actions/music'
 import { connect } from 'react-redux'
 import './index.less'
 
-require('es6-promise').polyfill();
+require('es6-promise').polyfill()
 
 const confirm = Modal.confirm
 @connect(

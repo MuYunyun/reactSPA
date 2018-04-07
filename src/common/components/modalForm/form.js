@@ -19,11 +19,10 @@ const RadioGroup = Radio.Group
 class ModForm extends React.Component {
 
   componentDidMount() {
-    // eslint-disable-next-line no-restricted-syntax
     for (const component of this.needToEmptyStyleComponents) {
-      // eslint-disable-next-line react/no-find-dom-node
-      const dom = ReactDOM.findDOMNode(component);
-      dom.setAttribute('style', '');
+      // eslint-disable-next-line
+      const dom = ReactDOM.findDOMNode(component)
+      dom.setAttribute('style', '')
     }
   }
 
@@ -132,39 +131,39 @@ class ModForm extends React.Component {
       labelCol: { span: 6 },
       wrapperCol: { span: 14 }
     }
-    const components = [];
-    this.needToEmptyStyleComponents = [];
+    const components = []
+    this.needToEmptyStyleComponents = []
     // eslint-disable-next-line no-restricted-syntax
     for (const field of fields) {
-      let component = null;
+      let component = null
       switch (field.type) {
       case 'input':
         component = this.getInputField(field)
-        break;
+        break
       case 'inputNumber':
         component = this.getInputNumberField(field)
-        break;
+        break
       case 'select':
         component = this.getSelectField(field)
-        break;
+        break
       case 'radioGroup':
         component = this.getRadioGroupField(field)
-        break;
+        break
       case 'date':
         component = this.getDateField(field)
-        break;
+        break
       case 'datetime':
         component = this.getDateTimeField(field)
-        break;
+        break
       case 'switch':
         component = this.getSwitchField(field)
-        break;
+        break
       case 'upload':
         component = this.getUploadField(field)
-        break;
+        break
       case 'textarea':
         component = this.getTextAreaField(field)
-        break;
+        break
       default:
         component = this.getTextField(field)
         break
@@ -177,7 +176,7 @@ class ModForm extends React.Component {
         options: field.options,
         hasFeedBack: field.type === 'input',
       })
-      components.push(component);
+      components.push(component)
     }
     const buttons = (<FormItem
       key="control-buttons"
@@ -193,7 +192,7 @@ class ModForm extends React.Component {
 
     </FormItem>)
     components.push(buttons)
-    return components;
+    return components
   }
 
   render() {

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class LogoSelect extends React.Component {
     constructor(props){
-        super(props);
+        super(props)
         this.state = {
             logos: [require('../../images/360_logo.png'),require('../../images/baidu_logo.png'),require('../../images/sougou_logo.png')],
             selectIndex: 1,
@@ -12,7 +12,7 @@ export default class LogoSelect extends React.Component {
 
     //处理logo选择
     handleLogoSelect = (e) => {
-        var index = parseInt(e.target.getAttribute('data-index'), 10);
+        var index = parseInt(e.target.getAttribute('data-index'), 10)
         this.setState({
             selectIndex: index,
             showLogo: false
@@ -36,7 +36,7 @@ export default class LogoSelect extends React.Component {
                     <img src={logo} onClick={this.handleLogoSelect} data-index={index} alt="logo" />
                 </div>
             )
-        });
+        })
 
         return (
             <div className="logo-panel">

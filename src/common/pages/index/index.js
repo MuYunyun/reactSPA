@@ -1,11 +1,11 @@
-import React from 'react';
-import { Row, Col, Card, Timeline, Icon } from 'antd';
-import EchartsViews from './EchartsViews';
-import EchartsProjects from './EchartsProjects';
-import b1 from 'images/minren.jpg';
-import b2 from 'images/zuozu.jpg';
-import b3 from 'images/xiaoying.jpg';
-import b4 from 'images/chutian.jpg';
+import React from 'react'
+import { Row, Col, Card, Timeline, Icon } from 'antd'
+import EchartsViews from './EchartsViews'
+import EchartsProjects from './EchartsProjects'
+import b1 from 'images/minren.jpg'
+import b2 from 'images/zuozu.jpg'
+import b3 from 'images/xiaoying.jpg'
+import b4 from 'images/chutian.jpg'
 import './index.less'
 
 export default class index extends React.Component {

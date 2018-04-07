@@ -33,7 +33,7 @@ export default class Top extends React.Component {
 
     screenFull = () => {
         if (screenfull.enabled) {
-            screenfull.request();
+            screenfull.request()
         }
     }
     render() {
@@ -55,6 +55,6 @@ export default class Top extends React.Component {
                     onClick={this.screenFull}
                 />
             </Header>
-        );
+        )
     }
 }

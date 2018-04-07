@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Route } from 'react-router-dom'
 import { Layout } from 'antd'
 import './content.less'
@@ -30,6 +30,6 @@ export default class Contents extends React.Component {
         <Route path="/searchEngine" component={Search} />
         <Route path="/waterfall" component={Waterfall} />
       </Content>
-    );
+    )
   }
 }

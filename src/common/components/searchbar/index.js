@@ -1,47 +1,47 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {
     Input,
     Button,
     Select,
     DatePicker,
     Cascader,
-} from 'antd';
-import './index.less';
+} from 'antd'
+import './index.less'
 
 export default class SearchBar extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       fields: {},
       autoComplete: {},
       disabled: {},
       warnings: {},
-    };
+    }
   }
 
   setField(field, value) {
     const {
      fields,
      warnings
-    } = this.state;
-    let newValue = value;
+    } = this.state
+    let newValue = value
     if (Array.isArray(newValue) && newValue.length === 0) {
-      newValue = undefined;
+      newValue = undefined
     }
     if (field.validator) {
       try {
-        newValue = field.validator(value);
-        warnings[field.key] = '';
+        newValue = field.validator(value)
+        warnings[field.key] = ''
       } catch (e) {
-        warnings[field.key] = e.message;
+        warnings[field.key] = e.message
       }
     }
     if (typeof field.key !== 'string') {
-      fields[field.key[0]] = newValue && newValue[0];
-      fields[field.key[1]] = newValue && newValue[1];
+      fields[field.key[0]] = newValue && newValue[0]
+      fields[field.key[1]] = newValue && newValue[1]
     } else {
-      fields[field.key] = newValue;
+      fields[field.key] = newValue
     }
     this.setState({
       fields,
@@ -53,14 +53,14 @@ export default class SearchBar extends React.Component {
     // eslint-disable-next-line no-restricted-syntax
     for (const component of this.needToEmptyStyleComponents) {
       // eslint-disable-next-line react/no-find-dom-node
-      const dom = ReactDOM.findDOMNode(component);
-      dom.setAttribute('style', '');
+      const dom = ReactDOM.findDOMNode(component)
+      dom.setAttribute('style', '')
     }
   }
 
   generateInputs(fields) {
     const components = []
-    this.needToEmptyStyleComponents = [];
+    this.needToEmptyStyleComponents = []
     let i = 0
     // eslint-disable-next-line no-restricted-syntax
     for (const field of fields) {
@@ -69,7 +69,7 @@ export default class SearchBar extends React.Component {
         items = field.items()
       }
 
-      let component = null;
+      let component = null
       switch (field.type) {
       case 'input':
       default:
@@ -85,13 +85,13 @@ export default class SearchBar extends React.Component {
             }}
             notFoundContent="未找到"
             onChange={(value) => {
-              this.setField(field, value);
+              this.setField(field, value)
               field
                   .autoComplete(value)
                   .then((result) => {
-                    const { autoComplete } = this.state;
-                    autoComplete[field.key] = result;
-                    this.setState({ autoComplete });
+                    const { autoComplete } = this.state
+                    autoComplete[field.key] = result
+                    this.setState({ autoComplete })
                   })
             }}
           >
@@ -104,7 +104,7 @@ export default class SearchBar extends React.Component {
             onChange={e => this.setField(field, e.target.value)}
           />)
         }
-        break;
+        break
       case 'cascader':  // 级联
         component = (<Cascader
           options={items}
@@ -113,8 +113,8 @@ export default class SearchBar extends React.Component {
           disabled={this.state.disabled[field.key]}
           onChange={value => this.setField(field, value)}
           showSearch
-        />);
-        break;
+        />)
+        break
       case 'select':
         component = (<Select
           placeholder="请选择"
@@ -131,8 +131,8 @@ export default class SearchBar extends React.Component {
         >
           {items && items.map(({ mean, value }) =>
             <Select.Option key={value.toString()} value={value.toString()}>{mean}</Select.Option>)}
-        </Select>);
-        break;
+        </Select>)
+        break
       case 'date':
         component = (<DatePicker
           value={this.state.fields[field.key]}
@@ -153,7 +153,7 @@ export default class SearchBar extends React.Component {
           }}
           showToday={false}
         />)
-        break;
+        break
       case 'datetime':
         component = (<DatePicker
           showTime
@@ -165,7 +165,7 @@ export default class SearchBar extends React.Component {
           ref={item => this.needToEmptyStyleComponents.push(item)}
           showToday={false}
         />)
-        break;
+        break
       }
       components.push(<div key={i++} className="field">
         <div className="input">
@@ -173,29 +173,29 @@ export default class SearchBar extends React.Component {
           <div style={{ width: field.width || 130 }} className="input">{component}</div>
         </div>
         <div className="warning">{this.state.warnings[field.key]}</div>
-      </div>);
+      </div>)
     }
-    return components;
+    return components
   }
 
   handleReset = () => {
     if ('onReset' in this.props) {
-      this.props.onReset();
+      this.props.onReset()
     }
     this.setState({
       fields: {},
-    });
+    })
   }
 
   handleSubmit = () => {
-    let { warnings } = this.state;
-    warnings = {};
+    let { warnings } = this.state
+    warnings = {}
     for (const field of this.props.fields) {
       if (field.validator) {
         try {
           field.validator(this.state.fields[field.key])
         } catch (e) {
-          warnings[field.key] = e.message;
+          warnings[field.key] = e.message
         }
       }
     }
@@ -205,29 +205,29 @@ export default class SearchBar extends React.Component {
       })
       return
     }
-    this.setState({ warnings: {} });
+    this.setState({ warnings: {} })
     if ('onSubmit' in this.props) {
-      const fields = {};
+      const fields = {}
       // eslint-disable-next-line
       for (const key in this.state.fields) {
-        let value = this.state.fields[key];
+        let value = this.state.fields[key]
         if (value === undefined || value === null) {
           // eslint-disable-next-line
-          continue;
+          continue
         }
         if (Array.isArray(value)) {
-          fields[key] = value;
+          fields[key] = value
           // eslint-disable-next-line
-          continue;
+          continue
         }
         if (typeof value === 'string') {
-          value = value.trim();
+          value = value.trim()
         }
         if (value !== '') {
-          fields[key] = value;
+          fields[key] = value
         }
       }
-      this.props.onSubmit(fields);
+      this.props.onSubmit(fields)
     }
   }
 
@@ -240,7 +240,7 @@ export default class SearchBar extends React.Component {
           <Button onClick={this.handleSubmit} className="search" icon="search">搜索</Button>
         </div>
       </div>
-    );
+    )
   }
 }
 

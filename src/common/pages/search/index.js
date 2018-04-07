@@ -5,7 +5,7 @@ import LogoSelect from './logo-select'
 
 export default class Search extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             keyword: '',
             showList: [],
@@ -23,7 +23,7 @@ export default class Search extends React.Component {
                 method: 'GET'
             })
             .then((res) => {
-                return res.json();
+                return res.json()
             })
             .then((data) => {
                 this.setState({
@@ -35,7 +35,7 @@ export default class Search extends React.Component {
 
     //处理鼠标hover
     handleMouseSelect = (e) => {
-        const index = parseInt(e.target.getAttribute('data-index'), 10);
+        const index = parseInt(e.target.getAttribute('data-index'), 10)
         this.setState({
             listIndex: index
         })
@@ -46,10 +46,10 @@ export default class Search extends React.Component {
         this.setState({
             keyword: e.target.innerText
         }, () => {
-            this.input.value = this.state.keyword;
+            this.input.value = this.state.keyword
             setTimeout(()=> {
-                this.handleSearch();
-            }, 50);
+                this.handleSearch()
+            }, 50)
         })
     }
 
@@ -58,53 +58,53 @@ export default class Search extends React.Component {
         this.setState({
             keyword: '',
             showList: []
-        });
-        this.input.value = '';
+        })
+        this.input.value = ''
     }
 
     //处理搜索
     handleSearch = () => {
-        window.location.href = this.state.searchSrc + this.state.keyword;
+        window.location.href = this.state.searchSrc + this.state.keyword
     }
 
     //处理Enter键
     handleKeyEnter = (e) => {
-        const keyCode = e.keyCode;
+        const keyCode = e.keyCode
         switch (keyCode) {
             case 13:
-                this.handleSearch();
-                break;
+                this.handleSearch()
+                break
             case 38:
-                this.selectUpAndDown(e, keyCode);
-                break;
+                this.selectUpAndDown(e, keyCode)
+                break
             case 40:
-                this.selectUpAndDown(e, keyCode);
-                break;
+                this.selectUpAndDown(e, keyCode)
+                break
             default:
-                break;
+                break
         }
     }
 
     //上下键选择列表项
     selectUpAndDown = (e, keycode) => {
-        e.preventDefault();
+        e.preventDefault()
 
         const stateCb = () => {
             this.setState({
                 keyword: this.state.showList[this.state.listIndex]
             }, () => {
-                this.input.value = this.state.keyword;
-            });
-        };
+                this.input.value = this.state.keyword
+            })
+        }
 
         if (keycode === 38) {
             this.setState({
                 listIndex: this.state.listIndex === 0 ? 9 : --this.state.listIndex
-            }, stateCb);
+            }, stateCb)
         } else if (keycode === 40) {
             this.setState({
                 listIndex: this.state.listIndex === 9 ? 0 : ++this.state.listIndex
-            }, stateCb);
+            }, stateCb)
         }
     }
 
@@ -123,7 +123,7 @@ export default class Search extends React.Component {
                 onClick={ this.handleSelectClick }>
                 { value }
             </li>
-        );
+        )
 
         return (
             <div className="search">

@@ -4,14 +4,18 @@ import { setVisibility } from 'actions/todoList'
 import './index.less'
 
 @connect(
-    (state) => ({
-        setVisibility: state.setVisibility,
-    })
+  (state) => ({
+      setVisibility: state.setVisibility,
+  })
 )
 
 export default class FilterLink extends React.Component {
+  constructor() {
+    super()
+  }
+
   onClick = () => {
-    this.props.dispatch(setVisibility({filter: this.props.filter}))
+    this.props.dispatch(setVisibility({ filter: this.props.filter }))
   }
 
   render() {

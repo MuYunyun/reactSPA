@@ -1,18 +1,21 @@
-import React from 'react';
-import { Row, Col, Card } from 'antd';
-import PhotoSwipe from 'photoswipe';
-import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default';
-import 'photoswipe/dist/photoswipe.css';
-import 'photoswipe/dist/default-skin/default-skin.css';
+import React from 'react'
+import { Row, Col, Card } from 'antd'
+import PhotoSwipe from 'photoswipe'
+import PhotoswipeUIDefault from 'photoswipe/dist/photoswipe-ui-default'
+import 'photoswipe/dist/photoswipe.css'
+import 'photoswipe/dist/default-skin/default-skin.css'
 import './index.less'
 
 export default class Gallery extends React.Component {
-    state = {
-        gallery: null
-    };
+    constructor() {
+        super()
+        this.state = {
+            gallery: null
+        }
+    }
     componentWillUnmount = () => {
-        this.closeGallery();
-    };
+        this.closeGallery()
+    }
     openGallery = (item) => {
         const items = [
             {
@@ -20,29 +23,29 @@ export default class Gallery extends React.Component {
                 w: 0,
                 h: 0,
             }
-        ];
-        const pswpElement = this.pswpElement;
-        const options = {index: 0};
-        this.gallery = new PhotoSwipe( pswpElement, PhotoswipeUIDefault, items, options);
+        ]
+        const pswpElement = this.pswpElement
+        const options = { index: 0 }
+        this.gallery = new PhotoSwipe(pswpElement, PhotoswipeUIDefault, items, options)
         this.gallery.listen('gettingData', (index, item) => {
-            const _this = this;
+            const _this = this
             if (item.w < 1 || item.h < 1) { // unknown size
-                var img = new Image();
+                var img = new Image()
                 img.onload = function() { // will get size after load
-                    item.w = this.width; // set image width
-                    item.h = this.height; // set image height
-                    _this.gallery.invalidateCurrItems(); // reinit Items
-                    _this.gallery.updateSize(true); // reinit Items
-                };
-                img.src = item.src; // let's download image
+                    item.w = this.width // set image width
+                    item.h = this.height // set image height
+                    _this.gallery.invalidateCurrItems() // reinit Items
+                    _this.gallery.updateSize(true) // reinit Items
+                }
+                img.src = item.src // let's download image
             }
-        });
-        this.gallery.init();
-    };
+        })
+        this.gallery.init()
+    }
     closeGallery = () => {
-        if (!this.gallery) return;
-        this.gallery.close();
-    };
+        if (!this.gallery) return
+        this.gallery.close()
+    }
     render() {
         const imgs = [
             [
@@ -81,11 +84,11 @@ export default class Gallery extends React.Component {
                 'http://img.hb.aicdn.com/4ea229436fcf2077502953907a6afb16d3c5cd611b8e2-0dVIeH_fw',
                 'http://img.hb.aicdn.com/98c786f4314736f95a42bf927bf65a82d305a532c6258-njI6id_fw'
             ]
-        ];
-        const imgsTag = imgs.map(v1 => (
-            v1.map(v2 => (
-                <div className="cloud-box">
-                    <Card bordered={true} bodyStyle={{ padding: 0 }}>
+        ]
+        const imgsTag = imgs.map((v1, index1) => (
+            v1.map((v2, index2) => (
+                <div key={index1 * index2} className="cloud-box">
+                    <Card key={ index1 * index2 } bordered={true} bodyStyle={{ padding: 0 }}>
                         <div>
                             <img onClick={() => this.openGallery(v2)} alt="example" width="100%" src={v2} />
                         </div>
@@ -96,7 +99,7 @@ export default class Gallery extends React.Component {
                     </Card>
                 </div>
             ))
-        ));
+        ))
         return (
             <div>
                 <Row gutter={10}>
@@ -116,7 +119,7 @@ export default class Gallery extends React.Component {
                         {imgsTag[4]}
                     </Col>
                 </Row>
-                <div className="pswp" tabIndex="-1" role="dialog" aria-hidden="true" ref={(div) => {this.pswpElement = div;} }>
+                <div className="pswp" tabIndex="-1" role="dialog" aria-hidden="true" ref={(div) => {this.pswpElement = div} }>
                     <div className="pswp__bg" />
                     <div className="pswp__scroll-wrap">
                         <div className="pswp__container">

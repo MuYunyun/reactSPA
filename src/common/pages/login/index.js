@@ -1,23 +1,26 @@
-import React from 'react';
-import { Form, Input, Button, notification, Icon } from 'antd';
-import createHistory from 'history/createHashHistory';
+import React from 'react'
+import { Form, Input, Button, notification, Icon } from 'antd'
+import createHistory from 'history/createHashHistory'
 
 import './index.less'
 
-const FormItem = Form.Item;
-const history = createHistory();
+const FormItem = Form.Item
+const history = createHistory()
 
 class LoginPage extends React.Component {
+    constructor() {
+        super()
+    }
 
     handleSubmit = (e) => {
-        e.preventDefault();
-        let n = this.props.form.getFieldsValue().username;
-        let p = this.props.form.getFieldsValue().password;
+        e.preventDefault()
+        let n = this.props.form.getFieldsValue().username
+        let p = this.props.form.getFieldsValue().password
         if (n === '123' && p === '123') {
             // 表单的路由处理
-            history.push('/index');
+            history.push('/index')
         } else {
-            this.openNotificationWithIcon('info');
+            this.openNotificationWithIcon('info')
         }
     }
 
@@ -32,7 +35,7 @@ class LoginPage extends React.Component {
     }
 
     componentDidMount() {
-        this.openNotificationWithIcon('info');
+        this.openNotificationWithIcon('info')
     }
 
     render() {
@@ -62,9 +65,9 @@ class LoginPage extends React.Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 
-let Login = Form.create()(LoginPage);
-export default Login;
+let Login = Form.create()(LoginPage)
+export default Login

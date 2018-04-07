@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './waterfall.js'
 import './index.less'
 import { imgUrlList } from './imgUrlList'
@@ -13,7 +13,7 @@ export default class Waterfall extends React.Component {
         fixWidth: 1000,
         scrollElem: 'content',
       })
-      waterfall.on("load", function () {
+      waterfall.on('load', function () {
         setTimeout(function () {
           const $waterfall = document.getElementById('waterfall')
           for (let i = 0; i < 20; i++) {
@@ -45,13 +45,13 @@ export default class Waterfall extends React.Component {
           if (count === urlList.length) {
             callback()
           }
-        };
+        }
       }
     }
     if (completeCount === urlList.length) {
       callback()
     }
-  };
+  }
 
 
   componentWillUnmount() {
@@ -62,7 +62,7 @@ export default class Waterfall extends React.Component {
   render() {
     return (
       <div id="waterfall">
-        {imgUrlList.map(r => <img src={r} className="waterfall-box" alt="waterfall" />)}
+        {imgUrlList.map((r, index) => <img key={index} src={r} className="waterfall-box" alt="waterfall" />)}
       </div>
     )
   }

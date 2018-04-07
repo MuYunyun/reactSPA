@@ -1,22 +1,22 @@
-import React from 'react';
-import propTypes from 'prop-types';
+import React from 'react'
+import propTypes from 'prop-types'
 import {
   Table as AntTable,   // 这里必须引用别名，why?
   Menu,
   Dropdown,
   Icon,
   Tooltip
-} from 'antd';
-import styles from './index.less';
+} from 'antd'
+import styles from './index.less'
 
 export default class Table extends React.Component {
   constructor(props) {
-    super(props);
-    this.mountProps(props);
+    super(props)
+    this.mountProps(props)
   }
 
   componentWillReceiveProps(props) {
-    this.changeProps(props);
+    this.changeProps(props)
   }
 
   mountProps(props) {
@@ -26,11 +26,11 @@ export default class Table extends React.Component {
       headerWidth,
       currentPage,
       data,
-      } = props;
+      } = props
     this.state = {
       currentPage,
     }
-    this.makeColumns(header, action, headerWidth, data);
+    this.makeColumns(header, action, headerWidth, data)
   }
 
   changeProps(props) {
@@ -40,9 +40,9 @@ export default class Table extends React.Component {
       headerWidth,
       currentPage,
       data,
-      } = props;
+      } = props
     this.setState({ currentPage })
-    this.makeColumns(header, action, headerWidth, data);
+    this.makeColumns(header, action, headerWidth, data)
   }
 
   makeColumns(headers, action, headerWidth, data) {
@@ -59,27 +59,27 @@ export default class Table extends React.Component {
       })
     }
     if (action) {
-      const maxActionCount = Math.max(...(data.map(action).map(i => (i ? i.length : 0))));  // action的数量
+      const maxActionCount = Math.max(...(data.map(action).map(i => (i ? i.length : 0))))  // action的数量
       this.columns.push({
         key: 'x',
         title: '操作',
         width: this.props.scroll ? 230 : maxActionCount * 50 + 10,
         fixed: this.props.fixed,
         render: (row) => {
-          const actions = action(row);
+          const actions = action(row)
           if (!actions) {
-            return <div />;
+            return <div />
           }
-          const buttons = actions.map(({ color, name, key, icon, hidden, children }) => {
+          const buttons = actions.map(({ color, name, key, icon, hidden, children }, index) => {
             if (children) {
               return this.getActionItem({ color, name, key }, children, row)
             }
-            return (<Tooltip title={ name }><a
+            return (<Tooltip key={ index } title={ name }><a
               key={key}
               onClick={(e) => {
-                e.preventDefault();
+                e.preventDefault()
                 if ('onCtrlClick' in this.props) {
-                  this.props.onCtrlClick(key, row);
+                  this.props.onCtrlClick(key, row)
                 }
               }}
               style={{
@@ -89,10 +89,10 @@ export default class Table extends React.Component {
                 fontSize: 14,
               }}
             ><Icon type={ icon } /></a></Tooltip>)
-          });
+          })
           return (<div>
             {buttons}
-          </div>);
+          </div>)
         },
       })
     }
@@ -107,9 +107,9 @@ export default class Table extends React.Component {
           hidden ? null : <Menu.Item key={i}>
             <a key={key}
               onClick={(e) => {
-                e.preventDefault();
+                e.preventDefault()
                 if ('onCtrlClick' in this.props) {
-                  this.props.onCtrlClick(key, row);
+                  this.props.onCtrlClick(key, row)
                 }
               }}
             >{name}</a>
@@ -123,9 +123,9 @@ export default class Table extends React.Component {
         <span
           key={parent.key}
           onClick={(e) => {
-            e.preventDefault();
+            e.preventDefault()
             if ('onCtrlClick' in this.props) {
-              this.props.onCtrlClick(parent.key, row);
+              this.props.onCtrlClick(parent.key, row)
             }
           }}
           style={{
@@ -142,9 +142,9 @@ export default class Table extends React.Component {
   onPageChangeHandler = (currentPage) => {
     this.setState({
       currentPage,
-    });
+    })
     if ('onChange' in this.props) {
-      this.props.onChange(currentPage);
+      this.props.onChange(currentPage)
     }
   }
 
@@ -164,7 +164,7 @@ export default class Table extends React.Component {
             current: this.state.currentPage,
             onChange: this.onPageChangeHandler,
             showTotal(total, range) {
-              return <span className={styles.pageTotal}>共<span className={styles.count}>{total}</span>条</span>;
+              return <span className={styles.pageTotal}>共<span className={styles.count}>{total}</span>条</span>
             },
           } : false}
           footer={this.props.footer}

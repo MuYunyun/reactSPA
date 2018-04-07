@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, Icon, Switch, Layout } from 'antd'
 import { allMenu } from 'utils/menu'
@@ -7,7 +7,7 @@ import Contents from './content'
 import Footer from './bottom'
 import './index.less'
 
-const SubMenu = Menu.SubMenu;
+const SubMenu = Menu.SubMenu
 const { Sider } = Layout
 
 export default class Container extends React.Component {
@@ -23,23 +23,23 @@ export default class Container extends React.Component {
   changeTheme = (value) => {
     this.setState({
       theme: value ? 'dark' : 'light',
-    });
+    })
   }
   toggle = () => {
     this.setState({
       collapsed: !this.state.collapsed,
       mode: this.state.collapsed ? 'inline' : 'vertical',
-    });
+    })
   }
   clear = () => {
     this.setState({
       current: 'index',
-    });
+    })
   }
   handleClick = (e, special) => {
     this.setState({
       current: e.key || special,
-    });
+    })
   }
   render() {
     return (
@@ -97,6 +97,6 @@ export default class Container extends React.Component {
           <Footer />
         </Layout>
       </Layout>
-    );
+    )
   }
 }

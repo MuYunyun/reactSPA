@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Input, Row, Col, message } from 'antd';
+import { Input, Row, Col, message } from 'antd'
 import MyContainer from './decorator'
 
-let handleonce = true;
+let handleonce = true
 
 // const MyContainer = (WrappedComponent) =>
 // 	class extends Component {
@@ -15,7 +15,7 @@ let handleonce = true;
 @MyContainer  // 相当于原来外组件 => 子组件 现在变为 外组件 => 装饰器 => 子组件
 export default class Salary extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
           old:'',
           medical:'',
@@ -28,37 +28,37 @@ export default class Salary extends Component {
     }
 
     handleChange = (e) => {
-  		const input = e.target.value;
+  		const input = e.target.value
   		if (handleonce && input >= 10000) {
-        handleonce = false;
-  			message.success('呦！不错哦，工资上万了');
+        handleonce = false
+  			message.success('呦！不错哦，工资上万了')
   		}
-  		const old = input*8/100;
-  		const medical = input*2/100 + (input > 0 ? 3 : 0);
-  		const offwork = input*2/1000;
-  		const house = input*12/100;
-  		const pretax = (input-old-medical-offwork-house);
-  		const taxBase = pretax-3500;
-  		let tax;
+  		const old = input*8/100
+  		const medical = input*2/100 + (input > 0 ? 3 : 0)
+  		const offwork = input*2/1000
+  		const house = input*12/100
+  		const pretax = (input-old-medical-offwork-house)
+  		const taxBase = pretax-3500
+  		let tax
   		if(taxBase <= 0) {
-  			tax = 0;
+  			tax = 0
   		} else if(taxBase > 0 && taxBase <= 1500) {
-  			tax = taxBase*3/100;
+  			tax = taxBase*3/100
   		} else if(taxBase > 1500 && taxBase <= 4500) {
-  			tax = taxBase*10/100-105;
+  			tax = taxBase*10/100-105
   		} else if(taxBase > 4500 && taxBase <= 9000) {
-  			tax = taxBase*20/100-555;
+  			tax = taxBase*20/100-555
   		} else if(taxBase > 9000 && taxBase <= 35000) {
-  			tax = taxBase*25/100-1005;
+  			tax = taxBase*25/100-1005
   		} else if(taxBase > 35000 && taxBase <= 55000) {
-  			tax = taxBase*30/100-2775;
+  			tax = taxBase*30/100-2775
   		} else if(taxBase > 55000 && taxBase <= 80000) {
-  			tax = taxBase*35/100-5505;
+  			tax = taxBase*35/100-5505
   		} else if(taxBase > 80000) {
-  			tax = taxBase*45/100-13505;
+  			tax = taxBase*45/100-13505
   		}
-  		const cleanTax = tax.toFixed(2);
-  		const output = (pretax -tax).toFixed(2);
+  		const cleanTax = tax.toFixed(2)
+  		const output = (pretax -tax).toFixed(2)
 
   		this.setState({
   			old:old,
@@ -68,7 +68,7 @@ export default class Salary extends Component {
   			pretax:pretax,
   			tax:cleanTax,
   			output:output,
-  		});
+  		})
   	}
 
   	render() {
@@ -120,7 +120,6 @@ export default class Salary extends Component {
 	  	  			</Col>
 	  	  		</Row>
 	  	  	</div>
-  	  	);
+  	  	)
   	}
 }
-

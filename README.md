@@ -2,7 +2,7 @@
 ### Target
 
 > React 全家桶的综合运用.该项目会把日常开发中
-遇到的 React 案例抽离成 demo 展现出来，该项目同时会对一些知识点进行实践。
+遇到的案例抽离成 demo 展现出来，同时会对一些知识点进行实践。
 
 [效果展示](https://muyunyun.github.io/reactSPA)，项目变大后，gitpage 上访问速度会比较慢(几十秒)，建议本地打开
 
@@ -16,10 +16,16 @@
 本地运行
 yarn install || npm install
 yarn start || npm start
+
+打包
+yarn build || npm run build
+
+发布
+yarn deploy
 ```
 
 ### Tech Stack
-- [x] 打包构建：Babel Webpack(3.x)
+- [x] 打包构建：Babel Webpack(4.x)
 - [x] 热更新
 - [x] 包管理：Yarn || Npm
 - [x] UI库：React & React-Dom(16.2.0)
@@ -30,6 +36,7 @@ yarn start || npm start
 - [x] 状态管理：redux
 - [x] Ajax：Fetch
 - [x] 跨域: 基于 CORS 实现
+- [x] 代码校验: Eslint
 - [ ] 测试用例：jest
 - [ ] 网关层：使用 typescript + node.js，可参考 [gateway](https://github.com/MuYunyun/gateway)
 
@@ -54,15 +61,15 @@ yarn start || npm start
 * 搜索模块
   * 搜索引擎的实现(集合了百度、360、搜狗搜索)
 * 更多模块开发中
-  * 欢迎提 issue
+  * 欢迎 issue || pr
 
 ### Project Structure
 ```
 ├── build.js                   项目打包后的文件
 ├── config                     webpack配置文件
 │   ├──...
-│   ├──webpack.config.dev.js   开发环境配置
-│   ├──webpack.config.prod.js  生产环境配置
+│   ├──webpack.config.dev.js   开发环境配置(启动速度优化)
+│   ├──webpack.config.prod.js  生产环境配置(打包体积优化)
 ├── node_modules               node模块目录
 ├── public
 │   └──index.html
@@ -71,7 +78,7 @@ yarn start || npm start
 │   ├── start.js               启动项目文件
 │   └── test.js                测试项目文件
 ├── src
-│   ├── client                 汇聚目录
+│   ├── client
 │   │   ├── store              redux中的store
 │   │   ├── devTools.js        开发者工具
 │   ├── common                 核心目录
