@@ -17,6 +17,7 @@ const publicPath = '/';
 const publicUrl = '';
 const env = getClientEnvironment(publicUrl);
 
+// 优先速度
 module.exports = {
   mode: 'development',
   devtool: 'cheap-module-source-map', // https://webpack.js.org/configuration/devtool/
@@ -30,7 +31,7 @@ module.exports = {
   ],
   output: { // https://doc.webpack-china.org/configuration/output/
     path: paths.appBuild, // 开发环境这句没用，但是生成环境要用
-    pathinfo: true, // 告诉 webpack 在 bundle 中引入「所包含模块信息」的相关注释
+    pathinfo: true, // 告诉 webpack 在 bundle 中引入「所包含模块信息」的相关注释，开发环境用
     filename: 'static/js/bundle.js', // 这不是真实的文件，其仅仅是在开发环境下由 WebpackDevServer 提供的一个虚拟路径
     chunkFilename: 'static/js/[name].chunk.js', // 使用了 code splitting 后其它的 chunk 文件
     publicPath: publicPath,
@@ -93,8 +94,8 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
-              // 缓存在 ./node_modules/.cache/babel-loader/，从而能更快地 rebuild
-              cacheDirectory: true,
+              // 缓存在 ./node_modules/.cache/babel-loader/，从而能更快地 rebuild，
+              cacheDirectory: true, // 可能项目大了以后该属性有影响
               plugins: [
                 "transform-decorators-legacy",
                 ['import', { libraryName: 'antd', style: true }],  // import less
@@ -160,7 +161,7 @@ module.exports = {
               {
                 loader: require.resolve('less-loader'),
                 options: {
-                  modifyVars: { "@primary-color": "#1DA57A" },
+                  modifyVars: { "@primary-color": "#1890ff" },
                 },
               },
             ],
@@ -194,7 +195,6 @@ module.exports = {
     // 防止大小写错误
     new CaseSensitivePathsPlugin(),
     // 在 npm install 新的依赖后自动刷新
-    // See https://github.com/facebookincubator/create-react-app/issues/186
     // new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     // 优化 moment.js 库的体积，https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
