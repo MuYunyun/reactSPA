@@ -9,6 +9,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 
@@ -102,6 +103,40 @@ module.exports = {
               ],
               compact: true,
             },
+          },
+          {
+            test: /\.css$/,
+            use: [
+              // "style" loader turns CSS into JS modules that inject <style> tags.
+              require.resolve('style-loader'),
+              MiniCssExtractPlugin.loader,
+              {
+                // "css" loader resolves paths in CSS and adds assets as dependencies.
+                loader: require.resolve('css-loader'),
+                options: {
+                  importLoaders: 1,
+                },
+              },
+              {
+                // "postcss" loader applies autoprefixer to our CSS.
+                loader: require.resolve('postcss-loader'),
+                options: {
+                  ident: 'postcss',
+                  plugins: () => [
+                    require('postcss-flexbugs-fixes'),
+                    autoprefixer({
+                      browsers: [
+                        '>1%',
+                        'last 4 versions',
+                        'Firefox ESR',
+                        'not ie < 9', // React doesn't support IE8 anyway
+                      ],
+                      flexbox: 'no-2009',
+                    }),
+                  ],
+                },
+              },
+            ],
           },
           {
             test: /\.less$/,
@@ -216,6 +251,10 @@ module.exports = {
       staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
     }),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/), // 实验减少了 47.68 kb
+    new MiniCssExtractPlugin({
+      filename: "static/css/[name].css",
+      chunkFilename: "static/css/[id].css"
+    })
   ],
   node: { // 这个对体积没影响，应该对项目引用有间接影响
     dgram: 'empty',
