@@ -1,13 +1,16 @@
 {
-  "main.css": "static/css/main.4776acd8.css",
-  "main.css.map": "static/css/main.4776acd8.css.map",
-  "main.js": "static/js/main.6f14dbb7.js",
-  "main.js.map": "static/js/main.6f14dbb7.js.map",
-  "static/media/baidu_logo.png": "static/media/baidu_logo.a11828a5.png",
-  "static/media/chutian.jpg": "static/media/chutian.d9543fe0.jpg",
-  "static/media/default-skin.svg": "static/media/default-skin.b257fa9c.svg",
-  "static/media/face.png": "static/media/face.a0e6c687.png",
-  "static/media/minren.jpg": "static/media/minren.a392b4dd.jpg",
-  "static/media/sougou_logo.png": "static/media/sougou_logo.0a9b0227.png",
-  "static/media/xiaoying.jpg": "static/media/xiaoying.e2dedb10.jpg"
+  "vendor.js": "/reactSPA/static/js/vendor.6cf217ca.chunk.js",
+  "vendor.js.map": "/reactSPA/static/js/vendor.6cf217ca.chunk.js.map",
+  "main.js": "/reactSPA/static/js/main.8873ef64.js",
+  "main.js.map": "/reactSPA/static/js/main.8873ef64.js.map",
+  "static/media/xiaoying.jpg": "/reactSPA/static/media/xiaoying.e2dedb10.jpg",
+  "static/media/sougou_logo.png": "/reactSPA/static/media/sougou_logo.0a9b0227.png",
+  "static/media/react-draft-wysiwyg.css": "/reactSPA/static/media/react-draft-wysiwyg.b367780f.css",
+  "static/media/default-skin.css": "/reactSPA/static/media/default-skin.1ce09d40.css",
+  "static/media/photoswipe.css": "/reactSPA/static/media/photoswipe.a78e12d3.css",
+  "static/media/face.png": "/reactSPA/static/media/face.a0e6c687.png",
+  "static/media/chutian.jpg": "/reactSPA/static/media/chutian.d9543fe0.jpg",
+  "static/media/baidu_logo.png": "/reactSPA/static/media/baidu_logo.a11828a5.png",
+  "static/media/minren.jpg": "/reactSPA/static/media/minren.a392b4dd.jpg",
+  "index.html": "/reactSPA/index.html"
 }
