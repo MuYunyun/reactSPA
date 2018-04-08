@@ -4,8 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const url = require('url');
 
-// Make sure any symlinks in the project folder are resolved:
-// https://github.com/facebookincubator/create-react-app/issues/637
+// 确保任何项目的链接已经成功加载
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 
@@ -16,29 +15,23 @@ function ensureSlash(path, needsSlash) {
   if (hasSlash && !needsSlash) {
     return path.substr(path, path.length - 1);
   } else if (!hasSlash && needsSlash) {
-    return `${path}/`;
+    return `${path}/`; // reactSPA/
   } else {
     return path;
   }
 }
 
+// 使用 PUBLIC_URL 或者 homepage 字段来推断应用程序所在的'公共路径'
 const getPublicUrl = appPackageJson =>
   envPublicUrl || require(appPackageJson).homepage;
 
-// We use `PUBLIC_URL` environment variable or "homepage" field to infer
-// "public path" at which the app is served.
-// Webpack needs to know it to put the right <script> hrefs into HTML even in
-// single-page apps that may serve index.html for nested URLs like /todos/42.
-// We can't use a relative path in HTML because we don't want to load something
-// like /todos/42/static/js/bundle.7289d.js. We have to know the root.
 function getServedPath(appPackageJson) {
   const publicUrl = getPublicUrl(appPackageJson);
   const servedUrl = envPublicUrl ||
-    (publicUrl ? url.parse(publicUrl).pathname : '/');
+    (publicUrl ? url.parse(publicUrl).pathname : '/'); // 本 demo 中，servedUrl 为 reactSPA
   return ensureSlash(servedUrl, true);
 }
 
-// config after eject: we're in ./config/
 module.exports = {
   dotenv: resolveApp('.env'),
   appBuild: resolveApp('build'),
@@ -51,5 +44,5 @@ module.exports = {
   testsSetup: resolveApp('src/__tests__/index.test.js'),
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
+  servedPath: getServedPath(resolveApp('package.json')), // 本 demo 中，为 reactSPA/
 };
