@@ -28,6 +28,7 @@
     "screenfull": "^3.3.2"
   },
   "devDependencies": {
+    "analyze-webpack-plugin": "^0.1.2",
     "autoprefixer": "7.1.2",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",

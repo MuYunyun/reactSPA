@@ -37,6 +37,7 @@ yarn deploy
 - [x] Ajax：Fetch
 - [x] 跨域: 基于 CORS 实现
 - [x] 代码校验: Eslint
+- [ ] 性能优化: [analyze-webpack-plugin](https://github.com/MuYunyun/analyze-webpack-plugin)
 - [ ] 测试用例：jest
 - [ ] 网关层：使用 typescript + node.js，可参考 [gateway](https://github.com/MuYunyun/gateway)
 

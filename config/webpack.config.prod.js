@@ -10,6 +10,7 @@ const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const AnalyzeWebpackPlugin = require('analyze-webpack-plugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 
@@ -254,7 +255,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "static/css/[name].css",
       chunkFilename: "static/css/[id].css"
-    })
+    }),
+    new AnalyzeWebpackPlugin({}), // 在 build 中生成 webpack 相关消息
   ],
   node: { // 这个对体积没影响，应该对项目引用有间接影响
     dgram: 'empty',

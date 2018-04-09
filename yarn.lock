@@ -129,6 +129,14 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+analyze-webpack-plugin@^0.1.0, analyze-webpack-plugin@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/analyze-webpack-plugin/-/analyze-webpack-plugin-0.1.2.tgz#a6b525f1d54ca52191eafcf5a8e02f5ea0528b55"
+  dependencies:
+    analyze-webpack-plugin "^0.1.0"
+    loader-utils "^1.1.0"
+    webpack-sources "^1.1.0"
+
 anser@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/anser/-/anser-1.4.1.tgz#c3641863a962cebef941ea2c8706f2cb4f0716bd"

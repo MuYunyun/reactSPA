@@ -9,6 +9,7 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 // const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+const AnalyzeWebpackPlugin = require('analyze-webpack-plugin')
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
 
@@ -198,6 +199,7 @@ module.exports = {
     // new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     // 优化 moment.js 库的体积，https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new AnalyzeWebpackPlugin({}), // 开发环境中可以输入 http://localhost:3000/filelist.md 查看相应信息，从而进行优化
   ],
   // 将一些在浏览器不起作用，但是引用到的库置空
   node: {
