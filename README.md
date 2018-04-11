@@ -37,9 +37,14 @@ yarn deploy
 - [x] Ajax：Fetch
 - [x] 跨域: 基于 CORS 实现
 - [x] 代码校验: Eslint
-- [ ] 性能优化: [analyze-webpack-plugin](https://github.com/MuYunyun/analyze-webpack-plugin)
 - [ ] 测试用例：jest
 - [ ] 网关层：使用 typescript + node.js，可参考 [gateway](https://github.com/MuYunyun/gateway)
+
+### Optimize
+
+开发环境中可使用最近开发优化的 [webpack 插件](https://github.com/MuYunyun/analyze-webpack-plugin) 观察各模块的占用情况，从而进一步优化项目。以该项目为例：浏览器中输入 `http://localhost:3000/analyze.html` 可以看到如下效果:
+
+![](http://oqhtscus0.bkt.clouddn.com/fd9c7bf00d31696ac40b69db65b9cb60.jpg-400)
 
 ### Document
 
