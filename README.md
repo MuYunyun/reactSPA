@@ -54,6 +54,8 @@ yarn deploy
 
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
 
+* [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)
+
 ### Features
 * 音乐模块
   * 抽离了 Ajax 模块，可完成相应的跨域需求
