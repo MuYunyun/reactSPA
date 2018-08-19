@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {
-    Input,
-    Button,
-    Select,
-    DatePicker,
-    Cascader,
+  Input,
+  Button,
+  Select,
+  DatePicker,
+  Cascader,
 } from 'antd'
 import './index.less'
 
@@ -22,8 +22,8 @@ export default class SearchBar extends React.Component {
 
   setField(field, value) {
     const {
-     fields,
-     warnings
+      fields,
+      warnings
     } = this.state
     let newValue = value
     if (Array.isArray(newValue) && newValue.length === 0) {
@@ -71,101 +71,101 @@ export default class SearchBar extends React.Component {
 
       let component = null
       switch (field.type) {
-      case 'input':
-      default:
-        if ('autoComplete' in field) {  // 自动补全
-          component = (<Select
-            combobox
-            value={this.state.fields[field.key]}
-            showArrow={false}
-            filterOption={false}
-            disabled={this.state.disabled[field.key]}
-            style={{
-              width: '100%',
-            }}
-            notFoundContent="未找到"
-            onChange={(value) => {
-              this.setField(field, value)
-              field
+        case 'input':
+        default:
+          if ('autoComplete' in field) {  // 自动补全
+            component = (<Select
+              combobox
+              value={this.state.fields[field.key]}
+              showArrow={false}
+              filterOption={false}
+              disabled={this.state.disabled[field.key]}
+              style={{
+                width: '100%',
+              }}
+              notFoundContent="未找到"
+              onChange={(value) => {
+                this.setField(field, value)
+                field
                   .autoComplete(value)
                   .then((result) => {
                     const { autoComplete } = this.state
                     autoComplete[field.key] = result
                     this.setState({ autoComplete })
                   })
+              }}
+            >
+              {(this.state.autoComplete[field.key] || []).map((value, key) =>
+                <Select.Option key={key} value={value}>{value}</Select.Option>)}
+            </Select>)
+          } else {
+            component = (<Input
+              value={this.state.fields[field.key]}
+              onChange={e => this.setField(field, e.target.value)}
+            />)
+          }
+          break
+        case 'cascader':  // 级联
+          component = (<Cascader
+            options={items}
+            placeholder="请选择"
+            value={this.state.fields[field.key]}
+            disabled={this.state.disabled[field.key]}
+            onChange={value => this.setField(field, value)}
+            showSearch
+          />)
+          break
+        case 'select':
+          component = (<Select
+            placeholder="请选择"
+            value={this.state.fields[field.key] === undefined ? (field.defaultValue && field.defaultValue.toString()) : this.state.fields[field.key]}
+            multiple={field.multiple}
+            disabled={this.state.disabled[field.key]}
+            onChange={(value) => {
+              field.onChange && field.onChange(value)
+              this.setField(field, value)
+            }}
+            style={{
+              width: '100%',
             }}
           >
-            {(this.state.autoComplete[field.key] || []).map((value, key) =>
-              <Select.Option key={key} value={value}>{value}</Select.Option>)}
+            {items && items.map(({ mean, value }) =>
+              <Select.Option key={value.toString()} value={value.toString()}>{mean}</Select.Option>)}
           </Select>)
-        } else {
-          component = (<Input
+          break
+        case 'date':
+          component = (<DatePicker
             value={this.state.fields[field.key]}
-            onChange={e => this.setField(field, e.target.value)}
+            disabled={this.state.disabled[field.key]}
+            onChange={value => this.setField(field, value)}
+            placeholder="请选择日期"
+            showToday={false}
           />)
-        }
-        break
-      case 'cascader':  // 级联
-        component = (<Cascader
-          options={items}
-          placeholder="请选择"
-          value={this.state.fields[field.key]}
-          disabled={this.state.disabled[field.key]}
-          onChange={value => this.setField(field, value)}
-          showSearch
-        />)
-        break
-      case 'select':
-        component = (<Select
-          placeholder="请选择"
-          value={this.state.fields[field.key] === undefined ? (field.defaultValue && field.defaultValue.toString()) : this.state.fields[field.key]}
-          multiple={field.multiple}
-          disabled={this.state.disabled[field.key]}
-          onChange={(value) => {
-            field.onChange && field.onChange(value)
-            this.setField(field, value)
-          }}
-          style={{
-            width: '100%',
-          }}
-        >
-          {items && items.map(({ mean, value }) =>
-            <Select.Option key={value.toString()} value={value.toString()}>{mean}</Select.Option>)}
-        </Select>)
-        break
-      case 'date':
-        component = (<DatePicker
-          value={this.state.fields[field.key]}
-          disabled={this.state.disabled[field.key]}
-          onChange={value => this.setField(field, value)}
-          placeholder="请选择日期"
-          showToday={false}
-        />)
-        break
-      case 'rangePicker':
-        component = (<DatePicker.RangePicker
-          showTime
-          format="YYYY-MM-DD"
-          value={[this.state.fields[field.key[0]], this.state.fields[field.key[1]]]}
-          disabled={this.state.disabled[field.key]}
-          onChange={(value) => {
-            this.setField(field, value)
-          }}
-          showToday={false}
-        />)
-        break
-      case 'datetime':
-        component = (<DatePicker
-          showTime
-          format="YYYY-MM-DD HH:mm"
-          value={this.state.fields[field.key]}
-          disabled={this.state.disabled[field.key]}
-          onChange={value => this.setField(field, value)}
-          placeholder="请选择时间"
-          ref={item => this.needToEmptyStyleComponents.push(item)}
-          showToday={false}
-        />)
-        break
+          break
+        case 'rangePicker':
+          component = (<DatePicker.RangePicker
+            showTime
+            format="YYYY-MM-DD"
+            value={[this.state.fields[field.key[0]], this.state.fields[field.key[1]]]}
+            disabled={this.state.disabled[field.key]}
+            onChange={(value) => {
+              this.setField(field, value)
+            }}
+            showToday={false}
+          />)
+          break
+        case 'datetime':
+          component = (<DatePicker
+            showTime
+            format="YYYY-MM-DD HH:mm"
+            value={this.state.fields[field.key]}
+            disabled={this.state.disabled[field.key]}
+            onChange={value => this.setField(field, value)}
+            placeholder="请选择时间"
+            ref={item => this.needToEmptyStyleComponents.push(item)}
+            showToday={false}
+          />)
+          break
       }
       components.push(<div key={i++} className="field">
         <div className="input">

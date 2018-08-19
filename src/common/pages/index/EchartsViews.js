@@ -5,7 +5,7 @@ import moment from 'moment'
 
 const dateArray = []
 for (let i = 0; i <= 7; i++) {
-  dateArray.push(moment(new Date() - (7 - i) * 24 * 3600 * 1000).format('YYYY-MM-DD'))
+	dateArray.push(moment(new Date() - (7 - i) * 24 * 3600 * 1000).format('YYYY-MM-DD'))
 }
 const option = {
 	title: {
@@ -18,7 +18,7 @@ const option = {
 		trigger: 'axis',
 		axisPointer: {
 			lineStyle: {
-					color: '#ddd'
+				color: '#ddd'
 			}
 		},
 		backgroundColor: 'rgba(255,255,255,1)',
@@ -115,7 +115,7 @@ const option = {
 const EchartsViews = () => (
 	<ReactEcharts
 		option={option}
-		style={{height: '280px', width: '100%'}}
+		style={{ height: '280px', width: '100%' }}
 		className={'react_for_echarts'}
 	/>
 )

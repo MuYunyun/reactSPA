@@ -13,7 +13,7 @@ export default class Bottom extends React.Component {
 	}
 
 	tick = () => {
-		this.setState({ timer:this.state.timer + 1 })
+		this.setState({ timer: this.state.timer + 1 })
 	}
 
 	// 组件渲染后开始循环执行tick函数

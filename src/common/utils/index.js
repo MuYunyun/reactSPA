@@ -8,18 +8,18 @@ export const createAjaxAction = (api, startAction, endAction) => (data, cb) =>
     dispatch(startAction(data))
     return new Promise((resolve, reject) => {
       api(data)
-      .then(checkStatus)
-      .then(response => response.json())
-      .then(response => {
-        respon = response
-        dispatch(endAction({ req: data, res: response }))
-      })
-      .then(() => {
-        if (respon.status === 1) {
-          cb && cb(respon)
-        }
-      })
-      .catch(catchError)
+        .then(checkStatus)
+        .then(response => response.json())
+        .then(response => {
+          respon = response
+          dispatch(endAction({ req: data, res: response }))
+        })
+        .then(() => {
+          if (respon.status === 1) {
+            cb && cb(respon)
+          }
+        })
+        .catch(catchError)
     })
   }
 

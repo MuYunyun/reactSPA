@@ -1,7 +1,7 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import {
-  Table as AntTable,   // 这里必须引用别名，why?
+  Table,
   Menu,
   Dropdown,
   Icon,
@@ -9,7 +9,7 @@ import {
 } from 'antd'
 import styles from './index.less'
 
-export default class Table extends React.Component {
+export default class DIYTable extends React.Component {
   constructor(props) {
     super(props)
     this.mountProps(props)
@@ -26,7 +26,7 @@ export default class Table extends React.Component {
       headerWidth,
       currentPage,
       data,
-      } = props
+    } = props
     this.state = {
       currentPage,
     }
@@ -40,7 +40,7 @@ export default class Table extends React.Component {
       headerWidth,
       currentPage,
       data,
-      } = props
+    } = props
     this.setState({ currentPage })
     this.makeColumns(header, action, headerWidth, data)
   }
@@ -74,7 +74,7 @@ export default class Table extends React.Component {
             if (children) {
               return this.getActionItem({ color, name, key }, children, row)
             }
-            return (<Tooltip key={ index } title={ name }><a
+            return (<Tooltip key={index} title={name}><a
               key={key}
               onClick={(e) => {
                 e.preventDefault()
@@ -88,7 +88,7 @@ export default class Table extends React.Component {
                 display: hidden ? 'none' : 'inline-block',
                 fontSize: 14,
               }}
-            ><Icon type={ icon } /></a></Tooltip>)
+            ><Icon type={icon} /></a></Tooltip>)
           })
           return (<div>
             {buttons}
@@ -103,19 +103,19 @@ export default class Table extends React.Component {
     const menu = (
       <Menu>
         {
-        children.map(({ color, name, key, hidden }, i) => (
-          hidden ? null : <Menu.Item key={i}>
-            <a key={key}
-              onClick={(e) => {
-                e.preventDefault()
-                if ('onCtrlClick' in this.props) {
-                  this.props.onCtrlClick(key, row)
-                }
-              }}
-            >{name}</a>
-          </Menu.Item>
-        ))
-      }
+          children.map(({ color, name, key, hidden }, i) => (
+            hidden ? null : <Menu.Item key={i}>
+              <a key={key}
+                onClick={(e) => {
+                  e.preventDefault()
+                  if ('onCtrlClick' in this.props) {
+                    this.props.onCtrlClick(key, row)
+                  }
+                }}
+              >{name}</a>
+            </Menu.Item>
+          ))
+        }
       </Menu>
     )
     return (<Dropdown overlay={menu}>
@@ -151,7 +151,7 @@ export default class Table extends React.Component {
   render() {
     return (
       <div className="myy-table">
-        <AntTable
+        <Table
           rowSelection={this.props.rowSelection}
           scroll={this.props.scroll}
           dataSource={this.props.data.map((row, i) => ({ ...row, rowIndex: i + 1, key: i + 1 }))}
@@ -173,13 +173,13 @@ export default class Table extends React.Component {
     )
   }
 }
-Table.propTypes = {
+DIYTable.propTypes = {
   scroll: propTypes.object,
   fixed: propTypes.string,
   pageSize: propTypes.number,
   getRowClassName: propTypes.func
 }
-Table.defaultProps = {
+DIYTable.defaultProps = {
   pageSize: 20,
   // scroll: { x: 1500 },
   // fixed: 'right'

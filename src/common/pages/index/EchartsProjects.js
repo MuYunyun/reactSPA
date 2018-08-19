@@ -12,12 +12,12 @@ for (let i = 0; i < 50; i++) {
 const option = {
   title: {
     text: '最近50天每天项目完成情况',
-  left: 'center',
+    left: 'center',
     textStyle: {
       color: '#ccc',
       fontSize: 12,
     },
-      padding: 10,
+    padding: 10,
   },
   backgroundColor: '#404040',
   xAxis: [{
@@ -76,9 +76,9 @@ const option = {
           color: 'transparent'
         }
       },
-    areaStyle: {
-      normal: {
-        color: '#08263a',
+      areaStyle: {
+        normal: {
+          color: '#08263a',
           shadowBlur: 50,
           shadowColor: '#000'
         }
@@ -95,19 +95,19 @@ const option = {
         }
       }
     }],
-    animationEasing: 'elasticOut',
-    animationEasingUpdate: 'elasticOut',
-    animationDelay: function (idx) {
-      return idx * 20
-    },
-    animationDelayUpdate: function (idx) {
-      return idx * 20
-    }
+  animationEasing: 'elasticOut',
+  animationEasingUpdate: 'elasticOut',
+  animationDelay: function (idx) {
+    return idx * 20
+  },
+  animationDelayUpdate: function (idx) {
+    return idx * 20
+  }
 }
 const EchartsProjects = () => (
   <ReactEcharts
     option={option}
-    style={{height: '212px', width: '100%'}}
+    style={{ height: '212px', width: '100%' }}
     className={'react_for_echarts'}
   />
 )

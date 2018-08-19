@@ -21,18 +21,18 @@ const todo = (state, action) => {
 }
 
 const todoListInit = [{
-    id: -3,
-    text: 'coding',
-    completed: false,
-  }, {
-    id: -2,
-    text: '打篮球',
-    completed: false,
-  }, {
-    id: -1,
-    text: 'reading',
-    completed: true,
-  }]
+  id: -3,
+  text: 'coding',
+  completed: false,
+}, {
+  id: -2,
+  text: '打篮球',
+  completed: false,
+}, {
+  id: -1,
+  text: 'reading',
+  completed: true,
+}]
 
 export const todoList = handleActions({
   'ADD_TODO'(state, action) {
@@ -55,6 +55,6 @@ const setVisibilityInit = {
 
 export const setVisibility = handleActions({
   'SET_VISIBILITY'(state, action) {
-    return { ...state, ...action.payload}
+    return { ...state, ...action.payload }
   }
 }, setVisibilityInit)

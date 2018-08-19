@@ -14,7 +14,7 @@ export const fetchJSONByGet = url => query => {
   let getQuery = '?'
   let getUrl = ''
   if (query) {
-    for(let name in query) {
+    for (let name in query) {
       getQuery = `${getQuery}${name}=${query[name]}&`
     }
   }

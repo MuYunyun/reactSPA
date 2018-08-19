@@ -137,36 +137,36 @@ class ModForm extends React.Component {
     for (const field of fields) {
       let component = null
       switch (field.type) {
-      case 'input':
-        component = this.getInputField(field)
-        break
-      case 'inputNumber':
-        component = this.getInputNumberField(field)
-        break
-      case 'select':
-        component = this.getSelectField(field)
-        break
-      case 'radioGroup':
-        component = this.getRadioGroupField(field)
-        break
-      case 'date':
-        component = this.getDateField(field)
-        break
-      case 'datetime':
-        component = this.getDateTimeField(field)
-        break
-      case 'switch':
-        component = this.getSwitchField(field)
-        break
-      case 'upload':
-        component = this.getUploadField(field)
-        break
-      case 'textarea':
-        component = this.getTextAreaField(field)
-        break
-      default:
-        component = this.getTextField(field)
-        break
+        case 'input':
+          component = this.getInputField(field)
+          break
+        case 'inputNumber':
+          component = this.getInputNumberField(field)
+          break
+        case 'select':
+          component = this.getSelectField(field)
+          break
+        case 'radioGroup':
+          component = this.getRadioGroupField(field)
+          break
+        case 'date':
+          component = this.getDateField(field)
+          break
+        case 'datetime':
+          component = this.getDateTimeField(field)
+          break
+        case 'switch':
+          component = this.getSwitchField(field)
+          break
+        case 'upload':
+          component = this.getUploadField(field)
+          break
+        case 'textarea':
+          component = this.getTextAreaField(field)
+          break
+        default:
+          component = this.getTextField(field)
+          break
       }
       component = this.generateFormItem({
         formItemLayout,

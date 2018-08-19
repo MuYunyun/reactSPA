@@ -33,7 +33,7 @@ export default class Waterfall extends React.Component {
   loadImage = (urlList, callback) => {
     let count = 0
     let completeCount = 0
-    for(let i = 0; i < urlList.length; i++) {
+    for (let i = 0; i < urlList.length; i++) {
       const img = new Image() //创建一个Image对象，实现图片的预下载
       img.src = urlList[i]
       if (img.complete) {

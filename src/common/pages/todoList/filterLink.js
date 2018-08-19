@@ -5,7 +5,7 @@ import './index.less'
 
 @connect(
   (state) => ({
-      setVisibility: state.setVisibility,
+    setVisibility: state.setVisibility,
   })
 )
 
@@ -23,7 +23,7 @@ export default class FilterLink extends React.Component {
     const active = setVisibility.filter === filter
     return (
       <div className="todo-tab_item">
-        <a style={{ color: active? '#f01414' : '#4d555d' }} onClick={this.onClick}>{name}</a>
+        <a style={{ color: active ? '#f01414' : '#4d555d' }} onClick={this.onClick}>{name}</a>
       </div>
     )
   }

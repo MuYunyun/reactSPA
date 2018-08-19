@@ -1,67 +1,73 @@
-.ant-layout-sider-collapsed .anticon {  // 放在.github前面原因猜想是渲染。
+.ant-layout-sider-collapsed .anticon {
+  // 放在.github前面原因猜想是渲染。
   font-size: 20px;
 }
 
 .containAll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .github {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    .github {
-        position: absolute;
-        top: 20px;
-        left: 14px;
-        font-size: 36px;
-        animation: App-logo-spin infinite 20s linear;
-    }
-    .author {
-        position: absolute;
-        top: 20px;
-        left: 65px;
-        font-size: 24px;
-        font-weight: 600;
-        font-family: "Microsoft YaHei","SimHei"
-    }
-    .white {
-        color: white
-    }
-    .menu {
-        height: 100%;
-        padding-top: 75px;
-    }
-    .switch {
-        position: absolute;
-        bottom: 4%;
-        right: 5%;
-    }
+    top: 20px;
+    left: 14px;
+    font-size: 36px;
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .author {
+    position: absolute;
+    top: 20px;
+    left: 65px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Microsoft YaHei", "SimHei"
+  }
+  .white {
+    color: white
+  }
+  .menu {
+    height: 100%;
+    padding-top: 75px;
+  }
+  .switch {
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+  }
 }
 
 .ant-layout-sider-trigger {
-    display: none;
+  display: none;
 }
 
 .ant-layout-header {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .ant-layout-sider-collapsed .nav-text {
   display: none;
 }
 
-.ant-menu-submenu-vertical > .ant-menu-submenu-title:after { // 对缩放时的menu样式进行处理
-    display: none;
+.ant-menu-submenu-vertical>.ant-menu-submenu-title:after {
+  // 对缩放时的menu样式进行处理
+  display: none;
 }
 
 .ant-menu-submenu-vertical .ant-menu-submenu-title span span {
-    display: none;
+  display: none;
 }
 
 .ant-layout-sider-collapsed .author {
-    display: none;
+  display: none;
 }

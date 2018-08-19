@@ -6,8 +6,8 @@
   background-color: @color;
   color: #fff;
   font-size: 14px;
-	line-height: 1.0;
-	text-align: center;
+  line-height: 1.0;
+  text-align: center;
   &:hover {
     width: 68px;
     height: 30px;
@@ -20,68 +20,69 @@
 
 .cloud-btn2(@color) {
   width: 68px;
-	height: 30px;
-	border-radius: 2px;
-	border: solid 1px @color;
+  height: 30px;
+  border-radius: 2px;
+  border: solid 1px @color;
   font-size: 14px;
-	line-height: 1.0;
-	text-align: center;
-	color: #fe751a;
+  line-height: 1.0;
+  text-align: center;
+  color: #fe751a;
   &:hover {
     width: 68px;
     height: 30px;
     border-radius: 2px;
     border: solid 1px @color;
     font-size: 14px;
-	  line-height: 1.0;
-	  text-align: center;
-	  color: #fe751a;
+    line-height: 1.0;
+    text-align: center;
+    color: #fe751a;
     opacity: .3
   }
 }
+
 .searchbar {
-    padding: 10px 15px;
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .field {
-        height: 47px;
-        align-items: center;
-        .input {
-            display: flex;
-            align-items: center;
-            .title {
-                text-align: right;
-                width: 100px;
-                font-size: 14px;
-                margin-right: 5px;
-            }
-            .input {
-                height: 30px;
-            }
-        }
-        .warning {
-            color: red;
-            text-align: center;
-            margin-left: 105px;
-        }
+  padding: 10px 15px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .field {
+    height: 47px;
+    align-items: center;
+    .input {
+      display: flex;
+      align-items: center;
+      .title {
+        text-align: right;
+        width: 100px;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+      .input {
+        height: 30px;
+      }
     }
-    .buttonGroup {
-        align-self: center;
-        margin-left: 24px;
-        height: 47px;
-        button {
-            margin-right: 23px;
-            height: 30px;
-            border: none;
-            padding: 0;
-        }
-        .reset {
-          .cloud-btn2(#fe751a)
-        }
-        .search {
-          .cloud-btn1(#fe751a)
-        }
+    .warning {
+      color: red;
+      text-align: center;
+      margin-left: 105px;
     }
+  }
+  .buttonGroup {
+    align-self: center;
+    margin-left: 24px;
+    height: 47px;
+    button {
+      margin-right: 23px;
+      height: 30px;
+      border: none;
+      padding: 0;
+    }
+    .reset {
+      .cloud-btn2(#fe751a)
+    }
+    .search {
+      .cloud-btn1(#fe751a)
+    }
+  }
 }
