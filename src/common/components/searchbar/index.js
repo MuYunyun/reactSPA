@@ -1,15 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import {
   Input,
   Button,
   Select,
   DatePicker,
-  Cascader,
 } from 'antd'
 import './index.less'
+import * as _ from 'diana'
 
-export default class SearchBar extends React.Component {
+export default class SearchBar extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {
@@ -44,25 +43,14 @@ export default class SearchBar extends React.Component {
       fields[field.key] = newValue
     }
     this.setState({
-      fields,
-      warnings
+      fields: _.clone(fields), // 这里配合 PureComponent 做的优化
+      warnings: _.clone(warnings)
     })
-  }
-
-  componentDidMount() {
-    // eslint-disable-next-line no-restricted-syntax
-    for (const component of this.needToEmptyStyleComponents) {
-      // eslint-disable-next-line react/no-find-dom-node
-      const dom = ReactDOM.findDOMNode(component)
-      dom.setAttribute('style', '')
-    }
   }
 
   generateInputs(fields) {
     const components = []
-    this.needToEmptyStyleComponents = []
     let i = 0
-    // eslint-disable-next-line no-restricted-syntax
     for (const field of fields) {
       let items = []
       if (field.items) {
@@ -73,47 +61,12 @@ export default class SearchBar extends React.Component {
       switch (field.type) {
         case 'input':
         default:
-          if ('autoComplete' in field) {  // 自动补全
-            component = (<Select
-              combobox
-              value={this.state.fields[field.key]}
-              showArrow={false}
-              filterOption={false}
-              disabled={this.state.disabled[field.key]}
-              style={{
-                width: '100%',
-              }}
-              notFoundContent="未找到"
-              onChange={(value) => {
-                this.setField(field, value)
-                field
-                  .autoComplete(value)
-                  .then((result) => {
-                    const { autoComplete } = this.state
-                    autoComplete[field.key] = result
-                    this.setState({ autoComplete })
-                  })
-              }}
-            >
-              {(this.state.autoComplete[field.key] || []).map((value, key) =>
-                <Select.Option key={key} value={value}>{value}</Select.Option>)}
-            </Select>)
-          } else {
+          {
             component = (<Input
               value={this.state.fields[field.key]}
               onChange={e => this.setField(field, e.target.value)}
             />)
           }
-          break
-        case 'cascader':  // 级联
-          component = (<Cascader
-            options={items}
-            placeholder="请选择"
-            value={this.state.fields[field.key]}
-            disabled={this.state.disabled[field.key]}
-            onChange={value => this.setField(field, value)}
-            showSearch
-          />)
           break
         case 'select':
           component = (<Select
@@ -132,15 +85,6 @@ export default class SearchBar extends React.Component {
             {items && items.map(({ mean, value }) =>
               <Select.Option key={value.toString()} value={value.toString()}>{mean}</Select.Option>)}
           </Select>)
-          break
-        case 'date':
-          component = (<DatePicker
-            value={this.state.fields[field.key]}
-            disabled={this.state.disabled[field.key]}
-            onChange={value => this.setField(field, value)}
-            placeholder="请选择日期"
-            showToday={false}
-          />)
           break
         case 'rangePicker':
           component = (<DatePicker.RangePicker
@@ -162,7 +106,6 @@ export default class SearchBar extends React.Component {
             disabled={this.state.disabled[field.key]}
             onChange={value => this.setField(field, value)}
             placeholder="请选择时间"
-            ref={item => this.needToEmptyStyleComponents.push(item)}
             showToday={false}
           />)
           break
@@ -179,9 +122,6 @@ export default class SearchBar extends React.Component {
   }
 
   handleReset = () => {
-    if ('onReset' in this.props) {
-      this.props.onReset()
-    }
     this.setState({
       fields: {},
     })
@@ -201,23 +141,20 @@ export default class SearchBar extends React.Component {
     }
     if (Object.keys(warnings).length) {
       this.setState({
-        warnings
+        warnings: _.clone(warnings)
       })
       return
     }
     this.setState({ warnings: {} })
     if ('onSubmit' in this.props) {
       const fields = {}
-      // eslint-disable-next-line
       for (const key in this.state.fields) {
         let value = this.state.fields[key]
-        if (value === undefined || value === null) {
-          // eslint-disable-next-line
+        if (value == undefined) {
           continue
         }
         if (Array.isArray(value)) {
           fields[key] = value
-          // eslint-disable-next-line
           continue
         }
         if (typeof value === 'string') {

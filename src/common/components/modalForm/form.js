@@ -16,15 +16,7 @@ import './index.less'
 const FormItem = Form.Item
 const RadioGroup = Radio.Group
 
-class ModForm extends React.Component {
-
-  componentDidMount() {
-    for (const component of this.needToEmptyStyleComponents) {
-      // eslint-disable-next-line
-      const dom = ReactDOM.findDOMNode(component)
-      dom.setAttribute('style', '')
-    }
-  }
+class ModForm extends React.PureComponent {
 
   handleSubmit = (e) => {
     e && e.preventDefault()
@@ -36,6 +28,7 @@ class ModForm extends React.Component {
       }
     })
   }
+
   doCancel = () => {
     const { onCancel } = this.props
     onCancel && onCancel()
@@ -95,7 +88,6 @@ class ModForm extends React.Component {
       format="YYYY-MM-DD"
       placeholder="请选择时间"
       showToday={false}
-      ref={item => this.needToEmptyStyleComponents.push(item)}
     />)
 
   getSwitchField = field => <Switch
@@ -105,19 +97,6 @@ class ModForm extends React.Component {
     defaultChecked={field.options.initialValue}
   />
 
-  // getUploadField = field =>
-  //   <Upload
-  //     name="logo"
-  //     action="/"
-  //     listType="picture"
-  //     beforeUpload={field.options.beforeUpload}
-  //     onChange={field.options.onChange}
-  //     disabled={field.options.disabled}
-  //   >
-  //     <Button>
-  //       <Icon type="upload" /> 点击上传
-  //   </Button>
-  //   </Upload>
   getUploadField = field =>
     <input
       type="file"
@@ -132,8 +111,6 @@ class ModForm extends React.Component {
       wrapperCol: { span: 14 }
     }
     const components = []
-    this.needToEmptyStyleComponents = []
-    // eslint-disable-next-line no-restricted-syntax
     for (const field of fields) {
       let component = null
       switch (field.type) {
@@ -189,7 +166,6 @@ class ModForm extends React.Component {
         {this.props.showCancel && <Button onClick={this.doCancel} >取消</Button>}
         {!this.props.noBtn && <Button type="primary" htmlType="submit">{this.props.okText || '确定'}</Button>}
       </div>
-
     </FormItem>)
     components.push(buttons)
     return components
@@ -201,7 +177,7 @@ class ModForm extends React.Component {
     } = this.props
     return (
       <div className="formWrapper">
-        <Form onSubmit={this.handleSubmit} ref={(c) => { this.form = c; this.props.cb && this.props.cb(this.handleSubmit) }}>
+        <Form onSubmit={this.handleSubmit}>
           {this.generateFormFields(fields)}
         </Form>
       </div>

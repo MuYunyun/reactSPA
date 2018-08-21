@@ -6,7 +6,7 @@ import {
 
 import Form from './form'
 
-export default class FormModal extends React.Component {
+export default class FormModal extends React.PureComponent {
 
   render() {
     const {

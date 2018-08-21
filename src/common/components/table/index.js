@@ -2,50 +2,45 @@ import React from 'react'
 import propTypes from 'prop-types'
 import {
   Table,
-  Menu,
-  Dropdown,
   Icon,
   Tooltip
 } from 'antd'
 import styles from './index.less'
 
-export default class DIYTable extends React.Component {
+export default class DIYTable extends React.PureComponent {
   constructor(props) {
     super(props)
-    this.mountProps(props)
+    this.state = {
+      currentPage: 1,
+    }
+  }
+
+  componentWillMount() {
+    const {
+      header,
+      action,
+      data,
+    } = this.props
+
+    this.makeColumns(header, action, data)
   }
 
   componentWillReceiveProps(props) {
     this.changeProps(props)
   }
 
-  mountProps(props) {
-    const {
-      header,
-      action,
-      headerWidth,
-      currentPage,
-      data,
-    } = props
-    this.state = {
-      currentPage,
-    }
-    this.makeColumns(header, action, headerWidth, data)
-  }
-
   changeProps(props) {
     const {
       header,
       action,
-      headerWidth,
       currentPage,
       data,
     } = props
     this.setState({ currentPage })
-    this.makeColumns(header, action, headerWidth, data)
+    this.makeColumns(header, action, data)
   }
 
-  makeColumns(headers, action, headerWidth, data) {
+  makeColumns(headers, action, data) {
     this.columns = this.props.noIndex ? [] : [{
       dataIndex: 'rowIndex',
       title: '序号',
@@ -58,8 +53,9 @@ export default class DIYTable extends React.Component {
         ...header,
       })
     }
+
     if (action) {
-      const maxActionCount = Math.max(...(data.map(action).map(i => (i ? i.length : 0))))  // action的数量
+      const maxActionCount = Math.max(...(data.map(action).map(i => (i ? i.length : 0))))  // the number of action
       this.columns.push({
         key: 'x',
         title: '操作',
@@ -70,10 +66,7 @@ export default class DIYTable extends React.Component {
           if (!actions) {
             return <div />
           }
-          const buttons = actions.map(({ color, name, key, icon, hidden, children }, index) => {
-            if (children) {
-              return this.getActionItem({ color, name, key }, children, row)
-            }
+          const buttons = actions.map(({ color, name, key, icon, hidden }, index) => {
             return (<Tooltip key={index} title={name}><a
               key={key}
               onClick={(e) => {
@@ -96,47 +89,6 @@ export default class DIYTable extends React.Component {
         },
       })
     }
-  }
-
-  /** 操作详情下拉选项 */
-  getActionItem = (parent, children, row) => {
-    const menu = (
-      <Menu>
-        {
-          children.map(({ color, name, key, hidden }, i) => (
-            hidden ? null : <Menu.Item key={i}>
-              <a key={key}
-                onClick={(e) => {
-                  e.preventDefault()
-                  if ('onCtrlClick' in this.props) {
-                    this.props.onCtrlClick(key, row)
-                  }
-                }}
-              >{name}</a>
-            </Menu.Item>
-          ))
-        }
-      </Menu>
-    )
-    return (<Dropdown overlay={menu}>
-      <a className="ant-dropdown-link">
-        <span
-          key={parent.key}
-          onClick={(e) => {
-            e.preventDefault()
-            if ('onCtrlClick' in this.props) {
-              this.props.onCtrlClick(parent.key, row)
-            }
-          }}
-          style={{
-            color: parent.color,
-            marginRight: 8,
-            display: parent.hidden ? 'none' : 'inline-block',
-          }}
-        >{parent.name}</span>
-        <Icon type="down" />
-      </a>
-    </Dropdown>)
   }
 
   onPageChangeHandler = (currentPage) => {
@@ -173,14 +125,14 @@ export default class DIYTable extends React.Component {
     )
   }
 }
+
 DIYTable.propTypes = {
   scroll: propTypes.object,
   fixed: propTypes.string,
   pageSize: propTypes.number,
   getRowClassName: propTypes.func
 }
+
 DIYTable.defaultProps = {
   pageSize: 20,
-  // scroll: { x: 1500 },
-  // fixed: 'right'
 }

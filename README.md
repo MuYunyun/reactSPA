@@ -2,9 +2,9 @@
 ### Target
 
 > React 全家桶的综合运用.该项目会把日常开发中
-遇到的案例抽离成 demo 展现出来，同时会对一些知识点进行实践。
+遇到的案例抽离成 demo 展现出来，同时会对一些知识点进行实践。计划未来产出一套针对中后台开发相对友好的使用方案。
 
-[效果展示](https://muyunyun.github.io/reactSPA)，项目变大后，gitpage 上访问速度会比较慢(几十秒)，建议本地打开
+[效果展示](https://muyunyun.github.io/reactSPA)，项目变大后，建议本地打开。
 
 * 部分模块展示：
 ![](http://files.cnblogs.com/files/MuYunyun/reactSPA.gif)
@@ -28,7 +28,7 @@ yarn deploy
 - [x] 打包构建：Babel Webpack(4.x)
 - [x] 热更新
 - [x] 包管理：Yarn || Npm
-- [x] UI库：React & React-Dom(16.2.0)
+- [x] UI库：React & React-Dom(16.4.0)
 - [x] UI组件：Antd(3.x)
 - [x] 路由：react-router(4.x)、react-router-redux
 - [x] JS：ES6、ES7

@@ -10,8 +10,6 @@ import { fetchMusicList } from 'actions/music'
 import { connect } from 'react-redux'
 import './index.less'
 
-require('es6-promise').polyfill()
-
 const confirm = Modal.confirm
 @connect(
   (state) => ({
@@ -298,11 +296,9 @@ export default class Music extends React.Component {
     let songList = musicList.data
     const searchFields = this.state.searchFields
     if (searchFields && searchFields.country && searchFields.country.toString() !== '0') { // 发行国家搜索
-      // eslint-disable-next-line
       songList = songList.filter(ele => ele.country === publishCountry.find(t => t.value === parseInt(searchFields.country), 10).mean)
     }
     if (searchFields && searchFields.language && searchFields.language.toString() !== '0') { // 歌曲语种搜索
-      // eslint-disable-next-line
       songList = songList.filter(ele => ele.language === languageKindList.find(t => t.value === parseInt(searchFields.language), 10).mean)
     }
     if (searchFields && searchFields.start) { // 发行时间段收索

@@ -1,8 +1,21 @@
 {
   "name": "reactSPA",
   "version": "1.0.1",
-  "private": true,
+  "description": "combination of react teconology stack",
   "main": "index.js",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "node scripts/build.js",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "muyunyun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuYunyun/reactSPA/issues"
+  },
+  "homepage": "http://muyunyun.cn/reactSPA/",
   "dependencies": {
     "antd": "^3.2.1",
     "diana": "0.4.4",
@@ -50,7 +63,6 @@
     "dotenv": "4.0.0",
     "echarts": "^3.6.1",
     "echarts-for-react": "^1.4.1",
-    "es6-promise": "^4.1.0",
     "eslint": "^4.19.1",
     "eslint-config-react-app": "^2.0.0",
     "eslint-loader": "^2.0.0",
@@ -82,43 +94,5 @@
     "webpack-dev-server": "^3.0.0-beta.1",
     "webpack-manifest-plugin": "2.0.0-rc.2",
     "whatwg-fetch": "^2.0.3"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
-    "predeploy": "node scripts/build.js",
-    "deploy": "gh-pages -d build"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
-    ],
-    "testEnvironment": "node",
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
-    },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
-    "moduleNameMapper": {
-      "^react-native$": "react-native-web",
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/common/images",
-      "\\.(css|less|scss)$": "<rootDir>/src"
-    }
-  },
-  "homepage": "http://MuYunyun.github.io/reactSPA"
+  }
 }
