@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
+import { ConnectedRouter } from 'react-router-redux'
+import createHistory from 'history/createHashHistory'
 import routes from '../common/routes'
 import './index.less'
 import DevTools from './devTools'
 import configureStore from './store/configureStore'
-import { ConnectedRouter } from 'react-router-redux'
-import createHistory from 'history/createHashHistory'
 
 const history = createHistory()
 

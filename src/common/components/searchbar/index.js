@@ -6,14 +6,12 @@ import {
   DatePicker,
 } from 'antd'
 import './index.less'
-import * as _ from 'diana'
 
 export default class SearchBar extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {
       fields: {},
-      autoComplete: {},
       disabled: {},
       warnings: {},
     }
@@ -22,7 +20,7 @@ export default class SearchBar extends React.PureComponent {
   setField(field, value) {
     const {
       fields,
-      warnings
+      warnings,
     } = this.state
     let newValue = value
     if (Array.isArray(newValue) && newValue.length === 0) {
@@ -43,8 +41,8 @@ export default class SearchBar extends React.PureComponent {
       fields[field.key] = newValue
     }
     this.setState({
-      fields: _.clone(fields), // 这里配合 PureComponent 做的优化
-      warnings: _.clone(warnings)
+      fields: { ...fields }, // 这里配合 PureComponent 做的优化
+      warnings: { ...warnings }
     })
   }
 
@@ -141,7 +139,7 @@ export default class SearchBar extends React.PureComponent {
     }
     if (Object.keys(warnings).length) {
       this.setState({
-        warnings: _.clone(warnings)
+        warnings: {...warnings}
       })
       return
     }

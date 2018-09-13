@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 import {
   Table,
   Icon,
-  Tooltip
+  Tooltip,
 } from 'antd'
 import styles from './index.less'
 
@@ -127,10 +127,7 @@ export default class DIYTable extends React.PureComponent {
 }
 
 DIYTable.propTypes = {
-  scroll: propTypes.object,
-  fixed: propTypes.string,
   pageSize: propTypes.number,
-  getRowClassName: propTypes.func
 }
 
 DIYTable.defaultProps = {

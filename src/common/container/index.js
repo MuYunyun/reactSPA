@@ -15,32 +15,38 @@ export default class Container extends React.Component {
     theme: 'dark',
     current: 'index',
     collapsed: false,
-    mode: 'inline',  // 水平垂直展现
+    mode: 'inline', // 水平垂直展现
   }
+
   componentDidMount() {
     this.handleClick([], 'index')
   }
+
   changeTheme = (value) => {
     this.setState({
       theme: value ? 'dark' : 'light',
     })
   }
+
   toggle = () => {
     this.setState({
       collapsed: !this.state.collapsed,
       mode: this.state.collapsed ? 'inline' : 'vertical',
     })
   }
+
   clear = () => {
     this.setState({
       current: 'index',
     })
   }
+
   handleClick = (e, special) => {
     this.setState({
       current: e.key || special,
     })
   }
+
   render() {
     return (
       <Layout className="containAll">
@@ -75,7 +81,8 @@ export default class Container extends React.Component {
                 return (
                   <Menu.Item key={subMenu.url}>
                     <Link to={`/${subMenu.url}`}>
-                      <Icon type={subMenu.icon} /><span className="nav-text">{subMenu.name}</span>
+                      <Icon type={subMenu.icon} />
+                      <span className="nav-text">{subMenu.name}</span>
                     </Link>
                   </Menu.Item>
                 )

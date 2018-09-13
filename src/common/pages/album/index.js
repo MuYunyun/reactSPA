@@ -10,12 +10,14 @@ export default class Gallery extends React.Component {
   constructor() {
     super()
     this.state = {
-      gallery: null
+      gallery: null,
     }
   }
+
   componentWillUnmount = () => {
     this.closeGallery()
   }
+
   openGallery = (item) => {
     const items = [
       {
@@ -42,10 +44,12 @@ export default class Gallery extends React.Component {
     })
     this.gallery.init()
   }
+
   closeGallery = () => {
     if (!this.gallery) return
     this.gallery.close()
   }
+
   render() {
     const imgs = [
       [
@@ -153,11 +157,6 @@ export default class Gallery extends React.Component {
             </div>
           </div>
         </div>
-        <style>{`
-                    .ant-card-body img {
-                        cursor: pointer;
-                    }
-                `}</style>
       </div>
     )
   }

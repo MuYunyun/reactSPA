@@ -7,7 +7,6 @@ import {
 import Form from './form'
 
 export default class FormModal extends React.PureComponent {
-
   render() {
     const {
       modalKey,
@@ -46,5 +45,4 @@ FormModal.propTypes = {
   fields: PropTypes.arrayOf(Object).isRequired,
   onOk: PropTypes.func.isRequired,
   onCancel: PropTypes.func.isRequired,
-  okText: PropTypes.string,
 }

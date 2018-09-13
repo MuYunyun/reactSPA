@@ -3,5 +3,8 @@
     "env",
     "react",
     "stage-2"
+  ],
+  "plugins": [
+    ["on-demand-loading", {"library": "diana"}]
   ]
 }

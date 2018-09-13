@@ -2,9 +2,9 @@
 ### Target
 
 > React 全家桶的综合运用.该项目会把日常开发中
-遇到的案例抽离成 demo 展现出来，同时会对一些知识点进行实践。计划未来产出一套针对中后台开发相对友好的使用方案。
+遇到的案例抽离成 demo 展现出来，同时会对一些知识点进行实践，最终的目的是产出一套针对中后台开发相对完善的使用方案。
 
-[效果展示](https://muyunyun.github.io/reactSPA)，项目变大后，建议本地打开。
+[效果展示](https://muyunyun.github.io/reactSPA)，建议本地打开。
 
 * 部分模块展示：
 ![](http://files.cnblogs.com/files/MuYunyun/reactSPA.gif)
@@ -21,7 +21,7 @@ yarn start || npm start
 yarn build || npm run build
 
 发布
-yarn deploy
+yarn deploy || npm run deploy
 ```
 
 ### Tech Stack
@@ -37,12 +37,12 @@ yarn deploy
 - [x] Ajax：Fetch
 - [x] 跨域: 基于 CORS 实现
 - [x] 代码校验: Eslint
-- [ ] 测试用例：jest
-- [ ] 网关层：使用 typescript + node.js，可参考 [gateway](https://github.com/MuYunyun/gateway)
+- [ ] ~~测试用例：jest~~
+- [ ] 网关层：[gateway](https://github.com/MuYunyun/gateway)
 
 ### Optimize
 
-开发环境中可使用最近开发优化的 [webpack 插件](https://github.com/MuYunyun/analyze-webpack-plugin) 观察各模块的占用情况，从而进一步优化项目。以该项目为例：浏览器中输入 `http://localhost:3000/analyze.html` 可以看到如下效果:
+开发环境中可使用 [analyze-webpack-plugin](https://github.com/MuYunyun/analyze-webpack-plugin) 观察各模块的占用情况。以该项目为例：浏览器中输入 `http://localhost:3000/analyze.html` 可以看到如下效果:
 
 ![](http://oqhtscus0.bkt.clouddn.com/fd9c7bf00d31696ac40b69db65b9cb60.jpg-400)
 

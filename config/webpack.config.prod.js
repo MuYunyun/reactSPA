@@ -1,31 +1,31 @@
 'use strict'
 
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer')
 const path = require('path')
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
-// const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
-const eslintFormatter = require('react-dev-utils/eslintFormatter');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const paths = require('./paths');
-const getClientEnvironment = require('./env');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ManifestPlugin = require('webpack-manifest-plugin')
+// const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
+const eslintFormatter = require('react-dev-utils/eslintFormatter')
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const paths = require('./paths')
+const getClientEnvironment = require('./env')
 
 // 从哪里获取服务，需要一个末尾斜杠
-const publicPath = paths.servedPath;
+const publicPath = paths.servedPath
 // Source maps are resource heavy and can cause out of memory issue for large source files.
-const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
-const publicUrl = publicPath.slice(0, -1);
-const env = getClientEnvironment(publicUrl);
+const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false'
+const publicUrl = publicPath.slice(0, -1)
+const env = getClientEnvironment(publicUrl)
 
 // 下面代码仅仅出于安全
 if (env.stringified['process.env'].NODE_ENV !== '"production"') {
-  throw new Error('Production builds must have NODE_ENV=production.');
+  throw new Error('Production builds must have NODE_ENV=production.')
 }
 
-const cssFilename = 'static/css/[name].[contenthash:8].css';
+const cssFilename = 'static/css/[name].[contenthash:8].css'
 
 // 优先体积
 module.exports = {
@@ -234,12 +234,12 @@ module.exports = {
       filename: 'service-worker.js',
       logger(message) {
         if (message.indexOf('Total precache size is') === 0) {
-          return;
+          return
         }
         if (message.indexOf('Skipping static resource') === 0) {
-          return;
+          return
         }
-        console.log(message);
+        console.log(message)
       },
       minify: true,
       // For unknown URLs, fallback to the index page
@@ -262,4 +262,4 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
   },
-};
+}

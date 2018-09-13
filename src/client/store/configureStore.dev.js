@@ -2,8 +2,8 @@
 // import createHistory from 'history/createHashHistory'
 import { createStore, compose, applyMiddleware } from 'redux'
 import rootReducer from 'reducers'
-import DevTools from '../devTools'
 import thunk from 'redux-thunk'
+import DevTools from '../devTools'
 import logger from '../middleware/logger'
 
 // const history = createHistory()

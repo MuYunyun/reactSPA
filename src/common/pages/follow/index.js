@@ -1,5 +1,5 @@
 import React from 'react'
-import * as _ from 'diana'
+import { rdColor } from 'diana'
 import './index.less'
 
 export default class follow extends React.Component {
@@ -12,7 +12,7 @@ export default class follow extends React.Component {
 
   getRandomColor = () => {
     this.setState({
-      col: _.rdColor(),
+      col: rdColor(),
     })
   }
 

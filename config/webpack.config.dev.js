@@ -1,22 +1,22 @@
 'use strict'
 
-const autoprefixer = require('autoprefixer');
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-// const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-// const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
-const eslintFormatter = require('react-dev-utils/eslintFormatter');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const getClientEnvironment = require('./env');
+const autoprefixer = require('autoprefixer')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
+// const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
+// const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin')
+const eslintFormatter = require('react-dev-utils/eslintFormatter')
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
+const getClientEnvironment = require('./env')
 const AnalyzeWebpackPlugin = require('analyze-webpack-plugin').default
-const paths = require('./paths');
+const paths = require('./paths')
 
-const publicPath = '/';
+const publicPath = '/'
 
-const publicUrl = '';
-const env = getClientEnvironment(publicUrl);
+const publicUrl = ''
+const env = getClientEnvironment(publicUrl)
 
 // 优先速度
 module.exports = {
@@ -214,4 +214,4 @@ module.exports = {
   performance: {
     hints: false,
   },
-};
+}
