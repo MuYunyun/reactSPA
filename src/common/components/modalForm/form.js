@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import {
   Button,
   Input,
@@ -19,20 +18,21 @@ const RadioGroup = Radio.Group
 class ModForm extends React.PureComponent {
 
   handleSubmit = (e) => {
+    const { form } = this.props
     e && e.preventDefault()
-    this.props.form.validateFieldsAndScroll((err, values) => {
+    form.validateFieldsAndScroll((err, values) => {
       if (!err) {
         const { onOk } = this.props
         onOk && onOk(values)
-        this.props.form.resetFields()
+        form.resetFields()
       }
     })
   }
 
   doCancel = () => {
-    const { onCancel } = this.props
+    const { onCancel, form } = this.props
     onCancel && onCancel()
-    this.props.form.resetFields()
+    form.resetFields()
   }
 
   generateFormItem = ({ formItemLayout, label, hasFeedBack, name, options, component }) => {

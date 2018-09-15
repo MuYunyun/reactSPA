@@ -15,7 +15,7 @@ class todo extends Component {
   render() {
     return (
       <div className="animated swing todo">
-        <div>计划在本项目中，把平时工作、学习中遇到的事抽象成demo给展现出来。其实这套界面风格不仅仅可以作为后台管理系统，也可以修改成一个美观的博客。</div>
+        <div>该项目会把日常开发中 遇到的案例抽离成 demo 展现出来，同时会对一些知识点进行实践，最终的目的是产出一套针对中后台开发相对完善的使用方案。</div>
       </div>
     )
   }

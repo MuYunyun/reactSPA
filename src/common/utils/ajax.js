@@ -1,10 +1,9 @@
 import fetchJsonp from 'fetch-jsonp'
 
 export function fetchJSON(url, params) {
-  params = {
+  return fetchJsonp(url, {
     ...params,
-  }
-  return fetchJsonp(url, params)
+  })
 }
 
 export const fetchJSONByGet = url => query => {

@@ -1,5 +1,8 @@
+import configureStoreDev from './configureStore.dev'
+import configureStoreProd from './configureStore.prod'
+
 if (process.env.NODE_ENV === 'development') {
-  module.exports = import('./configureStore.dev')
+  module.exports = configureStoreDev
 } else {
-  module.exports = import('./configureStore.prod')
+  module.exports = configureStoreProd
 }

@@ -49,23 +49,23 @@ const option = {
     axisLabel: {
       textStyle: {
         color: '#ccc'
-      }
+      },
     },
     splitLine: {
       show: true,
       lineStyle: {
         color: '#08263f'
-      }
+      },
     },
     axisTick: {
       show: false
-    }
+    },
   },
   series: [
     {
       name: 'Simulate Shadow',
       type: 'line',
-      data: data,
+      data,
       z: 2,
       showSymbol: false,
       animationDelay: 0,
@@ -74,7 +74,7 @@ const option = {
       lineStyle: {
         normal: {
           color: 'transparent'
-        }
+        },
       },
       areaStyle: {
         normal: {
@@ -86,14 +86,14 @@ const option = {
     }, {
       name: '完成项目数',
       type: 'bar',
-      data: data,
+      data,
       xAxisIndex: 1,
       z: 3,
       itemStyle: {
         normal: {
           barBorderRadius: 5
         }
-      }
+      },
     }],
   animationEasing: 'elasticOut',
   animationEasingUpdate: 'elasticOut',

@@ -10,18 +10,19 @@ export default class LogoSelect extends React.Component {
     }
   }
 
-  //处理logo选择
+  // 处理logo选择
   handleLogoSelect = (e) => {
-    var index = parseInt(e.target.getAttribute('data-index'), 10)
+    const index = parseInt(e.target.getAttribute('data-index'), 10)
+    const { onLogoChange } = this.props
     this.setState({
       selectIndex: index,
-      showLogo: false
+      showLogo: false,
     }, () => {
-      this.props.onLogoChange(index)
+      onLogoChange(index)
     })
   }
 
-  //显示logo列表
+  // 显示logo列表
   showLogoList = () => {
     this.setState({
       showLogo: true
@@ -29,9 +30,11 @@ export default class LogoSelect extends React.Component {
   }
 
   render() {
-    const Li = this.state.logos.map((logo, index) => {
+    const { logos, selectIndex, showLogo } = this.state
+    const Li = logos.map((logo, index) => {
       return (
-        <div className="logo-list-item"
+        <div
+          className="logo-list-item"
           key={index}>
           <img src={logo} onClick={this.handleLogoSelect} data-index={index} alt="logo" />
         </div>
@@ -41,10 +44,10 @@ export default class LogoSelect extends React.Component {
     return (
       <div className="logo-panel">
         <div className="logo-display">
-          <img src={this.state.logos[this.state.selectIndex]} alt="logo" />
+          <img src={logos[selectIndex]} alt="logo" />
           <span className="logo-select-arrow" onClick={this.showLogoList}></span>
         </div>
-        <div className="logo-list" style={{ display: this.state.showLogo ? 'block' : 'none' }}>
+        <div className="logo-list" style={{ display: showLogo ? 'block' : 'none' }}>
           {Li}
         </div>
       </div>

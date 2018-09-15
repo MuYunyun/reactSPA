@@ -1,4 +1,4 @@
-export const allMenu = [
+const allMenu = [
   {
     name: '首页',
     url: 'index',
@@ -46,3 +46,5 @@ export const allMenu = [
     url: 'follow',
     icon: 'heart-o',
   }]
+
+export default allMenu

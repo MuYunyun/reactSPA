@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, Icon, Switch, Layout } from 'antd'
-import { allMenu } from 'utils/menu'
+import allMenu from 'utils/menu'
 import Top from './header'
 import Contents from './content'
 import Footer from './bottom'
@@ -29,9 +29,10 @@ export default class Container extends React.Component {
   }
 
   toggle = () => {
+    const { collapsed } = this.state
     this.setState({
-      collapsed: !this.state.collapsed,
-      mode: this.state.collapsed ? 'inline' : 'vertical',
+      collapsed: !collapsed,
+      mode: collapsed ? 'inline' : 'vertical',
     })
   }
 
@@ -48,24 +49,25 @@ export default class Container extends React.Component {
   }
 
   render() {
+    const { collapsed, theme, current, mode } = this.state
     return (
       <Layout className="containAll">
         <Sider
           collapsible
-          collapsed={this.state.collapsed}
+          collapsed={collapsed}
           onCollapse={this.onCollapse}
           className="leftMenu"
         >
-          {this.state.theme === 'light' ? <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank' rel='noopener noreferrer'><Icon type="github" className="github" /></a> :
+          {theme === 'light' ? <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank' rel='noopener noreferrer'><Icon type="github" className="github" /></a> :
             <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank' rel='noopener noreferrer'><Icon type="github" className="github white" /></a>}
-          {this.state.theme === 'light' ? <span className="author">牧之</span> : <span className="author white">牧之</span>}
+          {theme === 'light' ? <span className="author">牧之</span> : <span className="author white">牧之</span>}
           <Menu
-            theme={this.state.theme}
+            theme={theme}
             onClick={this.handleClick}
             defaultOpenKeys={['']}
-            selectedKeys={[this.state.current]}
+            selectedKeys={[current]}
             className="menu"
-            mode={this.state.mode}
+            mode={mode}
           >
             {
               allMenu.map((subMenu) => {
@@ -91,7 +93,7 @@ export default class Container extends React.Component {
           </Menu>
           <div className="switch">
             <Switch
-              checked={this.state.theme === 'dark'}
+              checked={theme === 'dark'}
               onChange={this.changeTheme}
               checkedChildren="Dark"
               unCheckedChildren="Light"
@@ -99,7 +101,7 @@ export default class Container extends React.Component {
           </div>
         </Sider>
         <Layout>
-          <Top toggle={this.toggle} collapsed={this.state.collapsed} clear={this.clear} />
+          <Top toggle={this.toggle} collapsed={collapsed} clear={this.clear} />
           <Contents />
           <Footer />
         </Layout>

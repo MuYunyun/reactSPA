@@ -7,13 +7,6 @@ import 'photoswipe/dist/default-skin/default-skin.css'
 import './index.less'
 
 export default class Gallery extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      gallery: null,
-    }
-  }
-
   componentWillUnmount = () => {
     this.closeGallery()
   }

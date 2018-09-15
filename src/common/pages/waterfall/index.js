@@ -1,7 +1,7 @@
 import React from 'react'
 import './waterfall.js'
 import './index.less'
-import { imgUrlList } from './imgUrlList'
+import imgUrlList from './imgUrlList'
 
 let waterfall = null
 
@@ -13,8 +13,8 @@ export default class Waterfall extends React.Component {
         fixWidth: 1000,
         scrollElem: 'content',
       })
-      waterfall.on('load', function () {
-        setTimeout(function () {
+      waterfall.on('load', () => {
+        setTimeout(() => {
           const $waterfall = document.getElementById('waterfall')
           for (let i = 0; i < 20; i++) {
             const img = document.createElement('img')
@@ -27,6 +27,10 @@ export default class Waterfall extends React.Component {
       })
     }
     this.loadImage(imgUrlList, wf)
+  }
+
+  componentWillUnmount() {
+    waterfall = null
   }
 
   // 实现图片预加载
@@ -52,12 +56,6 @@ export default class Waterfall extends React.Component {
       callback()
     }
   }
-
-
-  componentWillUnmount() {
-    waterfall = null
-  }
-
 
   render() {
     return (

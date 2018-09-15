@@ -8,8 +8,8 @@ const FormItem = Form.Item
 const history = createHistory()
 
 class LoginPage extends React.Component {
-  constructor() {
-    super()
+  componentDidMount() {
+    this.openNotificationWithIcon('info')
   }
 
   handleSubmit = (e) => {
@@ -34,12 +34,9 @@ class LoginPage extends React.Component {
     })
   }
 
-  componentDidMount() {
-    this.openNotificationWithIcon('info')
-  }
-
   render() {
-    const { getFieldDecorator } = this.props.form
+    const { form } = this.props
+    const { getFieldDecorator } = form
     return (
       <div className="loginpagewrap">
         <div className="box">
@@ -57,7 +54,7 @@ class LoginPage extends React.Component {
                 {getFieldDecorator('password', {
                   rules: [{ required: true, message: '请输入密码' }],
                 })(
-                  <Input type="password" placeholder="Password：123" />
+                  <Input type="password" placeholder="Password：123" />,
                 )}
               </FormItem>
               <Button type="primary" htmlType="submit" className="loginBtn">Login</Button>
@@ -69,5 +66,5 @@ class LoginPage extends React.Component {
   }
 }
 
-let Login = Form.create()(LoginPage)
+const Login = Form.create()(LoginPage)
 export default Login
