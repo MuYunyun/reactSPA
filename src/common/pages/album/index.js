@@ -17,7 +17,7 @@ export default class Gallery extends React.Component {
         src: item,
         w: 0,
         h: 0,
-      }
+      },
     ]
     const pswpElement = this.pswpElement
     const options = { index: 0 }

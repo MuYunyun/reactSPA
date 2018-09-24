@@ -1,0 +1,27 @@
+.ani-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -140px;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 20px;
+}
+
+.text {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.lastPic {
+  display: block;
+  margin: 10px auto;
+}
+
+.discribe {
+  font-size: 13px;
+  margin-top: 10px;
+}

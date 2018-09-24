@@ -96,19 +96,17 @@ module.exports = {
               // 缓存在 ./node_modules/.cache/babel-loader/，从而能更快地 rebuild，
               cacheDirectory: true, // 可能项目大了以后该属性有影响
               plugins: [
-                "transform-decorators-legacy",
-                ['import', { libraryName: 'antd', style: true }],  // import less
+                'transform-decorators-legacy',
+                ['import', { libraryName: 'antd', style: true }],
               ],
             },
           },
           {
             test: /\.css$/,
             use: [
-              // "style" loader turns CSS into JS modules that inject <style> tags.
-              require.resolve('style-loader'),
+              require.resolve('style-loader'), // 将 js 字符串(样式)插入 style
               {
-                // "css" loader resolves paths in CSS and adds assets as dependencies.
-                loader: require.resolve('css-loader'),
+                loader: require.resolve('css-loader'), // 将 css 转为 common.js
                 options: {
                   importLoaders: 1,
                 },
@@ -138,7 +136,13 @@ module.exports = {
             test: /\.less$/,
             use: [
               require.resolve('style-loader'),
-              require.resolve('css-loader'),
+              {
+                loader: require.resolve('css-loader'),
+                options: {
+                  // modules: true,
+                  importLoaders: 2,
+                },
+              },
               {
                 loader: require.resolve('postcss-loader'),
                 options: {

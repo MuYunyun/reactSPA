@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import { Layout } from 'antd'
-import './content.less'
 import index from 'pages/index'
 import follow from 'pages/follow'
 import Tools from 'pages/tools'
@@ -12,6 +11,7 @@ import Editor from 'pages/editor'
 import TodoList from 'pages/todoList'
 import Search from 'pages/search'
 import Waterfall from 'pages/waterfall'
+import './content.less'
 
 const { Content } = Layout
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import * as screenfull from 'screenfull'
 import './header.less'
 
-const SubMenu = Menu.SubMenu
+const { SubMenu } = Menu
 const { Header } = Layout
 
 export default class Top extends React.Component {
@@ -26,8 +26,9 @@ export default class Top extends React.Component {
   }
 
   clear = (item) => {
+    const { clear } = this.props
     if (item.key === 'logOut') {
-      this.props.clear()
+      clear()
     }
   }
 

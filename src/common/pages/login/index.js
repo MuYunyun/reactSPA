@@ -13,9 +13,11 @@ class LoginPage extends React.Component {
   }
 
   handleSubmit = (e) => {
+    const { form } = this.props
+    const { getFieldsValue } = form
     e.preventDefault()
-    let n = this.props.form.getFieldsValue().username
-    let p = this.props.form.getFieldsValue().password
+    let n = getFieldsValue().username
+    let p = getFieldsValue().password
     if (n === '123' && p === '123') {
       // 表单的路由处理
       history.push('/index')

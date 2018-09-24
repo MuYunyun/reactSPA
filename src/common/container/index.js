@@ -7,7 +7,7 @@ import Contents from './content'
 import Footer from './bottom'
 import './index.less'
 
-const SubMenu = Menu.SubMenu
+const { SubMenu } = Menu
 const { Sider } = Layout
 
 export default class Container extends React.Component {
@@ -49,14 +49,15 @@ export default class Container extends React.Component {
   }
 
   render() {
-    const { collapsed, theme, current, mode } = this.state
+    const {
+      collapsed, theme, current, mode,
+    } = this.state
     return (
       <Layout className="containAll">
         <Sider
           collapsible
           collapsed={collapsed}
           onCollapse={this.onCollapse}
-          className="leftMenu"
         >
           {theme === 'light' ? <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank' rel='noopener noreferrer'><Icon type="github" className="github" /></a> :
             <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank' rel='noopener noreferrer'><Icon type="github" className="github white" /></a>}

@@ -6,7 +6,7 @@ import Login from 'pages/login'
 import createHistory from 'history/createBrowserHistory'
 
 const history = createHistory()
-const location = history.location
+const { location } = history
 
 const routes = (
   <HashRouter>

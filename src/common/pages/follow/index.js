@@ -6,14 +6,8 @@ export default class follow extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      col: '#666'
+      col: '#666',
     }
-  }
-
-  getRandomColor = () => {
-    this.setState({
-      col: rdColor(),
-    })
   }
 
   // 组件渲染后，500毫秒改变一次组件颜色
@@ -26,10 +20,16 @@ export default class follow extends React.Component {
     clearInterval(this.interval)
   }
 
+  getRandomColor = () => {
+    this.setState({
+      col: rdColor(),
+    })
+  }
+
   render() {
     const { col } = this.state
     return (
-      <div className="animated flip ani-box">
+      <div className="animated flip" className=".ani-box">
         <div><a href="https://github.com/MuYunyun/react-antd-demo" className="welcome animated flip text" style={{ color: col }}>项目地址</a></div>
         <img src={require('../../images/face.png')} width="100" alt="logo" className="lastPic" />
         <div className="animated swing discribe">本项目会把平时工作、学习中</div>
