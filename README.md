@@ -1,17 +1,19 @@
 ![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)
-### Target
 
-> React 全家桶的综合运用.该项目会把日常开发中
-遇到的案例抽离成 demo 展现出来，同时会对一些知识点进行实践，最终的目的是产出一套针对中后台开发相对完善的使用方案。
+React 全家桶的综合运用
+
+> 在该项目中会对前端工程化、React 技术栈进行相应的实践，最终的目的是沉淀出一套针对中后台开发相对完善的使用方案。
 
 [效果展示](https://muyunyun.github.io/reactSPA)，建议本地打开。
 
 * 部分模块展示：
 ![](http://files.cnblogs.com/files/MuYunyun/reactSPA.gif)
-* redux 在项目中的运用 demo 展示
+
+* redux 实现一个 todoList:
 ![](http://files.cnblogs.com/files/MuYunyun/todoList.gif)
 
 ### Usage
+
 ```
 本地运行
 yarn install || npm install
@@ -25,6 +27,7 @@ yarn deploy || npm run deploy
 ```
 
 ### Tech Stack
+
 - [x] 打包构建：Babel Webpack(4.x)
 - [x] 热更新
 - [x] 包管理：Yarn || Npm
@@ -37,23 +40,18 @@ yarn deploy || npm run deploy
 - [x] Ajax：Fetch
 - [x] 跨域: 基于 CORS 实现
 - [x] 代码校验: Eslint
-- [ ] ~~测试用例：jest~~
 - [ ] 网关层：[gateway](https://github.com/MuYunyun/gateway)
 
 ### Optimize
 
-开发环境中可使用 [analyze-webpack-plugin](https://github.com/MuYunyun/analyze-webpack-plugin) 观察各模块的占用情况。以该项目为例：浏览器中输入 `http://localhost:3000/analyze.html` 可以看到如下效果:
-
-![](http://oqhtscus0.bkt.clouddn.com/fd9c7bf00d31696ac40b69db65b9cb60.jpg-400)
+[压缩打包实践](https://github.com/MuYunyun/reactSPA/issues/43)
 
 ### Document
 
-结合该项目分析过的文章(技术栈以项目中的为准)
+结合该项目产出的文章
 
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
-
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
-
 * [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)
 
 ### Features
@@ -69,9 +67,9 @@ yarn deploy || npm run deploy
 * 搜索模块
   * 搜索引擎的实现(集合了百度、360、搜狗搜索)
 * 更多模块开发中
-  * 欢迎 issue || pr
 
 ### Project Structure
+
 ```
 ├── build.js                   项目打包后的文件
 ├── config                     webpack配置文件

@@ -1,33 +1,32 @@
-const path = require('path');
-const fs = require('fs');
-const url = require('url');
+const path = require('path')
+const fs = require('fs')
+const url = require('url')
 
 // 确保任何项目的链接已经成功加载
-const appDirectory = fs.realpathSync(process.cwd());
-const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
+const appDirectory = fs.realpathSync(process.cwd())
+const resolveApp = relativePath => path.resolve(appDirectory, relativePath)
 
-const envPublicUrl = process.env.PUBLIC_URL;
+const envPublicUrl = process.env.PUBLIC_URL
 
 function ensureSlash(path, needsSlash) {
-  const hasSlash = path.endsWith('/');
+  const hasSlash = path.endsWith('/')
   if (hasSlash && !needsSlash) {
-    return path.substr(path, path.length - 1);
+    return path.substr(path, path.length - 1)
   } else if (!hasSlash && needsSlash) {
-    return `${path}/`; // reactSPA/
+    return `${path}/` // reactSPA/
   } else {
-    return path;
+    return path
   }
 }
 
 // 使用 PUBLIC_URL 或者 homepage 字段来推断应用程序所在的'公共路径'
-const getPublicUrl = appPackageJson =>
-  envPublicUrl || require(appPackageJson).homepage;
+const getPublicUrl = appPackageJson => envPublicUrl || require(appPackageJson).homepage
 
 function getServedPath(appPackageJson) {
-  const publicUrl = getPublicUrl(appPackageJson);
+  const publicUrl = getPublicUrl(appPackageJson)
   const servedUrl = envPublicUrl ||
-    (publicUrl ? url.parse(publicUrl).pathname : '/'); // 本 demo 中，servedUrl 为 reactSPA
-  return ensureSlash(servedUrl, true);
+    (publicUrl ? url.parse(publicUrl).pathname : '/') // 本 demo 中，servedUrl 为 reactSPA
+  return ensureSlash(servedUrl, true)
 }
 
 module.exports = {
@@ -43,4 +42,4 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')), // 本 demo 中，为 reactSPA/
-};
+}

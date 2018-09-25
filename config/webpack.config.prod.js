@@ -3,11 +3,10 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
-// const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const paths = require('./paths')
 const getClientEnvironment = require('./env')
 
@@ -23,7 +22,7 @@ if (env.stringified['process.env'].NODE_ENV !== '"production"') {
   throw new Error('Production builds must have NODE_ENV=production.')
 }
 
-const cssFilename = 'static/css/[name].[contenthash:8].css'
+// const cssFilename = 'static/css/[name].[contenthash:8].css'
 
 // 优先体积
 module.exports = {
@@ -37,10 +36,9 @@ module.exports = {
     path: paths.appBuild,
     filename: 'static/js/[name].[chunkhash:8].js',
     chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
-    publicPath: publicPath,
+    publicPath,
     // Point sourcemap entries to original disk location
-    devtoolModuleFilenameTemplate: info =>
-      path.relative(paths.appSrc, info.absoluteResourcePath).replace(/\\/g, '/'),
+    devtoolModuleFilenameTemplate: info => path.relative(paths.appSrc, info.absoluteResourcePath).replace(/\\/g, '/'),
   },
   resolve: {
     modules: ['node_modules', paths.appNodeModules].concat(
@@ -48,15 +46,15 @@ module.exports = {
     ),
     extensions: ['.js', '.json', '.jsx'],
     alias: {
-      components: path.resolve(__dirname, '..') + '/src/common/components',
-      container: path.resolve(__dirname, '..') + '/src/common/container',
-      images: path.resolve(__dirname, '..') + '/src/common/images',
-      pages: path.resolve(__dirname, '..') + '/src/common/pages',
-      utils: path.resolve(__dirname, '..') + '/src/common/utils',
-      data: path.resolve(__dirname, '..') + '/src/server/data',
-      actions: path.resolve(__dirname, '..') + '/src/common/actions',
-      reducers: path.resolve(__dirname, '..') + '/src/common/reducers',
-      api: path.resolve(__dirname, '..') + '/src/common/api'
+      components: `${path.resolve(__dirname, '..')}/src/common/components`,
+      container: `${path.resolve(__dirname, '..')}/src/common/container`,
+      images: `${path.resolve(__dirname, '..')}/src/common/images`,
+      pages: `${path.resolve(__dirname, '..')}/src/common/pages`,
+      utils: `${path.resolve(__dirname, '..')}/src/common/utils`,
+      data: `${path.resolve(__dirname, '..')}/src/server/data`,
+      actions: `${path.resolve(__dirname, '..')}/src/common/actions`,
+      reducers: `${path.resolve(__dirname, '..')}/src/common/reducers`,
+      api: `${path.resolve(__dirname, '..')}/src/common/api`,
     },
     plugins: [
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
@@ -199,7 +197,6 @@ module.exports = {
     },
   },
   plugins: [
-    // new InterpolateHtmlPlugin(env.raw),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
@@ -241,7 +238,7 @@ module.exports = {
       },
       minify: true,
       // For unknown URLs, fallback to the index page
-      navigateFallback: publicUrl + '/index.html',
+      navigateFallback: `${publicUrl}/index.html`,
       // Ignores URLs starting from /__ (useful for Firebase):
       // https://github.com/facebookincubator/create-react-app/issues/2237#issuecomment-302693219
       navigateFallbackWhitelist: [/^(?!\/__).*/],
@@ -250,8 +247,8 @@ module.exports = {
     }),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/), // 实验减少了 47.68 kb
     new MiniCssExtractPlugin({
-      filename: "static/css/[name].css",
-      chunkFilename: "static/css/[id].css"
+      filename: 'static/css/[name].css',
+      chunkFilename: 'static/css/[id].css',
     }),
   ],
   node: { // 这个对体积没影响，应该对项目引用有间接影响

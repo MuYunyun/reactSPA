@@ -1,6 +1,6 @@
 {
   "name": "reactSPA",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "combination of react teconology stack",
   "main": "index.js",
   "scripts": {
@@ -89,7 +89,7 @@
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.5",
     "url-loader": "0.5.9",
-    "webpack": "^4.5.0",
+    "webpack": "^4.20.0",
     "webpack-cli": "^2.0.6",
     "webpack-dev-server": "^3.0.0-beta.1",
     "webpack-manifest-plugin": "2.0.0-rc.2",
