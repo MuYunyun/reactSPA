@@ -2,7 +2,7 @@
 
 React 全家桶的综合运用
 
-> 在该项目中会对前端工程化、React 技术栈进行相应的实践，最终的目的是沉淀出一套针对中后台开发相对完善的使用方案。
+> 在该项目中会对前端工程化、React 技术栈进行相关实践。最终的目的是沉淀出一套针对中后台开发相对完善的使用方案。
 
 [效果展示](https://muyunyun.github.io/reactSPA)，建议本地打开。
 
@@ -44,11 +44,12 @@ yarn deploy || npm run deploy
 
 ### Optimize
 
-[压缩打包实践](https://github.com/MuYunyun/reactSPA/issues/43)
+- [ ] [压缩打包实践](https://github.com/MuYunyun/reactSPA/issues/43)
+- [ ] [css 模块化实践](https://github.com/MuYunyun/reactSPA/issues/52)
 
 ### Document
 
-结合该项目产出的文章
+和该项目相关的文章
 
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)

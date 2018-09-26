@@ -4,7 +4,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
-const eslintFormatter = require('react-dev-utils/eslintFormatter')
+// const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const paths = require('./paths')
@@ -17,7 +17,7 @@ const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false'
 const publicUrl = publicPath.slice(0, -1)
 const env = getClientEnvironment(publicUrl)
 
-// 下面代码仅仅出于安全
+// 下面代码出于安全考虑
 if (env.stringified['process.env'].NODE_ENV !== '"production"') {
   throw new Error('Production builds must have NODE_ENV=production.')
 }
@@ -63,21 +63,21 @@ module.exports = {
   module: {
     strictExportPresence: true,
     rules: [
-      {
-        test: /\.(js|jsx)$/,
-        enforce: 'pre',
-        use: [
-          {
-            options: {
-              formatter: eslintFormatter,
-              eslintPath: require.resolve('eslint'),
+      // {
+      //   test: /\.(js|jsx)$/,
+      //   enforce: 'pre',
+      //   use: [
+      //     {
+      //       options: {
+      //         formatter: eslintFormatter,
+      //         eslintPath: require.resolve('eslint'),
 
-            },
-            loader: require.resolve('eslint-loader'),
-          },
-        ],
-        include: paths.appSrc,
-      },
+      //       },
+      //       loader: require.resolve('eslint-loader'),
+      //     },
+      //   ],
+      //   include: paths.appSrc,
+      // },
       {
         oneOf: [
           {
@@ -180,19 +180,30 @@ module.exports = {
     runtimeChunk: false,
     splitChunks: {
       cacheGroups: {
-        commons: {
-          chunks: 'initial',
-          minChunks: 2,
-          maxInitialRequests: 5, // The default limit is too small to showcase the effect
-          minSize: 0 // This is example is too small to create commons chunks
-        },
-        vendor: {// 基础类库
-          chunks: 'initial',
-          test: /[\\/]node_modules[\\/]/,
-          name: "vendor",
+        // commons: { // 应该配合多 entry 一起使用
+        //   chunks: 'all',
+        //   minChunks: 2, // 在传入公共chunk(commons chunk) 之前所需要包含的最少数量的 chunks
+        //   maxAsyncRequests: 5,
+        //   maxInitialRequests: 5, // The default limit is too small to showcase the effect
+        //   minSize: 0, // This is example is too small to create commons chunks
+        // },
+        vendor1: {
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/](react|react-dom|antd)[\\/]/,
+          name: 'vendor1',
+          maxAsyncRequests: 5,
           priority: 10,
-          enforce: true
-        }
+          enforce: true,
+        },
+        vendor2: {
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor2',
+          maxAsyncRequests: 5,
+          priority: 9,
+          enforce: true,
+          reuseExistingChunk: true,
+        },
       },
     },
   },
