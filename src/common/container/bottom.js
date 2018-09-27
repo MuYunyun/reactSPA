@@ -30,7 +30,7 @@ export default class Bottom extends React.Component {
   render() {
     const { timer } = this.state
     return (
-      <Footer className="bottom" className="animated bounceInLeft">
+      <Footer className="bottom animated bounceInLeft">
         <div className="text">
           <div>
             <span>© 2017 牧云云</span>

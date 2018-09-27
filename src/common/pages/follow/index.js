@@ -2,7 +2,7 @@ import React from 'react'
 import { rdColor } from 'diana'
 import './index.less'
 
-export default class follow extends React.Component {
+export default class Follow extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -29,11 +29,12 @@ export default class follow extends React.Component {
   render() {
     const { col } = this.state
     return (
-      <div className="animated flip" className=".ani-box">
+      <div className="animated flip ani-box">
         <div><a href="https://github.com/MuYunyun/react-antd-demo" className="welcome animated flip text" style={{ color: col }}>项目地址</a></div>
         <img src={require('../../images/face.png')} width="100" alt="logo" className="lastPic" />
         <div className="animated swing discribe">本项目会把平时工作、学习中</div>
-        <div className="animated swing discribe">遇到的事例抽象成demo给展现出来。欢迎 <a href="https://github.com/MuYunyun/react-antd-demo">Star</a></div>
+        <div className="animated swing discribe">
+          遇到的事例抽象成 demo 给展现出来。欢迎 <a href="https://github.com/MuYunyun/reactSPA">Star</a></div>
       </div>
     )
   }

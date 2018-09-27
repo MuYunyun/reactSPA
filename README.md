@@ -1,15 +1,17 @@
 ![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)
 
-React 全家桶的综合运用
+React 全家桶的综合实践
 
-> 在该项目中会对前端工程化、React 技术栈进行相关实践。最终的目的是沉淀出一套针对中后台开发相对完善的使用方案。
+> 在该项目中对前端工程化、React 相关技术栈进行实践。最终的目的是沉淀出一套针对中后台开发相对完善的使用方案。
 
 [效果展示](https://muyunyun.github.io/reactSPA)，建议本地打开。
 
 * 部分模块展示：
+
 ![](http://files.cnblogs.com/files/MuYunyun/reactSPA.gif)
 
 * redux 实现一个 todoList:
+
 ![](http://files.cnblogs.com/files/MuYunyun/todoList.gif)
 
 ### Usage
@@ -28,34 +30,35 @@ yarn deploy || npm run deploy
 
 ### Tech Stack
 
-- [x] 打包构建：Babel Webpack(4.x)
-- [x] 热更新
-- [x] 包管理：Yarn || Npm
-- [x] UI库：React & React-Dom(16.4.0)
-- [x] UI组件：Antd(3.x)
-- [x] 路由：react-router(4.x)、react-router-redux
-- [x] JS：ES6、ES7
-- [x] 样式：less
-- [x] 状态管理：redux
-- [x] Ajax：Fetch
+- [x] 打包构建: Babel Webpack(4.x)
+- [x] 热更新: webpack-server 赋能
+- [x] 包管理: Yarn || Npm
+- [x] UI 库: React & React-Dom(16.4.0)
+- [x] UI 组件: Antd(3.x)
+- [x] 路由: react-router(4.x)、react-router-redux
+- [x] JS: ES6、ES7
+- [x] 样式: less
+- [x] 状态管理: redux
+- [x] Ajax: Fetch
 - [x] 跨域: 基于 CORS 实现
-- [x] 代码校验: Eslint
-- [ ] 网关层：[gateway](https://github.com/MuYunyun/gateway)
+- [x] 代码校验: Eslint(Airbnb)
+- [ ] [css 模块化](https://github.com/MuYunyun/reactSPA/issues/52)
+- [ ] [网关](https://github.com/MuYunyun/gateway): 一个 IOC 的简单 demo，有时间填坑
 
 ### Optimize
 
-- [ ] [压缩打包实践](https://github.com/MuYunyun/reactSPA/issues/53)
-- [ ] [css 模块化实践](https://github.com/MuYunyun/reactSPA/issues/52)
+* [压缩打包优化](https://github.com/MuYunyun/reactSPA/issues/53)
 
 ### Document
 
-和该项目相关的文章
+提到过该项目的文章(有些点可能过时)，有时间迭代下。
 
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
 * [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)
 
 ### Features
+
 * 音乐模块
   * 抽离了 Ajax 模块，可完成相应的跨域需求
   * redux 流实现数据的获取

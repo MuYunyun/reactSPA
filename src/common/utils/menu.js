@@ -1,7 +1,7 @@
 const allMenu = [
   {
     name: '首页',
-    url: 'index',
+    url: 'home',
     icon: 'home',
   }, {
     name: '音乐模块',

@@ -1,35 +1,76 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import { Layout } from 'antd'
-import index from 'pages/index'
-import follow from 'pages/follow'
-import Tools from 'pages/tools'
-import Music from 'pages/music'
-import Todo from 'pages/todo'
-import Album from 'pages/album'
-import Editor from 'pages/editor'
-import TodoList from 'pages/todoList'
-import Search from 'pages/search'
-import Waterfall from 'pages/waterfall'
+import Loadable from 'react-loadable'
 import './content.less'
 
 const { Content } = Layout
 
-export default class Contents extends React.Component {
-  render() {
-    return (
-      <Content className="content" id="content">
-        <Route path="/index" component={index} />
-        <Route path="/follow" component={follow} />
-        <Route path="/tools" component={Tools} />
-        <Route path="/music" component={Music} />
-        <Route path="/todo" component={Todo} />
-        <Route path="/album" component={Album} />
-        <Route path="/editor" component={Editor} />
-        <Route path="/todoList" component={TodoList} />
-        <Route path="/searchEngine" component={Search} />
-        <Route path="/waterfall" component={Waterfall} />
-      </Content>
-    )
-  }
-}
+const Loading = () => <div>Loading...</div>
+
+const Home = Loadable({
+  loader: () => import('../pages/home'),
+  loading: Loading,
+})
+
+const Follow = Loadable({
+  loader: () => import('../pages/follow'),
+  loading: Loading,
+})
+
+const Tools = Loadable({
+  loader: () => import('../pages/tools'),
+  loading: Loading,
+})
+
+const Music = Loadable({
+  loader: () => import('../pages/music'),
+  loading: Loading,
+})
+
+const Todo = Loadable({
+  loader: () => import('../pages/todo'),
+  loading: Loading,
+})
+
+const Album = Loadable({
+  loader: () => import('../pages/album'),
+  loading: Loading,
+})
+
+const Editor = Loadable({
+  loader: () => import('../pages/editor'),
+  loading: Loading,
+})
+
+const TodoList = Loadable({
+  loader: () => import('../pages/todoList'),
+  loading: Loading,
+})
+
+const Search = Loadable({
+  loader: () => import('../pages/search'),
+  loading: Loading,
+})
+
+const Waterfall = Loadable({
+  loader: () => import('../pages/waterfall'),
+  loading: Loading,
+})
+
+const Contents = () => (
+  <Content className="content" id="content">
+    <Route path="/home" component={Home} />
+    <Route path="/follow" component={Follow} />
+    <Route path="/tools" component={Tools} />
+    <Route path="/music" component={Music} />
+    <Route path="/todo" component={Todo} />
+    <Route path="/album" component={Album} />
+    <Route path="/editor" component={Editor} />
+    <Route path="/todoList" component={TodoList} />
+    <Route path="/searchEngine" component={Search} />
+    <Route path="/waterfall" component={Waterfall} />
+  </Content>
+)
+
+export default Contents

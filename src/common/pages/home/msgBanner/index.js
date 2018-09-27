@@ -1,23 +1,21 @@
 import React from 'react'
-import { Row, Col, Card, Icon } from 'antd'
+import {
+  Col, Card, Icon,
+} from 'antd'
 import b1 from 'images/minren.jpg'
 import b2 from 'images/zuozu.jpg'
 import b3 from 'images/xiaoying.jpg'
 import b4 from 'images/chutian.jpg'
-import EchartsViews from './EchartsViews'
-import './index.less'
-import LeftTop from './leftTop'
 
-const Index = () => (
-  <Row gutter={16}>
-    <LeftTop />
+const MsgBanner = () => (
+  <div>
     <Col span={8}>
       <div className="cloud-box">
         <Card>
           <div className="pb-m">
             <h3>消息栏</h3>
           </div>
-          <a className="card-tool"><Icon type="sync" /></a>
+          <span className="card-tool"><Icon type="sync" /></span>
           <ul className="list-group no-border">
             <li className="list-group-item">
               <a className="pull-left w-40 mr-m">
@@ -59,19 +57,6 @@ const Index = () => (
         </Card>
       </div>
     </Col>
-    <Col span={8}>
-      <div className="cloud-box">
-        <Card>
-          <div className="pb-m">
-            <h3>访问量统计</h3>
-            <small>最近7天用户访问量</small>
-          </div>
-          <a className="card-tool"><Icon type="sync" /></a>
-          <EchartsViews />
-        </Card>
-      </div>
-    </Col>
-  </Row>
-)
+  </div>)
 
-export default Index
+export default MsgBanner

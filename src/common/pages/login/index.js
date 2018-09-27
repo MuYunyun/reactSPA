@@ -1,5 +1,7 @@
 import React from 'react'
-import { Form, Input, Button, notification, Icon } from 'antd'
+import {
+  Form, Input, Button, notification, Icon,
+} from 'antd'
 import createHistory from 'history/createHashHistory'
 
 import './index.less'
@@ -20,7 +22,7 @@ class LoginPage extends React.Component {
     let p = getFieldsValue().password
     if (n === '123' && p === '123') {
       // 表单的路由处理
-      history.push('/index')
+      history.push('/home')
     } else {
       this.openNotificationWithIcon('info')
     }
