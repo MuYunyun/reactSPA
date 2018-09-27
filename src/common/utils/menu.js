@@ -9,7 +9,7 @@ const allMenu = [
     icon: 'bars',
     children: [
       { name: '音乐系列', url: 'music' },
-    ]
+    ],
   }, {
     name: '工具模块',
     url: 'tool',

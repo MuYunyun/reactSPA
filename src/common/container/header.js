@@ -21,15 +21,8 @@ export default class Top extends React.Component {
 
   getUser = () => {
     this.setState({
-      username: 'Muyy'
+      username: 'Muyy',
     })
-  }
-
-  clear = (item) => {
-    const { clear } = this.props
-    if (item.key === 'logOut') {
-      clear()
-    }
   }
 
   screenFull = () => {
@@ -45,7 +38,7 @@ export default class Top extends React.Component {
           type={this.props.collapsed ? 'menu-unfold' : 'menu-fold'}
           onClick={this.props.toggle}
         />
-        <Menu mode="horizontal" className="logOut" onClick={this.clear}>
+        <Menu mode="horizontal" className="logOut">
           <SubMenu title={<span><Icon type="user" />{this.state.username}</span>} >
             <Menu.Item key="logOut"><Link to="/login" >退出</Link></Menu.Item>
           </SubMenu>

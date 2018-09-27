@@ -28,7 +28,8 @@ function catchError(error) {
 }
 
 function checkStatus(response) {
-  if ((response.status >= 100 && response.status < 300) || response.status === 500 || response.json) {
+  if ((response.status >= 100 && response.status < 300)
+    || response.status === 500 || response.json) {
     return response
   }
   const error = new Error(response.statusText)

@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, Icon, Switch, Layout } from 'antd'
-import allMenu from 'utils/menu'
+import {
+  Menu, Icon, Switch, Layout,
+} from 'antd'
+import { connect } from 'react-redux'
+import allMenu from '../utils/menu'
 import Top from './header'
 import Contents from './content'
 import Footer from './bottom'
@@ -10,16 +13,16 @@ import './index.less'
 const { SubMenu } = Menu
 const { Sider } = Layout
 
+@connect(
+  (state) => ({
+    router: state.router,
+  })
+)
 export default class Container extends React.Component {
   state = {
     theme: 'dark',
-    current: 'index',
     collapsed: false,
-    mode: 'inline', // 水平垂直展现
-  }
-
-  componentDidMount() {
-    this.handleClick([], 'index')
+    mode: 'inline',
   }
 
   changeTheme = (value) => {
@@ -36,22 +39,23 @@ export default class Container extends React.Component {
     })
   }
 
-  clear = () => {
-    this.setState({
-      current: 'index',
-    })
-  }
-
-  handleClick = (e, special) => {
-    this.setState({
-      current: e.key || special,
-    })
-  }
-
   render() {
     const {
-      collapsed, theme, current, mode,
+      collapsed, theme, mode,
     } = this.state
+    const { router } = this.props
+    const selectedKey = router.location.pathname.split('/')[1]
+    let openKey = ''
+    for (let menuObj of allMenu) {
+      if (menuObj.children) {
+        for (let menuList of menuObj.children) {
+          if (menuList.url === selectedKey) {
+            openKey = menuObj.url
+            break
+          }
+        }
+      }
+    }
     return (
       <Layout className="containAll">
         <Sider
@@ -64,9 +68,8 @@ export default class Container extends React.Component {
           {theme === 'light' ? <span className="author">牧之</span> : <span className="author white">牧之</span>}
           <Menu
             theme={theme}
-            onClick={this.handleClick}
-            defaultOpenKeys={['']}
-            selectedKeys={[current]}
+            defaultOpenKeys={[openKey]}
+            selectedKeys={[selectedKey]}
             className="menu"
             mode={mode}
           >
@@ -102,7 +105,7 @@ export default class Container extends React.Component {
           </div>
         </Sider>
         <Layout>
-          <Top toggle={this.toggle} collapsed={collapsed} clear={this.clear} />
+          <Top toggle={this.toggle} collapsed={collapsed} />
           <Contents />
           <Footer />
         </Layout>

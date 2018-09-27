@@ -44,7 +44,7 @@ yarn deploy || npm run deploy
 
 ### Optimize
 
-- [ ] [压缩打包实践](https://github.com/MuYunyun/reactSPA/issues/43)
+- [ ] [压缩打包实践](https://github.com/MuYunyun/reactSPA/issues/53)
 - [ ] [css 模块化实践](https://github.com/MuYunyun/reactSPA/issues/52)
 
 ### Document

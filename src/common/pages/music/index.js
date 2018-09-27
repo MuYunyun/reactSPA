@@ -10,13 +10,13 @@ import { fetchMusicList } from 'actions/music'
 import { connect } from 'react-redux'
 import './index.less'
 
-const confirm = Modal.confirm
+const {confirm} = Modal
+
 @connect(
   (state) => ({
     musicList: state.musicList,
   })
 )
-
 export default class Music extends React.Component {
   constructor(props) {
     super(props)
