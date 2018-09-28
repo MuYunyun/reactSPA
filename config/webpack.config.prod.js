@@ -31,7 +31,11 @@ module.exports = {
   bail: true,
   devtool: shouldUseSourceMap ? 'source-map' : false,
   // 区分于生产环境，开发环境只要 polyfill 和文件路口
-  entry: [require.resolve('./polyfills'), paths.appIndexJs],
+  // entry: [require.resolve('./polyfills'), paths.appIndexJs],
+  entry: {
+    polyfill: require.resolve('./polyfills'),
+    IndexJs: paths.appIndexJs,
+  },
   output: {
     path: paths.appBuild,
     filename: 'static/js/[name].[chunkhash:8].js',
@@ -176,37 +180,27 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    runtimeChunk: false,
-    splitChunks: {
-      cacheGroups: {
-        // commons: { // 应该配合多 entry 一起使用
-        //   chunks: 'all',
-        //   minChunks: 2, // 在传入公共chunk(commons chunk) 之前所需要包含的最少数量的 chunks
-        //   maxAsyncRequests: 5,
-        //   maxInitialRequests: 5, // The default limit is too small to showcase the effect
-        //   minSize: 0, // This is example is too small to create commons chunks
-        // },
-        vendor1: {
-          chunks: 'all',
-          test: /[\\/]node_modules[\\/](react|react-dom|antd)[\\/]/,
-          name: 'vendor1',
-          maxAsyncRequests: 5,
-          priority: 10,
-          enforce: true,
-        },
-        vendor2: {
-          chunks: 'all',
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor2',
-          maxAsyncRequests: 5,
-          priority: 9,
-          enforce: true,
-          reuseExistingChunk: true,
-        },
-      },
-    },
-  },
+  // optimization: {
+  //   cacheGroups: {
+  //     vendor1: {
+  //       chunks: 'all',
+  //       test: /[\\/]node_modules[\\/](react|react-dom|antd)[\\/]/,
+  //       name: 'vendor1',
+  //       maxAsyncRequests: 5,
+  //       priority: 10,
+  //       enforce: true,
+  //     },
+  //     vendor2: {
+  //       chunks: 'all',
+  //       test: /[\\/]node_modules[\\/]/,
+  //       name: 'vendor2',
+  //       maxAsyncRequests: 5,
+  //       priority: 9,
+  //       enforce: true,
+  //       reuseExistingChunk: true,
+  //     },
+  //   },
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,

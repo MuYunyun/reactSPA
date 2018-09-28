@@ -51,7 +51,7 @@ yarn deploy || npm run deploy
 
 ### Document
 
-提到过该项目的文章(有些点可能过时)，有时间迭代下。
+提到过该项目的文章，未来会迭代。
 
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
