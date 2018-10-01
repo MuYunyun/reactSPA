@@ -12,12 +12,13 @@ const history = createHistory()
 
 const store = configureStore()
 
+/* eslint-disable */
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <div>
         { routes }
-        {process.env.NODE_ENV === 'development' ? <DevTools /> : ''}
+        {ENABLE_DEVTOOLS ? <DevTools /> : ''}
       </div>
     </ConnectedRouter>
   </Provider>,

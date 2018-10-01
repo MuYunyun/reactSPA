@@ -33,7 +33,7 @@ yarn deploy || npm run deploy
 - [x] 打包构建: Babel Webpack(4.x)
 - [x] 热更新: webpack-server 赋能
 - [x] 包管理: Yarn || Npm
-- [x] UI 库: React & React-Dom(16.4.0)
+- [x] UI 库: React & React-Dom(16.5.x)
 - [x] UI 组件: Antd(3.x)
 - [x] 路由: react-router(4.x)、react-router-redux
 - [x] JS: ES6、ES7
@@ -42,16 +42,14 @@ yarn deploy || npm run deploy
 - [x] Ajax: Fetch
 - [x] 跨域: 基于 CORS 实现
 - [x] 代码校验: Eslint(Airbnb)
-- [ ] [css 模块化](https://github.com/MuYunyun/reactSPA/issues/52)
-- [ ] [网关](https://github.com/MuYunyun/gateway): 一个 IOC 的简单 demo，有时间填坑
+- [ ] [网关](https://github.com/MuYunyun/gateway): ioc 模式，有时间填坑
 
 ### Optimize
 
 * [压缩打包优化](https://github.com/MuYunyun/reactSPA/issues/53)
+* [css 模块化](https://github.com/MuYunyun/reactSPA/issues/52)
 
-### Document
-
-提到过该项目的文章，未来会迭代。
+### Articles
 
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)

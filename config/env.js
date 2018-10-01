@@ -13,7 +13,7 @@ if (!NODE_ENV) {
 }
 
 // https://github.com/bkeepers/dotenv#what-other-env-files-can-i-use
-var dotenvFiles = [
+const dotenvFiles = [
   `${paths.dotenv}.${NODE_ENV}.local`,
   `${paths.dotenv}.${NODE_ENV}`,
   // Don't include `.env.local` for `test` environment
@@ -51,32 +51,19 @@ process.env.NODE_PATH = (process.env.NODE_PATH || '')
   .map(folder => path.resolve(appDirectory, folder))
   .join(path.delimiter)
 
-// Grab NODE_ENV and REACT_APP_* environment variables and prepare them to be
-// injected into the application via DefinePlugin in Webpack configuration.
-const REACT_APP = /^REACT_APP_/i
-
 // 获取客户端环境
-function getClientEnvironment(publicUrl) {
-  const raw = Object.keys(process.env)
-    .filter(key => REACT_APP.test(key))
-    .reduce(
-      (env, key) => {
-        env[key] = process.env[key]
-        return env
-      },
-      {
-        NODE_ENV: process.env.NODE_ENV || 'development',
-        PUBLIC_URL: publicUrl,
-      }
-    )
-  // Stringify all values so we can feed into Webpack DefinePlugin
+function getClientEnvironment() {
+  const raw = {
+    NODE_ENV: process.env.NODE_ENV || 'development',
+    // PUBLIC_URL: publicUrl,
+  }
+
   const stringified = {
     'process.env': Object.keys(raw).reduce((env, key) => {
       env[key] = JSON.stringify(raw[key])
       return env
     }, {}),
   }
-
   return { raw, stringified }
 }
 

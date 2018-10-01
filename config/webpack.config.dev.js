@@ -3,11 +3,9 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
-// const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin')
-// const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
-const getClientEnvironment = require('./env')
 const AnalyzeWebpackPlugin = require('analyze-webpack-plugin').default
+const getClientEnvironment = require('./env')
 const paths = require('./paths')
 
 const publicPath = '/'
@@ -60,22 +58,6 @@ module.exports = {
   module: { // https://doc.webpack-china.org/configuration/module/
     strictExportPresence: true,
     rules: [
-      // 在 babel 解析前进行 eslint 校验
-      // {
-      //   test: /\.(js|jsx)$/,
-      //   enforce: 'pre',
-      //   use: [
-      //     {
-      //       options: {
-      //         formatter: eslintFormatter,
-      //         eslintPath: require.resolve('eslint'),
-
-      //       },
-      //       loader: require.resolve('eslint-loader'),
-      //     },
-      //   ],
-      //   include: paths.appSrc,
-      // },
       {
         // 使用第一个规则匹配
         oneOf: [
@@ -189,13 +171,13 @@ module.exports = {
     // 当开启 HMR 的时候使用该插件会显示模块的相对路径，建议用于开发环境。作用没理解~
     // new webpack.NamedModulesPlugin(),
     // 区别开发模式和发布模式的全局变量
-    new webpack.DefinePlugin(env.stringified),
+    new webpack.DefinePlugin(Object.assign({}, env.stringified, {
+      ENABLE_DEVTOOLS: true,
+    })),
     // This is necessary to emit hot updates (currently CSS only):
     new webpack.HotModuleReplacementPlugin(),
     // 防止大小写错误
     new CaseSensitivePathsPlugin(),
-    // 在 npm install 新的依赖后自动刷新
-    // new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     // 优化 moment.js 库的体积，https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new AnalyzeWebpackPlugin(), // 输入 http://localhost:3000/analyze.html 查看相应信息，从而进行优化

@@ -9,11 +9,15 @@ import './index.less'
 
 const Index = () => (
   <Row gutter={16}>
-    <LeftTop />
-    <ProFinish />
-    <BuildSiteLog />
-    <MsgBanner />
-    <AccessNum />
+    <div style={{ overflow: 'hidden' }}>
+      <LeftTop />
+      <ProFinish />
+    </div>
+    <div>
+      <BuildSiteLog />
+      <MsgBanner />
+      <AccessNum />
+    </div>
   </Row>
 )
 

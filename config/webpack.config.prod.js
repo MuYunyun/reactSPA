@@ -4,7 +4,6 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
-// const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const paths = require('./paths')
@@ -21,9 +20,6 @@ const env = getClientEnvironment(publicUrl)
 if (env.stringified['process.env'].NODE_ENV !== '"production"') {
   throw new Error('Production builds must have NODE_ENV=production.')
 }
-
-// const cssFilename = 'static/css/[name].[contenthash:8].css'
-
 // 优先体积
 module.exports = {
   mode: 'production',
@@ -67,21 +63,6 @@ module.exports = {
   module: {
     strictExportPresence: true,
     rules: [
-      // {
-      //   test: /\.(js|jsx)$/,
-      //   enforce: 'pre',
-      //   use: [
-      //     {
-      //       options: {
-      //         formatter: eslintFormatter,
-      //         eslintPath: require.resolve('eslint'),
-
-      //       },
-      //       loader: require.resolve('eslint-loader'),
-      //     },
-      //   ],
-      //   include: paths.appSrc,
-      // },
       {
         oneOf: [
           {
@@ -180,27 +161,6 @@ module.exports = {
       },
     ],
   },
-  // optimization: {
-  //   cacheGroups: {
-  //     vendor1: {
-  //       chunks: 'all',
-  //       test: /[\\/]node_modules[\\/](react|react-dom|antd)[\\/]/,
-  //       name: 'vendor1',
-  //       maxAsyncRequests: 5,
-  //       priority: 10,
-  //       enforce: true,
-  //     },
-  //     vendor2: {
-  //       chunks: 'all',
-  //       test: /[\\/]node_modules[\\/]/,
-  //       name: 'vendor2',
-  //       maxAsyncRequests: 5,
-  //       priority: 9,
-  //       enforce: true,
-  //       reuseExistingChunk: true,
-  //     },
-  //   },
-  // },
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
@@ -218,7 +178,9 @@ module.exports = {
         minifyURLs: true,
       },
     }),
-    new webpack.DefinePlugin(env.stringified),
+    new webpack.DefinePlugin(Object.assign({}, env.stringified, {
+      ENABLE_DEVTOOLS: false,
+    })),
     // Generate a manifest file which contains a mapping of all asset filenames
     // to their corresponding output file so that tools can pick it up without
     // having to parse `index.html`.
@@ -239,7 +201,6 @@ module.exports = {
         if (message.indexOf('Skipping static resource') === 0) {
           return
         }
-        console.log(message)
       },
       minify: true,
       // For unknown URLs, fallback to the index page

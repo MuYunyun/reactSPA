@@ -5,14 +5,12 @@ import {
 import EchartsProjects from './EchartsProjects'
 
 const ProFinish = () => (
-  <div>
-    <Col span={16}>
-      <div className="cloud-box">
-        <Card className="no-padding">
-          <EchartsProjects />
-        </Card>
-      </div>
-    </Col>
-  </div>)
+  <Col span={16}>
+    <div className="cloud-box">
+      <Card className="no-padding">
+        <EchartsProjects />
+      </Card>
+    </div>
+  </Col>)
 
 export default ProFinish
