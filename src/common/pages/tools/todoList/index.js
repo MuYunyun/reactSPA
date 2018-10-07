@@ -12,7 +12,6 @@ let nextTodoId = 0
     setVisibility: state.setVisibility,
   })
 )
-
 export default class todoList extends React.Component {
   submit = (e) => {
     e.preventDefault()

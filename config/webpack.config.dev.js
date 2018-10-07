@@ -21,7 +21,6 @@ module.exports = {
     `${require.resolve('webpack-dev-server/client')}?/`,
     require.resolve('webpack/hot/dev-server'),
     // require.resolve('react-dev-utils/webpackHotDevClient'), // 这句和上面两句写法二选一
-    require.resolve('./polyfills'),
     require.resolve('react-error-overlay'), // 开发报错，将导致启动不了
     paths.appIndexJs,
   ],

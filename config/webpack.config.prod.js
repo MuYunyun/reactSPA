@@ -26,10 +26,7 @@ module.exports = {
   // 当 webpack 遇到第一个错，标红抛出并中断运行
   bail: true,
   devtool: shouldUseSourceMap ? 'source-map' : false,
-  // 区分于生产环境，开发环境只要 polyfill 和文件路口
-  // entry: [require.resolve('./polyfills'), paths.appIndexJs],
   entry: {
-    polyfill: require.resolve('./polyfills'),
     IndexJs: paths.appIndexJs,
   },
   output: {

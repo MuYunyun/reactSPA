@@ -30,26 +30,28 @@ yarn deploy || npm run deploy
 
 ### Tech Stack
 
-- [x] 打包构建: Babel Webpack(4.x)
-- [x] 热更新: webpack-server 赋能
-- [x] 包管理: Yarn || Npm
+- [x] 编译打包: Babel Webpack(4.x)
+- [x] 热更新: webpack-dev-server
 - [x] UI 库: React & React-Dom(16.5.x)
 - [x] UI 组件: Antd(3.x)
 - [x] 路由: react-router(4.x)、react-router-redux
+- [x] 状态管理: redux
 - [x] JS: ES6、ES7
 - [x] 样式: less
-- [x] 状态管理: redux
 - [x] Ajax: Fetch
-- [x] 跨域: 基于 CORS 实现
-- [x] 代码校验: Eslint(Airbnb)
+- [x] 跨域: CORS
+- [x] 代码校验: Eslint(Airbnb 规范)
+- [ ] Mock 数据
 - [ ] [网关](https://github.com/MuYunyun/gateway): ioc 模式，有时间填坑
 
-### Optimize
+### Articles
+
+实践相关:
 
 * [压缩打包优化](https://github.com/MuYunyun/reactSPA/issues/53)
 * [css 模块化](https://github.com/MuYunyun/reactSPA/issues/52)
 
-### Articles
+其它：
 
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
@@ -98,7 +100,7 @@ yarn deploy || npm run deploy
 │   │   ├── pages              页面模块
 │   │   ├── reducers           redux中的reducer
 │   │   ├── utils              工具类
-│   │   │   ├── index.js       通用工具
+│   │   │   ├── index.js
 │   │   │   ├── config.js      通用配置
 │   │   │   ├── menu.js        菜单配置
 │   │   │   └── ajax.js        ajax模块

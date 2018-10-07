@@ -35,10 +35,11 @@ const allMenu = [
       { name: '搜索引擎', url: 'searchEngine' },
     ],
   }, {
-    name: '开发模块',
+    name: 'mock联调',
     url: 'dev',
     icon: 'apple-o',
     children: [
+      { name: 'mock', url: 'mock' },
       { name: '更多模块开发中', url: 'todo' },
     ],
   }, {

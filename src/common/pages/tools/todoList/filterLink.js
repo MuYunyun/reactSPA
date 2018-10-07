@@ -10,20 +10,15 @@ import './index.less'
 )
 
 export default class FilterLink extends React.Component {
-  constructor() {
-    super()
-  }
-
   onClick = () => {
     this.props.dispatch(setVisibility({ filter: this.props.filter }))
   }
 
   render() {
     const { name, filter, setVisibility } = this.props
-    const active = setVisibility.filter === filter
     return (
       <div className="todo-tab_item">
-        <a style={{ color: active ? '#f01414' : '#4d555d' }} onClick={this.onClick}>{name}</a>
+        <a style={{ color: setVisibility.filter === filter ? '#f01414' : '#4d555d' }} onClick={this.onClick}>{name}</a>
       </div>
     )
   }

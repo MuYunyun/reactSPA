@@ -19,7 +19,7 @@ const Follow = Loadable({
 })
 
 const Tools = Loadable({
-  loader: () => import('../pages/tools'),
+  loader: () => import('../pages/tools/smallTools'),
   loading: Loading,
 })
 
@@ -29,22 +29,22 @@ const Music = Loadable({
 })
 
 const Todo = Loadable({
-  loader: () => import('../pages/todo'),
+  loader: () => import('../pages/mock/todo'),
   loading: Loading,
 })
 
 const Album = Loadable({
-  loader: () => import('../pages/album'),
+  loader: () => import('../pages/gallary/album'),
   loading: Loading,
 })
 
 const Editor = Loadable({
-  loader: () => import('../pages/editor'),
+  loader: () => import('../pages/tools/editor'),
   loading: Loading,
 })
 
 const TodoList = Loadable({
-  loader: () => import('../pages/todoList'),
+  loader: () => import('../pages/tools/todoList'),
   loading: Loading,
 })
 
@@ -54,7 +54,12 @@ const Search = Loadable({
 })
 
 const Waterfall = Loadable({
-  loader: () => import('../pages/waterfall'),
+  loader: () => import('../pages/gallary/waterfall'),
+  loading: Loading,
+})
+
+const Mock = Loadable({
+  loader: () => import('../pages/mock/useMock'),
   loading: Loading,
 })
 
@@ -70,6 +75,7 @@ const Contents = () => (
     <Route path="/todoList" component={TodoList} />
     <Route path="/searchEngine" component={Search} />
     <Route path="/waterfall" component={Waterfall} />
+    <Route path="/mock" component={Mock} />
   </Content>
 )
 

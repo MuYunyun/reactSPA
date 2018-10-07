@@ -78,10 +78,8 @@
     "http-proxy-middleware": "0.17.3",
     "jest": "20.0.4",
     "json-loader": "0.5.4",
-    "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.6",
-    "promise": "8.0.1",
     "react-dev-utils": "^5.0.0",
     "react-error-overlay": "^1.0.10",
     "redux-devtools": "^3.4.1",
@@ -93,7 +91,12 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^2.0.6",
     "webpack-dev-server": "^3.0.0-beta.1",
-    "webpack-manifest-plugin": "2.0.0-rc.2",
-    "whatwg-fetch": "^2.0.3"
+    "webpack-manifest-plugin": "2.0.0-rc.2"
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:5000/application",
+      "secure": false
+    }
   }
 }

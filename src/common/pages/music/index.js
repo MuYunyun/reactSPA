@@ -1,7 +1,6 @@
 import React from 'react'
 import SearchBar from 'components/searchbar'
 import Table from 'components/table'
-import 'whatwg-fetch'
 import moment from 'moment'
 import { Button, message, Modal } from 'antd'
 import { FormModal } from 'components/modalForm'
@@ -60,7 +59,7 @@ export default class Music extends React.Component {
       onChange: (value) => this.fetchTableData(value),
       items: () => musicKindList.map(ele => ({
         value: ele.value,
-        mean: ele.mean
+        mean: ele.mean,
       })),
     }, {
       title: '发行国家',
@@ -69,7 +68,7 @@ export default class Music extends React.Component {
       defaultValue: '全部',
       items: () => publishCountry.map(ele => ({
         value: ele.value,
-        mean: ele.mean
+        mean: ele.mean,
       })),
     }, {
       title: '歌曲语种',
@@ -78,7 +77,7 @@ export default class Music extends React.Component {
       defaultValue: '全部',
       items: () => languageKindList.map(ele => ({
         value: ele.value,
-        mean: ele.mean
+        mean: ele.mean,
       })),
     }, {
       title: '发行时间段',

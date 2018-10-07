@@ -16,8 +16,8 @@ module.exports = (proxy, allowedHost) => {
     // environment or subdomains in development significantly more complicated:
     // https://github.com/facebookincubator/create-react-app/issues/2271
     // https://github.com/facebookincubator/create-react-app/issues/2233
-    disableHostCheck: !proxy ||
-      process.env.DANGEROUSLY_DISABLE_HOST_CHECK === 'true',
+    disableHostCheck: !proxy
+      || process.env.DANGEROUSLY_DISABLE_HOST_CHECK === 'true',
     // 启用 gzip 压缩生成的文件.
     compress: true,
     // 使 WebpackDevServer 自己的日志无效，因为它们通常没有用处。
