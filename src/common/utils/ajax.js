@@ -1,9 +1,24 @@
 import fetchJsonp from 'fetch-jsonp'
 
-export function fetchJSON(url, params) {
+export function fetchJSONP(url, params) {
   return fetchJsonp(url, {
     ...params,
   })
+}
+
+export const fetchJSONPByGet = url => query => {
+  const params = {
+    method: 'GET',
+  }
+  let getQuery = '?'
+  let getUrl = ''
+  if (query) {
+    Object.keys(query).forEach((name) => {
+      getQuery = `${getQuery}${name}=${query[name]}&`
+    })
+  }
+  getUrl = url + (query ? getQuery.substr(0, getQuery.length - 1) : '')
+  return fetchJSONP(getUrl, params)
 }
 
 export const fetchJSONByGet = url => query => {
@@ -13,10 +28,10 @@ export const fetchJSONByGet = url => query => {
   let getQuery = '?'
   let getUrl = ''
   if (query) {
-    for (let name in query) {
+    Object.keys(query).forEach((name) => {
       getQuery = `${getQuery}${name}=${query[name]}&`
-    }
+    })
   }
-  getUrl = url + (query ? getQuery.substring(0, getQuery.length - 1) : '')
-  return fetchJSON(getUrl, params)
+  getUrl = url + (query ? getQuery.substr(0, getQuery.length - 1) : '')
+  return fetch(getUrl, params)
 }

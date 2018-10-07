@@ -1,32 +1,24 @@
 import React from 'react'
 import SearchBar from 'components/searchbar'
 import Table from 'components/table'
-import moment from 'moment'
-import { Button, message, Modal } from 'antd'
-import { fetchMusicList } from 'actions/music'
+import { message } from 'antd'
+import { fetchMusicList } from './redux'
 import { connect } from 'react-redux'
 import { musicKindList } from '../../../utils/config'
 import './index.less'
 
-// @connect(
-//   (state) => ({
-//     musicList: state.musicList,
-//   })
-// )
+@connect(
+  (state) => ({
+    music2List: state.music2List,
+  })
+)
 export default class Music extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      item: {},
-    }
-  }
-
   componentDidMount() {}
 
   fetchTableData = (value) => {}
 
   onSearch = (searchFields) => {
-
+    this.props.dispatch(fetchMusicList())
   }
 
   searchFields = () => {
@@ -69,8 +61,8 @@ export default class Music extends React.Component {
   }
 
   render() {
-    // const { musicList } = this.props
-    const songArray = [{ title: '卡路里（电影《西虹市首富》插曲）', author: '火箭少女101', country: '内地', language: '国语' }]
+    const { data, loading } = this.props.music2List
+    // const songArray = [{ title: '卡路里（电影《西虹市首富》插曲）', author: '火箭少女101', country: '内地', language: '国语' }]
 
     return (
       <div id="wrap">
@@ -85,8 +77,8 @@ export default class Music extends React.Component {
               pagination={true}
               pageSize={10}
               header={this.tableHeader()}
-              data={songArray}
-              loading={false}
+              data={data}
+              loading={loading}
               scroll={{ y: 385 }}
             />
           </div>
