@@ -20,7 +20,7 @@ const env = getClientEnvironment(publicUrl)
 if (env.stringified['process.env'].NODE_ENV !== '"production"') {
   throw new Error('Production builds must have NODE_ENV=production.')
 }
-// 优先体积
+
 module.exports = {
   mode: 'production',
   // 当 webpack 遇到第一个错，标红抛出并中断运行

@@ -41,8 +41,8 @@ yarn deploy || npm run deploy
 - [x] Ajax: Fetch
 - [x] 跨域: CORS
 - [x] 代码校验: Eslint(Airbnb 规范)
-- [ ] Mock 数据
-- [ ] [网关](https://github.com/MuYunyun/gateway): ioc 模式，有时间填坑
+- [x] 网关：一个 ioc 模式的 [demo](https://github.com/MuYunyun/gateway)
+- [ ] Mock 数据: [mock 方案调研](https://github.com/MuYunyun/reactSPA/issues/55)
 
 ### Articles
 

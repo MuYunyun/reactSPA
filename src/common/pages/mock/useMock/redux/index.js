@@ -3,7 +3,8 @@ import { createAjaxAction, ajax } from '../../../../utils'
 
 const requestMusicList = createAction('request music2 list')
 const receiveMusicList = createAction('receive music2 list')
-const musicListApi = ajax.fetchJSONByGet('http://127.0.0.1:4000/api/music/list')
+// const musicListApi = ajax.fetchJSONByGet('/mock/music.json')
+const musicListApi = ajax.fetchJSONByGet('/api/music/list')
 export const fetchMusicList = createAjaxAction(musicListApi, requestMusicList, receiveMusicList)
 
 export const music2List = handleActions({

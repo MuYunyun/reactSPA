@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
     "predeploy": "node scripts/build.js",
     "deploy": "gh-pages -d build"
   },
@@ -48,7 +47,6 @@
     "autoprefixer": "7.1.2",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
-    "babel-jest": "^20.0.3",
     "babel-loader": "7.1.2",
     "babel-plugin-import": "^1.1.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
@@ -76,7 +74,6 @@
     "gh-pages": "^0.12.0",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "0.17.3",
-    "jest": "20.0.4",
     "json-loader": "0.5.4",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.6",
@@ -92,11 +89,5 @@
     "webpack-cli": "^2.0.6",
     "webpack-dev-server": "^3.0.0-beta.1",
     "webpack-manifest-plugin": "2.0.0-rc.2"
-  },
-  "proxy": {
-    "/api": {
-      "target": "http://localhost:5000/application",
-      "secure": false
-    }
   }
 }

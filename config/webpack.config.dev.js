@@ -13,14 +13,12 @@ const publicPath = '/'
 const publicUrl = ''
 const env = getClientEnvironment(publicUrl)
 
-// 优先速度
 module.exports = {
   mode: 'development',
   devtool: 'cheap-module-source-map', // https://webpack.js.org/configuration/devtool/
   entry: [
     `${require.resolve('webpack-dev-server/client')}?/`,
     require.resolve('webpack/hot/dev-server'),
-    // require.resolve('react-dev-utils/webpackHotDevClient'), // 这句和上面两句写法二选一
     require.resolve('react-error-overlay'), // 开发报错，将导致启动不了
     paths.appIndexJs,
   ],
@@ -58,7 +56,6 @@ module.exports = {
     strictExportPresence: true,
     rules: [
       {
-        // 使用第一个规则匹配
         oneOf: [
           {
             test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
