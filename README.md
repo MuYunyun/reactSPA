@@ -46,8 +46,9 @@ yarn deploy || npm run deploy
 
 ### Articles
 
-实践相关:
+优化实践:
 
+* [react 性能优化实践](https://github.com/MuYunyun/reactSPA/issues/54)
 * [压缩打包优化](https://github.com/MuYunyun/reactSPA/issues/53)
 * [css 模块化](https://github.com/MuYunyun/reactSPA/issues/52)
 
