@@ -1,8 +1,8 @@
 ![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)
 
-React 全家桶的综合实践
+该项目是对 React 技术栈以及前端工程化的相关实践。
 
-> 在该项目中对前端工程化、React 相关技术栈进行实践。最终的目的是沉淀出一套针对中后台开发相对完善的使用方案。
+> 愿景：沉淀出一套针对中台系统的开发相对完善的使用方案。
 
 [效果展示](https://muyunyun.github.io/reactSPA)，建议本地打开。
 
@@ -30,29 +30,29 @@ yarn deploy || npm run deploy
 
 ### Tech Stack
 
-- [x] 编译打包: Babel Webpack(4.x)
-- [x] 热更新: webpack-dev-server
-- [x] UI 库: React & React-Dom(16.5.x)
-- [x] UI 组件: Antd(3.x)
-- [x] 路由: react-router(4.x)、react-router-redux
-- [x] 状态管理: redux
-- [x] JS: ES6、ES7
-- [x] 样式: less
-- [x] Ajax: Fetch
-- [x] 跨域: CORS
-- [x] 代码校验: Eslint(Airbnb 规范)
-- [x] 网关：一个 ioc 模式的 [demo](https://github.com/MuYunyun/gateway)
+* 编译打包: Babel Webpack(4.x)
+* 热更新: webpack-dev-server
+* UI 库: React & React-Dom(16.5.x)
+* UI 组件: Antd(3.x)，
+* 路由: react-router(4.x)、react-router-redux
+* 状态管理: redux
+* JS: ES6、ES7
+* 样式: less
+* Ajax: Fetch
+* 跨域: CORS
+* 代码校验: Eslint(Airbnb 规范)
+
+- [ ] 网关: [demo](https://github.com/MuYunyun/gateway)
 - [ ] Mock 数据: [mock 方案调研](https://github.com/MuYunyun/reactSPA/issues/55)
+- [ ] 封装整合适用于公司业务的中台 UI 库(基于 Antd)
 
-### Articles
-
-优化实践:
+### Practice
 
 * [react 性能优化实践](https://github.com/MuYunyun/reactSPA/issues/54)
 * [压缩打包优化](https://github.com/MuYunyun/reactSPA/issues/53)
 * [css 模块化](https://github.com/MuYunyun/reactSPA/issues/52)
 
-其它：
+番外：
 
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
