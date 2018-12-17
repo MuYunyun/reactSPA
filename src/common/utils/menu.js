@@ -40,6 +40,7 @@ const allMenu = [
     icon: 'apple-o',
     children: [
       { name: 'mock', url: 'mock' },
+      { name: '双向绑定', url: 'reform' },
       { name: '更多模块开发中', url: 'todo' },
     ],
   }, {

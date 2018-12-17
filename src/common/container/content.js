@@ -63,6 +63,11 @@ const Mock = Loadable({
   loading: Loading,
 })
 
+const Reform = Loadable({
+  loader: () => import('../pages/mock/reform'),
+  loading: Loading,
+})
+
 const Contents = () => (
   <Content className="content" id="content">
     <Route path="/home" component={Home} />
@@ -76,6 +81,7 @@ const Contents = () => (
     <Route path="/searchEngine" component={Search} />
     <Route path="/waterfall" component={Waterfall} />
     <Route path="/mock" component={Mock} />
+    <Route path="/reform" component={Reform} />
   </Content>
 )
 

@@ -1,8 +1,7 @@
 {
-  "name": "reactSPA",
-  "version": "1.0.0",
+  "name": "reactspa",
+  "version": "0.0.1",
   "description": "combination of react teconology stack",
-  "main": "index.js",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
@@ -10,14 +9,10 @@
     "deploy": "gh-pages -d build"
   },
   "author": "muyunyun",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MuYunyun/reactSPA/issues"
-  },
-  "homepage": "http://muyunyun.cn/reactSPA/",
   "dependencies": {
     "antd": "^3.9.3",
     "babel-plugin-on-demand-loading": "^0.0.9",
+    "daform": "^0.1.1",
     "diana": "0.5.1",
     "draftjs-to-html": "^0.7.2",
     "draftjs-to-markdown": "^0.4.2",
@@ -29,8 +24,8 @@
     "moment": "^2.18.1",
     "photoswipe": "^4.1.2",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-draft-wysiwyg": "^1.10.0",
     "react-loadable": "^5.5.0",
     "react-redux": "^5.0.5",

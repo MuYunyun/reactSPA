@@ -32,7 +32,7 @@ yarn deploy || npm run deploy
 
 * 编译打包: Babel Webpack(4.x)
 * 热更新: webpack-dev-server
-* UI 库: React & React-Dom(16.5.x)
+* UI 库: React & React-Dom(^16.6.3)
 * UI 组件: Antd(3.x)，
 * 路由: react-router(4.x)、react-router-redux
 * 状态管理: redux
@@ -41,37 +41,33 @@ yarn deploy || npm run deploy
 * Ajax: Fetch
 * 跨域: CORS
 * 代码校验: Eslint(Airbnb 规范)
+* 网关: [demo](https://github.com/MuYunyun/gateway)
+* 表单: [daForm](https://github.com/dwd-fe/daForm)
 
-- [ ] 网关: [demo](https://github.com/MuYunyun/gateway)
-- [ ] Mock 数据: [mock 方案调研](https://github.com/MuYunyun/reactSPA/issues/55)
-- [ ] 封装整合适用于公司业务的中台 UI 库(基于 Antd)
+### articles
 
-### Practice
-
-* [react 性能优化实践](https://github.com/MuYunyun/reactSPA/issues/54)
+* [React 性能优化实践](https://github.com/MuYunyun/reactSPA/issues/54)
 * [压缩打包优化](https://github.com/MuYunyun/reactSPA/issues/53)
 * [css 模块化](https://github.com/MuYunyun/reactSPA/issues/52)
-
-番外：
-
 * [使用 React 全家桶搭建一个后台管理系统](http://muyunyun.cn/posts/9bfbdbf4/)
 * [redux middleware 源码分析](http://muyunyun.cn/posts/7f9a92dc/)
 * [探寻 webpack 插件机制](https://github.com/MuYunyun/blog/issues/19)
+* [React16.x 特性剪辑](https://github.com/MuYunyun/blog/blob/master/BasicSkill/React周边/React16.x特性剪辑.md)
 
-### Features
+### Module
 
 * 音乐模块
-  * 抽离了 Ajax 模块，可完成相应的跨域需求
-  * redux 流实现数据的获取
+  * 音乐列表
 * 工具模块
-  * 实现对工资、房租、身体指数、年龄的智能计算
-  * 富文本编辑器应用
-  * 用 redux 实现了待办事项模块
+  * 工资、房租、身体指数、年龄的智能计算器
+  * 富文本编辑器
+  * 待办事项
 * 画廊模块
   * 图片瀑布流(撸了个插件 [jswaterfall](https://github.com/MuYunyun/waterfall))
 * 搜索模块
-  * 搜索引擎的实现(集合了百度、360、搜狗搜索)
-* 更多模块开发中
+  * 搜索引擎(集成百度、360、搜狗搜索)
+* 其它
+  * one for all 表单方案 —— [daForm](https://github.com/dwd-fe/daForm)
 
 ### Project Structure
 
