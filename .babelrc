@@ -5,6 +5,7 @@
     "stage-2"
   ],
   "plugins": [
-    ["on-demand-loading", {"library": "diana"}]
+    ["on-demand-loading", {"library": "diana"}],
+    ["react-hot-loader/babel"]
   ]
 }

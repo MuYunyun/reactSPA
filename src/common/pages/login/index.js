@@ -5,6 +5,8 @@ import {
 import createHistory from 'history/createHashHistory'
 
 import './index.less'
+import { hot } from 'react-hot-loader/root'
+
 
 const FormItem = Form.Item
 const history = createHistory()
@@ -71,4 +73,4 @@ class LoginPage extends React.Component {
 }
 
 const Login = Form.create()(LoginPage)
-export default Login
+export default hot(Login)
