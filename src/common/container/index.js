@@ -115,4 +115,10 @@ class Container extends React.Component {
   }
 }
 
-export default hot(Container)
+let handleComponent = Container
+// 静默刷新
+if (ENABLE_DEVTOOLS) {
+  handleComponent = hot(Container)
+}
+
+export default handleComponent

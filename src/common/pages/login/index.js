@@ -73,4 +73,10 @@ class LoginPage extends React.Component {
 }
 
 const Login = Form.create()(LoginPage)
-export default hot(Login)
+let handleComponent = Login
+// 静默刷新
+if (ENABLE_DEVTOOLS) {
+  handleComponent = hot(Login)
+}
+
+export default handleComponent
