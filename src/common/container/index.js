@@ -9,6 +9,7 @@ import Top from './header'
 import Contents from './content'
 import Footer from './bottom'
 import './index.less'
+import { hot } from 'react-hot-loader/root'
 
 const { SubMenu } = Menu
 const { Sider } = Layout
@@ -18,7 +19,7 @@ const { Sider } = Layout
     router: state.router,
   })
 )
-export default class Container extends React.Component {
+class Container extends React.Component {
   state = {
     theme: 'dark',
     collapsed: false,
@@ -113,3 +114,5 @@ export default class Container extends React.Component {
     )
   }
 }
+
+export default hot(Container)
