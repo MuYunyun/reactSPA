@@ -5,7 +5,8 @@ import { Form, FormItem } from 'daform'
 @Form()
 class reform extends Component {
   render() {
-    const { formdata } = this.props.form
+    const { form } = this.props
+    const { formdata } = form
     return (
       <React.Fragment>
         <FormItem name="name" label="姓名" initialValue="deku">

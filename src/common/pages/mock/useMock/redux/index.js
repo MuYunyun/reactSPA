@@ -9,10 +9,10 @@ export const fetchMusicList = createAjaxAction(musicListApi, requestMusicList, r
 
 export const music2List = handleActions(
   {
-    'request music2 list'(state, action) {
+    'request music2 list': function(state, action) {
       return { ...state, loading: true }
     },
-    'receive music2 list'(state, action) {
+    'receive music2 list': function(state, action) {
       const { res } = action.payload
       return { data: res, loading: false }
     }

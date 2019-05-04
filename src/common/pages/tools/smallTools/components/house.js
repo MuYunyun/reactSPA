@@ -18,17 +18,19 @@ export default class Salary extends React.Component {
     const rentMoney = e.target.value
     this.setState({ item: rentMoney })
   }
+
   handleTime = e => {
     const year = e.target.value
     this.setState({ time: year })
     const rent = (year * 12 * this.state.item) / 10000
-    this.setState({ rent: rent })
+    this.setState({ rent })
   }
+
   handleBuy = e => {
     const buyMoney = e.target.value
     this.setState({ buy: buyMoney })
     const balance = buyMoney - this.state.rent
-    this.setState({ balance: balance })
+    this.setState({ balance })
     if (balance > 0) {
       this.setState({ des: '租房更合算！' })
     } else if (balance === 0) {
@@ -96,7 +98,10 @@ export default class Salary extends React.Component {
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
             <Card bodyStyle={{ padding: 10, fontSize: 20 }}>
-              <p>砖家建议：{this.state.des}</p>
+              <p>
+                砖家建议：
+                {this.state.des}
+              </p>
             </Card>
           </Col>
         </Row>

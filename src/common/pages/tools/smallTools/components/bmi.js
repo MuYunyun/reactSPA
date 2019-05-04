@@ -18,9 +18,9 @@ class Bmi extends React.Component {
         message.error('请输入体重和身高再进行计算')
         return
       }
-      let w = this.props.form.getFieldsValue().weight
-      let h = this.props.form.getFieldsValue().height
-      let bmi = (w / (h / 100) ** 2).toFixed(1)
+      const w = this.props.form.getFieldsValue().weight
+      const h = this.props.form.getFieldsValue().height
+      const bmi = (w / (h / 100) ** 2).toFixed(1)
       let level
       if (bmi < 18.5) {
         level = 0
@@ -33,7 +33,7 @@ class Bmi extends React.Component {
       } else if (bmi >= 30) {
         level = 4
       }
-      this.setState({ bmi: bmi, level: level })
+      this.setState({ bmi, level })
     })
   }
 
@@ -45,7 +45,7 @@ class Bmi extends React.Component {
 
   render() {
     const { getFieldDecorator } = this.props.form
-    let i = this.state.level
+    const i = this.state.level
     return (
       <div style={{ marginTop: 80 }}>
         <Form onSubmit={this.handleSubmit}>
@@ -82,16 +82,25 @@ class Bmi extends React.Component {
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
             <Card bodyStyle={{ padding: 0 }} id="cardWrap">
-              <p className={i === 0 ? 'activeP' : 'die'}>偏瘦&nbsp;&nbsp;&nbsp;&nbsp;{'<18.5'}</p>
-              <p className={i === 1 ? 'activeP' : 'die'}>
-                正常&nbsp;&nbsp;&nbsp;&nbsp;{'18.5～24.9'}
+              <p className={i === 0 ? 'activeP' : 'die'}>
+                偏瘦&nbsp;&nbsp;&nbsp;&nbsp;
+                {'<18.5'}
               </p>
-              <p className={i === 2 ? 'activeP' : 'die'}>超重&nbsp;&nbsp;&nbsp;&nbsp;{'=25'}</p>
+              <p className={i === 1 ? 'activeP' : 'die'}>
+                正常&nbsp;&nbsp;&nbsp;&nbsp;
+                {'18.5～24.9'}
+              </p>
+              <p className={i === 2 ? 'activeP' : 'die'}>
+                超重&nbsp;&nbsp;&nbsp;&nbsp;
+                {'=25'}
+              </p>
               <p className={i === 3 ? 'activeP' : 'die'}>
-                偏胖&nbsp;&nbsp;&nbsp;&nbsp;{'25.0～29.9'}
+                偏胖&nbsp;&nbsp;&nbsp;&nbsp;
+                {'25.0～29.9'}
               </p>
               <p className={i === 4 ? 'activeP' : 'die'}>
-                肥胖&nbsp;&nbsp;&nbsp;&nbsp;{'30.0～34.9'}
+                肥胖&nbsp;&nbsp;&nbsp;&nbsp;
+                {'30.0～34.9'}
               </p>
             </Card>
           </Col>

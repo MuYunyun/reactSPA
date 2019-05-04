@@ -99,7 +99,7 @@ export default class wysiwyg extends Component {
         <Row gutter={16}>
           <Col span={24}>
             <div className="cloud-box">
-              <Card title="富文本编辑器" bordered={true}>
+              <Card title="富文本编辑器" bordered>
                 <Editor
                   editorState={editorState}
                   toolbarClassName="home-toolbar"
@@ -145,17 +145,17 @@ export default class wysiwyg extends Component {
             </div>
           </Col>
           <Col span={8}>
-            <Card title="同步转换HTML" bordered={true}>
+            <Card title="同步转换HTML" bordered>
               <pre>{draftToHtml(editorContent)}</pre>
             </Card>
           </Col>
           <Col span={8}>
-            <Card title="同步转换MarkDown" bordered={true}>
+            <Card title="同步转换MarkDown" bordered>
               <pre style={{ whiteSpace: 'pre-wrap' }}>{draftToMarkdown(editorContent)}</pre>
             </Card>
           </Col>
           <Col span={8}>
-            <Card title="同步转换JSON" bordered={true}>
+            <Card title="同步转换JSON" bordered>
               <pre style={{ whiteSpace: 'normal' }}>{JSON.stringify(editorContent)}</pre>
             </Card>
           </Col>

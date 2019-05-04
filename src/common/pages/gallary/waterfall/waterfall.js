@@ -152,7 +152,7 @@
   // 获取最小高度的数组下标
   proto.getMinPointer = function(perList) {
     const minHeight = Math.min.apply(null, perList)
-    for (let i in perList) {
+    for (const i in perList) {
       if (perList[i] === minHeight) {
         return i
       }
@@ -228,10 +228,10 @@
   }
 
   const util = {
-    addEventListener: function(elem, evName, func) {
+    addEventListener(elem, evName, func) {
       elem.addEventListener(evName, func, false)
     },
-    removeEventListener: function(elem, evName, func) {
+    removeEventListener(elem, evName, func) {
       elem.removeEventListener(evName, func, false)
     }
   }

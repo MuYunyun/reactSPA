@@ -85,7 +85,7 @@ export default class Gallery extends React.Component {
     const imgsTag = imgs.map((v1, index1) =>
       v1.map((v2, index2) => (
         <div key={index1 * index2} className="cloud-box">
-          <Card key={index1 * index2} bordered={true} bodyStyle={{ padding: 0 }}>
+          <Card key={index1 * index2} bordered bodyStyle={{ padding: 0 }}>
             <div>
               <img onClick={() => this.openGallery(v2)} alt="example" width="100%" src={v2} />
             </div>

@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, Icon, Switch, Layout } from 'antd'
 import { connect } from 'react-redux'
+import { hot } from 'react-hot-loader/root'
 import allMenu from '../utils/menu'
 import Top from './header'
 import Contents from './content'
 import Footer from './bottom'
 import './index.less'
-import { hot } from 'react-hot-loader/root'
 
 const { SubMenu } = Menu
 const { Sider } = Layout
@@ -41,9 +41,9 @@ class Container extends React.Component {
     const { router } = this.props
     const selectedKey = router.location.pathname.split('/')[1]
     let openKey = ''
-    for (let menuObj of allMenu) {
+    for (const menuObj of allMenu) {
       if (menuObj.children) {
-        for (let menuList of menuObj.children) {
+        for (const menuList of menuObj.children) {
           if (menuList.url === selectedKey) {
             openKey = menuObj.url
             break

@@ -30,6 +30,7 @@ export default class Top extends React.Component {
       screenfull.request()
     }
   }
+
   render() {
     return (
       <Header style={{ background: '#fff' }}>

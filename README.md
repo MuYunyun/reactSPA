@@ -109,3 +109,5 @@ yarn deploy || npm run deploy
 ├── README.md
 └── yarn.lock
 ```
+
+> 执行 npm run lint, 该项目存在 eslint 报错, 欢迎感兴趣的朋友 pr。

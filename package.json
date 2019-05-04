@@ -7,8 +7,10 @@
     "build": "node scripts/build.js",
     "predeploy": "node scripts/build.js",
     "deploy": "gh-pages -d build",
-    "lint": "eslint src",
-    "format": "prettier --write \"src/**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\""
+    "lint": "eslint src --fix",
+    "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
+    "format": "npm run prettier -- --write",
+    "validate": "npm run lint && npm run prettier -- --list-different"
   },
   "author": "muyunyun",
   "husky": {
@@ -18,7 +20,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)": [
+    "**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)": [
       "prettier --write",
       "git add"
     ]

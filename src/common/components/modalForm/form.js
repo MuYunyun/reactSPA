@@ -87,8 +87,8 @@ class ModForm extends React.PureComponent {
 
   getSwitchField = field => (
     <Switch
-      checkedChildren={'开'}
-      unCheckedChildren={'关'}
+      checkedChildren="开"
+      unCheckedChildren="关"
       disabled={field.options.disabled}
       defaultChecked={field.options.initialValue}
     />

@@ -17,8 +17,8 @@ class LoginPage extends React.Component {
     const { form } = this.props
     const { getFieldsValue } = form
     e.preventDefault()
-    let n = getFieldsValue().username
-    let p = getFieldsValue().password
+    const n = getFieldsValue().username
+    const p = getFieldsValue().password
     if (n === '123' && p === '123') {
       // 表单的路由处理
       history.push('/home')

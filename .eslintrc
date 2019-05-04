@@ -6,7 +6,7 @@
     "node": true
   },
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": ["airbnb", "eslint-config-prettier"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
@@ -26,6 +26,6 @@
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
     "no-plusplus": 0,
-    "no-param-reassign": 0,
+    "no-param-reassign": 0
   }
 }
