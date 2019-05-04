@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Col, Card,
-} from 'antd'
+import { Col, Card } from 'antd'
 import EchartsProjects from './EchartsProjects'
 
 const ProFinish = () => (
@@ -11,6 +9,7 @@ const ProFinish = () => (
         <EchartsProjects />
       </Card>
     </div>
-  </Col>)
+  </Col>
+)
 
 export default ProFinish

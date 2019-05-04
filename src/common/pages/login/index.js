@@ -1,12 +1,9 @@
 import React from 'react'
-import {
-  Form, Input, Button, notification, Icon,
-} from 'antd'
+import { Form, Input, Button, notification, Icon } from 'antd'
 import createHistory from 'history/createHashHistory'
 
 import './index.less'
 import { hot } from 'react-hot-loader/root'
-
 
 const FormItem = Form.Item
 const history = createHistory()
@@ -16,7 +13,7 @@ class LoginPage extends React.Component {
     this.openNotificationWithIcon('info')
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     const { form } = this.props
     const { getFieldsValue } = form
     e.preventDefault()
@@ -31,12 +28,12 @@ class LoginPage extends React.Component {
   }
 
   // 返回一个弹框对象，提示用户名和密码
-  openNotificationWithIcon = (type) => {
+  openNotificationWithIcon = type => {
     notification[type]({
       message: '用户名&密码',
       description: '都是：123',
       duration: 6,
-      icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />,
+      icon: <Icon type="smile-circle" style={{ color: '#108ee9' }} />
     })
   }
 
@@ -51,19 +48,17 @@ class LoginPage extends React.Component {
             <Form onSubmit={this.handleSubmit}>
               <FormItem>
                 {getFieldDecorator('username', {
-                  rules: [{ required: true, message: '请输入用户名' }],
-                })(
-                  <Input placeholder="Username：123" />
-                )}
+                  rules: [{ required: true, message: '请输入用户名' }]
+                })(<Input placeholder="Username：123" />)}
               </FormItem>
               <FormItem>
                 {getFieldDecorator('password', {
-                  rules: [{ required: true, message: '请输入密码' }],
-                })(
-                  <Input type="password" placeholder="Password：123" />,
-                )}
+                  rules: [{ required: true, message: '请输入密码' }]
+                })(<Input type="password" placeholder="Password：123" />)}
               </FormItem>
-              <Button type="primary" htmlType="submit" className="loginBtn">Login</Button>
+              <Button type="primary" htmlType="submit" className="loginBtn">
+                Login
+              </Button>
             </Form>
           </div>
         </div>

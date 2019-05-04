@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Col, Card, Icon,
-} from 'antd'
+import { Col, Card, Icon } from 'antd'
 import b1 from 'images/minren.jpg'
 import b2 from 'images/zuozu.jpg'
 import b3 from 'images/xiaoying.jpg'
@@ -14,7 +12,9 @@ const MsgBanner = () => (
         <div className="pb-m">
           <h3>消息栏</h3>
         </div>
-        <span className="card-tool"><Icon type="sync" /></span>
+        <span className="card-tool">
+          <Icon type="sync" />
+        </span>
         <ul className="list-group no-border">
           <li className="list-group-item">
             <a className="pull-left w-40 mr-m">
@@ -55,6 +55,7 @@ const MsgBanner = () => (
         </ul>
       </Card>
     </div>
-  </Col>)
+  </Col>
+)
 
 export default MsgBanner

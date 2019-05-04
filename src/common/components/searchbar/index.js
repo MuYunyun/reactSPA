@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  Input,
-  Button,
-  Select,
-  DatePicker,
-} from 'antd'
+import { Input, Button, Select, DatePicker } from 'antd'
 import './index.less'
 
 export default class SearchBar extends React.PureComponent {
@@ -13,15 +8,12 @@ export default class SearchBar extends React.PureComponent {
     this.state = {
       fields: {},
       disabled: {},
-      warnings: {},
+      warnings: {}
     }
   }
 
   setField(field, value) {
-    const {
-      fields,
-      warnings,
-    } = this.state
+    const { fields, warnings } = this.state
     let newValue = value
     if (Array.isArray(newValue) && newValue.length === 0) {
       newValue = undefined
@@ -60,68 +52,90 @@ export default class SearchBar extends React.PureComponent {
         case 'input':
         default:
           {
-            component = (<Input
-              value={this.state.fields[field.key]}
-              onChange={e => this.setField(field, e.target.value)}
-            />)
+            component = (
+              <Input
+                value={this.state.fields[field.key]}
+                onChange={e => this.setField(field, e.target.value)}
+              />
+            )
           }
           break
         case 'select':
-          component = (<Select
-            placeholder="请选择"
-            value={this.state.fields[field.key] === undefined ? (field.defaultValue && field.defaultValue.toString()) : this.state.fields[field.key]}
-            multiple={field.multiple}
-            disabled={this.state.disabled[field.key]}
-            onChange={(value) => {
-              field.onChange && field.onChange(value)
-              this.setField(field, value)
-            }}
-            style={{
-              width: '100%',
-            }}
-          >
-            {items && items.map(({ mean, value }) =>
-              <Select.Option key={value.toString()} value={value.toString()}>{mean}</Select.Option>)}
-          </Select>)
+          component = (
+            <Select
+              placeholder="请选择"
+              value={
+                this.state.fields[field.key] === undefined
+                  ? field.defaultValue && field.defaultValue.toString()
+                  : this.state.fields[field.key]
+              }
+              multiple={field.multiple}
+              disabled={this.state.disabled[field.key]}
+              onChange={value => {
+                field.onChange && field.onChange(value)
+                this.setField(field, value)
+              }}
+              style={{
+                width: '100%'
+              }}
+            >
+              {items &&
+                items.map(({ mean, value }) => (
+                  <Select.Option key={value.toString()} value={value.toString()}>
+                    {mean}
+                  </Select.Option>
+                ))}
+            </Select>
+          )
           break
         case 'rangePicker':
-          component = (<DatePicker.RangePicker
-            showTime
-            format="YYYY-MM-DD"
-            value={[this.state.fields[field.key[0]], this.state.fields[field.key[1]]]}
-            disabled={this.state.disabled[field.key]}
-            onChange={(value) => {
-              this.setField(field, value)
-            }}
-            showToday={false}
-          />)
+          component = (
+            <DatePicker.RangePicker
+              showTime
+              format="YYYY-MM-DD"
+              value={[this.state.fields[field.key[0]], this.state.fields[field.key[1]]]}
+              disabled={this.state.disabled[field.key]}
+              onChange={value => {
+                this.setField(field, value)
+              }}
+              showToday={false}
+            />
+          )
           break
         case 'datetime':
-          component = (<DatePicker
-            showTime
-            format="YYYY-MM-DD HH:mm"
-            value={this.state.fields[field.key]}
-            disabled={this.state.disabled[field.key]}
-            onChange={value => this.setField(field, value)}
-            placeholder="请选择时间"
-            showToday={false}
-          />)
+          component = (
+            <DatePicker
+              showTime
+              format="YYYY-MM-DD HH:mm"
+              value={this.state.fields[field.key]}
+              disabled={this.state.disabled[field.key]}
+              onChange={value => this.setField(field, value)}
+              placeholder="请选择时间"
+              showToday={false}
+            />
+          )
           break
       }
-      components.push(<div key={i++} className="field">
-        <div className="input">
-          <div className="title" style={{ width: field.labelWidth || 100 }}>{field.title}:</div>
-          <div style={{ width: field.width || 130 }} className="input">{component}</div>
+      components.push(
+        <div key={i++} className="field">
+          <div className="input">
+            <div className="title" style={{ width: field.labelWidth || 100 }}>
+              {field.title}:
+            </div>
+            <div style={{ width: field.width || 130 }} className="input">
+              {component}
+            </div>
+          </div>
+          <div className="warning">{this.state.warnings[field.key]}</div>
         </div>
-        <div className="warning">{this.state.warnings[field.key]}</div>
-      </div>)
+      )
     }
     return components
   }
 
   handleReset = () => {
     this.setState({
-      fields: {},
+      fields: {}
     })
   }
 
@@ -139,7 +153,7 @@ export default class SearchBar extends React.PureComponent {
     }
     if (Object.keys(warnings).length) {
       this.setState({
-        warnings: {...warnings}
+        warnings: { ...warnings }
       })
       return
     }
@@ -171,8 +185,12 @@ export default class SearchBar extends React.PureComponent {
       <div className="searchbar">
         {this.generateInputs(this.props.fields)}
         <div className="buttonGroup">
-          <Button onClick={this.handleReset} className="reset" icon="reload">重置</Button>
-          <Button onClick={this.handleSubmit} className="search" icon="search">搜索</Button>
+          <Button onClick={this.handleReset} className="reset" icon="reload">
+            重置
+          </Button>
+          <Button onClick={this.handleSubmit} className="search" icon="search">
+            搜索
+          </Button>
         </div>
       </div>
     )
@@ -180,5 +198,5 @@ export default class SearchBar extends React.PureComponent {
 }
 
 SearchBar.defaultProps = {
-  hasReset: true,
+  hasReset: true
 }

@@ -10,54 +10,64 @@ export default class Search extends React.Component {
       keyword: '',
       showList: [],
       listIndex: 0,
-      searchSrcs: ['https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q=', 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=', 'https://www.sogou.com/web?query='],
-      searchSrc: 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=',
+      searchSrcs: [
+        'https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q=',
+        'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=',
+        'https://www.sogou.com/web?query='
+      ],
+      searchSrc: 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd='
     }
   }
 
-  handleInput = (e) => {
+  handleInput = e => {
     const { keyword } = this.state
-    this.setState({
-      keyword: e.target.value,
-    }, () => {
-      fetchJsonp(`https://sug.so.360.cn/suggest?word=${keyword}&encodein=utf-8&encodeout=utf-8`, {
-        method: 'GET',
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          this.setState({
-            showList: data.s,
-          })
+    this.setState(
+      {
+        keyword: e.target.value
+      },
+      () => {
+        fetchJsonp(`https://sug.so.360.cn/suggest?word=${keyword}&encodein=utf-8&encodeout=utf-8`, {
+          method: 'GET'
         })
-    })
+          .then(res => res.json())
+          .then(data => {
+            this.setState({
+              showList: data.s
+            })
+          })
+      }
+    )
   }
 
   // 处理鼠标hover
-  handleMouseSelect = (e) => {
+  handleMouseSelect = e => {
     const index = parseInt(e.target.getAttribute('data-index'), 10)
     this.setState({
-      listIndex: index,
+      listIndex: index
     })
   }
 
   // 处理点击列表
-  handleSelectClick = (e) => {
+  handleSelectClick = e => {
     const { keyword } = this.state
-    this.setState({
-      keyword: e.target.innerText,
-    }, () => {
-      this.input.value = keyword
-      setTimeout(() => {
-        this.handleSearch()
-      }, 50)
-    })
+    this.setState(
+      {
+        keyword: e.target.innerText
+      },
+      () => {
+        this.input.value = keyword
+        setTimeout(() => {
+          this.handleSearch()
+        }, 50)
+      }
+    )
   }
 
   // 处理点击清除按钮
   handleClearClick = () => {
     this.setState({
       keyword: '',
-      showList: [],
+      showList: []
     })
     this.input.value = ''
   }
@@ -69,7 +79,7 @@ export default class Search extends React.Component {
   }
 
   // 处理 Enter 键
-  handleKeyEnter = (e) => {
+  handleKeyEnter = e => {
     const { keyCode } = e
     switch (keyCode) {
       case 13:
@@ -92,28 +102,37 @@ export default class Search extends React.Component {
 
     const { showList, keyword, listIndex } = this.state
     const stateCb = () => {
-      this.setState({
-        keyword: showList[listIndex],
-      }, () => {
-        this.input.value = keyword
-      })
+      this.setState(
+        {
+          keyword: showList[listIndex]
+        },
+        () => {
+          this.input.value = keyword
+        }
+      )
     }
 
     if (keycode === 38) {
-      this.setState({
-        listIndex: listIndex === 0 ? 9 : listIndex - 1,
-      }, stateCb)
+      this.setState(
+        {
+          listIndex: listIndex === 0 ? 9 : listIndex - 1
+        },
+        stateCb
+      )
     } else if (keycode === 40) {
-      this.setState({
-        listIndex: listIndex === 9 ? 0 : listIndex + 1,
-      }, stateCb)
+      this.setState(
+        {
+          listIndex: listIndex === 9 ? 0 : listIndex + 1
+        },
+        stateCb
+      )
     }
   }
 
-  onLogoChange = (index) => {
+  onLogoChange = index => {
     const { searchSrcs } = this.state
     this.setState({
-      searchSrc: searchSrcs[index],
+      searchSrc: searchSrcs[index]
     })
   }
 
@@ -125,9 +144,11 @@ export default class Search extends React.Component {
         data-index={index}
         className={listIndex === index ? 'is-select' : ''}
         onMouseOver={this.handleMouseSelect}
-        onClick={this.handleSelectClick}>
+        onClick={this.handleSelectClick}
+      >
         {value}
-      </li>))
+      </li>
+    ))
 
     return (
       <div className="search">
@@ -141,13 +162,23 @@ export default class Search extends React.Component {
                   className="search-input"
                   onChange={this.handleInput}
                   onKeyDown={this.handleKeyEnter}
-                  ref={r => this.input = r}
+                  ref={r => (this.input = r)}
                 />
-                <span className="search-clearinput" onClick={this.handleClearClick}>&times;</span>
+                <span className="search-clearinput" onClick={this.handleClearClick}>
+                  &times;
+                </span>
               </div>
-              {showList.length > 0 ? <div className="search-list"><ul className="search-ul">{Li}</ul></div> : ''}
+              {showList.length > 0 ? (
+                <div className="search-list">
+                  <ul className="search-ul">{Li}</ul>
+                </div>
+              ) : (
+                ''
+              )}
             </div>
-            <button className="search-btn" onClick={this.handleSearch}>搜一下</button>
+            <button className="search-btn" onClick={this.handleSearch}>
+              搜一下
+            </button>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
   router: routerReducer,
   ...todoList,
   ...musicList,
-  music2List,
+  music2List
 })
 
 export default rootReducer

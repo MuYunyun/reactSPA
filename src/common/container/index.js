@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {
-  Menu, Icon, Switch, Layout,
-} from 'antd'
+import { Menu, Icon, Switch, Layout } from 'antd'
 import { connect } from 'react-redux'
 import allMenu from '../utils/menu'
 import Top from './header'
@@ -14,21 +12,19 @@ import { hot } from 'react-hot-loader/root'
 const { SubMenu } = Menu
 const { Sider } = Layout
 
-@connect(
-  (state) => ({
-    router: state.router,
-  })
-)
+@connect(state => ({
+  router: state.router
+}))
 class Container extends React.Component {
   state = {
     theme: 'dark',
     collapsed: false,
-    mode: 'inline',
+    mode: 'inline'
   }
 
-  changeTheme = (value) => {
+  changeTheme = value => {
     this.setState({
-      theme: value ? 'dark' : 'light',
+      theme: value ? 'dark' : 'light'
     })
   }
 
@@ -36,14 +32,12 @@ class Container extends React.Component {
     const { collapsed } = this.state
     this.setState({
       collapsed: !collapsed,
-      mode: collapsed ? 'inline' : 'vertical',
+      mode: collapsed ? 'inline' : 'vertical'
     })
   }
 
   render() {
-    const {
-      collapsed, theme, mode,
-    } = this.state
+    const { collapsed, theme, mode } = this.state
     const { router } = this.props
     const selectedKey = router.location.pathname.split('/')[1]
     let openKey = ''
@@ -59,14 +53,29 @@ class Container extends React.Component {
     }
     return (
       <Layout className="containAll">
-        <Sider
-          collapsible
-          collapsed={collapsed}
-          onCollapse={this.onCollapse}
-        >
-          {theme === 'light' ? <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank' rel='noopener noreferrer'><Icon type="github" className="github" /></a> :
-            <a href="https://github.com/MuYunyun/react-antd-demo" target='_blank' rel='noopener noreferrer'><Icon type="github" className="github white" /></a>}
-          {theme === 'light' ? <span className="author">牧之</span> : <span className="author white">牧之</span>}
+        <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
+          {theme === 'light' ? (
+            <a
+              href="https://github.com/MuYunyun/react-antd-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon type="github" className="github" />
+            </a>
+          ) : (
+            <a
+              href="https://github.com/MuYunyun/react-antd-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon type="github" className="github white" />
+            </a>
+          )}
+          {theme === 'light' ? (
+            <span className="author">牧之</span>
+          ) : (
+            <span className="author white">牧之</span>
+          )}
           <Menu
             theme={theme}
             defaultOpenKeys={[openKey]}
@@ -74,27 +83,35 @@ class Container extends React.Component {
             className="menu"
             mode={mode}
           >
-            {
-              allMenu.map((subMenu) => {
-                if (subMenu.children && subMenu.children.length) {
-                  return (
-                    <SubMenu key={subMenu.url} title={<span><Icon type={subMenu.icon} /><span>{subMenu.name}</span></span>}>
-                      {subMenu.children.map(menu => (
-                        <Menu.Item key={menu.url}><Link to={`/${menu.url}`}>{menu.name}</Link></Menu.Item>
-                      ))}
-                    </SubMenu>
-                  )
-                }
+            {allMenu.map(subMenu => {
+              if (subMenu.children && subMenu.children.length) {
                 return (
-                  <Menu.Item key={subMenu.url}>
-                    <Link to={`/${subMenu.url}`}>
-                      <Icon type={subMenu.icon} />
-                      <span className="nav-text">{subMenu.name}</span>
-                    </Link>
-                  </Menu.Item>
+                  <SubMenu
+                    key={subMenu.url}
+                    title={
+                      <span>
+                        <Icon type={subMenu.icon} />
+                        <span>{subMenu.name}</span>
+                      </span>
+                    }
+                  >
+                    {subMenu.children.map(menu => (
+                      <Menu.Item key={menu.url}>
+                        <Link to={`/${menu.url}`}>{menu.name}</Link>
+                      </Menu.Item>
+                    ))}
+                  </SubMenu>
                 )
-              })
-            }
+              }
+              return (
+                <Menu.Item key={subMenu.url}>
+                  <Link to={`/${subMenu.url}`}>
+                    <Icon type={subMenu.icon} />
+                    <span className="nav-text">{subMenu.name}</span>
+                  </Link>
+                </Menu.Item>
+              )
+            })}
           </Menu>
           <div className="switch">
             <Switch

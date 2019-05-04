@@ -6,39 +6,76 @@ import draftToHtml from 'draftjs-to-html'
 import draftToMarkdown from 'draftjs-to-markdown'
 import './index.less'
 
-const rawContentState = { "entityMap": { "0": { "type": "IMAGE", "mutability": "MUTABLE", "data": { "src": "http://i.imgur.com/aMtBIep.png", "height": "auto", "width": "100%" } } }, "blocks": [{ "key": "9unl6", "text": "", "type": "unstyled", "depth": 0, "inlineStyleRanges": [], "entityRanges": [], "data": {} }, { "key": "95kn", "text": " ", "type": "atomic", "depth": 0, "inlineStyleRanges": [], "entityRanges": [{ "offset": 0, "length": 1, "key": 0 }], "data": {} }, { "key": "7rjes", "text": "", "type": "unstyled", "depth": 0, "inlineStyleRanges": [], "entityRanges": [], "data": {} }] }
+const rawContentState = {
+  entityMap: {
+    '0': {
+      type: 'IMAGE',
+      mutability: 'MUTABLE',
+      data: { src: 'http://i.imgur.com/aMtBIep.png', height: 'auto', width: '100%' }
+    }
+  },
+  blocks: [
+    {
+      key: '9unl6',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: '95kn',
+      text: ' ',
+      type: 'atomic',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [{ offset: 0, length: 1, key: 0 }],
+      data: {}
+    },
+    {
+      key: '7rjes',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    }
+  ]
+}
 
 export default class wysiwyg extends Component {
   state = {
     editorContent: undefined,
     contentState: rawContentState,
-    editorState: '',
+    editorState: ''
   }
 
-  onEditorChange = (editorContent) => {
+  onEditorChange = editorContent => {
     this.setState({
-      editorContent,
+      editorContent
     })
   }
 
   clearContent = () => {
     this.setState({
-      contentState: '',
+      contentState: ''
     })
   }
 
-  onContentStateChange = (contentState) => {
+  onContentStateChange = contentState => {
     console.log('contentState', contentState)
   }
 
-  onEditorStateChange = (editorState) => {
+  onEditorStateChange = editorState => {
     this.setState({
-      editorState,
+      editorState
     })
   }
 
-  imageUploadCallBack = file => new Promise(
-    (resolve, reject) => {
+  imageUploadCallBack = file =>
+    new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest()
       xhr.open('POST', 'https://api.imgur.com/3/image')
       xhr.setRequestHeader('Authorization', 'Client-ID 8d26ccd12712fca')
@@ -53,8 +90,7 @@ export default class wysiwyg extends Component {
         const error = JSON.parse(xhr.responseText)
         reject(error)
       })
-    }
-  )
+    })
 
   render() {
     const { editorContent, editorState } = this.state
@@ -63,7 +99,7 @@ export default class wysiwyg extends Component {
         <Row gutter={16}>
           <Col span={24}>
             <div className="cloud-box">
-              <Card title="富文本编辑器" bordered={true} >
+              <Card title="富文本编辑器" bordered={true}>
                 <Editor
                   editorState={editorState}
                   toolbarClassName="home-toolbar"
@@ -74,14 +110,21 @@ export default class wysiwyg extends Component {
                     history: { inDropdown: true },
                     list: { inDropdown: true },
                     textAlign: { inDropdown: true },
-                    image: { uploadCallback: this.imageUploadCallBack },
+                    image: { uploadCallback: this.imageUploadCallBack }
                   }}
                   onContentStateChange={this.onEditorChange}
                   placeholder="尝试输入 @ 哦，有惊喜"
                   spellCheck
-                  onFocus={() => { console.log('focus') }}
-                  onBlur={() => { console.log('blur') }}
-                  onTab={() => { console.log('tab'); return true }}
+                  onFocus={() => {
+                    console.log('focus')
+                  }}
+                  onBlur={() => {
+                    console.log('blur')
+                  }}
+                  onTab={() => {
+                    console.log('tab')
+                    return true
+                  }}
                   localization={{ locale: 'zh', translations: { 'generic.add': 'Add' } }}
                   mention={{
                     separator: ' ',
@@ -94,8 +137,8 @@ export default class wysiwyg extends Component {
                       { text: 'ABCD', value: 'ABCDDDD', url: 'href-abcd' },
                       { text: 'ABCDE', value: 'ABCDE', url: 'href-abcde' },
                       { text: 'ABCDEF', value: 'ABCDEF', url: 'href-abcdef' },
-                      { text: 'ABCDEFG', value: 'ABCDEFG', url: 'href-abcdefg' },
-                    ],
+                      { text: 'ABCDEFG', value: 'ABCDEFG', url: 'href-abcdefg' }
+                    ]
                   }}
                 />
               </Card>

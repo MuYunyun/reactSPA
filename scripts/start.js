@@ -13,11 +13,7 @@ const chalk = require('chalk')
 const webpack = require('webpack')
 const WebpackDevServer = require('webpack-dev-server')
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles')
-const {
-  choosePort,
-  createCompiler,
-  prepareUrls,
-} = require('react-dev-utils/WebpackDevServerUtils')
+const { choosePort, createCompiler, prepareUrls } = require('react-dev-utils/WebpackDevServerUtils')
 const openBrowser = require('react-dev-utils/openBrowser')
 const paths = require('../config/paths')
 const config = require('../config/webpack.config.dev')
@@ -45,9 +41,7 @@ choosePort(HOST, DEFAULT_PORT)
     const urls = prepareUrls(protocol, HOST, port)
     // Create a webpack compiler that is configured with custom messages.
     const compiler = createCompiler(webpack, config, appName, urls, useYarn)
-    const serverConfig = createDevServerConfig(
-      urls.lanUrlForConfig,
-    )
+    const serverConfig = createDevServerConfig(urls.lanUrlForConfig)
     const devServer = new WebpackDevServer(compiler, serverConfig)
     devServer.listen(port, HOST, err => {
       if (err) {

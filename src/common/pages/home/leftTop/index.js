@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Col, Card, Icon,
-} from 'antd'
+import { Col, Card, Icon } from 'antd'
 
 const LeftTop = () => (
   <div>
@@ -61,6 +59,7 @@ const LeftTop = () => (
         </Card>
       </div>
     </Col>
-  </div>)
+  </div>
+)
 
 export default LeftTop

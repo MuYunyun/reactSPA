@@ -7,52 +7,58 @@ import { connect } from 'react-redux'
 import { musicKindList } from '../../../utils/config'
 import './index.less'
 
-@connect(
-  (state) => ({
-    music2List: state.music2List,
-  })
-)
+@connect(state => ({
+  music2List: state.music2List
+}))
 export default class Music extends React.Component {
   componentDidMount() {}
 
-  fetchTableData = (value) => {}
+  fetchTableData = value => {}
 
-  onSearch = (searchFields) => {
+  onSearch = searchFields => {
     this.props.dispatch(fetchMusicList())
   }
 
   searchFields = () => {
-    return [{
-      title: '歌曲类型',
-      key: 'type',
-      type: 'select',
-      defaultValue: 2,
-      // onChange: (value) => this.fetchTableData(value),
-      items: () => musicKindList.map(ele => ({
-        value: ele.value,
-        mean: ele.mean,
-      })),
-    }]
+    return [
+      {
+        title: '歌曲类型',
+        key: 'type',
+        type: 'select',
+        defaultValue: 2,
+        // onChange: (value) => this.fetchTableData(value),
+        items: () =>
+          musicKindList.map(ele => ({
+            value: ele.value,
+            mean: ele.mean
+          }))
+      }
+    ]
   }
 
   tableHeader = () => {
-    return [{
-      dataIndex: 'title',
-      title: '歌曲名',
-      width: 200,
-    }, {
-      dataIndex: 'author',
-      title: '歌手',
-      width: 200,
-    }, {
-      dataIndex: 'country',
-      title: '发行国家',
-      width: 200,
-    }, {
-      dataIndex: 'language',
-      title: '语种',
-      width: 200,
-    }]
+    return [
+      {
+        dataIndex: 'title',
+        title: '歌曲名',
+        width: 200
+      },
+      {
+        dataIndex: 'author',
+        title: '歌手',
+        width: 200
+      },
+      {
+        dataIndex: 'country',
+        title: '发行国家',
+        width: 200
+      },
+      {
+        dataIndex: 'language',
+        title: '语种',
+        width: 200
+      }
+    ]
   }
 
   onOk = () => {
@@ -66,10 +72,7 @@ export default class Music extends React.Component {
 
     return (
       <div id="wrap">
-        <SearchBar
-          onSubmit={this.onSearch}
-          fields={this.searchFields()}
-        />
+        <SearchBar onSubmit={this.onSearch} fields={this.searchFields()} />
         <div className="tableBox">
           <div style={{ paddingTop: 43 }}>
             <Table

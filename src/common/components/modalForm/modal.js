@@ -1,22 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  Modal,
-} from 'antd'
+import { Modal } from 'antd'
 
 import Form from './form'
 
 export default class FormModal extends React.PureComponent {
   render() {
-    const {
-      modalKey,
-      visible,
-      title,
-      fields,
-      onCancel,
-      onOk,
-      okText,
-    } = this.props
+    const { modalKey, visible, title, fields, onCancel, onOk, okText } = this.props
     return (
       <Modal
         wrapClassName="form"
@@ -26,13 +16,7 @@ export default class FormModal extends React.PureComponent {
         onCancel={onCancel}
         footer={null}
       >
-        <Form
-          fields={fields}
-          onOk={onOk}
-          onCancel={onCancel}
-          showCancel
-          okText={okText}
-        />
+        <Form fields={fields} onOk={onOk} onCancel={onCancel} showCancel okText={okText} />
       </Modal>
     )
   }
@@ -44,5 +28,5 @@ FormModal.propTypes = {
   title: PropTypes.string.isRequired,
   fields: PropTypes.arrayOf(Object).isRequired,
   onOk: PropTypes.func.isRequired,
-  onCancel: PropTypes.func.isRequired,
+  onCancel: PropTypes.func.isRequired
 }

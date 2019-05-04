@@ -14,23 +14,26 @@ const option = {
     left: 'center',
     textStyle: {
       color: '#ccc',
-      fontSize: 12,
+      fontSize: 12
     },
-    padding: 10,
+    padding: 10
   },
   backgroundColor: '#404040',
-  xAxis: [{
-    show: true,
-    data: xAxisData,
-    axisLabel: {
-      textStyle: {
-        color: '#ccc',
-      },
+  xAxis: [
+    {
+      show: true,
+      data: xAxisData,
+      axisLabel: {
+        textStyle: {
+          color: '#ccc'
+        }
+      }
     },
-  }, {
-    show: false,
-    data: xAxisData,
-  }],
+    {
+      show: false,
+      data: xAxisData
+    }
+  ],
   tooltip: {},
   visualMap: {
     show: false,
@@ -38,27 +41,27 @@ const option = {
     max: 50,
     dimension: 0,
     inRange: {
-      color: ['#4a657a', '#308e92', '#b1cfa5', '#f5d69f', '#f5898b', '#ef5055'],
-    },
+      color: ['#4a657a', '#308e92', '#b1cfa5', '#f5d69f', '#f5898b', '#ef5055']
+    }
   },
   yAxis: {
     axisLine: {
-      show: false,
+      show: false
     },
     axisLabel: {
       textStyle: {
-        color: '#ccc',
-      },
+        color: '#ccc'
+      }
     },
     splitLine: {
       show: true,
       lineStyle: {
-        color: '#08263f',
-      },
+        color: '#08263f'
+      }
     },
     axisTick: {
-      show: false,
-    },
+      show: false
+    }
   },
   series: [
     {
@@ -72,17 +75,18 @@ const option = {
       animationDuration: 1200,
       lineStyle: {
         normal: {
-          color: 'transparent',
-        },
+          color: 'transparent'
+        }
       },
       areaStyle: {
         normal: {
           color: '#08263a',
           shadowBlur: 50,
-          shadowColor: '#000',
+          shadowColor: '#000'
         }
       }
-    }, {
+    },
+    {
       name: '完成项目数',
       type: 'bar',
       data,
@@ -90,14 +94,15 @@ const option = {
       z: 3,
       itemStyle: {
         normal: {
-          barBorderRadius: 5,
-        },
-      },
-    }],
+          barBorderRadius: 5
+        }
+      }
+    }
+  ],
   animationEasing: 'elasticOut',
   animationEasingUpdate: 'elasticOut',
-  animationDelay: (idx) => idx * 20,
-  animationDelayUpdate: (idx) => idx * 20,
+  animationDelay: idx => idx * 20,
+  animationDelayUpdate: idx => idx * 20
 }
 const EchartsProjects = () => (
   <ReactEcharts

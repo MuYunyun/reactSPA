@@ -24,13 +24,13 @@ const option = {
     backgroundColor: 'rgba(255,255,255,1)',
     padding: [5, 10],
     textStyle: {
-      color: '#7588E4',
+      color: '#7588E4'
     },
     extraCssText: 'box-shadow: 0 0 5px rgba(0,0,0,0.3)'
   },
   legend: {
     right: 20,
-    orient: 'vertical',
+    orient: 'vertical'
   },
   xAxis: {
     type: 'category',
@@ -80,36 +80,48 @@ const option = {
       }
     }
   },
-  series: [{
-    name: 'pv',
-    type: 'line',
-    smooth: true,
-    showSymbol: false,
-    symbol: 'circle',
-    symbolSize: 6,
-    data: ['1200', '1400', '808', '811', '626', '488', '1600'],
-    areaStyle: {
-      normal: {
-        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-          offset: 0,
-          color: 'rgba(216, 244, 247,1)'
-        }, {
-          offset: 1,
-          color: 'rgba(216, 244, 247,1)'
-        }], false)
-      }
-    },
-    itemStyle: {
-      normal: {
-        color: '#58c8da'
-      }
-    },
-    lineStyle: {
-      normal: {
-        width: 3
+  series: [
+    {
+      name: 'pv',
+      type: 'line',
+      smooth: true,
+      showSymbol: false,
+      symbol: 'circle',
+      symbolSize: 6,
+      data: ['1200', '1400', '808', '811', '626', '488', '1600'],
+      areaStyle: {
+        normal: {
+          color: new echarts.graphic.LinearGradient(
+            0,
+            0,
+            0,
+            1,
+            [
+              {
+                offset: 0,
+                color: 'rgba(216, 244, 247,1)'
+              },
+              {
+                offset: 1,
+                color: 'rgba(216, 244, 247,1)'
+              }
+            ],
+            false
+          )
+        }
+      },
+      itemStyle: {
+        normal: {
+          color: '#58c8da'
+        }
+      },
+      lineStyle: {
+        normal: {
+          width: 3
+        }
       }
     }
-  }]
+  ]
 }
 
 const EchartsViews = () => (

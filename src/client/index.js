@@ -17,10 +17,10 @@ ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <div>
-        { routes }
+        {routes}
         {ENABLE_DEVTOOLS ? <DevTools /> : ''}
       </div>
     </ConnectedRouter>
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 )

@@ -10,62 +10,62 @@ const Loading = () => <div>Loading...</div>
 
 const Home = Loadable({
   loader: () => import('../pages/home'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Follow = Loadable({
   loader: () => import('../pages/follow'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Tools = Loadable({
   loader: () => import('../pages/tools/smallTools'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Music = Loadable({
   loader: () => import('../pages/music'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Todo = Loadable({
   loader: () => import('../pages/mock/todo'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Album = Loadable({
   loader: () => import('../pages/gallary/album'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Editor = Loadable({
   loader: () => import('../pages/tools/editor'),
-  loading: Loading,
+  loading: Loading
 })
 
 const TodoList = Loadable({
   loader: () => import('../pages/tools/todoList'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Search = Loadable({
   loader: () => import('../pages/search'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Waterfall = Loadable({
   loader: () => import('../pages/gallary/waterfall'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Mock = Loadable({
   loader: () => import('../pages/mock/useMock'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Reform = Loadable({
   loader: () => import('../pages/mock/reform'),
-  loading: Loading,
+  loading: Loading
 })
 
 const Contents = () => (

@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Col, Card, Icon,
-} from 'antd'
+import { Col, Card, Icon } from 'antd'
 import EchartsViews from './EchartsViews'
 
 const AccessNum = () => (
@@ -12,10 +10,13 @@ const AccessNum = () => (
           <h3>访问量统计</h3>
           <small>最近7天用户访问量</small>
         </div>
-        <span className="card-tool"><Icon type="sync" /></span>
+        <span className="card-tool">
+          <Icon type="sync" />
+        </span>
         <EchartsViews />
       </Card>
     </div>
-  </Col>)
+  </Col>
+)
 
 export default AccessNum

@@ -27,7 +27,7 @@ module.exports = {
   bail: true,
   devtool: shouldUseSourceMap ? 'source-map' : false,
   entry: {
-    IndexJs: paths.appIndexJs,
+    IndexJs: paths.appIndexJs
   },
   output: {
     path: paths.appBuild,
@@ -35,7 +35,8 @@ module.exports = {
     chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
     publicPath,
     // Point sourcemap entries to original disk location
-    devtoolModuleFilenameTemplate: info => path.relative(paths.appSrc, info.absoluteResourcePath).replace(/\\/g, '/'),
+    devtoolModuleFilenameTemplate: info =>
+      path.relative(paths.appSrc, info.absoluteResourcePath).replace(/\\/g, '/')
   },
   resolve: {
     modules: ['node_modules', paths.appNodeModules].concat(
@@ -51,11 +52,9 @@ module.exports = {
       data: `${path.resolve(__dirname, '..')}/src/server/data`,
       actions: `${path.resolve(__dirname, '..')}/src/common/actions`,
       reducers: `${path.resolve(__dirname, '..')}/src/common/reducers`,
-      api: `${path.resolve(__dirname, '..')}/src/common/api`,
+      api: `${path.resolve(__dirname, '..')}/src/common/api`
     },
-    plugins: [
-      new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
-    ],
+    plugins: [new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson])]
   },
   module: {
     strictExportPresence: true,
@@ -67,8 +66,8 @@ module.exports = {
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: 'static/media/[name].[hash:8].[ext]',
-            },
+              name: 'static/media/[name].[hash:8].[ext]'
+            }
           },
           {
             test: /\.(js|jsx)$/,
@@ -77,10 +76,10 @@ module.exports = {
             options: {
               plugins: [
                 'transform-decorators-legacy',
-                ['import', { libraryName: 'antd', style: true }],
+                ['import', { libraryName: 'antd', style: true }]
               ],
-              compact: true,
-            },
+              compact: true
+            }
           },
           {
             test: /\.css$/,
@@ -92,8 +91,8 @@ module.exports = {
                 // "css" loader resolves paths in CSS and adds assets as dependencies.
                 loader: require.resolve('css-loader'),
                 options: {
-                  importLoaders: 1,
-                },
+                  importLoaders: 1
+                }
               },
               {
                 // "postcss" loader applies autoprefixer to our CSS.
@@ -107,14 +106,14 @@ module.exports = {
                         '>1%',
                         'last 4 versions',
                         'Firefox ESR',
-                        'not ie < 9', // React doesn't support IE8 anyway
+                        'not ie < 9' // React doesn't support IE8 anyway
                       ],
-                      flexbox: 'no-2009',
-                    }),
-                  ],
-                },
-              },
-            ],
+                      flexbox: 'no-2009'
+                    })
+                  ]
+                }
+              }
+            ]
           },
           {
             test: /\.less$/,
@@ -132,31 +131,31 @@ module.exports = {
                         '>1%',
                         'last 4 versions',
                         'Firefox ESR',
-                        'not ie < 9', // React doesn't support IE8 anyway
+                        'not ie < 9' // React doesn't support IE8 anyway
                       ],
-                      flexbox: 'no-2009',
-                    }),
-                  ],
-                },
+                      flexbox: 'no-2009'
+                    })
+                  ]
+                }
               },
               {
                 loader: require.resolve('less-loader'),
                 options: {
-                  modifyVars: { "@primary-color": "#1890ff" },
-                },
-              },
-            ],
+                  modifyVars: { '@primary-color': '#1890ff' }
+                }
+              }
+            ]
           },
           {
             loader: require.resolve('file-loader'),
-            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.less$/,],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /\.less$/],
             options: {
-              name: 'static/media/[name].[hash:8].[ext]',
-            },
-          },
-        ],
-      },
-    ],
+              name: 'static/media/[name].[hash:8].[ext]'
+            }
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -172,17 +171,19 @@ module.exports = {
         keepClosingSlash: true,
         minifyJS: true,
         minifyCSS: true,
-        minifyURLs: true,
-      },
+        minifyURLs: true
+      }
     }),
-    new webpack.DefinePlugin(Object.assign({}, env.stringified, {
-      ENABLE_DEVTOOLS: false,
-    })),
+    new webpack.DefinePlugin(
+      Object.assign({}, env.stringified, {
+        ENABLE_DEVTOOLS: false
+      })
+    ),
     // Generate a manifest file which contains a mapping of all asset filenames
     // to their corresponding output file so that tools can pick it up without
     // having to parse `index.html`.
     new ManifestPlugin({
-      fileName: 'asset-manifest.json',
+      fileName: 'asset-manifest.json'
     }),
     // 生成一个能预缓存的 service worker，同时它能保持更新
     new SWPrecacheWebpackPlugin({
@@ -206,18 +207,19 @@ module.exports = {
       // https://github.com/facebookincubator/create-react-app/issues/2237#issuecomment-302693219
       navigateFallbackWhitelist: [/^(?!\/__).*/],
       // Don't precache sourcemaps (they're large) and build asset manifest:
-      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/]
     }),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/), // 实验减少了 47.68 kb
     new MiniCssExtractPlugin({
       filename: 'static/css/[name].css',
-      chunkFilename: 'static/css/[id].css',
-    }),
+      chunkFilename: 'static/css/[id].css'
+    })
   ],
-  node: { // 这个对体积没影响，应该对项目引用有间接影响
+  node: {
+    // 这个对体积没影响，应该对项目引用有间接影响
     dgram: 'empty',
     fs: 'empty',
     net: 'empty',
-    tls: 'empty',
-  },
+    tls: 'empty'
+  }
 }

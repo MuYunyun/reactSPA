@@ -10,21 +10,21 @@ export default class Salary extends React.Component {
       rent: '',
       buy: '',
       balance: '',
-      des: '………………',
+      des: '………………'
     }
   }
 
-  handleChange = (e) => {
+  handleChange = e => {
     const rentMoney = e.target.value
     this.setState({ item: rentMoney })
   }
-  handleTime = (e) => {
+  handleTime = e => {
     const year = e.target.value
     this.setState({ time: year })
-    const rent = year * 12 * this.state.item / 10000
+    const rent = (year * 12 * this.state.item) / 10000
     this.setState({ rent: rent })
   }
-  handleBuy = (e) => {
+  handleBuy = e => {
     const buyMoney = e.target.value
     this.setState({ buy: buyMoney })
     const balance = buyMoney - this.state.rent
@@ -43,27 +43,54 @@ export default class Salary extends React.Component {
       <div style={{ marginTop: 80 }}>
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
-            <Input type="number" addonBefore="预计租金：" addonAfter="元/月" onChange={this.handleChange} />
+            <Input
+              type="number"
+              addonBefore="预计租金："
+              addonAfter="元/月"
+              onChange={this.handleChange}
+            />
           </Col>
         </Row>
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
-            <Input type="number" addonBefore="预计年数：" addonAfter="年" onChange={this.handleTime} />
+            <Input
+              type="number"
+              addonBefore="预计年数："
+              addonAfter="年"
+              onChange={this.handleTime}
+            />
           </Col>
         </Row>
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
-            <Input addonBefore="租房合计：" addonAfter="万" value={this.state.rent} disabled id="red" />
+            <Input
+              addonBefore="租房合计："
+              addonAfter="万"
+              value={this.state.rent}
+              disabled
+              id="red"
+            />
           </Col>
         </Row>
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
-            <Input type="number" addonBefore="买房合计：" addonAfter="万" onChange={this.handleBuy} />
+            <Input
+              type="number"
+              addonBefore="买房合计："
+              addonAfter="万"
+              onChange={this.handleBuy}
+            />
           </Col>
         </Row>
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
-            <Input addonBefore="买房 - 租房：" addonAfter="万" value={this.state.balance} disabled id="blue" />
+            <Input
+              addonBefore="买房 - 租房："
+              addonAfter="万"
+              value={this.state.balance}
+              disabled
+              id="blue"
+            />
           </Col>
         </Row>
         <Row type="flex" justify="center" className="rowItem">
@@ -75,11 +102,20 @@ export default class Salary extends React.Component {
         </Row>
         <Row type="flex" justify="center" className="rowItem">
           <Col span={10}>
-            <div className="issue">如若结果出现误差<a href="https://github.com/MuYunyun/react-antd-demo/issues" target="_blank" rel='noopener noreferrer'>点此提issue</a>，O(∩_∩)O</div>
+            <div className="issue">
+              如若结果出现误差
+              <a
+                href="https://github.com/MuYunyun/react-antd-demo/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                点此提issue
+              </a>
+              ，O(∩_∩)O
+            </div>
           </Col>
         </Row>
       </div>
     )
   }
 }
-

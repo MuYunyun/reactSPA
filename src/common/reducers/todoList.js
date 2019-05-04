@@ -6,7 +6,7 @@ const todo = (state, action) => {
       return {
         id: action.id,
         text: action.text,
-        completed: false, // 刚传入的待办项未完成
+        completed: false // 刚传入的待办项未完成
       }
     case 'TOGGLE_TODO':
       if (state.id !== action.id) {
@@ -20,41 +20,48 @@ const todo = (state, action) => {
   }
 }
 
-const todoListInit = [{
-  id: -3,
-  text: 'coding',
-  completed: false,
-}, {
-  id: -2,
-  text: '打篮球',
-  completed: false,
-}, {
-  id: -1,
-  text: 'reading',
-  completed: true,
-}]
-
-export const todoList = handleActions({
-  'ADD_TODO'(state, action) {
-    return [
-      ...state,
-      todo(undefined, action.payload)
-    ]
+const todoListInit = [
+  {
+    id: -3,
+    text: 'coding',
+    completed: false
   },
-  'TOGGLE_TODO'(state, action) {
-    return state.map(t => todo(t, action.payload))
+  {
+    id: -2,
+    text: '打篮球',
+    completed: false
   },
-  'DEL_TODO'(state, action) {
-    return state.filter(t => t.id !== action.payload.id)
+  {
+    id: -1,
+    text: 'reading',
+    completed: true
   }
-}, todoListInit)
+]
+
+export const todoList = handleActions(
+  {
+    ADD_TODO(state, action) {
+      return [...state, todo(undefined, action.payload)]
+    },
+    TOGGLE_TODO(state, action) {
+      return state.map(t => todo(t, action.payload))
+    },
+    DEL_TODO(state, action) {
+      return state.filter(t => t.id !== action.payload.id)
+    }
+  },
+  todoListInit
+)
 
 const setVisibilityInit = {
-  filter: 'SHOW_ALL',
+  filter: 'SHOW_ALL'
 }
 
-export const setVisibility = handleActions({
-  'SET_VISIBILITY'(state, action) {
-    return { ...state, ...action.payload }
-  }
-}, setVisibilityInit)
+export const setVisibility = handleActions(
+  {
+    SET_VISIBILITY(state, action) {
+      return { ...state, ...action.payload }
+    }
+  },
+  setVisibilityInit
+)

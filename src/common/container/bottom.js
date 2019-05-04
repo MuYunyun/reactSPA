@@ -8,7 +8,7 @@ export default class Bottom extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      timer: 0,
+      timer: 0
     }
   }
 
@@ -36,8 +36,7 @@ export default class Bottom extends React.Component {
             <span>© 2017-2018 牧云云</span>
             <span className="stay">
               您已在小窝里逗留了
-              <span className="time">{timer}</span>
-              秒
+              <span className="time">{timer}</span>秒
             </span>
           </div>
         </div>

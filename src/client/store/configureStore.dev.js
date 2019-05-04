@@ -12,7 +12,7 @@ import logger from '../middleware/logger'
 const enhancer = compose(
   // applyMiddleware(thunk, middleware),
   applyMiddleware(thunk, logger),
-  DevTools.instrument(),
+  DevTools.instrument()
 )
 
 export default function configureStore(initialstate) {

@@ -11,7 +11,7 @@ export default class Waterfall extends React.Component {
       waterfall = new window.Waterfall({
         number: 20,
         fixWidth: 1000,
-        scrollElem: 'content',
+        scrollElem: 'content'
       })
       waterfall.on('load', () => {
         setTimeout(() => {
@@ -60,7 +60,9 @@ export default class Waterfall extends React.Component {
   render() {
     return (
       <div id="waterfall">
-        {imgUrlList.map((r, index) => <img key={index} src={r} className="waterfall-box" alt="waterfall" />)}
+        {imgUrlList.map((r, index) => (
+          <img key={index} src={r} className="waterfall-box" alt="waterfall" />
+        ))}
       </div>
     )
   }

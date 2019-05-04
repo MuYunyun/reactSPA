@@ -2,18 +2,18 @@ import fetchJsonp from 'fetch-jsonp'
 
 export function fetchJSONP(url, params) {
   return fetchJsonp(url, {
-    ...params,
+    ...params
   })
 }
 
 export const fetchJSONPByGet = url => query => {
   const params = {
-    method: 'GET',
+    method: 'GET'
   }
   let getQuery = '?'
   let getUrl = ''
   if (query) {
-    Object.keys(query).forEach((name) => {
+    Object.keys(query).forEach(name => {
       getQuery = `${getQuery}${name}=${query[name]}&`
     })
   }
@@ -23,12 +23,12 @@ export const fetchJSONPByGet = url => query => {
 
 export const fetchJSONByGet = url => query => {
   const params = {
-    method: 'GET',
+    method: 'GET'
   }
   let getQuery = '?'
   let getUrl = ''
   if (query) {
-    Object.keys(query).forEach((name) => {
+    Object.keys(query).forEach(name => {
       getQuery = `${getQuery}${name}=${query[name]}&`
     })
   }

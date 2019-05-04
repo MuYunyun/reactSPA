@@ -24,8 +24,7 @@ const getPublicUrl = appPackageJson => envPublicUrl || require(appPackageJson).h
 
 function getServedPath(appPackageJson) {
   const publicUrl = getPublicUrl(appPackageJson)
-  const servedUrl = envPublicUrl ||
-    (publicUrl ? url.parse(publicUrl).pathname : '/') // 本 demo 中，servedUrl 为 reactSPA
+  const servedUrl = envPublicUrl || (publicUrl ? url.parse(publicUrl).pathname : '/') // 本 demo 中，servedUrl 为 reactSPA
   return ensureSlash(servedUrl, true)
 }
 
@@ -41,5 +40,5 @@ module.exports = {
   testsSetup: resolveApp('src/__tests__/index.test.js'),
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')), // 本 demo 中，为 reactSPA/
+  servedPath: getServedPath(resolveApp('package.json')) // 本 demo 中，为 reactSPA/
 }
