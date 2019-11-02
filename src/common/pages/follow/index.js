@@ -10,12 +10,10 @@ export default class Follow extends React.Component {
     }
   }
 
-  // 组件渲染后，500毫秒改变一次组件颜色
   componentDidMount() {
     this.interval = setInterval(this.getRandomColor, 500)
   }
 
-  // 组件将要死亡时清除计时器
   componentWillUnmount() {
     clearInterval(this.interval)
   }

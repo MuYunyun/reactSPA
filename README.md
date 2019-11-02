@@ -33,7 +33,7 @@ yarn deploy || npm run deploy
 - 编译打包: Babel Webpack(4.x)
 - 热更新: webpack-dev-server
 - UI 库: React & React-Dom(^16.11.0)
-- UI 组件: Antd(3.x) (TodoList: Beast)
+- UI 组件: Antd(3.x)
 - 路由: react-router(4.x)、react-router-redux
 - 状态管理: redux (TodoList: Graghql + Relay)
 - JS: ES6、ES7
@@ -109,3 +109,8 @@ yarn deploy || npm run deploy
 ├── README.md
 └── yarn.lock
 ```
+
+### todoList
+
+- [ ] 使用 suspense 替代 react-loadable
+- [ ] 状态管理库迁移至 graghql
