@@ -32,10 +32,10 @@ yarn deploy || npm run deploy
 
 - 编译打包: Babel Webpack(4.x)
 - 热更新: webpack-dev-server
-- UI 库: React & React-Dom(^16.6.3)
-- UI 组件: Antd(3.x)，
+- UI 库: React & React-Dom(^16.11.0)
+- UI 组件: Antd(3.x) (TodoList: Beast)
 - 路由: react-router(4.x)、react-router-redux
-- 状态管理: redux
+- 状态管理: redux (TodoList: Graghql + Relay)
 - JS: ES6、ES7
 - 样式: less
 - Ajax: Fetch
@@ -109,5 +109,3 @@ yarn deploy || npm run deploy
 ├── README.md
 └── yarn.lock
 ```
-
-> 执行 npm run lint, 该项目存在 eslint 报错, 欢迎感兴趣的朋友 pr。
