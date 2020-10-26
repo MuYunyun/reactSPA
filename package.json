@@ -39,7 +39,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-draft-wysiwyg": "^1.10.0",
+    "react-draft-wysiwyg": "^1.14.5",
     "react-hot-loader": "^4.8.2",
     "react-loadable": "^5.5.0",
     "react-redux": "^5.0.5",
