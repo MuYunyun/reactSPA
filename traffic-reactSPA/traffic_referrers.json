@@ -5,23 +5,23 @@
     "uniques": 20
   },
   {
-    "referrer": "muyunyun.cn",
-    "count": 6,
-    "uniques": 5
-  },
-  {
-    "referrer": "cnblogs.com",
-    "count": 4,
-    "uniques": 3
-  },
-  {
     "referrer": "link.zhihu.com",
+    "count": 5,
+    "uniques": 4
+  },
+  {
+    "referrer": "muyunyun.cn",
     "count": 4,
-    "uniques": 3
+    "uniques": 4
   },
   {
     "referrer": "Baidu",
     "count": 4,
+    "uniques": 2
+  },
+  {
+    "referrer": "cnblogs.com",
+    "count": 2,
     "uniques": 2
   },
   {
