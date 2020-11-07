@@ -6,8 +6,8 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 6,
-    "uniques": 4
+    "count": 7,
+    "uniques": 5
   },
   {
     "referrer": "Google",
@@ -31,6 +31,11 @@
   },
   {
     "referrer": "Baidu",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "link.juejin.im",
     "count": 1,
     "uniques": 1
   }
