@@ -2,7 +2,17 @@
   {
     "referrer": "github.com",
     "count": 29,
-    "uniques": 20
+    "uniques": 19
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 5,
+    "uniques": 5
+  },
+  {
+    "referrer": "Google",
+    "count": 4,
+    "uniques": 4
   },
   {
     "referrer": "muyunyun.cn",
@@ -15,17 +25,12 @@
     "uniques": 3
   },
   {
-    "referrer": "Google",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "referrer": "link.juejin.im",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "codercto.com",
     "count": 1,
     "uniques": 1
   }
