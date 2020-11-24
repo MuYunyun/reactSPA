@@ -94,7 +94,7 @@
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.6",
     "prettier": "^1.17.0",
-    "react-dev-utils": "^5.0.0",
+    "react-dev-utils": "^11.0.1",
     "react-error-overlay": "^1.0.10",
     "redux-devtools": "^3.4.1",
     "redux-devtools-dock-monitor": "^1.1.3",
