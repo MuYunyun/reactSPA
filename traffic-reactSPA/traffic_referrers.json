@@ -1,12 +1,17 @@
 [
   {
     "referrer": "github.com",
-    "count": 31,
-    "uniques": 20
+    "count": 34,
+    "uniques": 22
   },
   {
     "referrer": "link.zhihu.com",
     "count": 5,
+    "uniques": 3
+  },
+  {
+    "referrer": "cnblogs.com",
+    "count": 3,
     "uniques": 3
   },
   {
@@ -15,17 +20,12 @@
     "uniques": 3
   },
   {
-    "referrer": "cnblogs.com",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "referrer": "Google",
+    "referrer": "awesomeopensource.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "segmentfault.com",
+    "referrer": "Google",
     "count": 1,
     "uniques": 1
   }
