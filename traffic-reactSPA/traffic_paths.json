@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 109,
-    "uniques": 59
+    "count": 110,
+    "uniques": 60
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
@@ -30,6 +30,12 @@
     "uniques": 3
   },
   {
+    "path": "/MuYunyun/reactSPA/search",
+    "title": "Search · vue · GitHub",
+    "count": 7,
+    "uniques": 6
+  },
+  {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/pages/home",
     "title": "reactSPA/src/common/pages/home at master · MuYunyun/reactSPA",
     "count": 7,
@@ -52,11 +58,5 @@
     "title": "reactSPA/src/common/components at master · MuYunyun/reactSPA · GitHub",
     "count": 6,
     "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/public",
-    "title": "reactSPA/public at master · MuYunyun/reactSPA · GitHub",
-    "count": 5,
-    "uniques": 5
   }
 ]
