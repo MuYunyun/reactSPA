@@ -2,11 +2,11 @@
   {
     "referrer": "github.com",
     "count": 31,
-    "uniques": 23
+    "uniques": 24
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 11,
+    "count": 10,
     "uniques": 7
   },
   {
@@ -15,17 +15,17 @@
     "uniques": 6
   },
   {
+    "referrer": "muyunyun.cn",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "referrer": "awesomeopensource.com",
     "count": 1,
     "uniques": 1
   },
   {
     "referrer": "Google",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "muyunyun.cn",
     "count": 1,
     "uniques": 1
   }
