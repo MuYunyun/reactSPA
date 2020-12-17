@@ -1,23 +1,23 @@
 [
   {
     "referrer": "github.com",
-    "count": 29,
-    "uniques": 27
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 8,
-    "uniques": 5
+    "count": 26,
+    "uniques": 25
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 7,
-    "uniques": 5
+    "count": 8,
+    "uniques": 6
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 6,
+    "uniques": 4
   },
   {
     "referrer": "cnblogs.com",
-    "count": 7,
-    "uniques": 3
+    "count": 5,
+    "uniques": 4
   },
   {
     "referrer": "Google",
@@ -25,12 +25,12 @@
     "uniques": 3
   },
   {
-    "referrer": "awesomeopensource.com",
-    "count": 1,
-    "uniques": 1
+    "referrer": "Baidu",
+    "count": 2,
+    "uniques": 2
   },
   {
-    "referrer": "Baidu",
+    "referrer": "awesomeopensource.com",
     "count": 1,
     "uniques": 1
   }
