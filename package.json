@@ -105,6 +105,6 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^2.0.6",
     "webpack-dev-server": "^3.1.11",
-    "webpack-manifest-plugin": "2.0.0-rc.2"
+    "webpack-manifest-plugin": "2.2.0"
   }
 }
