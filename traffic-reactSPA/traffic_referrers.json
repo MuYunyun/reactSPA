@@ -5,27 +5,17 @@
     "uniques": 18
   },
   {
-    "referrer": "link.zhihu.com",
-    "count": 5,
-    "uniques": 5
-  },
-  {
     "referrer": "muyunyun.cn",
     "count": 5,
     "uniques": 4
   },
   {
-    "referrer": "cnblogs.com",
-    "count": 5,
-    "uniques": 1
+    "referrer": "link.zhihu.com",
+    "count": 4,
+    "uniques": 4
   },
   {
     "referrer": "voidcn.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "link.csdn.net",
     "count": 1,
     "uniques": 1
   }
