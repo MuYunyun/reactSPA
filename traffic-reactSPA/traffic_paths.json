@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 55,
-    "uniques": 45
+    "count": 60,
+    "uniques": 50
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 14,
-    "uniques": 8
+    "count": 13,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
@@ -28,6 +28,12 @@
     "title": "reactSPA/src/common/api at master · MuYunyun/reactSPA · GitHub",
     "count": 6,
     "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "Issues · MuYunyun/reactSPA",
+    "count": 5,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
@@ -52,11 +58,5 @@
     "title": "请问button如何实现全局黑暗模式 · Issue #60 · MuYunyun/reactSPA",
     "count": 3,
     "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/package.json",
-    "title": "reactSPA/package.json at master · MuYunyun/reactSPA",
-    "count": 3,
-    "uniques": 2
   }
 ]
