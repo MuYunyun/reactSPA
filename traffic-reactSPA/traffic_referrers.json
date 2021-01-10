@@ -6,16 +6,21 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 8,
-    "uniques": 6
+    "count": 10,
+    "uniques": 7
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 4,
-    "uniques": 4
+    "count": 5,
+    "uniques": 5
   },
   {
     "referrer": "voidcn.com",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "Baidu",
     "count": 1,
     "uniques": 1
   }
