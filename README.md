@@ -1,4 +1,4 @@
-![GitHub views](https://raw.githubusercontent.com/MuYunyun/reactSPA/traffic/traffic-reactSPA/views.svg) ![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg)
+![GitHub views](https://raw.githubusercontent.com/MuYunyun/reactSPA/traffic/traffic-reactSPA/views.svg) ![Build Status](https://travis-ci.org/MuYunyun/reactSPA.svg?branch=master) ![LICENSE MIT](https://img.shields.io/npm/l/express.svg) [![Meercode CI Score](https://meercode.io/badge/MuYunyun/reactSPA?type=ci-score&branch=master)](https://meercode.io/MuYunyun/reactSPA)
 
 该项目是对 React 技术栈以及前端工程化的相关实践。
 
