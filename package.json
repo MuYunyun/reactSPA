@@ -48,7 +48,7 @@
     "react-router-redux": "^5.0.0-alpha.9",
     "redux": "^3.6.0",
     "redux-actions": "^2.2.1",
-    "redux-thunk": "^2.2.0",
+    "redux-thunk": "^2.3.0",
     "screenfull": "^3.3.2"
   },
   "devDependencies": {
