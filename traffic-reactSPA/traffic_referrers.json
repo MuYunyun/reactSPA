@@ -5,18 +5,18 @@
     "uniques": 14
   },
   {
-    "referrer": "muyunyun.cn",
-    "count": 6,
-    "uniques": 3
-  },
-  {
     "referrer": "segmentfault.com",
     "count": 4,
     "uniques": 4
   },
   {
-    "referrer": "link.zhihu.com",
-    "count": 3,
+    "referrer": "muyunyun.cn",
+    "count": 4,
     "uniques": 2
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 1,
+    "uniques": 1
   }
 ]
