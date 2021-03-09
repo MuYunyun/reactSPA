@@ -20,7 +20,17 @@
     "uniques": 2
   },
   {
+    "referrer": "cnblogs.com",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "referrer": "codercto.com",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "muyunyun.cn",
     "count": 1,
     "uniques": 1
   }
