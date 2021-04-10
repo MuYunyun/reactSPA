@@ -10,12 +10,12 @@
     "uniques": 4
   },
   {
-    "referrer": "Google",
+    "referrer": "segmentfault.com",
     "count": 2,
     "uniques": 2
   },
   {
-    "referrer": "segmentfault.com",
+    "referrer": "Google",
     "count": 2,
     "uniques": 2
   },
