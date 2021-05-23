@@ -15,7 +15,7 @@
     "uniques": 3
   },
   {
-    "referrer": "cnblogs.com",
+    "referrer": "segmentfault.com",
     "count": 2,
     "uniques": 2
   },
@@ -25,12 +25,12 @@
     "uniques": 2
   },
   {
-    "referrer": "segmentfault.com",
-    "count": 2,
-    "uniques": 2
+    "referrer": "awesomeopensource.com",
+    "count": 1,
+    "uniques": 1
   },
   {
-    "referrer": "awesomeopensource.com",
+    "referrer": "cnblogs.com",
     "count": 1,
     "uniques": 1
   }
