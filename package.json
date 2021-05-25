@@ -71,7 +71,7 @@
     "cross-spawn": "4.0.2",
     "css-loader": "v1.0.0",
     "detect-port": "1.1.0",
-    "dotenv": "4.0.0",
+    "dotenv": "10.0.0",
     "echarts": "^3.6.1",
     "echarts-for-react": "^1.4.1",
     "eslint": "^5.5.0",
