@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 35,
-    "uniques": 25
+    "count": 40,
+    "uniques": 32
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
@@ -42,6 +42,12 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/reactSPA/issues/32",
+    "title": "路由问题 · Issue #32 · MuYunyun/reactSPA",
+    "count": 2,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.js",
     "title": "reactSPA/configureStore.js at master · MuYunyun/reactSPA · GitHub",
     "count": 1,
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.prod.js",
     "title": "reactSPA/configureStore.prod.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/actions/music.js",
-    "title": "reactSPA/music.js at master · MuYunyun/reactSPA",
     "count": 1,
     "uniques": 1
   }
