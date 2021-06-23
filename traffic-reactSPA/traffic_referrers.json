@@ -15,14 +15,14 @@
     "uniques": 3
   },
   {
-    "referrer": "link.zhihu.com",
+    "referrer": "Google",
     "count": 3,
     "uniques": 2
   },
   {
-    "referrer": "Google",
-    "count": 3,
-    "uniques": 2
+    "referrer": "link.zhihu.com",
+    "count": 2,
+    "uniques": 1
   },
   {
     "referrer": "cnblogs.com",
