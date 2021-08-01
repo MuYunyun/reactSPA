@@ -1,8 +1,13 @@
 [
   {
     "referrer": "github.com",
-    "count": 29,
-    "uniques": 19
+    "count": 32,
+    "uniques": 20
+  },
+  {
+    "referrer": "muyunyun.cn",
+    "count": 3,
+    "uniques": 2
   },
   {
     "referrer": "link.juejin.cn",
@@ -15,17 +20,12 @@
     "uniques": 1
   },
   {
-    "referrer": "muyunyun.cn",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "referrer": "link.segmentfault.com",
+    "referrer": "codercto.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "codercto.com",
+    "referrer": "link.segmentfault.com",
     "count": 1,
     "uniques": 1
   },
