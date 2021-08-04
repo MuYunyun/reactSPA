@@ -5,14 +5,19 @@
     "uniques": 23
   },
   {
-    "referrer": "link.zhihu.com",
+    "referrer": "muyunyun.cn",
     "count": 3,
     "uniques": 2
   },
   {
-    "referrer": "muyunyun.cn",
-    "count": 3,
-    "uniques": 2
+    "referrer": "codercto.com",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "link.csdn.net",
+    "count": 1,
+    "uniques": 1
   },
   {
     "referrer": "link.juejin.cn",
@@ -25,12 +30,7 @@
     "uniques": 1
   },
   {
-    "referrer": "codercto.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "link.csdn.net",
+    "referrer": "link.zhihu.com",
     "count": 1,
     "uniques": 1
   }
