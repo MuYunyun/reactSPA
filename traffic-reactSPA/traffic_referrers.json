@@ -1,13 +1,23 @@
 [
   {
     "referrer": "github.com",
-    "count": 29,
-    "uniques": 19
+    "count": 28,
+    "uniques": 20
   },
   {
     "referrer": "link.juejin.cn",
-    "count": 3,
-    "uniques": 2
+    "count": 4,
+    "uniques": 3
+  },
+  {
+    "referrer": "blog.csdn.net",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "Google",
+    "count": 1,
+    "uniques": 1
   },
   {
     "referrer": "link.zhihu.com",
@@ -20,7 +30,7 @@
     "uniques": 1
   },
   {
-    "referrer": "Google",
+    "referrer": "fossbot.rnd.huawei.com",
     "count": 1,
     "uniques": 1
   }
