@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 75,
-    "uniques": 41
+    "count": 78,
+    "uniques": 42
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
@@ -13,27 +13,27 @@
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
-    "count": 26,
+    "title": "reactSPA/src/client/middleware at master · MuYunyun/reactSPA · GitHub",
+    "count": 27,
     "uniques": 13
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
     "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
-    "count": 16,
+    "count": 17,
     "uniques": 10
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/config",
-    "title": "reactSPA/config at master · MuYunyun/reactSPA",
-    "count": 15,
-    "uniques": 5
+    "title": "reactSPA/config at master · MuYunyun/reactSPA · GitHub",
+    "count": 16,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/package.json",
     "title": "reactSPA/package.json at master · MuYunyun/reactSPA · GitHub",
-    "count": 8,
-    "uniques": 3
+    "count": 9,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
@@ -42,20 +42,20 @@
     "uniques": 5
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/reducers",
-    "title": "reactSPA/src/common/reducers at master · MuYunyun/reactSPA · GitHub",
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/api",
+    "title": "reactSPA/src/common/api at master · MuYunyun/reactSPA · GitHub",
     "count": 7,
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/config/webpack.config.dev.js",
-    "title": "reactSPA/webpack.config.dev.js at master · MuYunyun/reactSPA",
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/actions",
+    "title": "reactSPA/src/common/actions at master · MuYunyun/reactSPA · GitHub",
     "count": 7,
-    "uniques": 2
+    "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/utils",
-    "title": "reactSPA/src/common/utils at master · MuYunyun/reactSPA",
+    "path": "/MuYunyun/reactSPA/blob/master/config/webpack.config.dev.js",
+    "title": "reactSPA/webpack.config.dev.js at master · MuYunyun/reactSPA",
     "count": 7,
     "uniques": 2
   }
