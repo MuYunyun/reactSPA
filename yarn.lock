@@ -6940,7 +6940,7 @@ lodash.startswith@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/lodash.startswith/-/lodash.startswith-4.2.1.tgz#c598c4adce188a27e53145731cdc6c0e7177600c"
 
-lodash.template@^4.0.2, lodash.template@^4.4.0:
+lodash.template@^4.0.2, lodash.template@^4.4.0, lodash.template@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
   dependencies:
@@ -10887,11 +10887,13 @@ sw-precache-webpack-plugin@0.11.4:
     sw-precache "^5.1.1"
     uglify-js "^3.0.13"
 
-sw-precache-webpack-plugin@0.11.5:
-  version "0.11.5"
-  resolved "https://registry.yarnpkg.com/sw-precache-webpack-plugin/-/sw-precache-webpack-plugin-0.11.5.tgz#9b53f65a4966e3adc298e256b3cef7a55c73fdfd"
+sw-precache-webpack-plugin@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/sw-precache-webpack-plugin/-/sw-precache-webpack-plugin-1.0.0.tgz#57438e9a2a730fd9f9ff76b346196164c5dcd301"
+  integrity sha512-xXda8q9Nx1uCQ3m6TfPvw6X9OcTCnl6qB/afrUi+FF9CK7Lly29XHnvRrni0fzBU/1LKToHFDfi4jpLZuhL9JQ==
   dependencies:
     del "^3.0.0"
+    lodash.template "^4.5.0"
     sw-precache "^5.2.1"
     uglify-es "^3.3.9"
 
