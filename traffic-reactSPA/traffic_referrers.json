@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "referrer": "github.com",
+    "count": 19,
+    "uniques": 15
+  },
+  {
+    "referrer": "cnblogs.com",
+    "count": 11,
+    "uniques": 2
+  },
+  {
+    "referrer": "muyunyun.cn",
+    "count": 5,
+    "uniques": 3
+  },
+  {
+    "referrer": "link.juejin.cn",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "referrer": "Google",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "referrer": "link.segmentfault.com",
+    "count": 1,
+    "uniques": 1
+  }
+]
