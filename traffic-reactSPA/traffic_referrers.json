@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 16,
-    "uniques": 14
+    "count": 17,
+    "uniques": 15
   },
   {
     "referrer": "cnblogs.com",
@@ -20,17 +20,12 @@
     "uniques": 2
   },
   {
-    "referrer": "link.segmentfault.com",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "referrer": "link.zhihu.com",
     "count": 1,
     "uniques": 1
   },
   {
-    "referrer": "Google",
+    "referrer": "link.segmentfault.com",
     "count": 1,
     "uniques": 1
   }
