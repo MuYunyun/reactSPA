@@ -6,16 +6,16 @@
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 12,
-    "uniques": 4
-  },
-  {
-    "referrer": "link.juejin.cn",
-    "count": 1,
-    "uniques": 1
+    "count": 11,
+    "uniques": 3
   },
   {
     "referrer": "muyunyun.cn",
+    "count": 3,
+    "uniques": 2
+  },
+  {
+    "referrer": "link.juejin.cn",
     "count": 1,
     "uniques": 1
   }
