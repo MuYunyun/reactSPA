@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA：react 技术栈的组合",
-    "count": 50,
-    "uniques": 30
+    "count": 54,
+    "uniques": 33
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src at master · MuYunyun/reactSPA",
-    "count": 12,
-    "uniques": 8
+    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
+    "count": 13,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/config",
@@ -19,7 +19,13 @@
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
-    "title": "reactSPA/src/common at master · MuYunyun/reactSPA",
+    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
+    "count": 7,
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages",
+    "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA · GitHub",
     "count": 6,
     "uniques": 3
   },
@@ -30,10 +36,16 @@
     "uniques": 5
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages",
-    "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA",
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages/login",
+    "title": "reactSPA/src/common/pages/login at master · MuYunyun/reactSPA · GitHub",
     "count": 5,
-    "uniques": 2
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/login/index.js",
+    "title": "reactSPA/index.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 4,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/scripts",
@@ -45,18 +57,6 @@
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
     "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA",
     "count": 3,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages/login",
-    "title": "reactSPA/src/common/pages/login at master · MuYunyun/reactSPA",
-    "count": 3,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/package.json",
-    "title": "reactSPA/package.json at master · MuYunyun/reactSPA",
-    "count": 2,
     "uniques": 2
   }
 ]
