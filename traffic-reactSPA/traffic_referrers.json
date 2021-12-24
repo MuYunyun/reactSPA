@@ -1,27 +1,22 @@
 [
   {
     "referrer": "cnblogs.com",
-    "count": 45,
-    "uniques": 1
+    "count": 46,
+    "uniques": 2
   },
   {
     "referrer": "github.com",
-    "count": 18,
-    "uniques": 16
+    "count": 21,
+    "uniques": 17
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 15,
-    "uniques": 4
+    "count": 5,
+    "uniques": 3
   },
   {
     "referrer": "link.zhihu.com",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "referrer": "link.segmentfault.com",
-    "count": 1,
-    "uniques": 1
   }
 ]
