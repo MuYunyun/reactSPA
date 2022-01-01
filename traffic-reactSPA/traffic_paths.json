@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "reactSPA/src at master · MuYunyun/reactSPA",
-    "count": 41,
-    "uniques": 29
+    "count": 51,
+    "uniques": 35
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 13,
-    "uniques": 8
+    "count": 14,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
@@ -42,12 +42,6 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/public",
-    "title": "reactSPA/public at master · MuYunyun/reactSPA · GitHub",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/api",
     "title": "reactSPA/src/common/api at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
@@ -58,5 +52,11 @@
     "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/reducers",
+    "title": "reactSPA/src/common/reducers at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 1
   }
 ]
