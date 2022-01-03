@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "reactSPA/src at master · MuYunyun/reactSPA",
-    "count": 57,
-    "uniques": 40
+    "count": 54,
+    "uniques": 38
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 15,
-    "uniques": 10
+    "count": 14,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
@@ -24,12 +24,6 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/config",
-    "title": "reactSPA/config at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/api/index.js",
     "title": "reactSPA/index.js at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
@@ -38,6 +32,12 @@
   {
     "path": "/MuYunyun/reactSPA/issues/69",
     "title": "npm install 或者 yarn install 下载不了包。。。是工程有问题吗 · Issue #69 · MuYunyun/reactSPA",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/config",
+    "title": "reactSPA/config at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
   },
