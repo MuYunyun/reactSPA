@@ -6,12 +6,22 @@
   },
   {
     "referrer": "link.segmentfault.com",
-    "count": 6,
-    "uniques": 1
+    "count": 28,
+    "uniques": 2
   },
   {
     "referrer": "Google",
     "count": 3,
+    "uniques": 1
+  },
+  {
+    "referrer": "link.juejin.cn",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "cnblogs.com",
+    "count": 1,
     "uniques": 1
   }
 ]
