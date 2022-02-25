@@ -10,11 +10,6 @@
     "uniques": 15
   },
   {
-    "referrer": "link.segmentfault.com",
-    "count": 23,
-    "uniques": 2
-  },
-  {
     "referrer": "scaffold.ant.design",
     "count": 7,
     "uniques": 1
@@ -26,11 +21,11 @@
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 2,
-    "uniques": 1
+    "count": 3,
+    "uniques": 2
   },
   {
-    "referrer": "cnblogs.com",
+    "referrer": "link.segmentfault.com",
     "count": 1,
     "uniques": 1
   }
