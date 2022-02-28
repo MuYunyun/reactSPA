@@ -29,7 +29,7 @@
     "daform": "^0.1.1",
     "diana": "0.5.1",
     "draftjs-to-html": "^0.7.2",
-    "draftjs-to-markdown": "^0.4.2",
+    "draftjs-to-markdown": "^0.6.0",
     "fetch-jsonp": "^1.0.6",
     "history": "^4.7.2",
     "less": "^2.7.2",
