@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 42,
-    "uniques": 31
+    "count": 37,
+    "uniques": 27
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 14,
-    "uniques": 11
+    "count": 13,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
@@ -18,14 +18,14 @@
     "uniques": 8
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common",
-    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
-    "count": 6,
-    "uniques": 6
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/middleware",
     "title": "reactSPA/src/client/middleware at master · MuYunyun/reactSPA · GitHub",
+    "count": 5,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common",
+    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
     "count": 5,
     "uniques": 5
   },
@@ -42,21 +42,21 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/scripts",
-    "title": "reactSPA/scripts at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
     "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA · GitHub",
     "count": 4,
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages",
-    "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA · GitHub",
-    "count": 3,
-    "uniques": 3
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.js",
+    "title": "reactSPA/configureStore.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/common/routes.js",
+    "title": "reactSPA/routes.js at master · MuYunyun/reactSPA",
+    "count": 2,
+    "uniques": 2
   }
 ]
