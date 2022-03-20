@@ -5,19 +5,19 @@
     "uniques": 10
   },
   {
-    "referrer": "link.juejin.cn",
-    "count": 7,
-    "uniques": 5
-  },
-  {
     "referrer": "muyunyun.cn",
     "count": 6,
     "uniques": 4
   },
   {
+    "referrer": "link.juejin.cn",
+    "count": 4,
+    "uniques": 4
+  },
+  {
     "referrer": "link.segmentfault.com",
-    "count": 3,
-    "uniques": 2
+    "count": 4,
+    "uniques": 3
   },
   {
     "referrer": "Google",
