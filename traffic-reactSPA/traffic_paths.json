@@ -2,32 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 55,
-    "uniques": 33
+    "count": 46,
+    "uniques": 28
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 15,
+    "count": 13,
     "uniques": 7
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common",
-    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
-    "count": 14,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/container",
-    "title": "reactSPA/src/common/container at master · MuYunyun/reactSPA · GitHub",
-    "count": 8,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/api",
-    "title": "reactSPA/src/common/api at master · MuYunyun/reactSPA · GitHub",
-    "count": 8,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
@@ -36,10 +18,10 @@
     "uniques": 5
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/60",
-    "title": "请问button如何实现全局黑暗模式 · Issue #60 · MuYunyun/reactSPA · GitHub",
-    "count": 3,
-    "uniques": 3
+    "path": "/MuYunyun/reactSPA/tree/master/src/common",
+    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
+    "count": 5,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
@@ -54,9 +36,27 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/routes.js",
-    "title": "reactSPA/routes.js at master · MuYunyun/reactSPA · GitHub",
+    "path": "/MuYunyun/reactSPA/issues/60",
+    "title": "请问button如何实现全局黑暗模式 · Issue #60 · MuYunyun/reactSPA",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/package.json",
+    "title": "reactSPA/package.json at master · MuYunyun/reactSPA",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/components",
+    "title": "reactSPA/src/common/components at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/public/index.html",
+    "title": "reactSPA/index.html at master · MuYunyun/reactSPA",
+    "count": 1,
+    "uniques": 1
   }
 ]
