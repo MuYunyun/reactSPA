@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 40,
-    "uniques": 21
+    "count": 39,
+    "uniques": 20
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
@@ -24,12 +24,6 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/60",
-    "title": "请问button如何实现全局黑暗模式 · Issue #60 · MuYunyun/reactSPA",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
     "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA · GitHub",
     "count": 3,
@@ -44,6 +38,12 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/client/middleware/logger.js",
     "title": "reactSPA/logger.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues/60",
+    "title": "请问button如何实现全局黑暗模式 · Issue #60 · MuYunyun/reactSPA",
     "count": 2,
     "uniques": 2
   },
