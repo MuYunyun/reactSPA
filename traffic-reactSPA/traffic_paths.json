@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 30,
-    "uniques": 22
+    "count": 31,
+    "uniques": 23
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
@@ -42,12 +42,6 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA/stargazers",
-    "title": "Stargazers · MuYunyun/reactSPA · GitHub",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/actions",
     "title": "reactSPA/src/common/actions at master · MuYunyun/reactSPA",
     "count": 3,
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/api",
     "title": "reactSPA/src/common/api at master · MuYunyun/reactSPA",
+    "count": 3,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/utils",
+    "title": "reactSPA/src/common/utils at master · MuYunyun/reactSPA",
     "count": 3,
     "uniques": 2
   }
