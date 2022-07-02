@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 27,
-    "uniques": 21
+    "count": 24,
+    "uniques": 18
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
@@ -14,8 +14,8 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 10,
-    "uniques": 5
+    "count": 9,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
@@ -30,16 +30,16 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/reactSPA/issues/54",
+    "title": "react 性能优化实践 · Issue #54 · MuYunyun/reactSPA · GitHub",
+    "count": 5,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/components",
     "title": "reactSPA/src/common/components at master · MuYunyun/reactSPA · GitHub",
     "count": 4,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues/54",
-    "title": "react 性能优化实践 · Issue #54 · MuYunyun/reactSPA · GitHub",
-    "count": 4,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/middleware",
