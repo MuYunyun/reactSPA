@@ -8,14 +8,14 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 9,
-    "uniques": 8
+    "count": 8,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
     "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
-    "count": 6,
-    "uniques": 6
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/muyunyun/reactspa/issues/54",
@@ -42,12 +42,6 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
-    "title": "reactSPA/index.js at master · MuYunyun/reactSPA",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "path": "/MuYunyun/reactSPA/search",
     "title": "Search · react course · GitHub",
     "count": 2,
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
     "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages/login",
+    "title": "reactSPA/src/common/pages/login at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
   }
