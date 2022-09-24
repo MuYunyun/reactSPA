@@ -6,7 +6,12 @@
   },
   {
     "referrer": "Google",
-    "count": 8,
-    "uniques": 5
+    "count": 7,
+    "uniques": 4
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 1,
+    "uniques": 1
   }
 ]
