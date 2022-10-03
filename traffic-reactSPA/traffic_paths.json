@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 12,
-    "uniques": 10
+    "count": 11,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
@@ -16,6 +16,12 @@
     "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
     "count": 4,
     "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/reactSPA/stargazers",
+    "title": "Stargazers · MuYunyun/reactSPA · GitHub",
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/music/index.js",
     "title": "reactSPA/index.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/commit/0b3ef8aaeee6f0170f4d7f7c95fbd16aaa1cfa31",
-    "title": "add fetch · MuYunyun/reactSPA@0b3ef8a · GitHub",
     "count": 1,
     "uniques": 1
   }
