@@ -55,7 +55,7 @@
     "analyze-webpack-plugin": "^0.2.5",
     "autoprefixer": "7.1.2",
     "babel-core": "6.26.0",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "7.1.2",
     "babel-plugin-import": "^1.1.1",
     "babel-plugin-on-demand-loading": "^0.0.9",
