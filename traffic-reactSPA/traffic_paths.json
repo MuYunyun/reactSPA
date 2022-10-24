@@ -2,20 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 20,
-    "uniques": 18
+    "count": 15,
+    "uniques": 14
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 8,
-    "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/package.json",
-    "title": "reactSPA/package.json at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
-    "uniques": 3
+    "count": 7,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
@@ -33,6 +27,12 @@
     "path": "/MuYunyun/reactSPA/tree/master/src/common/components/modalForm",
     "title": "reactSPA/src/common/components/modalForm at master · MuYunyun/reactSPA",
     "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/package.json",
+    "title": "reactSPA/package.json at master · MuYunyun/reactSPA · GitHub",
+    "count": 1,
     "uniques": 1
   },
   {
