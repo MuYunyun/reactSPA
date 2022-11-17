@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 19,
-    "uniques": 15
+    "count": 18,
+    "uniques": 14
   },
   {
     "path": "/MuYunyun/reactSPA/issues/32",
@@ -42,6 +42,12 @@
     "uniques": 1
   },
   {
+    "path": "/MuYunyun/reactSPA/blob/274c00870853638fb0f77df8497f911eb560b617/src/client/store/configureStore.dev.js",
+    "title": "reactSPA/configureStore.dev.js at 274c00870853638fb0f77df8497f911eb560b617 · ...",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/branches",
     "title": "Branches · MuYunyun/reactSPA",
     "count": 1,
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "Issues · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/projects",
-    "title": "Projects · reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   }
