@@ -5,18 +5,13 @@
     "uniques": 8
   },
   {
-    "referrer": "link.juejin.cn",
-    "count": 11,
+    "referrer": "Google",
+    "count": 2,
     "uniques": 1
   },
   {
     "referrer": "link.zhihu.com",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "referrer": "Google",
-    "count": 2,
+    "count": 1,
     "uniques": 1
   }
 ]
