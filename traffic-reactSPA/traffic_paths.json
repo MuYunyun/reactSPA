@@ -2,13 +2,43 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 12,
-    "uniques": 10
+    "count": 15,
+    "uniques": 11
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src",
+    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
+    "count": 8,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
     "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
+    "count": 8,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/client",
+    "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
     "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
+    "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA · GitHub",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/actions",
+    "title": "reactSPA/src/common/actions at master · MuYunyun/reactSPA",
+    "count": 3,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/common/routes.js",
+    "title": "reactSPA/routes.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
     "uniques": 2
   },
   {
@@ -18,45 +48,15 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
+    "path": "/MuYunyun/reactSPA/tree/master/config",
+    "title": "reactSPA/config at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/54",
-    "title": "react 性能优化实践 · Issue #54 · MuYunyun/reactSPA · GitHub",
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages",
+    "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/274c00870853638fb0f77df8497f911eb560b617/src/client/store/configureStore.dev.js",
-    "title": "reactSPA/configureStore.dev.js at 274c00870853638fb0f77df8497f911eb560b617 · ...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/package.json",
-    "title": "reactSPA/package.json at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/README.md",
-    "title": "reactSPA/README.md at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/api/index.js",
-    "title": "reactSPA/index.js at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/reducers/index.js",
-    "title": "reactSPA/index.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
+    "uniques": 2
   }
 ]
