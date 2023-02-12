@@ -1,21 +1,11 @@
 [
   {
     "referrer": "github.com",
-    "count": 11,
-    "uniques": 6
-  },
-  {
-    "referrer": "link.zhihu.com",
-    "count": 2,
-    "uniques": 1
+    "count": 40,
+    "uniques": 8
   },
   {
     "referrer": "Google",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "bbsmax.com",
     "count": 1,
     "uniques": 1
   },
