@@ -2,26 +2,26 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 22,
-    "uniques": 21
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common",
-    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
-    "count": 12,
-    "uniques": 6
+    "count": 17,
+    "uniques": 17
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 10,
+    "count": 11,
     "uniques": 7
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common",
+    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
+    "count": 11,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
     "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
-    "uniques": 4
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/components",
@@ -36,18 +36,6 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/container",
-    "title": "reactSPA/src/common/container at master · MuYunyun/reactSPA",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages",
-    "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/reactSPA/issues/60",
     "title": "请问button如何实现全局黑暗模式 · Issue #60 · MuYunyun/reactSPA",
     "count": 3,
@@ -56,6 +44,18 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/routes.js",
     "title": "reactSPA/routes.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/client/middleware",
+    "title": "reactSPA/src/client/middleware at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/container",
+    "title": "reactSPA/src/common/container at master · MuYunyun/reactSPA",
     "count": 2,
     "uniques": 2
   }
