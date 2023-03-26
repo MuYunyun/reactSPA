@@ -3,12 +3,12 @@
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
     "count": 30,
-    "uniques": 22
+    "uniques": 20
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 11,
+    "count": 12,
     "uniques": 8
   },
   {
@@ -20,8 +20,14 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
     "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
+    "count": 5,
     "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/pages",
+    "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/commit/f62cc283d6a57b2a6931a99261c3f301d1a6fa85",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.prod.js",
     "title": "reactSPA/configureStore.prod.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/api/music.js",
-    "title": "reactSPA/music.js at master · MuYunyun/reactSPA",
     "count": 1,
     "uniques": 1
   }
