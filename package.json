@@ -36,7 +36,7 @@
     "less-loader": "^4.1.x",
     "moment": "^2.18.1",
     "photoswipe": "^4.1.2",
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.8.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-draft-wysiwyg": "^1.10.0",
