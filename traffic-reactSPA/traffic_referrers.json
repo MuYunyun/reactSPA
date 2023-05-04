@@ -1,8 +1,8 @@
 [
   {
     "referrer": "link.zhihu.com",
-    "count": 78,
-    "uniques": 4
+    "count": 77,
+    "uniques": 3
   },
   {
     "referrer": "link.juejin.cn",
@@ -21,7 +21,7 @@
   },
   {
     "referrer": "muyunyun.cn",
-    "count": 1,
+    "count": 2,
     "uniques": 1
   }
 ]
