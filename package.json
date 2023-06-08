@@ -25,7 +25,7 @@
     ]
   },
   "dependencies": {
-    "antd": "^3.9.3",
+    "antd": "^5.6.1",
     "daform": "^0.1.1",
     "diana": "0.5.1",
     "draftjs-to-html": "^0.7.2",
