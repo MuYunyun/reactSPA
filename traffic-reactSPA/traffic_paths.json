@@ -8,26 +8,26 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 13,
-    "uniques": 4
+    "count": 11,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
     "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
-    "count": 8,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
-    "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA · GitHub",
     "count": 6,
-    "uniques": 3
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/container/index.js",
     "title": "reactSPA/index.js at master · MuYunyun/reactSPA · GitHub",
     "count": 5,
     "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
+    "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA · GitHub",
+    "count": 4,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/commit/46754dfb0d1521765db30cf82439a117872440fb",
@@ -42,6 +42,12 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/reactSPA/blob/master/.gitignore",
+    "title": "reactSPA/.gitignore at master · MuYunyun/reactSPA · GitHub",
+    "count": 3,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/waterfall/index.js",
     "title": "File not found · GitHub",
     "count": 3,
@@ -51,12 +57,6 @@
     "path": "/MuYunyun/reactSPA/tree/master/src/common/api",
     "title": "reactSPA/src/common/api at master · MuYunyun/reactSPA · GitHub",
     "count": 3,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/devTools.js",
-    "title": "reactSPA/devTools.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 2,
     "uniques": 1
   }
 ]
