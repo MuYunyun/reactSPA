@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 60,
-    "uniques": 8
+    "count": 65,
+    "uniques": 9
   },
   {
     "referrer": "link.juejin.cn",
@@ -16,6 +16,11 @@
   },
   {
     "referrer": "muyunyun.cn",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "referrer": "Google",
     "count": 1,
     "uniques": 1
   }
