@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 18,
-    "uniques": 11
+    "count": 15,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
@@ -50,12 +50,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/routes.js",
     "title": "reactSPA/src/common/routes.js at master · MuYunyun/reactSPA",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/yarn.lock",
-    "title": "reactSPA/yarn.lock at master · MuYunyun/reactSPA",
     "count": 2,
     "uniques": 1
   }
