@@ -10,12 +10,17 @@
     "uniques": 3
   },
   {
-    "referrer": "Google",
+    "referrer": "link.zhihu.com",
+    "count": 4,
+    "uniques": 2
+  },
+  {
+    "referrer": "cnblogs.com",
     "count": 2,
     "uniques": 1
   },
   {
-    "referrer": "cnblogs.com",
+    "referrer": "Google",
     "count": 2,
     "uniques": 1
   },
