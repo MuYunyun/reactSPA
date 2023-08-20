@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 75,
-    "uniques": 13
+    "count": 149,
+    "uniques": 12
   },
   {
     "referrer": "link.juejin.cn",
@@ -20,17 +20,17 @@
     "uniques": 2
   },
   {
-    "referrer": "Google",
-    "count": 3,
-    "uniques": 2
-  },
-  {
     "referrer": "link.segmentfault.com",
     "count": 2,
     "uniques": 1
   },
   {
     "referrer": "cloud.tencent.com",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "referrer": "Google",
     "count": 1,
     "uniques": 1
   },
