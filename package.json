@@ -32,7 +32,7 @@
     "draftjs-to-markdown": "^0.4.2",
     "fetch-jsonp": "^1.0.6",
     "history": "^4.7.2",
-    "less": "^2.7.2",
+    "less": "^3.13.1",
     "less-loader": "^4.1.x",
     "moment": "^2.18.1",
     "photoswipe": "^4.1.2",
