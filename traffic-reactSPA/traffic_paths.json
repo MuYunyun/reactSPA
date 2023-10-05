@@ -18,22 +18,16 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA",
-    "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 6,
-    "uniques": 6
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/components",
     "title": "reactSPA/src/common/components at master · MuYunyun/reactSPA",
     "count": 6,
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
-    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA",
+    "path": "/MuYunyun/reactSPA",
+    "title": "MuYunyun/reactSPA: combination of react teconology stack",
     "count": 4,
-    "uniques": 2
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
@@ -51,6 +45,12 @@
     "path": "/MuYunyun/reactSPA/tree/master/src/common/pages/gallary",
     "title": "reactSPA/src/common/pages/gallary at master · MuYunyun/reactSPA",
     "count": 3,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
+    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA",
+    "count": 2,
     "uniques": 1
   },
   {
