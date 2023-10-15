@@ -2,19 +2,13 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 23,
-    "uniques": 10
+    "count": 28,
+    "uniques": 12
   },
   {
     "path": "/MuYunyun/reactSPA/blob/21c09be29ecf7ac31ddfba31b7a8819549ffb2df/src/client/index.js",
     "title": "reactSPA/src/client/index.js at 21c09be29ecf7ac31ddfba31b7a8819549ffb2df · Mu...",
     "count": 4,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/client",
-    "title": "reactSPA/src/client at master · MuYunyun/reactSPA",
-    "count": 3,
     "uniques": 1
   },
   {
@@ -26,18 +20,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/21c09be29ecf7ac31ddfba31b7a8819549ffb2df/config/webpack.config.prod.js",
     "title": "reactSPA/config/webpack.config.prod.js at 21c09be29ecf7ac31ddfba31b7a8819549f...",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
-    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/components/modalForm/form.js",
-    "title": "reactSPA/src/common/components/modalForm/form.js at master · MuYunyun/reactSPA",
     "count": 2,
     "uniques": 1
   },
@@ -57,6 +39,12 @@
     "path": "/MuYunyun/reactSPA/tree/21c09be29ecf7ac31ddfba31b7a8819549ffb2df/src/common",
     "title": "reactSPA/src/common at 21c09be29ecf7ac31ddfba31b7a8819549ffb2df · MuYunyun/re...",
     "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/commits",
+    "title": "Commits · MuYunyun/reactSPA",
+    "count": 1,
     "uniques": 1
   }
 ]
