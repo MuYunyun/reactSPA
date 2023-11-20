@@ -1,8 +1,8 @@
 [
   {
     "referrer": "github.com",
-    "count": 58,
-    "uniques": 9
+    "count": 50,
+    "uniques": 8
   },
   {
     "referrer": "link.zhihu.com",
@@ -11,11 +11,6 @@
   },
   {
     "referrer": "Google",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "referrer": "zhihu.com",
     "count": 1,
     "uniques": 1
   }
