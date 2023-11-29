@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 36,
+    "count": 35,
     "uniques": 7
   },
   {
@@ -48,14 +48,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/54",
-    "title": "react 性能优化实践 · Issue #54 · MuYunyun/reactSPA",
+    "path": "/MuYunyun/reactSPA/commit/72baf0bcf54c85b82f675f8e15a42cd38b5f0783",
+    "title": "chore: use redux devtools && add react-router-redux · MuYunyun/reactSPA@72baf...",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/61",
-    "title": "拼多多内推(长期有效) · Issue #61 · MuYunyun/reactSPA · GitHub",
+    "path": "/MuYunyun/reactSPA/issues/54",
+    "title": "react 性能优化实践 · Issue #54 · MuYunyun/reactSPA",
     "count": 1,
     "uniques": 1
   }
