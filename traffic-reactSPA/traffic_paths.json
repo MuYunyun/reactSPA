@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 16,
+    "count": 15,
     "uniques": 10
   },
   {
@@ -54,8 +54,8 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/package.json",
-    "title": "reactSPA/package.json at master · MuYunyun/reactSPA",
+    "path": "/MuYunyun/reactSPA/commit/72baf0bcf54c85b82f675f8e15a42cd38b5f0783",
+    "title": "chore: use redux devtools && add react-router-redux · MuYunyun/reactSPA@72baf...",
     "count": 1,
     "uniques": 1
   }
