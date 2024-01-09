@@ -2,20 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 12,
-    "uniques": 11
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues/61",
-    "title": "拼多多内推(长期有效) · Issue #61 · MuYunyun/reactSPA · GitHub",
-    "count": 2,
-    "uniques": 2
+    "count": 9,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/reactSPA/stargazers",
@@ -36,12 +24,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src/client",
-    "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
-    "count": 2,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/compare/master...owlstudio-ustb:master",
     "title": "Comparing MuYunyun:master...owlstudio-ustb:master · MuYunyun/reactSPA · GitHub",
     "count": 1,
@@ -50,6 +32,12 @@
   {
     "path": "/MuYunyun/reactSPA/issues/32",
     "title": "路由问题 · Issue #32 · MuYunyun/reactSPA · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues/61",
+    "title": "拼多多内推(长期有效) · Issue #61 · MuYunyun/reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   }
