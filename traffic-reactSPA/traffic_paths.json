@@ -8,19 +8,19 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 21,
-    "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/client",
-    "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
-    "count": 15,
-    "uniques": 4
+    "count": 19,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/api",
     "title": "reactSPA/src/common/api at master · MuYunyun/reactSPA",
     "count": 14,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/client",
+    "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
+    "count": 13,
     "uniques": 3
   },
   {
@@ -32,20 +32,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: React 기술 스택의 조합",
-    "count": 8,
-    "uniques": 8
+    "count": 9,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
     "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA · GitHub",
-    "count": 8,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/client/middleware",
-    "title": "reactSPA/src/client/middleware at master · MuYunyun/reactSPA · GitHub",
-    "count": 7,
-    "uniques": 3
+    "count": 6,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/api/music.js",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/waterfall/index.js",
     "title": "File not found",
+    "count": 5,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/client/middleware",
+    "title": "reactSPA/src/client/middleware at master · MuYunyun/reactSPA · GitHub",
     "count": 5,
     "uniques": 2
   }
