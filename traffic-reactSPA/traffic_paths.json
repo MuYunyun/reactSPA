@@ -2,14 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 16,
-    "uniques": 10
+    "count": 15,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA",
     "count": 4,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/stargazers",
+    "title": "Stargazers · MuYunyun/reactSPA · GitHub",
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/commit/6b33d6648c87163ec1fc89681a9090cd0b94d541",
@@ -22,11 +28,5 @@
     "title": "拼多多内推(长期有效) · Issue #61 · MuYunyun/reactSPA",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/stargazers",
-    "title": "Stargazers · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
   }
 ]
