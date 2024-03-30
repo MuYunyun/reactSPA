@@ -1,8 +1,13 @@
 [
   {
     "referrer": "github.com",
-    "count": 61,
-    "uniques": 12
+    "count": 73,
+    "uniques": 10
+  },
+  {
+    "referrer": "link.juejin.cn",
+    "count": 53,
+    "uniques": 1
   },
   {
     "referrer": "cloud.tencent.com",
