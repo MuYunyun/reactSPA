@@ -24,12 +24,6 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA",
-    "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 9,
-    "uniques": 9
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
     "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
     "count": 8,
@@ -58,5 +52,11 @@
     "title": "reactSPA/src/client/store at master · MuYunyun/reactSPA",
     "count": 7,
     "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA",
+    "title": "MuYunyun/reactSPA: combination of react teconology stack",
+    "count": 6,
+    "uniques": 6
   }
 ]
