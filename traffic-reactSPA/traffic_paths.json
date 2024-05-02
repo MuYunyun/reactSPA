@@ -2,20 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
+    "count": 15,
+    "uniques": 11
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src",
+    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
     "count": 12,
-    "uniques": 10
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
     "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
     "count": 11,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 8,
-    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
@@ -26,7 +26,13 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/routes.js",
     "title": "reactSPA/src/common/routes.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
+    "count": 6,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
+    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 5,
     "uniques": 2
   },
   {
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/client/devTools.js",
     "title": "reactSPA/src/client/devTools.js at master · MuYunyun/reactSPA",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
-    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA",
     "count": 2,
     "uniques": 1
   }
