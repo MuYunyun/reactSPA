@@ -1,15 +1,9 @@
 [
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 12,
-    "uniques": 4
-  },
-  {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 10,
-    "uniques": 9
+    "count": 7,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
@@ -18,16 +12,10 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
-    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
+    "path": "/MuYunyun/reactSPA/tree/master/src",
+    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
+    "count": 5,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/routes.js",
-    "title": "reactSPA/src/common/routes.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 4,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
@@ -36,27 +24,39 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/dependabot/github_actions/actions/github-script-7.0.1/package.json",
-    "title": "reactSPA/package.json at dependabot/github_actions/actions/github-script-7.0....",
-    "count": 3,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/dependabot/npm_and_yarn/antd-5.12.2/package.json",
-    "title": "reactSPA/package.json at dependabot/npm_and_yarn/antd-5.12.2 · MuYunyun/react...",
-    "count": 3,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/gh-pages/package.json",
-    "title": "File not found · GitHub",
-    "count": 3,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/reducers/todoList.js",
     "title": "reactSPA/src/common/reducers/todoList.js at master · MuYunyun/reactSPA · GitHub",
     "count": 3,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/package.json",
+    "title": "reactSPA/package.json at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
+    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.less",
+    "title": "reactSPA/src/client/index.less at master · MuYunyun/reactSPA",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.dev.js",
+    "title": "reactSPA/src/client/store/configureStore.dev.js at master · MuYunyun/reactSPA",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.prod.js",
+    "title": "reactSPA/src/client/store/configureStore.prod.js at master · MuYunyun/reactSPA",
+    "count": 2,
     "uniques": 1
   }
 ]
