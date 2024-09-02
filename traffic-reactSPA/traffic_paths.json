@@ -1,15 +1,15 @@
 [
   {
-    "path": "/MuYunyun/reactSPA",
-    "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 9,
-    "uniques": 8
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA",
     "count": 9,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA",
+    "title": "MuYunyun/reactSPA: combination of react teconology stack",
+    "count": 7,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common",
@@ -44,12 +44,6 @@
   {
     "path": "/MuYunyun/reactSPA/issues/69",
     "title": "npm install 或者 yarn install 下载不了包。。。是工程有问题吗 · Issue #69 · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "Pull requests · MuYunyun/reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   }
