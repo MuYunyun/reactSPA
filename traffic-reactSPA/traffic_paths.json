@@ -2,14 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 6,
-    "uniques": 6
+    "count": 9,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/pages",
     "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/.eslintrc",
+    "title": "reactSPA/.eslintrc at master · MuYunyun/reactSPA · GitHub",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/home/index.js",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/utils/ajax.js",
     "title": "reactSPA/src/common/utils/ajax.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/utils/config.js",
-    "title": "reactSPA/src/common/utils/config.js at master · MuYunyun/reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   }
