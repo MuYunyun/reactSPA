@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 10,
-    "uniques": 9
+    "count": 11,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/client/store",
@@ -12,8 +12,38 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/reactSPA/tree/master/src",
+    "title": "reactSPA/src at master · MuYunyun/reactSPA",
+    "count": 3,
+    "uniques": 3
+  },
+  {
     "path": "/MuYunyun/reactSPA/tree/master/src/client",
     "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.js",
+    "title": "reactSPA/src/client/store/configureStore.js at master · MuYunyun/reactSPA · G...",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/common/reducers/index.js",
+    "title": "reactSPA/src/common/reducers/index.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/common/reducers/music.js",
+    "title": "reactSPA/src/common/reducers/music.js at master · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/src/common/utils/ajax.js",
+    "title": "reactSPA/src/common/utils/ajax.js at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
   },
@@ -28,35 +58,5 @@
     "title": "reactSPA/src/common/pages at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.eslintrc",
-    "title": "reactSPA/.eslintrc at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.js",
-    "title": "reactSPA/src/client/store/configureStore.js at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/home/index.js",
-    "title": "reactSPA/src/common/pages/home/index.js at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/home/msgBanner/index.js",
-    "title": "reactSPA/src/common/pages/home/msgBanner/index.js at master · MuYunyun/reactS...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/waterfall/index.js",
-    "title": "File not found",
-    "count": 1,
-    "uniques": 1
   }
 ]
