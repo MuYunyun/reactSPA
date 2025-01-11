@@ -2,14 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 8,
-    "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src at master · MuYunyun/reactSPA",
-    "count": 3,
-    "uniques": 2
+    "count": 7,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/commits/master",
@@ -18,44 +12,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/devTools.js",
-    "title": "reactSPA/src/client/devTools.js at master · MuYunyun/reactSPA",
-    "count": 1,
+    "path": "/MuYunyun/reactSPA/tree/master/src",
+    "title": "reactSPA/src at master · MuYunyun/reactSPA",
+    "count": 2,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.js",
-    "title": "reactSPA/src/client/index.js at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/index.less",
-    "title": "reactSPA/src/client/index.less at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/middleware/logger.js",
-    "title": "reactSPA/src/client/middleware/logger.js at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.dev.js",
-    "title": "reactSPA/src/client/store/configureStore.dev.js at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.js",
-    "title": "reactSPA/src/client/store/configureStore.js at master · MuYunyun/reactSPA",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/client/store/configureStore.prod.js",
-    "title": "reactSPA/src/client/store/configureStore.prod.js at master · MuYunyun/reactSPA",
+    "path": "/MuYunyun/reactSPA/tree/master/config",
+    "title": "reactSPA/config at master · MuYunyun/reactSPA",
     "count": 1,
     "uniques": 1
   }
