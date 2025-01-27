@@ -24,12 +24,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/waterfall/index.js",
-    "title": "File not found · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/tree/master/src",
     "title": "reactSPA/src at master · MuYunyun/reactSPA",
     "count": 1,
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/components",
     "title": "reactSPA/src/common/components at master · MuYunyun/reactSPA",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src/common/components/table",
+    "title": "reactSPA/src/common/components/table at master · MuYunyun/reactSPA",
     "count": 1,
     "uniques": 1
   }
