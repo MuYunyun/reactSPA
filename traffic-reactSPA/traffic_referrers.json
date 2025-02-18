@@ -3,5 +3,10 @@
     "referrer": "github.com",
     "count": 3,
     "uniques": 2
+  },
+  {
+    "referrer": "nocobase.com",
+    "count": 1,
+    "uniques": 1
   }
 ]
