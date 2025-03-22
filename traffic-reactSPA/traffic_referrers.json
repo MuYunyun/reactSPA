@@ -8,5 +8,10 @@
     "referrer": "github.com",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "referrer": "link.zhihu.com",
+    "count": 2,
+    "uniques": 1
   }
 ]
