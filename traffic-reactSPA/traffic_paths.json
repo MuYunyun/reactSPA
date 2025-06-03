@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 6,
-    "uniques": 6
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/src/common/pages/login/index.js",
@@ -34,6 +34,12 @@
     "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues/53",
+    "title": "webpack 打包优化实践 · Issue #53 · MuYunyun/reactSPA · GitHub",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
