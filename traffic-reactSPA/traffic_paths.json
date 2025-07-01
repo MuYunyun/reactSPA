@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 13,
-    "uniques": 11
+    "count": 10,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/reactSPA/tree/master/src/common/pages/home",
@@ -12,32 +12,8 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "reactSPA/src at master · MuYunyun/reactSPA · GitHub",
-    "count": 2,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/pull/100",
     "title": "chore(deps-dev): bump dotenv from 4.0.0 to 8.2.0 by dependabot[bot] · Pull Re...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/client",
-    "title": "reactSPA/src/client at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/client/middleware",
-    "title": "reactSPA/src/client/middleware at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src/common",
-    "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   }
