@@ -1,5 +1,11 @@
 [
   {
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "Issues · MuYunyun/reactSPA · GitHub",
+    "count": 3,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA",
     "title": "MuYunyun/reactSPA: combination of react teconology stack",
     "count": 2,
@@ -8,12 +14,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/package.json",
     "title": "reactSPA/package.json at master · MuYunyun/reactSPA",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues",
-    "title": "Issues · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 1
   },
