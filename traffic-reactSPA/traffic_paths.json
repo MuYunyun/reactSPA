@@ -24,12 +24,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/actions/workflows/traffic2badge.yml",
-    "title": "traffic2badge · Workflow runs · MuYunyun/reactSPA · GitHub",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/commit/1dcb7466cbef4f8928c1142cde803f5b7f15facc",
     "title": "chore(deps-dev): bump babel-preset-env from 1.6.1 to 1.7.0 · MuYunyun/reactSP...",
     "count": 1,
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/tree/690476029e6b8ce2a6a43830592998e910e9dbe8",
     "title": "GitHub - MuYunyun/reactSPA at 690476029e6b8ce2a6a43830592998e910e9dbe8",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/a8c90e87289ccf3f30535401205c0c8837723089/.github",
+    "title": "reactSPA/.github at a8c90e87289ccf3f30535401205c0c8837723089 · MuYunyun/react...",
     "count": 1,
     "uniques": 1
   }
