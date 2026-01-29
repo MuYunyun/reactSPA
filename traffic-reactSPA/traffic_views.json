@@ -7228,11 +7228,6 @@
       "uniques": 0
     },
     {
-      "timestamp": "2026-01-14T00:00:00Z",
-      "count": 8,
-      "uniques": 8
-    },
-    {
       "timestamp": "2026-01-13T00:00:00Z",
       "count": 1,
       "uniques": 1
@@ -7241,6 +7236,11 @@
       "timestamp": "2026-01-15T00:00:00Z",
       "count": 6,
       "uniques": 1
+    },
+    {
+      "timestamp": "2026-01-14T00:00:00Z",
+      "count": 8,
+      "uniques": 8
     },
     {
       "timestamp": "2026-01-16T00:00:00Z",
@@ -7296,6 +7296,11 @@
       "timestamp": "2026-01-26T00:00:00Z",
       "count": 3,
       "uniques": 3
+    },
+    {
+      "timestamp": "2026-01-27T00:00:00Z",
+      "count": 0,
+      "uniques": 0
     }
   ]
 }
