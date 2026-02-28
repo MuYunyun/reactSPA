@@ -3,19 +3,19 @@
     "path": "/MuYunyun/reactSPA",
     "title": "GitHub - MuYunyun/reactSPA: combination of react teconology stack",
     "count": 6,
-    "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "Pull requests · MuYunyun/reactSPA · GitHub",
-    "count": 3,
-    "uniques": 1
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "Issues · MuYunyun/reactSPA · GitHub",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "Pull requests · MuYunyun/reactSPA · GitHub",
+    "count": 2,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/actions/runs/20497247229/workflow",
@@ -32,6 +32,12 @@
   {
     "path": "/MuYunyun/reactSPA/commit/d1dc5ef85d00b6847656291c27d9ee0be0c3a7ed",
     "title": "feat: pretty · MuYunyun/reactSPA@d1dc5ef · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/labels",
+    "title": "Labels · MuYunyun/reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   }
