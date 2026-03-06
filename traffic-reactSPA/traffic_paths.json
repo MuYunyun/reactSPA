@@ -2,8 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "GitHub - MuYunyun/reactSPA: combination of react teconology stack",
-    "count": 8,
+    "count": 9,
     "uniques": 6
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "Pull requests · MuYunyun/reactSPA · GitHub",
+    "count": 4,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -12,26 +18,20 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "Pull requests · MuYunyun/reactSPA · GitHub",
-    "count": 2,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/commit/c7da8cae33d367ed5d40845e087db304d2a530d2",
     "title": "feat: bot · MuYunyun/reactSPA@c7da8ca · GitHub",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/commit/d1dc5ef85d00b6847656291c27d9ee0be0c3a7ed",
-    "title": "feat: pretty · MuYunyun/reactSPA@d1dc5ef · GitHub",
+    "path": "/MuYunyun/reactSPA/labels",
+    "title": "Labels · MuYunyun/reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/labels",
-    "title": "Labels · MuYunyun/reactSPA · GitHub",
+    "path": "/MuYunyun/reactSPA/milestones",
+    "title": "Milestones · MuYunyun/reactSPA · GitHub",
     "count": 1,
     "uniques": 1
   },
