@@ -36,6 +36,12 @@
     "uniques": 1
   },
   {
+    "path": "/MuYunyun/reactSPA/tree/master/public",
+    "title": "GitHub - MuYunyun/reactSPA: combination of react teconology stack · GitHub",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/reactSPA/tree/master",
     "title": "reactSPA/public at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
@@ -51,12 +57,6 @@
     "path": "/MuYunyun/reactSPA/tree/master/src/common/components",
     "title": "reactSPA/src/common at master · MuYunyun/reactSPA · GitHub",
     "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/src/common/reducers/index.js",
-    "title": "reactSPA/src/common/reducers at master · MuYunyun/reactSPA · GitHub",
-    "count": 1,
     "uniques": 1
   }
 ]
