@@ -1,61 +1,61 @@
 [
   {
     "path": "/MuYunyun/reactSPA",
-    "title": "GitHub - MuYunyun/reactSPA: combination of react teconology stack · GitHub",
+    "title": "Overview",
     "count": 10,
     "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
-    "title": "Issues · MuYunyun/reactSPA · GitHub",
-    "count": 8,
+    "title": "/issues",
+    "count": 9,
     "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
-    "title": "Pull requests · MuYunyun/reactSPA · GitHub",
+    "title": "/pulls",
     "count": 6,
     "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/actions",
-    "title": "Workflow runs · MuYunyun/reactSPA · GitHub",
+    "title": "/actions",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/activity",
-    "title": "Activity · MuYunyun/reactSPA · GitHub",
+    "title": "/activity",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
-    "title": "reactSPA/.babelrc at master · MuYunyun/reactSPA · GitHub",
+    "title": "/blob/master/.babelrc",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
-    "title": "reactSPA/.commitlintrc.js at master · MuYunyun/reactSPA · GitHub",
+    "title": "/blob/master/.commitlintrc.js",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.eslintrc",
-    "title": "reactSPA/.eslintrc at master · MuYunyun/reactSPA · GitHub",
+    "title": "/blob/master/.eslintrc",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.gitignore",
-    "title": "reactSPA/.gitignore at master · MuYunyun/reactSPA · GitHub",
+    "title": "/blob/master/.gitignore",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.npmrc",
-    "title": "reactSPA/.npmrc at master · MuYunyun/reactSPA · GitHub",
+    "title": "/blob/master/.npmrc",
     "count": 1,
     "uniques": 1
   }
