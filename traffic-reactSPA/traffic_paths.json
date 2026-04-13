@@ -1,5 +1,11 @@
 [
   {
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
+    "count": 7,
+    "uniques": 5
+  },
+  {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
     "count": 7,
@@ -8,14 +14,8 @@
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 6,
+    "count": 7,
     "uniques": 4
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "/pulls",
-    "count": 5,
-    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.npmrc",
