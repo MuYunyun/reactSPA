@@ -1,15 +1,15 @@
 [
   {
+    "path": "/MuYunyun/reactSPA",
+    "title": "Overview",
+    "count": 8,
+    "uniques": 4
+  },
+  {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
     "count": 7,
-    "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/reactSPA",
-    "title": "Overview",
-    "count": 7,
-    "uniques": 4
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
