@@ -2,20 +2,38 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 9,
-    "uniques": 6
-  },
-  {
-    "path": "/MuYunyun/reactSPA",
-    "title": "Overview",
-    "count": 8,
-    "uniques": 5
+    "count": 35,
+    "uniques": 32
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 6,
-    "uniques": 4
+    "count": 8,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/reactSPA",
+    "title": "Overview",
+    "count": 7,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/reactSPA/milestones",
+    "title": "/milestones",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/346",
+    "title": "/pull/346",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
+    "title": "/blob/master/.commitlintrc.js",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.npmrc",
@@ -30,20 +48,14 @@
     "uniques": 1
   },
   {
+    "path": "/MuYunyun/reactSPA/compare",
+    "title": "/compare",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/compare/master...didilinkin:reactSPA:master",
     "title": "/compare/master...didilinkin:reactSPA:master",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pull/346",
-    "title": "/pull/346",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pull/59",
-    "title": "/pull/59",
     "count": 1,
     "uniques": 1
   }
