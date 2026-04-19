@@ -2,19 +2,19 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 35,
-    "uniques": 32
+    "count": 37,
+    "uniques": 34
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 8,
+    "count": 10,
     "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 6,
+    "count": 8,
     "uniques": 4
   },
   {
@@ -28,6 +28,12 @@
     "title": "/pull/346",
     "count": 2,
     "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/actions/workflows/traffic2badge.yml",
+    "title": "/actions/workflows/traffic2badge.yml",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
@@ -50,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/compare",
     "title": "/compare",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/compare/master...didilinkin:reactSPA:master",
-    "title": "/compare/master...didilinkin:reactSPA:master",
     "count": 1,
     "uniques": 1
   }
