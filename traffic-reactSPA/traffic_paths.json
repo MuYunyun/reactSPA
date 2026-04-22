@@ -2,20 +2,26 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 39,
-    "uniques": 35
+    "count": 41,
+    "uniques": 36
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 15,
-    "uniques": 9
+    "count": 21,
+    "uniques": 13
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 12,
-    "uniques": 7
+    "count": 14,
+    "uniques": 8
+  },
+  {
+    "path": "/MuYunyun/reactSPA/commit/8afb43bb39bd511d4ec6936fc753cd2d1cc8a99a",
+    "title": "/commit/8afb43bb39bd511d4ec6936fc753cd2d1cc8a99a",
+    "count": 4,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/milestones",
@@ -30,32 +36,26 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/reactSPA/commit/f62cc283d6a57b2a6931a99261c3f301d1a6fa85",
+    "title": "/commit/f62cc283d6a57b2a6931a99261c3f301d1a6fa85",
+    "count": 2,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/actions",
+    "title": "/actions",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/actions/runs/23881228819/workflow",
+    "title": "/actions/runs/23881228819/workflow",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/actions/workflows/traffic2badge.yml",
     "title": "/actions/workflows/traffic2badge.yml",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
-    "title": "/blob/master/.commitlintrc.js",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/public/index.html",
-    "title": "/blob/master/public/index.html",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/compare",
-    "title": "/compare",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/compare/master...didilinkin:reactSPA:master",
-    "title": "/compare/master...didilinkin:reactSPA:master",
     "count": 1,
     "uniques": 1
   }
