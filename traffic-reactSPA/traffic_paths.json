@@ -2,13 +2,13 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 41,
-    "uniques": 36
+    "count": 43,
+    "uniques": 37
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 21,
+    "count": 23,
     "uniques": 13
   },
   {
@@ -54,8 +54,8 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/actions/workflows/traffic2badge.yml",
-    "title": "/actions/workflows/traffic2badge.yml",
+    "path": "/MuYunyun/reactSPA/actions/runs/24061888366/workflow",
+    "title": "/actions/runs/24061888366/workflow",
     "count": 1,
     "uniques": 1
   }
