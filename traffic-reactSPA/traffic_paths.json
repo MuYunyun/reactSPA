@@ -2,13 +2,13 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 23,
+    "count": 22,
     "uniques": 15
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 20,
+    "count": 17,
     "uniques": 12
   },
   {
@@ -20,12 +20,6 @@
   {
     "path": "/MuYunyun/reactSPA/actions",
     "title": "/actions",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/milestones",
-    "title": "/milestones",
     "count": 2,
     "uniques": 2
   },
@@ -54,8 +48,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/actions/runs/23931549567/workflow",
-    "title": "/actions/runs/23931549567/workflow",
+    "path": "/MuYunyun/reactSPA/actions/runs/24115109155/workflow",
+    "title": "/actions/runs/24115109155/workflow",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/actions/runs/24545953975/workflow",
+    "title": "/actions/runs/24545953975/workflow",
     "count": 1,
     "uniques": 1
   }
