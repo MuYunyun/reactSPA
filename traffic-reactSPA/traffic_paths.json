@@ -24,12 +24,6 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA/commit/21c09be29ecf7ac31ddfba31b7a8819549ffb2df",
-    "title": "/commit/21c09be29ecf7ac31ddfba31b7a8819549ffb2df",
-    "count": 2,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/commit/6b33d6648c87163ec1fc89681a9090cd0b94d541",
     "title": "/commit/6b33d6648c87163ec1fc89681a9090cd0b94d541",
     "count": 2,
@@ -50,6 +44,12 @@
   {
     "path": "/MuYunyun/reactSPA/actions/runs/24115109155/workflow",
     "title": "/actions/runs/24115109155/workflow",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/actions/runs/24272859569/workflow",
+    "title": "/actions/runs/24272859569/workflow",
     "count": 1,
     "uniques": 1
   },
