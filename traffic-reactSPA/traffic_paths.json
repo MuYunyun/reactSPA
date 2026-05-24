@@ -2,20 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 17,
+    "count": 15,
     "uniques": 8
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 11,
+    "count": 10,
     "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 8,
-    "uniques": 8
+    "count": 7,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/issues/52",
@@ -48,14 +48,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/commit/f62cc283d6a57b2a6931a99261c3f301d1a6fa85",
-    "title": "/commit/f62cc283d6a57b2a6931a99261c3f301d1a6fa85",
+    "path": "/MuYunyun/reactSPA/issues/53",
+    "title": "/issues/53",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/53",
-    "title": "/issues/53",
+    "path": "/MuYunyun/reactSPA/issues/54",
+    "title": "/issues/54",
     "count": 1,
     "uniques": 1
   }
