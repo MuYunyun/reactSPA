@@ -3,19 +3,19 @@
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
     "count": 17,
-    "uniques": 5
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 13,
-    "uniques": 6
+    "count": 11,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 3,
-    "uniques": 3
+    "count": 4,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/activity",
@@ -26,12 +26,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
     "title": "/blob/master/.babelrc",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues/53",
-    "title": "/issues/53",
     "count": 1,
     "uniques": 1
   },
