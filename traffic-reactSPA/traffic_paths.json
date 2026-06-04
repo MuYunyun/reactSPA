@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 17,
+    "count": 16,
     "uniques": 4
   },
   {
@@ -32,6 +32,12 @@
   {
     "path": "/MuYunyun/reactSPA/issues/58",
     "title": "/issues/58",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/scripts",
+    "title": "/tree/master/scripts",
     "count": 1,
     "uniques": 1
   }
