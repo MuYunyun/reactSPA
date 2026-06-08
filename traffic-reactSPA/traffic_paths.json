@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 17,
+    "count": 19,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
     "count": 13,
-    "uniques": 5
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -18,14 +18,20 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA/activity",
-    "title": "/activity",
-    "count": 1,
+    "path": "/MuYunyun/reactSPA/commit/ba3911b72625d8fdeef574b2eb230d95246450c0",
+    "title": "/commit/ba3911b72625d8fdeef574b2eb230d95246450c0",
+    "count": 2,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
     "title": "/blob/master/.babelrc",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
+    "title": "/blob/master/.commitlintrc.js",
     "count": 1,
     "uniques": 1
   },
