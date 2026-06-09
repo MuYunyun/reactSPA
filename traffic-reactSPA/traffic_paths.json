@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 19,
+    "count": 18,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
     "count": 13,
-    "uniques": 6
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -24,14 +24,26 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
-    "title": "/blob/master/.babelrc",
+    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
+    "title": "/blob/master/.commitlintrc.js",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
-    "title": "/blob/master/.commitlintrc.js",
+    "path": "/MuYunyun/reactSPA/blob/master/.prettierignore",
+    "title": "/blob/master/.prettierignore",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/tsconfig.json",
+    "title": "/blob/master/tsconfig.json",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/yarn.lock",
+    "title": "/blob/master/yarn.lock",
     "count": 1,
     "uniques": 1
   },
