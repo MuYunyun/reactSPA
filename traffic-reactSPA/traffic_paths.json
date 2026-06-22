@@ -1,21 +1,21 @@
 [
   {
-    "path": "/MuYunyun/reactSPA",
-    "title": "Overview",
-    "count": 7,
-    "uniques": 5
-  },
-  {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
     "count": 7,
-    "uniques": 3
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/reactSPA",
+    "title": "Overview",
+    "count": 5,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 4,
-    "uniques": 3
+    "count": 5,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/commit/0ce2709c9147a706edd5960d412376bc2d136b35",
@@ -24,20 +24,8 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/commit/ba3911b72625d8fdeef574b2eb230d95246450c0",
-    "title": "/commit/ba3911b72625d8fdeef574b2eb230d95246450c0",
-    "count": 2,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/actions",
     "title": "/actions",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
-    "title": "/blob/master/.commitlintrc.js",
     "count": 1,
     "uniques": 1
   },
@@ -56,6 +44,18 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/yarn.lock",
     "title": "/blob/master/yarn.lock",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/commit/148fa60079486021c4d7611f7a821b222b1bc82b",
+    "title": "/commit/148fa60079486021c4d7611f7a821b222b1bc82b",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master",
+    "title": "/tree/master",
     "count": 1,
     "uniques": 1
   }
