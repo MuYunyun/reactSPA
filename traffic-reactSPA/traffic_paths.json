@@ -1,14 +1,14 @@
 [
   {
+    "path": "/MuYunyun/reactSPA",
+    "title": "Overview",
+    "count": 9,
+    "uniques": 6
+  },
+  {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
     "count": 7,
-    "uniques": 4
-  },
-  {
-    "path": "/MuYunyun/reactSPA",
-    "title": "Overview",
-    "count": 5,
     "uniques": 4
   },
   {
@@ -30,26 +30,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/.prettierignore",
-    "title": "/blob/master/.prettierignore",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/tsconfig.json",
-    "title": "/blob/master/tsconfig.json",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/yarn.lock",
-    "title": "/blob/master/yarn.lock",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/commit/148fa60079486021c4d7611f7a821b222b1bc82b",
     "title": "/commit/148fa60079486021c4d7611f7a821b222b1bc82b",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/59",
+    "title": "/pull/59",
     "count": 1,
     "uniques": 1
   },
