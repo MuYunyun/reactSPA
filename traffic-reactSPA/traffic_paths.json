@@ -24,6 +24,12 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/reactSPA/activity",
+    "title": "/activity",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/reactSPA/actions/runs/27051944601",
     "title": "/actions/runs/27051944601",
     "count": 1,
@@ -38,12 +44,6 @@
   {
     "path": "/MuYunyun/reactSPA/actions/runs/27488584204/workflow",
     "title": "/actions/runs/27488584204/workflow",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/activity",
-    "title": "/activity",
     "count": 1,
     "uniques": 1
   },
