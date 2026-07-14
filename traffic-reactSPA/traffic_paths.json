@@ -20,8 +20,8 @@
   {
     "path": "/MuYunyun/reactSPA/activity",
     "title": "/activity",
-    "count": 3,
-    "uniques": 3
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/actions/runs/27394828027",
@@ -36,18 +36,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
-    "title": "/blob/master/.babelrc",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.eslintrc",
-    "title": "/blob/master/.eslintrc",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/commit/f62cc283d6a57b2a6931a99261c3f301d1a6fa85",
     "title": "/commit/f62cc283d6a57b2a6931a99261c3f301d1a6fa85",
     "count": 1,
@@ -56,6 +44,18 @@
   {
     "path": "/MuYunyun/reactSPA/forks",
     "title": "/forks",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/346",
+    "title": "/pull/346",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/356",
+    "title": "/pull/356",
     "count": 1,
     "uniques": 1
   }
