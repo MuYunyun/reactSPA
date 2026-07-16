@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 13,
+    "count": 12,
     "uniques": 4
   },
   {
@@ -14,24 +14,12 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 7,
+    "count": 6,
     "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/reactSPA/actions/runs/27394828027",
-    "title": "/actions/runs/27394828027",
-    "count": 1,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/actions/runs/27525018777/workflow",
     "title": "/actions/runs/27525018777/workflow",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/activity",
-    "title": "/activity",
     "count": 1,
     "uniques": 1
   },
@@ -56,6 +44,18 @@
   {
     "path": "/MuYunyun/reactSPA/pull/346",
     "title": "/pull/346",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/59",
+    "title": "/pull/59",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/stargazers",
+    "title": "/stargazers",
     "count": 1,
     "uniques": 1
   }
