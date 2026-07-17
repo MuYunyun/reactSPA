@@ -9,19 +9,13 @@
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
     "count": 10,
-    "uniques": 4
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
     "count": 6,
     "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/reactSPA/actions/runs/27525018777/workflow",
-    "title": "/actions/runs/27525018777/workflow",
-    "count": 1,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/79d808945fcb6c23f367649e153b2ca8d9ad27be/node_modules/regenerator-transform/lib/visit.js",
