@@ -1,21 +1,21 @@
 [
   {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "/pulls",
-    "count": 12,
-    "uniques": 4
-  },
-  {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 10,
-    "uniques": 5
+    "count": 12,
+    "uniques": 6
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
+    "count": 11,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
     "count": 6,
-    "uniques": 5
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/blob/79d808945fcb6c23f367649e153b2ca8d9ad27be/node_modules/regenerator-transform/lib/visit.js",
