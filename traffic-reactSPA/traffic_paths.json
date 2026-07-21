@@ -2,20 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 10,
-    "uniques": 6
+    "count": 9,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 8,
-    "uniques": 4
+    "count": 3,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 5,
-    "uniques": 5
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/blob/79d808945fcb6c23f367649e153b2ca8d9ad27be/node_modules/regenerator-transform/lib/visit.js",
@@ -36,12 +36,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/forks",
-    "title": "/forks",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/pull/346",
     "title": "/pull/346",
     "count": 1,
@@ -50,12 +44,6 @@
   {
     "path": "/MuYunyun/reactSPA/pull/59",
     "title": "/pull/59",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/stargazers",
-    "title": "/stargazers",
     "count": 1,
     "uniques": 1
   }
