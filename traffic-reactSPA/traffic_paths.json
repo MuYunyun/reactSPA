@@ -2,8 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 5,
-    "uniques": 4
+    "count": 4,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA",
+    "title": "Overview",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
@@ -12,14 +18,20 @@
     "uniques": 2
   },
   {
-    "path": "/MuYunyun/reactSPA",
-    "title": "Overview",
+    "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
+    "title": "/blob/master/.babelrc",
     "count": 1,
     "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/package.json",
     "title": "/blob/master/package.json",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues/20",
+    "title": "/issues/20",
     "count": 1,
     "uniques": 1
   },
