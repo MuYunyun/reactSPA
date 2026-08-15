@@ -2,14 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 4,
-    "uniques": 3
+    "count": 8,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
+    "count": 4,
+    "uniques": 4
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
     "count": 3,
-    "uniques": 2
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.eslintrc",
