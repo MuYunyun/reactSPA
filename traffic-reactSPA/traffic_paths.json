@@ -6,15 +6,15 @@
     "uniques": 8
   },
   {
-    "path": "/MuYunyun/reactSPA/issues",
-    "title": "/issues",
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
     "count": 6,
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "/pulls",
-    "count": 6,
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "/issues",
+    "count": 5,
     "uniques": 4
   },
   {
@@ -32,6 +32,12 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/tsconfig.json",
     "title": "/blob/master/tsconfig.json",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/commit/1c4c9a1c937ceb7e1e0b10f86758abbc3c74c8c1",
+    "title": "/commit/1c4c9a1c937ceb7e1e0b10f86758abbc3c74c8c1",
     "count": 1,
     "uniques": 1
   },
