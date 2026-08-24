@@ -2,20 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 15,
-    "uniques": 8
+    "count": 19,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 6,
+    "count": 7,
     "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 5,
-    "uniques": 4
+    "count": 4,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
