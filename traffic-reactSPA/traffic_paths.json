@@ -6,16 +6,16 @@
     "uniques": 8
   },
   {
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "/issues",
+    "count": 9,
+    "uniques": 6
+  },
+  {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
     "count": 9,
     "uniques": 4
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues",
-    "title": "/issues",
-    "count": 8,
-    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
@@ -36,12 +36,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/37",
-    "title": "/issues/37",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/issues/55",
     "title": "/issues/55",
     "count": 1,
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/pull/219",
     "title": "/pull/219",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/224",
+    "title": "/pull/224",
     "count": 1,
     "uniques": 1
   }
