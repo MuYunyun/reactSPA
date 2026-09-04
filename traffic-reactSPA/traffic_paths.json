@@ -2,26 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 18,
-    "uniques": 8
+    "count": 21,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 9,
-    "uniques": 5
+    "count": 10,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 7,
-    "uniques": 3
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
-    "title": "/blob/master/.babelrc",
-    "count": 1,
-    "uniques": 1
+    "count": 8,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/tsconfig.json",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/pull/224",
     "title": "/pull/224",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/227",
+    "title": "/pull/227",
     "count": 1,
     "uniques": 1
   }
