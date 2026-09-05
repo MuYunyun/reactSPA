@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 21,
+    "count": 23,
     "uniques": 9
   },
   {
@@ -16,12 +16,6 @@
     "title": "/pulls",
     "count": 8,
     "uniques": 5
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/tsconfig.json",
-    "title": "/blob/master/tsconfig.json",
-    "count": 1,
-    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/commit/1c4c9a1c937ceb7e1e0b10f86758abbc3c74c8c1",
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/pull/227",
     "title": "/pull/227",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/tree/master/src",
+    "title": "/tree/master/src",
     "count": 1,
     "uniques": 1
   }
