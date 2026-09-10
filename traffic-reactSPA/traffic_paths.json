@@ -6,16 +6,22 @@
     "uniques": 9
   },
   {
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "/issues",
+    "count": 11,
+    "uniques": 7
+  },
+  {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 11,
+    "count": 10,
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/reactSPA/issues",
-    "title": "/issues",
-    "count": 10,
-    "uniques": 7
+    "path": "/MuYunyun/reactSPA.git",
+    "title": ".git",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/083255c524f0369790bd6765dc28eb81892a89af/build/index.html",
@@ -24,14 +30,8 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/pull/224",
-    "title": "/pull/224",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pull/227",
-    "title": "/pull/227",
+    "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
+    "title": "/blob/master/.babelrc",
     "count": 1,
     "uniques": 1
   },
