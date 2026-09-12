@@ -2,14 +2,14 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 23,
-    "uniques": 8
+    "count": 21,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 11,
-    "uniques": 7
+    "count": 10,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
@@ -36,6 +36,18 @@
     "uniques": 1
   },
   {
+    "path": "/MuYunyun/reactSPA/blob/master/yarn.lock",
+    "title": "/blob/master/yarn.lock",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/labels",
+    "title": "/labels",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/pull/98",
     "title": "/pull/98",
     "count": 1,
@@ -44,12 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/pull/99",
     "title": "/pull/99",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/src",
-    "title": "/tree/master/src",
     "count": 1,
     "uniques": 1
   }
