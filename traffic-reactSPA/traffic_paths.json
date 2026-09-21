@@ -2,13 +2,13 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 13,
-    "uniques": 5
+    "count": 15,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 10,
+    "count": 9,
     "uniques": 3
   },
   {
@@ -30,6 +30,18 @@
     "uniques": 2
   },
   {
+    "path": "/MuYunyun/reactSPA/issues/54",
+    "title": "/issues/54",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues/56",
+    "title": "/issues/56",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/reactSPA/issues/21",
     "title": "/issues/21",
     "count": 2,
@@ -44,18 +56,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/083255c524f0369790bd6765dc28eb81892a89af/build/index.html",
     "title": "/blob/083255c524f0369790bd6765dc28eb81892a89af/build/index.html",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
-    "title": "/blob/master/.babelrc",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
-    "title": "/blob/master/.commitlintrc.js",
     "count": 1,
     "uniques": 1
   }
