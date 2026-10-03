@@ -2,20 +2,26 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 13,
-    "uniques": 7
+    "count": 14,
+    "uniques": 8
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 6,
-    "uniques": 5
+    "count": 7,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 5,
-    "uniques": 4
+    "count": 6,
+    "uniques": 6
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/README.md",
+    "title": "/blob/master/README.md",
+    "count": 2,
+    "uniques": 2
   },
   {
     "path": "/MuYunyun/reactSPA/issues/52",
@@ -36,26 +42,20 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/.commitlintrc.js",
-    "title": "/blob/master/.commitlintrc.js",
+    "path": "/MuYunyun/reactSPA/issues/35",
+    "title": "/issues/35",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/README.md",
-    "title": "/blob/master/README.md",
+    "path": "/MuYunyun/reactSPA/issues/37",
+    "title": "/issues/37",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/21",
-    "title": "/issues/21",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues/23",
-    "title": "/issues/23",
+    "path": "/MuYunyun/reactSPA/issues/40",
+    "title": "/issues/40",
     "count": 1,
     "uniques": 1
   }
