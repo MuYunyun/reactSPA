@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 14,
-    "uniques": 8
+    "count": 13,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -18,18 +18,6 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/52",
-    "title": "/issues/52",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues/56",
-    "title": "/issues/56",
-    "count": 2,
-    "uniques": 2
-  },
-  {
     "path": "/MuYunyun/reactSPA/blob/dependabot/github_actions/actions/checkout-5.0.0/README.md",
     "title": "/blob/dependabot/github_actions/actions/checkout-5.0.0/README.md",
     "count": 1,
@@ -42,20 +30,32 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/50",
-    "title": "/issues/50",
+    "path": "/MuYunyun/reactSPA/issues/52",
+    "title": "/issues/52",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/51",
-    "title": "/issues/51",
+    "path": "/MuYunyun/reactSPA/issues/60",
+    "title": "/issues/60",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/53",
-    "title": "/issues/53",
+    "path": "/MuYunyun/reactSPA/issues/69",
+    "title": "/issues/69",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues/8",
+    "title": "/issues/8",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues/9",
+    "title": "/issues/9",
     "count": 1,
     "uniques": 1
   }
