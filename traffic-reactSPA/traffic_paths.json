@@ -8,8 +8,8 @@
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 8,
-    "uniques": 6
+    "count": 7,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
@@ -18,14 +18,14 @@
     "uniques": 4
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/dependabot/github_actions/actions/checkout-5.0.0/README.md",
-    "title": "/blob/dependabot/github_actions/actions/checkout-5.0.0/README.md",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/blob/master/README.md",
     "title": "/blob/master/README.md",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/dependabot/github_actions/actions/checkout-5.0.0/README.md",
+    "title": "/blob/dependabot/github_actions/actions/checkout-5.0.0/README.md",
     "count": 1,
     "uniques": 1
   },
