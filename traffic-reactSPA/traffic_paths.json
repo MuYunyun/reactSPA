@@ -30,12 +30,6 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/52",
-    "title": "/issues/52",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/issues/8",
     "title": "/issues/8",
     "count": 1,
@@ -56,6 +50,12 @@
   {
     "path": "/MuYunyun/reactSPA/pull/119",
     "title": "/pull/119",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pull/121",
+    "title": "/pull/121",
     "count": 1,
     "uniques": 1
   }
