@@ -2,14 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 19,
-    "uniques": 9
-  },
-  {
-    "path": "/MuYunyun/reactSPA/issues",
-    "title": "/issues",
-    "count": 7,
-    "uniques": 6
+    "count": 16,
+    "uniques": 7
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
@@ -18,14 +12,20 @@
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/reactSPA/actions",
-    "title": "/actions",
-    "count": 1,
-    "uniques": 1
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "/issues",
+    "count": 6,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/README.md",
     "title": "/blob/master/README.md",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/MuYunyun/reactSPA/actions",
+    "title": "/actions",
     "count": 1,
     "uniques": 1
   },
@@ -44,18 +44,6 @@
   {
     "path": "/MuYunyun/reactSPA/tree/master",
     "title": "/tree/master",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/config",
-    "title": "/tree/master/config",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/q/github.com/MuYunyun/reactSPA",
-    "title": "nyun/reactSPA",
     "count": 1,
     "uniques": 1
   }
