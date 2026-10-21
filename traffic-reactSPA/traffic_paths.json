@@ -6,26 +6,26 @@
     "uniques": 7
   },
   {
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "/issues",
+    "count": 7,
+    "uniques": 6
+  },
+  {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
     "count": 6,
     "uniques": 6
   },
   {
-    "path": "/MuYunyun/reactSPA/issues",
-    "title": "/issues",
-    "count": 6,
-    "uniques": 5
+    "path": "/MuYunyun/reactSPA/actions",
+    "title": "/actions",
+    "count": 1,
+    "uniques": 1
   },
   {
     "path": "/MuYunyun/reactSPA/blob/master/README.md",
     "title": "/blob/master/README.md",
-    "count": 2,
-    "uniques": 2
-  },
-  {
-    "path": "/MuYunyun/reactSPA/actions",
-    "title": "/actions",
     "count": 1,
     "uniques": 1
   },
