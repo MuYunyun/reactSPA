@@ -2,7 +2,7 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 12,
+    "count": 11,
     "uniques": 7
   },
   {
@@ -14,8 +14,8 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 4,
-    "uniques": 4
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/actions",
@@ -32,12 +32,6 @@
   {
     "path": "/MuYunyun/reactSPA/pull/270",
     "title": "/pull/270",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pull/299",
-    "title": "/pull/299",
     "count": 1,
     "uniques": 1
   },
