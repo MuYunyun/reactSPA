@@ -2,20 +2,20 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 11,
-    "uniques": 7
+    "count": 10,
+    "uniques": 6
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 6,
-    "uniques": 6
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 3,
-    "uniques": 3
+    "count": 4,
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/actions",
@@ -26,12 +26,6 @@
   {
     "path": "/MuYunyun/reactSPA/blob/master/README.md",
     "title": "/blob/master/README.md",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/pull/270",
-    "title": "/pull/270",
     "count": 1,
     "uniques": 1
   },
