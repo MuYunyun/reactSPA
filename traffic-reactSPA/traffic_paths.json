@@ -3,7 +3,7 @@
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
     "count": 5,
-    "uniques": 3
+    "uniques": 4
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -12,14 +12,14 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "/pulls",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/MuYunyun/reactSPA/blob/master/README.md",
     "title": "/blob/master/README.md",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
     "count": 1,
     "uniques": 1
   },
