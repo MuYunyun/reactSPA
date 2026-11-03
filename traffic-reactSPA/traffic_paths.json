@@ -6,16 +6,16 @@
     "uniques": 7
   },
   {
-    "path": "/MuYunyun/reactSPA/issues",
-    "title": "/issues",
-    "count": 4,
-    "uniques": 4
-  },
-  {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 2,
-    "uniques": 2
+    "count": 5,
+    "uniques": 5
+  },
+  {
+    "path": "/MuYunyun/reactSPA/issues",
+    "title": "/issues",
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/muyunyun/reactspa/issues/28",
