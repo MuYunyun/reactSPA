@@ -10963,14 +10963,14 @@
       "uniques": 9
     },
     {
-      "timestamp": "2026-10-20T00:00:00Z",
-      "count": 45,
-      "uniques": 34
-    },
-    {
       "timestamp": "2026-10-21T00:00:00Z",
       "count": 28,
       "uniques": 24
+    },
+    {
+      "timestamp": "2026-10-20T00:00:00Z",
+      "count": 45,
+      "uniques": 34
     },
     {
       "timestamp": "2026-10-22T00:00:00Z",
