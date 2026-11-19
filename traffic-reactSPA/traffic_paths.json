@@ -3,7 +3,7 @@
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
     "count": 11,
-    "uniques": 9
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/reactSPA/issues/32",
@@ -18,24 +18,6 @@
     "uniques": 3
   },
   {
-    "path": "/MuYunyun/reactSPA/blob/master/.babelrc",
-    "title": "/blob/master/.babelrc",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.gitignore",
-    "title": "/blob/master/.gitignore",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/blob/master/.npmrc",
-    "title": "/blob/master/.npmrc",
-    "count": 1,
-    "uniques": 1
-  },
-  {
     "path": "/MuYunyun/reactSPA/commit/1e7b0df9b3bfeaded234f0d048feb5fdb124d7b1",
     "title": "/commit/1e7b0df9b3bfeaded234f0d048feb5fdb124d7b1",
     "count": 1,
@@ -48,14 +30,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/52",
-    "title": "/issues/52",
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/pulse",
-    "title": "/pulse",
+    "path": "/MuYunyun/reactSPA/tree/master/scripts",
+    "title": "/tree/master/scripts",
     "count": 1,
     "uniques": 1
   }
