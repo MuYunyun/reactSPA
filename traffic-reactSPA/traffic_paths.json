@@ -8,8 +8,8 @@
   {
     "path": "/MuYunyun/reactSPA/issues",
     "title": "/issues",
-    "count": 5,
-    "uniques": 5
+    "count": 3,
+    "uniques": 3
   },
   {
     "path": "/MuYunyun/reactSPA/compare/master@{1day}...master",
@@ -26,12 +26,6 @@
   {
     "path": "/MuYunyun/reactSPA/pulls",
     "title": "/pulls",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/MuYunyun/reactSPA/tree/master/scripts",
-    "title": "/tree/master/scripts",
     "count": 1,
     "uniques": 1
   }
