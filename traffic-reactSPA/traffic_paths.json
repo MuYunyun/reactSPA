@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 12,
-    "uniques": 11
+    "count": 11,
+    "uniques": 10
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -12,20 +12,38 @@
     "uniques": 3
   },
   {
+    "path": "/muyunyun/reactspa",
+    "title": "Overview",
+    "count": 3,
+    "uniques": 3
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/274c00870853638fb0f77df8497f911eb560b617/src/common/pages/music/index.js",
+    "title": "/blob/274c00870853638fb0f77df8497f911eb560b617/src/common/pages/music/index.js",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/commit/1ffdc7de09d4ecd8172779aee53df1560fb40953",
+    "title": "/commit/1ffdc7de09d4ecd8172779aee53df1560fb40953",
+    "count": 1,
+    "uniques": 1
+  },
+  {
     "path": "/MuYunyun/reactSPA/compare/master@{1day}...master",
     "title": "/compare/master@{1day}...master",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/issues/32",
-    "title": "/issues/32",
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "/pulls",
+    "path": "/MuYunyun/reactSPA/tree/master/scripts",
+    "title": "/tree/master/scripts",
     "count": 1,
     "uniques": 1
   }
