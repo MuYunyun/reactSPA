@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 11,
-    "uniques": 10
+    "count": 10,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -18,6 +18,12 @@
     "uniques": 3
   },
   {
+    "path": "/MuYunyun/reactSPA/pulls",
+    "title": "/pulls",
+    "count": 2,
+    "uniques": 2
+  },
+  {
     "path": "/MuYunyun/reactSPA/blob/274c00870853638fb0f77df8497f911eb560b617/src/common/pages/music/index.js",
     "title": "/blob/274c00870853638fb0f77df8497f911eb560b617/src/common/pages/music/index.js",
     "count": 1,
@@ -30,14 +36,14 @@
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/compare/master@{1day}...master",
-    "title": "/compare/master@{1day}...master",
+    "path": "/MuYunyun/reactSPA/compare/master...traffic",
+    "title": "/compare/master...traffic",
     "count": 1,
     "uniques": 1
   },
   {
-    "path": "/MuYunyun/reactSPA/pulls",
-    "title": "/pulls",
+    "path": "/MuYunyun/reactSPA/compare/master@{1day}...master",
+    "title": "/compare/master@{1day}...master",
     "count": 1,
     "uniques": 1
   },
