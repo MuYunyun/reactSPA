@@ -2,8 +2,8 @@
   {
     "path": "/MuYunyun/reactSPA",
     "title": "Overview",
-    "count": 8,
-    "uniques": 7
+    "count": 10,
+    "uniques": 9
   },
   {
     "path": "/MuYunyun/reactSPA/issues",
@@ -38,6 +38,12 @@
   {
     "path": "/MuYunyun/reactSPA/blob/274c00870853638fb0f77df8497f911eb560b617/src/common/pages/music/index.js",
     "title": "/blob/274c00870853638fb0f77df8497f911eb560b617/src/common/pages/music/index.js",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/MuYunyun/reactSPA/blob/master/README.md",
+    "title": "/blob/master/README.md",
     "count": 1,
     "uniques": 1
   },
